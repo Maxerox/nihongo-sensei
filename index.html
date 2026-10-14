@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Flashcards, quiz y lista de vocabulario de Minna no Nihongo, lecciones 1–19.">
+<title>Nihongo Sensei</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎌</text></svg>">
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#EEF1F4; --surface:#FFFFFF; --card:#FDFDFB; --ink:#1B2433; --muted:#5E6B7E;
+  --line:#D5DBE4; --ai:#2A4B7C; --ai-soft:#DCE5F2; --matcha:#4F7A3A; --matcha-soft:#E1ECD9;
+  --beni:#B5473A; --beni-soft:#F4E0DC; --ring:#9AA5B5;
+  --shadow:0 1px 2px rgba(27,36,51,.06),0 8px 24px rgba(27,36,51,.08);
+  --jp:"Klee One","Hiragino Mincho ProN","Yu Mincho",serif;
+  --ui:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --paper:#12161D; --surface:#1A2029; --card:#1E2530; --ink:#E7ECF3; --muted:#9AA6B8;
+  --line:#2E3745; --ai:#8FB0E3; --ai-soft:#233349; --matcha:#94C27A; --matcha-soft:#22321D;
+  --beni:#E58B7E; --beni-soft:#3A2320; --ring:#56627A;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#12161D; --surface:#1A2029; --card:#1E2530; --ink:#E7ECF3; --muted:#9AA6B8;
+  --line:#2E3745; --ai:#8FB0E3; --ai-soft:#233349; --matcha:#94C27A; --matcha-soft:#22321D;
+  --beni:#E58B7E; --beni-soft:#3A2320; --ring:#56627A;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-direction:column;gap:4px}
+h1{font-family:var(--jp);font-weight:600;font-size:clamp(26px,5vw,34px);margin:0;letter-spacing:.02em;text-wrap:balance}
+h1 small{font-family:var(--ui);font-size:15px;font-weight:500;color:var(--muted);margin-left:6px;letter-spacing:0}
+.sub{color:var(--muted);margin:0;font-size:14px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row.between{justify-content:space-between}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:600 14px var(--ui);min-width:40px;height:36px;padding:0 10px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{background:var(--ai);border-color:var(--ai);color:var(--surface)}
+.chip.ghost{font-weight:500;color:var(--muted)}
+button:focus-visible,select:focus-visible,input:focus-visible,.card:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px;background:var(--paper)}
+.seg button{font:600 14px var(--ui);border:0;background:transparent;color:var(--muted);padding:7px 14px;border-radius:7px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+select{font:500 14px var(--ui);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;height:36px;padding:0 8px}
+.toggle{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink);cursor:pointer}
+.toggle input{accent-color:var(--ai);width:16px;height:16px}
+.stats{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.stats b{color:var(--ink)}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--matcha);width:0;transition:width .3s}
+
+/* card: a ring-bound 単語カード */
+.stage{perspective:1400px}
+.card{position:relative;width:100%;aspect-ratio:1.55;max-height:380px;min-height:240px;cursor:pointer;transform-style:preserve-3d;transition:transform .45s cubic-bezier(.2,.7,.2,1);border-radius:16px}
+.card.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 20px 20px;text-align:center;gap:6px;overflow:hidden}
+.face.back{transform:rotateY(180deg)}
+.face::before{content:"";position:absolute;top:16px;left:16px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:2px solid var(--ring)}
+.face::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--ai-soft)}
+.tag{position:absolute;top:14px;right:16px;font-size:12px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.furi{font-family:var(--jp);font-size:clamp(15px,3.2vw,19px);color:var(--muted);min-height:1.3em}
+.jp{font-family:var(--jp);font-weight:600;font-size:clamp(34px,8vw,58px);line-height:1.2;overflow-wrap:anywhere}
+.jp.long{font-size:clamp(22px,5vw,34px)}
+.emoji{font-size:clamp(48px,11vw,76px);line-height:1.1}
+.meaning{font-size:clamp(19px,4vw,25px);font-weight:600;max-width:32ch;text-wrap:balance}
+.hint{font-size:13px;color:var(--muted)}
+.speak{position:absolute;bottom:14px;right:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:16px;display:grid;place-items:center}
+.known-dot{position:absolute;bottom:18px;left:18px;font-size:12px;font-weight:600;color:var(--matcha);background:var(--matcha-soft);padding:2px 8px;border-radius:99px}
+
+.controls{display:grid;grid-template-columns:auto 1fr 1fr auto;gap:8px}
+.btn{font:600 15px var(--ui);height:48px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;padding:0 14px}
+.btn.review{background:var(--beni-soft);border-color:transparent;color:var(--beni)}
+.btn.know{background:var(--matcha-soft);border-color:transparent;color:var(--matcha)}
+.btn.primary{background:var(--ai);color:var(--surface);border-color:var(--ai)}
+.btn:disabled{opacity:.4;cursor:default}
+.keys{font-size:12px;color:var(--muted);text-align:center}
+kbd{font:600 11px var(--ui);border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;background:var(--surface)}
+
+/* quiz */
+.q-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.q-opt{font:500 16px var(--ui);text-align:left;min-height:56px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.q-opt.jpopt{font-family:var(--jp);font-size:20px;font-weight:600}
+.q-opt.ok{background:var(--matcha-soft);border-color:var(--matcha);color:var(--matcha)}
+.q-opt.bad{background:var(--beni-soft);border-color:var(--beni);color:var(--beni)}
+.q-opt:disabled{cursor:default}
+
+/* list */
+.search{width:100%;height:40px;font:15px var(--ui);padding:0 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.list{display:flex;flex-direction:column;gap:18px}
+.lesson-h{font-family:var(--jp);font-size:18px;font-weight:600;margin:0 0 6px;display:flex;align-items:baseline;gap:8px}
+.lesson-h span{font:500 13px var(--ui);color:var(--muted)}
+.tbl{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tbl td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:middle}
+.tbl tr:first-child td{border-top:0}
+.tbl .e{width:38px;font-size:22px;text-align:center}
+.tbl .w{font-family:var(--jp);font-size:18px;font-weight:600}
+.tbl .w small{display:block;font-size:12px;font-weight:400;color:var(--muted)}
+.tbl .m{color:var(--ink)}
+.tbl .k{width:28px;text-align:center;color:var(--matcha);font-weight:700}
+.empty{padding:40px 16px;text-align:center;color:var(--muted)}
+.note{font-size:12.5px;color:var(--muted);margin:0}
+@media (max-width:520px){
+  .controls{grid-template-columns:1fr 1fr}
+  .controls .nav{display:none}
+  .q-opts{grid-template-columns:1fr}
+  .card{aspect-ratio:1.1}
+}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.bar>i{transition:none}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>日本語先生 <small>Nihongo Sensei · Minna no Nihongo, lecciones 1–19</small></h1>
+    <p class="sub">Los kanji aparecen solo si están entre los que viste hasta la unidad 8 del libro de kanji. El resto va en kana.</p>
+  </header>
+
+  <section class="panel" aria-label="Opciones">
+    <div class="row between">
+      <span class="label">Lecciones</span>
+      <div class="row">
+        <button class="chip ghost" id="allBtn">Todas</button>
+        <button class="chip ghost" id="noneBtn">Ninguna</button>
+      </div>
+    </div>
+    <div class="chips" id="lessonChips"></div>
+    <div class="row between">
+      <div class="seg" role="group" aria-label="Modo">
+        <button data-mode="cards" aria-pressed="true">Tarjetas</button>
+        <button data-mode="quiz" aria-pressed="false">Quiz</button>
+        <button data-mode="list" aria-pressed="false">Lista</button>
+      </div>
+      <div class="row">
+        <label class="label" for="dir" style="margin:0">Dirección</label>
+        <select id="dir">
+          <option value="jp">日本語 → español</option>
+          <option value="es">español → 日本語</option>
+        </select>
+      </div>
+    </div>
+    <div class="row between">
+      <label class="toggle"><input type="checkbox" id="onlyReview"> Solo las que me faltan</label>
+      <label class="toggle"><input type="checkbox" id="allKanji"> Mostrar todos los kanji</label>
+    </div>
+    <div>
+      <div class="row between" style="margin-bottom:6px">
+        <span class="stats" id="stats"></span>
+        <button class="chip ghost" id="resetBtn" style="height:28px">Reiniciar progreso</button>
+      </div>
+      <div class="bar"><i id="barFill"></i></div>
+    </div>
+  </section>
+
+  <main id="view"></main>
+  <p class="note">Vocabulario basado en la 2.ª edición del libro principal; puede haber alguna diferencia menor con tu edición. El botón 🔊 usa la voz japonesa de tu navegador, si la tiene. Tu progreso se guarda en este navegador.</p>
+</div>
+
+<script>
+const ALLOWED = new Set([..."日月火水木金土山川田一二三四五六七八九十百千万円学生先会社員本中国人今朝昼晩時分半午前後休毎何行来校週去年駅電車自転高安大小新古青白赤黒上下父母子手好肉魚食飲物近間右左外男女犬々"]);
+
+// kana | kanji (forma del libro) | significado | emoji
+const RAW = {
+1:`わたし|私|yo|🙋
+わたしたち|私たち|nosotros|👥
+あなた||tú, usted|👉
+あのひと|あの人|esa persona, él / ella|🧍
+あのかた|あの方|esa persona (formal)|🧍
+みなさん|皆さん|todos ustedes; damas y caballeros|👥
+～さん||Sr. / Sra. ~ (sufijo de respeto)|
+～ちゃん||sufijo cariñoso para niños|🧒
+～じん|～人|de nacionalidad ~|
+せんせい|先生|profesor/a (no para uno mismo)|👩‍🏫
+きょうし|教師|profesor/a (profesión)|👨‍🏫
+がくせい|学生|estudiante|🧑‍🎓
+かいしゃいん|会社員|empleado de empresa|👔
+しゃいん|社員|empleado de (la empresa) ~|💼
+ぎんこういん|銀行員|empleado bancario|🏦
+いしゃ|医者|médico|🩺
+けんきゅうしゃ|研究者|investigador|🔬
+エンジニア||ingeniero|⚙️
+だいがく|大学|universidad|🏫
+びょういん|病院|hospital|🏥
+でんき|電気|electricidad, luz|💡
+だれ||¿quién?|❓
+どなた||¿quién? (formal)|❓
+～さい|～歳|~ años (de edad)|🎂
+なんさい|何歳|¿cuántos años?|🎂
+おいくつ||¿cuántos años? (formal)|🎂
+はい||sí|⭕
+いいえ||no|❌
+しつれいですが|失礼ですが|disculpe, pero…|
+おなまえは？|お名前は？|¿cómo se llama?|
+はじめまして|初めまして|mucho gusto (al conocerse)|🤝
+どうぞよろしく［おねがいします］|どうぞよろしく［お願いします］|encantado, un placer|🙇
+こちらは～さんです||le presento a ~|
+～からきました|～から来ました|vengo de ~|
+アメリカ||Estados Unidos|🇺🇸
+イギリス||Reino Unido|🇬🇧
+インド||India|🇮🇳
+インドネシア||Indonesia|🇮🇩
+かんこく|韓国|Corea del Sur|🇰🇷
+タイ||Tailandia|🇹🇭
+ちゅうごく|中国|China|🇨🇳
+ドイツ||Alemania|🇩🇪
+にほん|日本|Japón|🇯🇵
+ブラジル||Brasil|🇧🇷`,
+2:`これ||esto (cerca de mí)|👇
+それ||eso (cerca de vos)|👉
+あれ||aquello (lejos de ambos)|👆
+この～||este ~|
+その～||ese ~|
+あの～||aquel ~|
+ほん|本|libro|📕
+じしょ|辞書|diccionario|📖
+ざっし|雑誌|revista|📔
+しんぶん|新聞|diario, periódico|📰
+ノート||cuaderno|📓
+てちょう|手帳|agenda|📒
+めいし|名刺|tarjeta personal|📇
+カード||tarjeta|💳
+えんぴつ|鉛筆|lápiz|✏️
+ボールペン||birome, bolígrafo|🖊️
+シャープペンシル||portaminas|✏️
+かぎ||llave|🔑
+とけい|時計|reloj|⌚
+かさ|傘|paraguas|☂️
+かばん||bolso, mochila|👜
+CD||CD|💿
+テレビ||televisor|📺
+ラジオ||radio|📻
+カメラ||cámara|📷
+コンピューター||computadora|💻
+くるま|車|auto|🚗
+つくえ|机|escritorio|
+いす||silla|🪑
+チョコレート||chocolate|🍫
+コーヒー||café|☕
+［お］みやげ|［お］土産|souvenir, regalo de viaje|🎁
+えいご|英語|inglés (idioma)|🇬🇧
+にほんご|日本語|japonés (idioma)|🇯🇵
+～ご|～語|idioma ~|🗣️
+なん|何|¿qué?|❓
+そう||así, eso|
+あのう||eh… (al dudar)|
+えっ||¿eh? (sorpresa)|😮
+どうぞ||tome, adelante|🤲
+［どうも］ありがとう［ございます］||muchas gracias|🙏
+そうですか||ah, ¿sí? / ya veo|
+ちがいます|違います|no, está equivocado|🙅
+あ||¡ah!|
+これからおせわになります|これからお世話になります|cuento con su ayuda de ahora en más|🙇
+こちらこそよろしく||el gusto es mío|🤝`,
+3:`ここ||aquí|📍
+そこ||ahí|
+あそこ||allá|
+どこ||¿dónde?|❓
+こちら||aquí (formal)|
+そちら||ahí (formal)|
+あちら||allá (formal)|
+どちら||¿dónde? (formal)|❓
+きょうしつ|教室|aula|🏫
+しょくどう|食堂|comedor|🍽️
+じむしょ|事務所|oficina|🏢
+かいぎしつ|会議室|sala de reuniones|👥
+うけつけ|受付|recepción|🛎️
+ロビー||lobby, vestíbulo|🛋️
+へや|部屋|habitación|🚪
+トイレ（おてあらい）|トイレ（お手洗い）|baño|🚻
+かいだん|階段|escalera|🪜
+エレベーター||ascensor|🛗
+エスカレーター||escalera mecánica|
+じどうはんばいき|自動販売機|máquina expendedora|🥤
+でんわ|電話|teléfono|📞
+［お］くに|［お］国|país|🌏
+かいしゃ|会社|empresa|🏢
+うち||casa|🏠
+くつ|靴|zapatos|👞
+ネクタイ||corbata|👔
+ワイン||vino|🍷
+うりば|売り場|sección (de una tienda)|🏬
+ちか|地下|subsuelo|⬇️
+―かい（―がい）|―階|piso ~|🏢
+なんがい|何階|¿qué piso?|❓
+―えん|―円|~ yenes|💴
+いくら||¿cuánto cuesta?|💰
+ひゃく|百|cien|💯
+せん|千|mil|
+まん|万|diez mil|
+すみません||disculpe|🙇
+どうも||gracias|
+いらっしゃいませ||¡bienvenido! (en negocios)|🙌
+［～を］みせてください|［～を］見せてください|muéstreme ~|👀
+じゃ||entonces|
+［～を］ください||deme ~ / quiero ~|🤲
+イタリア||Italia|🇮🇹
+スイス||Suiza|🇨🇭
+フランス||Francia|🇫🇷`,
+4:`おきます|起きます|levantarse, despertarse|⏰
+ねます|寝ます|dormir, acostarse|😴
+はたらきます|働きます|trabajar|💼
+やすみます|休みます|descansar, tomarse el día|🛌
+べんきょうします|勉強します|estudiar|📚
+おわります|終わります|terminar|🏁
+デパート||tienda departamental|🏬
+ぎんこう|銀行|banco|🏦
+ゆうびんきょく|郵便局|correo (oficina postal)|🏣
+としょかん|図書館|biblioteca|📚
+びじゅつかん|美術館|museo de arte|🖼️
+いま|今|ahora|⏱️
+―じ|―時|las ~ (hora)|🕐
+―ふん（―ぷん）|―分|~ minutos|⏱️
+はん|半|y media|🕧
+なんじ|何時|¿qué hora?|🕒
+なんぷん|何分|¿cuántos minutos?|❓
+ごぜん|午前|a. m., por la mañana|🌄
+ごご|午後|p. m., por la tarde|🌇
+あさ|朝|mañana (parte del día)|🌅
+ひる|昼|mediodía, día|☀️
+ばん（よる）|晩（夜）|noche|🌙
+おととい||anteayer|
+きのう||ayer|
+きょう||hoy|📅
+あした||mañana (el día siguiente)|
+あさって||pasado mañana|
+けさ||esta mañana|🌅
+こんばん|今晩|esta noche|🌙
+やすみ|休み|descanso, día libre|🏖️
+ひるやすみ|昼休み|descanso del mediodía|🍱
+しけん|試験|examen|📝
+かいぎ|会議|reunión|👥
+えいが|映画|película|🎬
+まいあさ|毎朝|todas las mañanas|🌅
+まいばん|毎晩|todas las noches|🌙
+まいにち|毎日|todos los días|📆
+げつようび|月曜日|lunes|
+かようび|火曜日|martes|
+すいようび|水曜日|miércoles|
+もくようび|木曜日|jueves|
+きんようび|金曜日|viernes|
+どようび|土曜日|sábado|
+にちようび|日曜日|domingo|
+なんようび|何曜日|¿qué día de la semana?|❓
+～から||desde ~|
+～まで||hasta ~|
+～と～||~ y ~|
+たいへんですね|大変ですね|¡qué duro! / ¡qué pesado!|😓
+ばんごう|番号|número|🔢
+なんばん|何番|¿qué número?|❓
+そちら||usted, su lado|`,
+5:`いきます|行きます|ir|🚶
+きます|来ます|venir|👋
+かえります|帰ります|volver (a casa)|🏠
+がっこう|学校|escuela|🏫
+スーパー||supermercado|🛒
+えき|駅|estación|🚉
+ひこうき|飛行機|avión|✈️
+ふね|船|barco|🚢
+でんしゃ|電車|tren|🚃
+ちかてつ|地下鉄|subte, metro|🚇
+しんかんせん|新幹線|tren bala|🚄
+バス||colectivo, bus|🚌
+タクシー||taxi|🚕
+じてんしゃ|自転車|bicicleta|🚲
+あるいて|歩いて|a pie, caminando|🚶
+ひと|人|persona|🧍
+ともだち|友達|amigo|🧑‍🤝‍🧑
+かれ|彼|él; novio|👦
+かのじょ|彼女|ella; novia|👧
+かぞく|家族|familia|👨‍👩‍👧
+ひとりで|一人で|solo, por su cuenta|🧍
+せんしゅう|先週|la semana pasada|
+こんしゅう|今週|esta semana|
+らいしゅう|来週|la semana que viene|
+せんげつ|先月|el mes pasado|
+こんげつ|今月|este mes|
+らいげつ|来月|el mes que viene|
+きょねん|去年|el año pasado|
+ことし||este año|
+らいねん|来年|el año que viene|
+―ねん|―年|año ~|
+なんねん|何年|¿qué año? / ¿cuántos años?|❓
+―がつ|―月|mes ~ (ej. 4月 = abril)|
+なんがつ|何月|¿qué mes?|❓
+ついたち|1日|día 1 (del mes)|📅
+ふつか|2日|día 2|📅
+みっか|3日|día 3|📅
+よっか|4日|día 4|📅
+いつか|5日|día 5|📅
+むいか|6日|día 6|📅
+なのか|7日|día 7|📅
+ようか|8日|día 8|📅
+ここのか|9日|día 9|📅
+とおか|10日|día 10|📅
+じゅうよっか|14日|día 14|📅
+はつか|20日|día 20|📅
+にじゅうよっか|24日|día 24|📅
+―にち|―日|día ~ (del mes)|📅
+なんにち|何日|¿qué día (del mes)?|❓
+いつ||¿cuándo?|❓
+たんじょうび|誕生日|cumpleaños|🎂
+ふつう|普通|tren local (para en todas)|🚃
+きゅうこう|急行|tren rápido|🚆
+とっきゅう|特急|tren expreso|🚅
+つぎの|次の|el próximo|⏭️
+どういたしまして||de nada|😊
+―ばんせん|―番線|andén número ~|🚉`,
+6:`たべます|食べます|comer|🍽️
+のみます|飲みます|beber, tomar|🥤
+すいます［たばこを～］|吸います|fumar|🚬
+みます|見ます|ver, mirar|👀
+ききます|聞きます|escuchar|👂
+よみます|読みます|leer|📖
+かきます|書きます|escribir; dibujar|✍️
+かいます|買います|comprar|🛍️
+とります［しゃしんを～］|撮ります［写真を～］|sacar (fotos)|📸
+します||hacer|
+あいます［ともだちに～］|会います［友達に～］|encontrarse (con un amigo)|🤝
+ごはん||comida; arroz cocido|🍚
+あさごはん|朝ごはん|desayuno|🥐
+ひるごはん|昼ごはん|almuerzo|🍱
+ばんごはん|晩ごはん|cena|🍛
+パン||pan|🍞
+たまご|卵|huevo|🥚
+にく|肉|carne|🥩
+さかな|魚|pescado, pez|🐟
+やさい|野菜|verdura|🥦
+くだもの|果物|fruta|🍎
+みず|水|agua|💧
+おちゃ|お茶|té (verde)|🍵
+こうちゃ|紅茶|té negro|🫖
+ぎゅうにゅう（ミルク）|牛乳（ミルク）|leche|🥛
+ジュース||jugo|🧃
+ビール||cerveza|🍺
+［お］さけ|［お］酒|bebida alcohólica; sake|🍶
+たばこ||cigarrillo|🚬
+てがみ|手紙|carta|✉️
+レポート||informe|📄
+しゃしん|写真|foto|🖼️
+ビデオ||video|📼
+みせ|店|negocio, tienda|🏪
+にわ|庭|jardín|🌳
+しゅくだい|宿題|tarea|📝
+テニス||tenis|🎾
+サッカー||fútbol|⚽
+［お］はなみ|［お］花見|ver los cerezos en flor|🌸
+なに|何|¿qué?|❓
+いっしょに||juntos|👫
+ちょっと||un poco|🤏
+いつも||siempre|
+ときどき|時々|a veces|
+それから||después, y luego|➡️
+ええ||sí|
+いいですね||¡qué bueno!|👍
+わかりました||entendido|🙆
+なんですか|何ですか|¿sí? ¿qué pasa?|❓
+じゃ、また［あした］||¡hasta [mañana]!|👋`,
+7:`きります|切ります|cortar|✂️
+おくります|送ります|enviar|📤
+あげます||dar, regalar|🎁
+もらいます||recibir|🤲
+かします|貸します|prestar|
+かります|借ります|pedir prestado|
+おしえます|教えます|enseñar|👩‍🏫
+ならいます|習います|aprender|📚
+かけます［でんわを～］|かけます［電話を～］|hacer (una llamada)|📞
+て|手|mano|✋
+はし||palillos|🥢
+スプーン||cuchara|🥄
+ナイフ||cuchillo|🔪
+フォーク||tenedor|🍴
+はさみ||tijera|✂️
+パソコン||computadora personal|💻
+ケータイ||celular|📱
+メール||mail|📧
+ねんがじょう|年賀状|tarjeta de Año Nuevo|🎍
+パンチ||perforadora|🕳️
+ホッチキス||abrochadora|📎
+セロテープ||cinta scotch|
+けしゴム|消しゴム|goma de borrar|
+かみ|紙|papel|📄
+はな|花|flor|💐
+シャツ||camisa|👕
+プレゼント||regalo|🎁
+にもつ|荷物|equipaje, paquete|📦
+おかね|お金|dinero|💰
+きっぷ|切符|boleto|🎫
+クリスマス||Navidad|🎄
+ちち|父|(mi) padre|👨
+はは|母|(mi) madre|👩
+おとうさん|お父さん|padre (de otro); papá|👨
+おかあさん|お母さん|madre (de otro); mamá|👩
+もう||ya|✅
+まだ||todavía no|⏳
+これから||de ahora en adelante; ahora|
+［～、］すてきですね||¡qué lindo ~!|✨
+いらっしゃい||¡bienvenido!|🙌
+どうぞおあがりください|どうぞお上がりください|pase, adelante|🚪
+しつれいします|失礼します|con permiso|🙇
+［～は］いかがですか||¿qué tal ~? / ¿quiere ~?|
+いただきます||(antes de comer) ¡a comer!|🙏
+ごちそうさま［でした］||gracias por la comida|😋
+スペイン||España|🇪🇸`,
+8:`ハンサム［な］||guapo, apuesto|😎
+きれい［な］||lindo; limpio|✨
+しずか［な］|静か［な］|tranquilo, silencioso|🤫
+にぎやか［な］||animado, bullicioso|🎉
+ゆうめい［な］|有名［な］|famoso|⭐
+しんせつ［な］|親切［な］|amable|😊
+げんき［な］|元気［な］|sano, con energía|💪
+ひま［な］|暇［な］|libre, desocupado|🛋️
+べんり［な］|便利［な］|práctico, conveniente|👌
+すてき［な］||precioso, encantador|💖
+おおきい|大きい|grande|🐘
+ちいさい|小さい|chico, pequeño|🐭
+あたらしい|新しい|nuevo|🆕
+ふるい|古い|viejo (cosas)|🏚️
+いい（よい）||bueno|👍
+わるい|悪い|malo|👎
+あつい|暑い|caluroso (clima)|🥵
+あつい|熱い|caliente (al tacto)|♨️
+さむい|寒い|frío (clima)|🥶
+つめたい|冷たい|frío (al tacto)|🧊
+むずかしい|難しい|difícil|🤯
+やさしい|易しい|fácil|🙂
+たかい|高い|caro; alto|🗼
+やすい|安い|barato|🏷️
+ひくい|低い|bajo|
+おもしろい||interesante, divertido|😄
+おいしい||rico, sabroso|😋
+いそがしい|忙しい|ocupado|🏃
+たのしい|楽しい|divertido, agradable|🥳
+しろい|白い|blanco|⬜
+くろい|黒い|negro|⬛
+あかい|赤い|rojo|🟥
+あおい|青い|azul|🟦
+さくら|桜|cerezo; flor de cerezo|🌸
+やま|山|montaña|⛰️
+まち|町|ciudad, pueblo|🏙️
+たべもの|食べ物|comida|🍙
+ところ|所|lugar|📍
+りょう|寮|residencia de estudiantes|🏢
+レストラン||restaurante|🍽️
+せいかつ|生活|vida (cotidiana)|
+［お］しごと|［お］仕事|trabajo|💼
+どう||¿cómo?|❓
+どんな～||¿qué tipo de ~?|❓
+とても||muy|
+あまり||no muy (con negativo)|
+そして||y, además|
+～が、～||~, pero ~|
+おげんきですか|お元気ですか|¿cómo está?|🙂
+そうですね||veamos… / es cierto|🤔
+もういっぱいいかがですか|もう一杯いかがですか|¿otra taza?|☕
+［いいえ、］けっこうです|［いいえ、］結構です|no, gracias; está bien así|🙅
+もう～です［ね］||ya son las ~|🕙
+そろそろしつれいします|そろそろ失礼します|ya me voy yendo|🚪
+またいらっしゃってください||vuelva cuando quiera|👋`,
+9:`わかります||entender|💡
+あります||tener|
+すき［な］|好き［な］|que gusta|❤️
+きらい［な］|嫌い［な］|que no gusta|💔
+じょうず［な］|上手［な］|hábil, bueno en|🏆
+へた［な］|下手［な］|torpe, malo en|
+のみもの|飲み物|bebida|🥤
+りょうり|料理|comida, cocina|🍳
+スポーツ||deporte|🏅
+やきゅう|野球|béisbol|⚾
+ダンス||baile|💃
+りょこう|旅行|viaje|🧳
+おんがく|音楽|música|🎵
+うた|歌|canción|🎤
+クラシック||música clásica|🎻
+ジャズ||jazz|🎷
+コンサート||concierto|🎶
+カラオケ||karaoke|🎤
+かぶき|歌舞伎|kabuki (teatro)|🎭
+え|絵|pintura, dibujo|🎨
+じ|字|letra, carácter|
+かんじ|漢字|kanji|🈶
+ひらがな||hiragana|
+かたかな||katakana|
+ローマじ|ローマ字|alfabeto latino|🔤
+こまかいおかね|細かいお金|cambio, monedas|🪙
+チケット||entrada, ticket|🎟️
+じかん|時間|tiempo|⏳
+ようじ|用事|un asunto, algo que hacer|📌
+やくそく|約束|compromiso, cita|🤙
+アルバイト||trabajo de medio tiempo|
+ごしゅじん|ご主人|esposo (de otra persona)|🤵
+おっと／しゅじん|夫／主人|(mi) esposo|🤵
+おくさん|奥さん|esposa (de otra persona)|👰
+つま／かない|妻／家内|(mi) esposa|👰
+こども|子ども|hijo; niño|🧒
+よく||bien; mucho, a menudo|
+だいたい||más o menos|
+たくさん||mucho|
+すこし|少し|un poco|🤏
+ぜんぜん|全然|para nada (con negativo)|🙅
+はやく|早く／速く|temprano; rápido|⚡
+～から||porque ~|
+どうして||¿por qué?|❓
+かしてください|貸してください|préstemelo, por favor|
+いいですよ||¡claro, está bien!|👌
+ざんねんです［が］|残念です［が］|qué lástima, pero…|😞
+ああ||ah…|
+いっしょにいかがですか||¿qué tal si vamos juntos?|👫
+［～は］ちょっと…||~ es un poco… (rechazo amable)|😅
+だめですか||¿no puede?|
+またこんどおねがいします|また今度お願いします|otra vez será, por favor|🙏`,
+10:`あります||haber, estar (cosas)|📦
+います||haber, estar (seres vivos)|🐈
+いろいろ［な］||varios, diversos|
+おとこのひと|男の人|hombre|👨
+おんなのひと|女の人|mujer|👩
+おとこのこ|男の子|niño, chico|👦
+おんなのこ|女の子|niña, chica|👧
+いぬ|犬|perro|🐕
+ねこ|猫|gato|🐈
+パンダ||panda|🐼
+ぞう|象|elefante|🐘
+き|木|árbol; madera|🌳
+もの|物|cosa|
+でんち|電池|pila|🔋
+はこ|箱|caja|📦
+スイッチ||interruptor|🔘
+れいぞうこ|冷蔵庫|heladera|🧊
+テーブル||mesa|
+ベッド||cama|🛏️
+たな|棚|estante|
+ドア||puerta|🚪
+まど|窓|ventana|🪟
+ポスト||buzón|📮
+ビル||edificio|🏢
+ATM||cajero automático|🏧
+コンビニ||tienda de conveniencia|🏪
+こうえん|公園|parque|🏞️
+きっさてん|喫茶店|cafetería|☕
+～や|～屋|tienda de ~|🏪
+のりば|乗り場|parada, andén|🚏
+けん|県|prefectura|🗾
+うえ|上|arriba, sobre|⬆️
+した|下|abajo, debajo|⬇️
+まえ|前|delante|
+うしろ||detrás|
+みぎ|右|derecha|➡️
+ひだり|左|izquierda|⬅️
+なか|中|dentro|
+そと|外|fuera|
+となり|隣|al lado|↔️
+ちかく|近く|cerca|
+あいだ|間|entre|
+～や～［など］||~, ~, etc.|
+［どうも］すみません||disculpe; gracias|🙇
+ナンプラー||salsa de pescado|🐟
+コーナー||rincón, sección|
+いちばんした|いちばん下|el de más abajo|⬇️
+―だんめ|―段目|el estante número ~|`,
+11:`います［こどもが～］|います［子どもが～］|tener (hijos)|🧒
+います［にほんに～］|います［日本に～］|estar, quedarse (en Japón)|🗾
+かかります||tardar; costar|⏳
+やすみます［かいしゃを～］|休みます［会社を～］|faltar (al trabajo)|🤒
+ひとつ|1つ|uno (cosas)|1️⃣
+ふたつ|2つ|dos (cosas)|2️⃣
+みっつ|3つ|tres (cosas)|3️⃣
+よっつ|4つ|cuatro (cosas)|4️⃣
+いつつ|5つ|cinco (cosas)|5️⃣
+むっつ|6つ|seis (cosas)|6️⃣
+ななつ|7つ|siete (cosas)|7️⃣
+やっつ|8つ|ocho (cosas)|8️⃣
+ここのつ|9つ|nueve (cosas)|9️⃣
+とお|10|diez (cosas)|🔟
+いくつ||¿cuántos?|❓
+ひとり|1人|una persona|🧍
+ふたり|2人|dos personas|🧑‍🤝‍🧑
+―にん|―人|~ personas|👥
+―だい|―台|contador de máquinas y vehículos|🚗
+―まい|―枚|contador de cosas planas|📄
+―かい|―回|~ veces|🔁
+りんご||manzana|🍎
+みかん||mandarina|🍊
+サンドイッチ||sándwich|🥪
+カレー［ライス］||curry con arroz|🍛
+アイスクリーム||helado|🍨
+きって|切手|estampilla|📮
+はがき||postal|
+ふうとう|封筒|sobre|✉️
+りょうしん|両親|padres|👪
+きょうだい|兄弟|hermanos|
+あに|兄|(mi) hermano mayor|
+おにいさん|お兄さん|hermano mayor (de otro)|
+あね|姉|(mi) hermana mayor|
+おねえさん|お姉さん|hermana mayor (de otro)|
+おとうと|弟|(mi) hermano menor|
+おとうとさん|弟さん|hermano menor (de otro)|
+いもうと|妹|(mi) hermana menor|
+いもうとさん|妹さん|hermana menor (de otro)|
+がいこく|外国|el extranjero, otro país|🌍
+りゅうがくせい|留学生|estudiante extranjero|🧑‍🎓
+クラス||clase, curso|🏫
+―じかん|―時間|~ horas|⏱️
+―しゅうかん|―週間|~ semanas|🗓️
+―かげつ|―か月|~ meses|🗓️
+―ねん|―年|~ años|🗓️
+～ぐらい||aproximadamente ~|
+どのくらい||¿cuánto (tiempo)?|❓
+ぜんぶで|全部で|en total|🧮
+みんな||todos|👥
+～だけ||solo ~|
+かしこまりました||entendido (muy formal)|🙇
+いいおてんきですね|いいお天気ですね|¡qué lindo día!|☀️
+おでかけですか|お出かけですか|¿va a salir?|🚶
+ちょっと～まで||voy un momento a ~|
+いっていらっしゃい|行っていらっしゃい|¡que te vaya bien!|👋
+いってきます|行ってきます|¡me voy! (y vuelvo)|👋
+ふなびん|船便|correo marítimo|🚢
+こうくうびん（エアメール）|航空便（エアメール）|correo aéreo|✈️
+［では、］おねがいします|［では、］お願いします|entonces, por favor|🙏`,
+12:`かんたん［な］|簡単［な］|fácil, simple|👌
+ちかい|近い|cercano|
+とおい|遠い|lejano|🔭
+はやい|速い|rápido|🏎️
+はやい|早い|temprano|🌅
+おそい|遅い|lento; tarde|🐢
+おおい［ひとが～］|多い［人が～］|mucho, muchos|👥
+すくない［ひとが～］|少ない［人が～］|poco, pocos|
+あたたかい|暖かい／温かい|templado, tibio|🌤️
+すずしい|涼しい|fresco|🍃
+あまい|甘い|dulce|🍬
+からい|辛い|picante; salado|🌶️
+おもい|重い|pesado|🏋️
+かるい|軽い|liviano|🪶
+いい［コーヒーが～］||preferir (café)|☕
+きせつ|季節|estación del año|🍂
+はる|春|primavera|🌸
+なつ|夏|verano|🌻
+あき|秋|otoño|🍁
+ふゆ|冬|invierno|⛄
+てんき|天気|tiempo, clima|🌤️
+あめ|雨|lluvia|🌧️
+ゆき|雪|nieve|❄️
+くもり|曇り|nublado|☁️
+ホテル||hotel|🏨
+くうこう|空港|aeropuerto|🛫
+うみ|海|mar|🌊
+せかい|世界|mundo|🌍
+パーティー||fiesta|🎉
+［お］まつり|［お］祭り|festival|🏮
+すきやき|すき焼き|sukiyaki|🍲
+さしみ|刺身|sashimi|🍣
+［お］すし||sushi|🍣
+てんぷら||tempura|🍤
+ぶたにく|豚肉|carne de cerdo|🐖
+とりにく|とり肉|pollo|🍗
+ぎゅうにく|牛肉|carne vacuna|🐄
+レモン||limón|🍋
+いけばな|生け花|arreglo floral (ikebana)|💐
+もみじ|紅葉|arce; hojas rojas de otoño|🍁
+どちら||¿cuál (de los dos)?|❓
+どちらも||los dos, ambos|
+いちばん||el más, número uno|🥇
+ずっと||mucho más|
+はじめて|初めて|por primera vez|🆕
+ただいま||¡ya llegué!|🏠
+おかえりなさい|お帰りなさい|¡bienvenido a casa!|🏠
+わあ、すごいひとですね|わあ、すごい人ですね|¡uau, cuánta gente!|👥
+つかれました|疲れました|estoy cansado|😩`,
+13:`あそびます|遊びます|jugar, divertirse|🎈
+およぎます|泳ぎます|nadar|🏊
+むかえます|迎えます|ir a buscar, recibir|🙋
+つかれます|疲れます|cansarse|😩
+けっこんします|結婚します|casarse|💍
+かいものします|買い物します|hacer compras|🛍️
+しょくじします|食事します|comer (una comida)|🍽️
+さんぽします［こうえんを～］|散歩します［公園を～］|pasear (por el parque)|🚶
+たいへん［な］|大変［な］|duro, difícil|😓
+ほしい|欲しい|querer (algo)|🤩
+ひろい|広い|amplio, espacioso|
+せまい|狭い|estrecho, chico|
+プール||pileta|🏊
+かわ|川|río|🏞️
+びじゅつ|美術|bellas artes|🎨
+つり|釣り|pesca|🎣
+スキー||esquí|⛷️
+しゅうまつ|週末|fin de semana|🗓️
+［お］しょうがつ|［お］正月|Año Nuevo|🎍
+～ごろ||alrededor de (hora/fecha) ~|🕑
+なにか|何か|algo|
+どこか||algún lugar|
+のどがかわきます|のどが渇きます|tener sed|🥤
+おなかがすきます||tener hambre|😋
+そうしましょう||¡hagamos eso!|👍
+ごちゅうもんは？|ご注文は？|¿qué va a pedir?|📝
+ていしょく|定食|menú del día|🍱
+ぎゅうどん|牛どん|gyudon (bol de carne)|🍚
+［しょうしょう］おまちください|［少々］お待ちください|espere un momento, por favor|⏳
+～で ございます||es ~ (formal)|
+べつべつに|別々に|por separado|`,
+14:`つけます||encender|💡
+けします|消します|apagar; borrar|
+あけます|開けます|abrir|
+しめます|閉めます|cerrar|
+いそぎます|急ぎます|apurarse|🏃
+まちます|待ちます|esperar|⏳
+もちます|持ちます|sostener, llevar|
+とります|取ります|tomar, agarrar|
+てつだいます|手伝います|ayudar|🤝
+よびます|呼びます|llamar (a alguien)|📣
+はなします|話します|hablar|🗣️
+つかいます|使います|usar|
+とめます|止めます|parar; estacionar|🛑
+みせます|見せます|mostrar|👀
+おしえます［じゅうしょを～］|教えます［住所を～］|decir, informar (la dirección)|
+すわります|座ります|sentarse|🪑
+たちます|立ちます|pararse|🧍
+はいります［きっさてんに～］|入ります［喫茶店に～］|entrar (a la cafetería)|🚪
+でます［きっさてんを～］|出ます［喫茶店を～］|salir (de la cafetería)|🚪
+ふります［あめが～］|降ります［雨が～］|llover (caer lluvia)|🌧️
+コピーします||fotocopiar|🖨️
+でんき|電気|luz eléctrica|💡
+エアコン||aire acondicionado|❄️
+パスポート||pasaporte|🛂
+なまえ|名前|nombre|🏷️
+じゅうしょ|住所|dirección, domicilio|🏠
+ちず|地図|mapa|🗺️
+しお|塩|sal|🧂
+さとう|砂糖|azúcar|🍬
+もんだい|問題|pregunta, problema|❓
+こたえ|答え|respuesta|✅
+よみかた|読み方|forma de leer|📖
+～かた|～方|forma de ~|
+まっすぐ||derecho|⬆️
+ゆっくり||despacio|🐢
+すぐ||enseguida|⚡
+また||otra vez|🔁
+あとで||después, más tarde|
+もうすこし|もう少し|un poco más|🤏
+もう～||~ más|
+さあ||¡bueno, vamos!|
+あれ？||¿eh? (sorpresa)|😯
+しんごうをみぎへまがってください|信号を右へ曲がってください|doble a la derecha en el semáforo|🚦
+これでおねがいします|これでお願いします|con esto, por favor (al pagar)|💴
+おつり||vuelto|🪙`,
+15:`おきます|置きます|poner, dejar|
+つくります|作ります|hacer, fabricar|🛠️
+うります|売ります|vender|🏷️
+しります|知ります|llegar a saber, conocer|💡
+すみます|住みます|vivir (en un lugar)|🏠
+けんきゅうします|研究します|investigar|🔬
+しりょう|資料|materiales, documentación|📑
+カタログ||catálogo|📘
+じこくひょう|時刻表|horario (de trenes)|🕒
+ふく|服|ropa|👗
+せいひん|製品|producto|📦
+ソフト||software|💾
+でんしじしょ|電子辞書|diccionario electrónico|📱
+けいざい|経済|economía|📈
+しやくしょ|市役所|municipalidad|🏛️
+こうこう|高校|escuela secundaria|🏫
+はいしゃ|歯医者|dentista|🦷
+どくしん|独身|soltero|🧍
+すみません||perdón|🙇
+みなさん|皆さん|todos, ustedes|👥
+おもいだします|思い出します|recordar|💭
+いらっしゃいます||estar (honorífico de います)|`,
+16:`のります［でんしゃに～］|乗ります［電車に～］|subir (al tren)|🚃
+おります［でんしゃを～］|降ります［電車を～］|bajar (del tren)|🚉
+のりかえます|乗り換えます|hacer transbordo|🔄
+あびます［シャワーを～］|浴びます|darse (una ducha)|🚿
+いれます|入れます|meter, poner|📥
+だします|出します|sacar; entregar|📤
+おろします［おかねを～］|下ろします［お金を～］|sacar (dinero)|🏧
+はいります［だいがくに～］|入ります［大学に～］|entrar (a la universidad)|🏫
+でます［だいがくを～］|出ます［大学を～］|recibirse (de la universidad)|🎓
+おします|押します|empujar, apretar|👆
+やめます［かいしゃを～］|辞めます［会社を～］|renunciar (a la empresa)|🚪
+はじめます|始めます|empezar|▶️
+けんがくします|見学します|visitar para conocer|👀
+でんわします|電話します|llamar por teléfono|📞
+わかい|若い|joven|🧒
+ながい|長い|largo|📏
+みじかい|短い|corto|
+あかるい|明るい|luminoso, alegre|💡
+くらい|暗い|oscuro|🌑
+からだ|体|cuerpo|🧍
+あたま|頭|cabeza; inteligencia|🧠
+かみ|髪|pelo|💇
+かお|顔|cara|🙂
+め|目|ojo|👁️
+みみ|耳|oreja|👂
+はな|鼻|nariz|👃
+くち|口|boca|👄
+は|歯|diente|🦷
+おなか||panza|
+あし|足|pie; pierna|🦶
+せ|背|estatura|📏
+サービス||servicio|🛎️
+ジョギング||trote, jogging|🏃
+シャワー||ducha|🚿
+みどり|緑|verde; vegetación|🌿
+［お］てら|［お］寺|templo budista|🛕
+じんじゃ|神社|santuario sintoísta|⛩️
+―ばん|―番|número ~|🔢
+どうやって||¿cómo? (de qué manera)|❓
+どの～||¿cuál ~?|❓
+どれ||¿cuál? (de tres o más)|❓
+すごいですね||¡increíble!|🤩
+［いいえ、］まだまだです||todavía me falta mucho|🙏
+おひきだしですか|お引き出しですか|¿va a retirar dinero?|🏧
+まず||primero|1️⃣
+つぎに|次に|a continuación|2️⃣
+キャッシュカード||tarjeta de débito|💳
+あんしょうばんごう|暗証番号|clave, PIN|🔢
+きんがく|金額|monto|💰
+かくにん|確認|confirmación|✅
+ボタン||botón|🔘`,
+17:`おぼえます|覚えます|memorizar|🧠
+わすれます|忘れます|olvidar|🤦
+なくします||perder (algo)|🔍
+はらいます|払います|pagar|💴
+かえします|返します|devolver|↩️
+でかけます|出かけます|salir (de casa)|🚶
+ぬぎます|脱ぎます|quitarse (ropa, zapatos)|👟
+もっていきます|持って行きます|llevar (algo)|🎒
+もってきます|持って来ます|traer (algo)|🎁
+しんぱいします|心配します|preocuparse|😟
+ざんぎょうします|残業します|hacer horas extra|🌃
+しゅっちょうします|出張します|viajar por trabajo|💼
+のみます［くすりを～］|飲みます［薬を～］|tomar (un remedio)|💊
+はいります［おふろに～］|入ります［お風呂に～］|bañarse (en la bañera)|🛁
+たいせつ［な］|大切［な］|importante, valioso|💎
+だいじょうぶ［な］|大丈夫［な］|está bien, no hay problema|👌
+あぶない|危ない|peligroso|⚠️
+きんえん|禁煙|prohibido fumar|🚭
+［けんこう］ほけんしょう|［健康］保険証|tarjeta del seguro médico|🪪
+ねつ|熱|fiebre|🤒
+びょうき|病気|enfermedad|🤧
+くすり|薬|remedio, medicamento|💊
+［お］ふろ|［お］風呂|baño, bañera|🛁
+うわぎ|上着|saco, abrigo|🧥
+したぎ|下着|ropa interior|🩲
+2、3にち|2、3日|dos o tres días|📅
+2、3～||dos o tres ~|
+～までに||antes de ~ (plazo)|⏰
+ですから||por eso|
+どうしましたか||¿qué le pasa?|🩺
+のど||garganta|
+［～が］いたいです|［～が］痛いです|me duele ~|🤕
+かぜ|風邪|resfrío|🤧
+それから||además, y también|
+おだいじに|お大事に|¡que se mejore!|🙏`,
+18:`できます||poder, saber hacer|💪
+あらいます|洗います|lavar|🧼
+ひきます|弾きます|tocar (un instrumento)|🎹
+うたいます|歌います|cantar|🎤
+あつめます|集めます|juntar, coleccionar|🗃️
+すてます|捨てます|tirar (a la basura)|🗑️
+かえます|換えます|cambiar (dinero, etc.)|💱
+うんてんします|運転します|manejar|🚗
+よやくします|予約します|reservar|📅
+ピアノ||piano|🎹
+―メートル||~ metros|📏
+げんきん|現金|efectivo|💵
+しゅみ|趣味|pasatiempo, hobby|🎨
+にっき|日記|diario (personal)|📔
+おいのり|お祈り|oración, rezo|🙏
+かちょう|課長|jefe de sección|👔
+ぶちょう|部長|jefe de departamento|👔
+しゃちょう|社長|presidente de la empresa|🤵
+どうぶつ|動物|animal|🐾
+うま|馬|caballo|🐎
+インターネット||internet|🌐
+とくに|特に|especialmente|
+へえ||¡uh! ¿en serio?|😮
+それはおもしろいですね|それは面白いですね|¡qué interesante!|😄
+なかなか||no fácilmente (con negativo)|
+ほんとうですか|本当ですか|¿de verdad?|😲
+ぜひ||sin falta, de todas maneras|👍
+ぼくじょう|牧場|granja, estancia|🐄`,
+19:`のぼります|登ります|subir, escalar|🧗
+とまります［ホテルに～］|泊まります|alojarse (en un hotel)|🏨
+そうじします|掃除します|limpiar|🧹
+せんたくします|洗濯します|lavar la ropa|🧺
+なります||volverse, llegar a ser|🦋
+ねむい|眠い|tener sueño|😪
+つよい|強い|fuerte|💪
+よわい|弱い|débil|🥀
+れんしゅう|練習|práctica|🔁
+ゴルフ||golf|⛳
+すもう|相撲|sumo|🤼
+おちゃ|お茶|ceremonia del té|🍵
+ひ|日|día; fecha|📅
+ちょうし|調子|estado, condición|📶
+いちど|一度|una vez|1️⃣
+いちども|一度も|ni una vez (con negativo)|🙅
+だんだん||poco a poco|📈
+もうすぐ||pronto, dentro de poco|⏳
+おかげさまで||bien, gracias (a usted)|🙇
+でも||pero|
+かんぱい|乾杯|¡salud! (brindis)|🥂
+ダイエット||dieta|🥗
+むり［な］|無理［な］|imposible; excesivo|🙅
+からだにいい|体にいい|bueno para la salud|💚
+ケーキ||torta|🍰`
+};
+
+const WORDS=[];
+for(const [l,txt] of Object.entries(RAW)){
+  txt.split("\n").forEach((line,i)=>{
+    const [kana,kanji,es,emo]=line.split("|");
+    if(!kana) return;
+    WORDS.push({id:l+":"+i+":"+kana,lesson:+l,kana:kana.trim(),kanji:(kanji||"").trim(),es:(es||"").trim(),emoji:(emo||"").trim()});
+  });
+}
+const isKanji=c=>/[一-鿿]/.test(c);
+function display(w,all){
+  if(!w.kanji) return {main:w.kana,furi:""};
+  const ks=[...w.kanji].filter(isKanji);
+  if(!ks.length) return {main:w.kanji,furi:""};
+  if(all || ks.every(c=>ALLOWED.has(c))) return {main:w.kanji,furi:w.kana};
+  return {main:w.kana,furi:""};
+}
+
+// ---- state ----
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const S={
+  lessons:new Set(store.get("mn_lessons",[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19])),
+  mode:"cards", dir:store.get("mn_dir","jp"),
+  known:new Set(store.get("mn_known",[])),
+  onlyReview:false, allKanji:store.get("mn_allk",false),
+  deck:[], idx:0, flipped:false,
+  quiz:null
+};
+const $=s=>document.querySelector(s);
+const view=$("#view");
+
+function pool(){return WORDS.filter(w=>S.lessons.has(w.lesson))}
+function buildDeck(){
+  let p=pool(); if(S.onlyReview) p=p.filter(w=>!S.known.has(w.id));
+  S.deck=shuffle(p); S.idx=0; S.flipped=false;
+}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function saveKnown(){store.set("mn_known",[...S.known])}
+function stats(){
+  const p=pool(),k=p.filter(w=>S.known.has(w.id)).length;
+  $("#stats").innerHTML=`<b>${k}</b> de <b>${p.length}</b> palabras marcadas como sabidas`;
+  $("#barFill").style.width=p.length?(k/p.length*100)+"%":"0";
+}
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function speak(w){
+  try{
+    const t=w.kana.replace(/［[^］]*］|（[^）]*）|[～―]/g,"").replace(/／.*/,"");
+    const u=new SpeechSynthesisUtterance(t);u.lang="ja-JP";u.rate=.85;
+    const v=speechSynthesis.getVoices().find(v=>v.lang&&v.lang.startsWith("ja"));if(v)u.voice=v;
+    speechSynthesis.cancel();speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+// ---- lesson chips ----
+const chipBox=$("#lessonChips");
+for(let i=1;i<=19;i++){
+  const b=document.createElement("button");b.className="chip";b.textContent=i;b.id="l"+i;
+  b.setAttribute("aria-pressed",S.lessons.has(i));b.title="Lección "+i;
+  b.onclick=()=>{S.lessons.has(i)?S.lessons.delete(i):S.lessons.add(i);b.setAttribute("aria-pressed",S.lessons.has(i));changed()};
+  chipBox.appendChild(b);
+}
+$("#allBtn").onclick=()=>{for(let i=1;i<=19;i++){S.lessons.add(i);$("#l"+i).setAttribute("aria-pressed",true)}changed()};
+$("#noneBtn").onclick=()=>{S.lessons.clear();for(let i=1;i<=19;i++)$("#l"+i).setAttribute("aria-pressed",false);changed()};
+document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
+  S.mode=b.dataset.mode;document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",x===b));render();
+});
+$("#dir").value=S.dir;$("#dir").onchange=e=>{S.dir=e.target.value;store.set("mn_dir",S.dir);S.flipped=false;S.quiz=null;render()};
+$("#onlyReview").onchange=e=>{S.onlyReview=e.target.checked;changed()};
+$("#allKanji").checked=S.allKanji;$("#allKanji").onchange=e=>{S.allKanji=e.target.checked;store.set("mn_allk",S.allKanji);render()};
+let resetArm=false;
+$("#resetBtn").onclick=e=>{
+  if(!resetArm){resetArm=true;e.target.textContent="¿Seguro? Tocá de nuevo";setTimeout(()=>{resetArm=false;e.target.textContent="Reiniciar progreso"},3000);return}
+  S.known.clear();saveKnown();resetArm=false;e.target.textContent="Reiniciar progreso";changed();
+};
+function changed(){store.set("mn_lessons",[...S.lessons]);buildDeck();S.quiz=null;render()}
+
+// ---- render ----
+function render(){
+  stats();
+  if(!S.lessons.size){view.innerHTML=`<div class="empty">Elegí al menos una lección.</div>`;return}
+  if(S.mode==="cards") renderCards();
+  else if(S.mode==="quiz") renderQuiz();
+  else renderList();
+}
+function jpBlock(w){
+  const d=display(w,S.allKanji);
+  const long=d.main.length>7?" long":"";
+  return `<div class="furi">${esc(d.furi)}</div><div class="jp${long}" lang="ja">${esc(d.main)}</div>`;
+}
+function renderCards(){
+  if(!S.deck.length){view.innerHTML=`<div class="empty">${S.onlyReview?"¡Ya marcaste todas como sabidas en estas lecciones! 🎉":"No hay palabras."}</div>`;return}
+  if(S.idx>=S.deck.length){
+    view.innerHTML=`<div class="panel" style="align-items:center;text-align:center;padding:32px 16px"><div style="font-size:48px">🎌</div><div class="meaning">¡Terminaste el mazo!</div><p class="sub">${S.deck.length} tarjetas repasadas.</p><button class="btn primary" id="again">Barajar y empezar de nuevo</button></div>`;
+    $("#again").onclick=()=>{buildDeck();render()};return;
+  }
+  const w=S.deck[S.idx];const known=S.known.has(w.id);
+  const jpFace=`${jpBlock(w)}<div class="hint">${S.dir==="jp"?"tocá para ver el significado":""}</div>`;
+  const esFace=`${w.emoji?`<div class="emoji" aria-hidden="true">${w.emoji}</div>`:""}<div class="meaning">${esc(w.es)}</div>`;
+  const front=S.dir==="jp"?jpFace:esFace+`<div class="hint">tocá para ver en japonés</div>`;
+  const back=S.dir==="jp"?esFace+`<div class="hint" lang="ja" style="font-family:var(--jp)">${esc(w.kana)}</div>`:jpFace;
+  view.innerHTML=`
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div class="stage">
+      <div class="card${S.flipped?" flipped":""}" id="card" tabindex="0" role="button" aria-label="Tarjeta, tocá para dar vuelta">
+        <div class="face front"><span class="tag">L${w.lesson} · ${S.idx+1}/${S.deck.length}</span>${front}${known?'<span class="known-dot">✓ sabida</span>':""}<button class="speak" data-s aria-label="Escuchar">🔊</button></div>
+        <div class="face back"><span class="tag">L${w.lesson} · ${S.idx+1}/${S.deck.length}</span>${back}${known?'<span class="known-dot">✓ sabida</span>':""}<button class="speak" data-s aria-label="Escuchar">🔊</button></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="btn nav" id="prev" ${S.idx===0?"disabled":""} aria-label="Anterior">←</button>
+      <button class="btn review" id="rev">Repasar</button>
+      <button class="btn know" id="know">Lo sé ✓</button>
+      <button class="btn nav" id="shuf" aria-label="Barajar">⤮</button>
+    </div>
+    <div class="keys"><kbd>espacio</kbd> dar vuelta · <kbd>←</kbd><kbd>→</kbd> moverse · <kbd>1</kbd> repasar · <kbd>2</kbd> lo sé</div>
+  </div>`;
+  const card=$("#card");
+  card.onclick=e=>{if(e.target.closest("[data-s]"))return;flip()};
+  card.querySelectorAll("[data-s]").forEach(b=>b.onclick=e=>{e.stopPropagation();speak(w)});
+  $("#prev").onclick=()=>move(-1);
+  $("#rev").onclick=()=>mark(false);
+  $("#know").onclick=()=>mark(true);
+  $("#shuf").onclick=()=>{buildDeck();render()};
+}
+function flip(){S.flipped=!S.flipped;const c=$("#card");if(c)c.classList.toggle("flipped",S.flipped)}
+function move(d){S.idx=Math.max(0,Math.min(S.deck.length,S.idx+d));S.flipped=false;render()}
+function mark(k){const w=S.deck[S.idx];if(!w)return;k?S.known.add(w.id):S.known.delete(w.id);saveKnown();move(1)}
+document.addEventListener("keydown",e=>{
+  if(S.mode!=="cards"||e.target.matches("input,select,textarea"))return;
+  if(e.key===" "||e.key==="Enter"){if(e.target.closest("button:not(#card)"))return;e.preventDefault();flip()}
+  else if(e.key==="ArrowRight")move(1);else if(e.key==="ArrowLeft")move(-1);
+  else if(e.key==="1")mark(false);else if(e.key==="2")mark(true);
+});
+
+// ---- quiz ----
+function newQuestion(){
+  const p=pool();if(p.length<4)return null;
+  const q=S.quiz;
+  let w;do{w=p[Math.floor(Math.random()*p.length)]}while(q&&q.w&&p.length>1&&w.id===q.w.id);
+  const opts=[w];const seen=new Set([w.es,w.kana]);
+  for(const x of shuffle(p)){if(opts.length>=4)break;if(seen.has(x.es)||seen.has(x.kana))continue;seen.add(x.es);seen.add(x.kana);opts.push(x)}
+  return {w,opts:shuffle(opts),answered:null};
+}
+function renderQuiz(){
+  if(pool().length<4){view.innerHTML=`<div class="empty">Elegí más lecciones para el quiz.</div>`;return}
+  if(!S.quiz){S.quiz={score:0,total:0,streak:0,...newQuestion()}}
+  const q=S.quiz,w=q.w;
+  const prompt=S.dir==="jp"?jpBlock(w):`${w.emoji?`<div class="emoji">${w.emoji}</div>`:""}<div class="meaning">${esc(w.es)}</div>`;
+  view.innerHTML=`
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div class="row between"><span class="stats">Puntaje <b>${q.score}/${q.total}</b></span><span class="stats">Racha <b>${q.streak}</b> 🔥</span></div>
+    <div class="face" style="position:relative;min-height:200px"><span class="tag">L${w.lesson}</span>${prompt}${S.dir==="jp"?'<button class="speak" data-s aria-label="Escuchar">🔊</button>':""}</div>
+    <div class="q-opts">${q.opts.map((o,i)=>{
+      let cls="q-opt"+(S.dir==="es"?" jpopt":"");
+      if(q.answered!==null){if(o.id===w.id)cls+=" ok";else if(i===q.answered)cls+=" bad"}
+      const label=S.dir==="jp"?esc(o.es):esc(display(o,S.allKanji).main);
+      return `<button class="${cls}" data-i="${i}" ${q.answered!==null?"disabled":""} ${S.dir==="es"?'lang="ja"':""}>${label}</button>`}).join("")}</div>
+    ${q.answered!==null?`<div class="row between"><span class="stats" lang="ja" style="font-family:var(--jp);font-size:16px;color:var(--ink)">${esc(w.kana)}${w.emoji?" "+w.emoji:""} — <span style="font-family:var(--ui)">${esc(w.es)}</span></span><button class="btn primary" id="next">Siguiente →</button></div>`:""}
+  </div>`;
+  view.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>speak(w));
+  view.querySelectorAll(".q-opt").forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.i;q.answered=i;q.total++;
+    if(q.opts[i].id===w.id){q.score++;q.streak++}else{q.streak=0}
+    render();
+  });
+  const n=$("#next");if(n){n.onclick=()=>{Object.assign(S.quiz,newQuestion());render()};n.focus()}
+}
+
+// ---- list ----
+let query="";
+function renderList(){
+  view.innerHTML=`<div style="display:flex;flex-direction:column;gap:14px"><input class="search" id="q" type="search" placeholder="Buscar en japonés o español…" value="${esc(query)}"><div class="list" id="listBody"></div></div>`;
+  const inp=$("#q");inp.oninput=e=>{query=e.target.value;fillList()};
+  fillList();
+}
+function fillList(){
+  const q=query.trim().toLowerCase();
+  const out=[];
+  [...S.lessons].sort((a,b)=>a-b).forEach(l=>{
+    const ws=WORDS.filter(w=>w.lesson===l&&(!q||w.kana.includes(q)||w.kanji.includes(q)||w.es.toLowerCase().includes(q)));
+    if(!ws.length)return;
+    out.push(`<section><h2 class="lesson-h">第${l}課 <span>Lección ${l} · ${ws.length} palabras</span></h2><div style="overflow-x:auto"><table class="tbl"><tbody>${ws.map(w=>{
+      const d=display(w,S.allKanji);
+      return `<tr><td class="e">${w.emoji||""}</td><td class="w" lang="ja">${esc(d.main)}${d.furi?`<small>${esc(d.furi)}</small>`:""}</td><td class="m">${esc(w.es)}</td><td class="k">${S.known.has(w.id)?"✓":""}</td></tr>`}).join("")}</tbody></table></div></section>`);
+  });
+  $("#listBody").innerHTML=out.join("")||`<div class="empty">No encontré nada con “${esc(query)}”.</div>`;
+}
+
+buildDeck();render();
+try{speechSynthesis.getVoices()}catch(e){}
+</script>
+
+</body>
+</html>
