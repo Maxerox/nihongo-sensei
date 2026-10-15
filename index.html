@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Vocabulario (tarjetas, quiz y lista) y cheatsheet de gramática de Minna no Nihongo, lecciones 1–19.">
+<meta name="description" content="Vocabulario, gramática y partículas de Minna no Nihongo, lecciones 1–19.">
 <title>Nihongo Sensei</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎌</text></svg>">
 <style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -133,6 +133,36 @@ kbd{font:600 11px var(--ui);border:1px solid var(--line);border-bottom-width:2px
 .wrap{padding-top:18px}
 h1 .h1-jp{font-family:var(--jp)}
 
+
+/* particles */
+.jpchip{font-family:var(--jp);font-size:17px;min-width:44px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px;align-items:start}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 76px)}
+.phead{display:flex;align-items:center;gap:12px}
+.phead b{display:block;font-size:16px;font-weight:600}
+.phead small{display:block;font-size:12.5px;color:var(--muted)}
+.pglyph{font-family:var(--jp);font-weight:600;font-size:28px;line-height:1;min-width:56px;height:56px;padding:0 10px;border-radius:12px;display:inline-grid;place-items:center;background:var(--ai);color:var(--surface);flex:none}
+.pglyph.sm{font-size:22px;min-width:46px;height:46px}
+.pglyph.alt{background:var(--matcha)}
+.pnote{margin:0;font-size:13px;color:var(--muted)}
+.puses{margin:0;padding:0 0 0 20px;display:flex;flex-direction:column;gap:10px}
+.puses li::marker{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.pu{font-size:14.5px;margin-bottom:4px}
+.ltag{font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:0 5px;margin-left:4px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pex{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;padding:8px 10px;background:var(--paper);border-radius:8px}
+.pex .ex-say{grid-row:1/span 2;grid-column:2}
+.pex .ex-es{grid-column:1}
+.pvs{display:flex;align-items:center;gap:10px}
+.vs{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.pcols{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pcol{padding:10px;border-radius:8px;background:var(--ai-soft)}
+.pcol.alt{background:var(--matcha-soft)}
+.pcol.alt mark{background:transparent;color:var(--matcha)}
+.psent{font-family:var(--jp);font-size:clamp(22px,5vw,30px);font-weight:600;line-height:1.5;text-align:center}
+.blank{display:inline-block;min-width:2.2em;padding:0 6px;border-bottom:3px solid var(--ai);color:var(--ai);margin:0 2px}
+.blank.ok{color:var(--matcha);border-color:var(--matcha)}
+.blank.bad{color:var(--beni);border-color:var(--beni)}
+@media (max-width:520px){.pcols{grid-template-columns:1fr}}
 /* grammar */
 .gl{display:flex;flex-direction:column;gap:10px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 76px)}
 .gp{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
@@ -171,6 +201,7 @@ h1 .h1-jp{font-family:var(--jp)}
   <div class="drawer-head"><b>日本語先生</b><button class="drawer-close" id="drawerClose" aria-label="Cerrar menú">✕</button></div>
   <button class="nav-item" data-sec="vocab"><span class="nav-jp">単語</span><span>Vocabulario<small>Tarjetas, quiz y lista · L1–19</small></span></button>
   <button class="nav-item" data-sec="gram"><span class="nav-jp">文法</span><span>Gramática<small>Cheatsheet por lección · L1–19</small></span></button>
+  <button class="nav-item" data-sec="part"><span class="nav-jp">助詞</span><span>Partículas<small>Usos, comparaciones y práctica</small></span></button>
 </nav>
 
 <div class="wrap" id="secVocab">
@@ -217,6 +248,22 @@ h1 .h1-jp{font-family:var(--jp)}
 
   <main id="view"></main>
   <p class="note">Vocabulario basado en la 2.ª edición del libro principal; puede haber alguna diferencia menor con tu edición. El botón 🔊 usa la voz japonesa de tu navegador, si la tiene. Tu progreso se guarda en este navegador.</p>
+</div>
+
+<div class="wrap" id="secPart" hidden>
+  <header>
+    <h1><span class="h1-jp">助詞</span> <small>Partículas · lecciones 1–19</small></h1>
+    <p class="sub">Para qué sirve cada partícula, cuáles se confunden entre sí, y práctica para completar oraciones. El número de lección dice dónde aparece cada uso.</p>
+  </header>
+  <section class="panel" aria-label="Opciones de partículas">
+    <div class="seg" role="group" aria-label="Vista" id="partSeg">
+      <button data-t="cards" aria-pressed="true">Usos</button>
+      <button data-t="pairs" aria-pressed="false">Comparar</button>
+      <button data-t="prac" aria-pressed="false">Practicar</button>
+    </div>
+    <div class="chips" id="partIdx"></div>
+  </section>
+  <div class="list" id="partBody"></div>
 </div>
 
 <div class="wrap" id="secGram" hidden>
@@ -1445,6 +1492,169 @@ $("#gramBody").addEventListener("click",e=>{const b=e.target.closest("[data-say]
   $("#gq").oninput=e=>{gq=e.target.value;renderGram()};
 })();
 
+// ---- partículas ----
+const PART=[
+{k:"は",r:"wa",t:"tema",note:"Se escribe は pero se lee «wa».",uses:[
+ {u:"Marca el tema: de qué se habla.",ex:"わたし[[は]] 学生です。",es:"Yo soy estudiante.",l:1},
+ {u:"Contraste: «…en cambio, esto no».",ex:"肉は 食べますが、魚[[は]] 食べません。",es:"Como carne, pero pescado no.",l:8},
+ {u:"Hace tema al objeto, en lugar de を.",ex:"にもつ[[は]] ここに おかないで ください。",es:"El equipaje, no lo deje acá.",l:17}]},
+{k:"が",r:"ga",t:"sujeto",uses:[
+ {u:"Objeto de 好き, きらい, じょうず, へた, わかる, ある y ほしい.",ex:"犬[[が]] 好きです。",es:"Me gustan los perros.",l:9},
+ {u:"Presenta algo nuevo con あります／います.",ex:"あそこに 男の 人[[が]] います。",es:"Allá hay un hombre.",l:10},
+ {u:"Sujeto de una palabra interrogativa y de su respuesta.",ex:"だれ[[が]] 来ましたか。",es:"¿Quién vino?",l:10},
+ {u:"Fenómenos naturales o algo que se ve tal cual.",ex:"あめ[[が]] ふって います。",es:"Está lloviendo.",l:14},
+ {u:"La parte descripta en «N₁ は N₂ が adj».",ex:"マリアさんは かみ[[が]] ながいです。",es:"María tiene el pelo largo.",l:16},
+ {u:"Entre dos oraciones: «pero».",ex:"おいしいです[[が]]、高いです。",es:"Es rico, pero caro.",l:8}]},
+{k:"を",r:"o",t:"objeto",note:"Se lee «o».",uses:[
+ {u:"Objeto directo de la acción.",ex:"ジュース[[を]] 飲みます。",es:"Tomo jugo.",l:6},
+ {u:"Lugar por donde se pasa.",ex:"こうえん[[を]] さんぽします。",es:"Paseo por el parque.",l:13},
+ {u:"Lugar del que se sale o se baja.",ex:"電車[[を]] おります。",es:"Me bajo del tren.",l:16}]},
+{k:"に",r:"ni",t:"punto de llegada",uses:[
+ {u:"Momento exacto (hora, día, fecha).",ex:"6時[[に]] おきます。",es:"Me levanto a las 6.",l:4},
+ {u:"Persona que recibe: あげます, おしえます, かします.",ex:"父[[に]] ネクタイを あげました。",es:"Le regalé una corbata a mi papá.",l:7},
+ {u:"Persona de quien se recibe: もらいます, ならいます, かります.",ex:"先生[[に]] にほんごを ならいます。",es:"Aprendo japonés con el profesor.",l:7},
+ {u:"Lugar donde algo está o existe.",ex:"ミラーさんは 会社[[に]] います。",es:"Miller está en la oficina.",l:10},
+ {u:"Frecuencia: tantas veces cada tanto tiempo.",ex:"1週間[[に]] 2かい プールへ 行きます。",es:"Voy a la pileta dos veces por semana.",l:11},
+ {u:"Para qué se va: V(ます)／N ＋ に 行きます.",ex:"デパートへ くつを かい[[に]] 行きます。",es:"Voy a la tienda a comprar zapatos.",l:13},
+ {u:"Lugar al que se sube o se entra.",ex:"電車[[に]] のります。",es:"Me subo al tren.",l:16},
+ {u:"Resultado de un cambio, con なります.",ex:"げんき[[に]] なりました。",es:"Me puse bien.",l:19}]},
+{k:"へ",r:"e",t:"dirección",note:"Se lee «e». Con verbos de movimiento muchas veces se puede usar に.",uses:[
+ {u:"Hacia dónde va el movimiento: 行きます, 来ます, かえります.",ex:"日本[[へ]] 来ました。",es:"Vine a Japón.",l:5}]},
+{k:"で",r:"de",t:"lugar de la acción y medio",uses:[
+ {u:"Lugar donde se hace algo.",ex:"駅[[で]] しんぶんを かいます。",es:"Compro el diario en la estación.",l:6},
+ {u:"Medio de transporte.",ex:"電車[[で]] 行きます。",es:"Voy en tren.",l:5},
+ {u:"Herramienta o idioma.",ex:"はし[[で]] 食べます。",es:"Como con palillos.",l:7},
+ {u:"Cuántas personas lo hacen: 一人で, みんなで.",ex:"一人[[で]] 行きます。",es:"Voy solo.",l:5},
+ {u:"Grupo dentro del cual se compara (superlativo).",ex:"1年[[で]] 2月が いちばん さむいです。",es:"Febrero es el mes más frío del año.",l:12}]},
+{k:"と",r:"to",t:"y, con",uses:[
+ {u:"Une sustantivos cuando la lista está completa.",ex:"パン[[と]] たまごを 食べます。",es:"Como pan y huevo.",l:4},
+ {u:"Con quién se hace algo.",ex:"かぞく[[と]] 日本へ 来ました。",es:"Vine a Japón con mi familia.",l:5},
+ {u:"Para comparar: N₁ と N₂ と どちらが…",ex:"サッカー[[と]] やきゅう[[と]] どちらが 好きですか。",es:"¿Qué te gusta más, el fútbol o el béisbol?",l:12}]},
+{k:"も",r:"mo",t:"también",uses:[
+ {u:"«También»: reemplaza a は, が o を.",ex:"わたし[[も]] 学生です。",es:"Yo también soy estudiante.",l:1},
+ {u:"Interrogativo ＋ も ＋ negativo: nada, nadie, ningún lado.",ex:"何[[も]] 食べません。",es:"No como nada.",l:6},
+ {u:"Se suma a otras partículas: へも, にも, とも.",ex:"どこへ[[も]] 行きません。",es:"No voy a ningún lado.",l:5}]},
+{k:"の",r:"no",t:"une sustantivos",uses:[
+ {u:"A qué grupo o empresa pertenece.",ex:"IMC[[の]] 社員です。",es:"Es empleado de IMC.",l:1},
+ {u:"Dueño, o de qué trata algo.",ex:"先生[[の]] かばんです。",es:"Es el bolso del profesor.",l:2},
+ {u:"Origen.",ex:"日本[[の]] 車です。",es:"Es un auto japonés.",l:3},
+ {u:"Posición: N の 上／前／中…",ex:"つくえ[[の]] 上に あります。",es:"Está sobre el escritorio.",l:10},
+ {u:"Reemplaza un sustantivo que ya se sabe.",ex:"この 本は わたし[[の]]です。",es:"Este libro es mío.",l:2}]},
+{k:"か",r:"ka",t:"pregunta",uses:[
+ {u:"Al final de la oración, la convierte en pregunta.",ex:"学生です[[か]]。",es:"¿Es estudiante?",l:1},
+ {u:"Para elegir entre dos opciones: ～か、～か.",ex:"「9」です[[か]]、「7」です[[か]]。",es:"¿Es un 9 o un 7?",l:2},
+ {u:"Interrogativo ＋ か: algo, algún lugar.",ex:"何[[か]] 飲みませんか。",es:"¿Querés tomar algo?",l:13}]},
+{k:"から",r:"kara",t:"desde, porque",uses:[
+ {u:"Desde (tiempo o lugar).",ex:"9時[[から]] はたらきます。",es:"Trabajo desde las 9.",l:4},
+ {u:"De quién se recibe (igual que に).",ex:"ともだち[[から]] はなを もらいました。",es:"Un amigo me regaló flores.",l:7},
+ {u:"Después de una oración: «porque».",ex:"時間が ありません[[から]]、行きません。",es:"No voy porque no tengo tiempo.",l:9},
+ {u:"V て から: «después de…».",ex:"しごとが おわって[[から]]、飲みに 行きます。",es:"Después del trabajo voy a tomar algo.",l:16}]},
+{k:"まで",r:"made",t:"hasta",uses:[
+ {u:"Hasta (tiempo o lugar).",ex:"5時[[まで]] はたらきます。",es:"Trabajo hasta las 5.",l:4},
+ {u:"までに: antes de, a más tardar.",ex:"金よう日[[までに]] ださなければ なりません。",es:"Tengo que entregarlo antes del viernes.",l:17}]},
+{k:"や",r:"ya",t:"y, entre otros",uses:[
+ {u:"Lista de ejemplos, no completa. Suele ir con など.",ex:"本[[や]] ノート[[など]]が あります。",es:"Hay libros, cuadernos y otras cosas.",l:10}]},
+{k:"より",r:"yori",t:"más que",uses:[
+ {u:"Comparación: N₁ は N₂ より adj.",ex:"中国は 日本[[より]] 大きいです。",es:"China es más grande que Japón.",l:12}]},
+{k:"だけ",r:"dake",t:"solo",uses:[
+ {u:"Limita a eso solamente.",ex:"休みは 日よう日[[だけ]]です。",es:"Solo tengo libre el domingo.",l:11}]},
+{k:"ね",r:"ne",t:"¿no?",uses:[
+ {u:"Busca que el otro esté de acuerdo o muestra empatía.",ex:"たいへんです[[ね]]。",es:"¡Qué duro!",l:4}]},
+{k:"よ",r:"yo",t:"te aviso",uses:[
+ {u:"Da información que el otro no sabe.",ex:"この 電車は こうしえんへ 行きません[[よ]]。",es:"Ojo, este tren no va a Koshien.",l:5}]}
+];
+
+const PAIRS=[
+{a:"は",b:"が",d:"は marca algo ya conocido y pone el foco en lo que viene después. が presenta algo nuevo o pone el foco en el sujeto. Las palabras interrogativas que funcionan como sujeto (だれ, 何) siempre llevan が.",
+ ea:["ミラーさん[[は]] 来ましたか。","¿Miller vino? (hablamos de Miller)"],eb:["だれ[[が]] 来ましたか。","¿Quién vino? (no sabemos quién)"]},
+{a:"に",b:"で",d:"Las dos marcan lugares. に dice dónde está algo (あります, います, すんでいます). で dice dónde ocurre una acción.",
+ ea:["駅[[に]] います。","Estoy en la estación."],eb:["駅[[で]] まちます。","Espero en la estación."]},
+{a:"に",b:"へ",d:"Con 行きます／来ます／かえります sirven las dos: へ marca la dirección y に el punto de llegada. Para la hora, las personas o los resultados solo se usa に.",
+ ea:["駅[[に]] 行きます。","Voy a la estación."],eb:["日本[[へ]] 来ました。","Vine a Japón."]},
+{a:"まで",b:"までに",d:"まで es «hasta»: la acción dura hasta ese momento. までに es un plazo: la acción pasa una vez, antes de ese momento.",
+ ea:["5時[[まで]] はたらきます。","Trabajo hasta las 5."],eb:["5時[[までに]] かえります。","Vuelvo antes de las 5."]},
+{a:"と",b:"や",d:"と da la lista completa. や da algunos ejemplos y deja otros afuera; suele ir con など.",
+ ea:["パン[[と]] たまごを 食べます。","Como pan y huevo (solo eso)."],eb:["パン[[や]] たまごを 食べます。","Como pan, huevo y otras cosas."]},
+{a:"を",b:"が",d:"Con la mayoría de los verbos el objeto lleva を. Con 好き, きらい, じょうず, わかる, ある y ほしい lleva が.",
+ ea:["ジュース[[を]] 飲みます。","Tomo jugo."],eb:["ジュース[[が]] 好きです。","Me gusta el jugo."]},
+{a:"から",b:"から",d:"Después de un sustantivo o de una hora significa «desde». Después de una oración completa significa «porque».",
+ ea:["9時[[から]] はたらきます。","Trabajo desde las 9."],eb:["時間が ありません[[から]]。","Porque no tengo tiempo."]}
+];
+
+const PRAC=[
+["わたし＿ 学生です。","は",["は","が","を","も"],"は marca el tema de la oración.",1],
+["6時＿ おきます。","に",["に","で","へ","を"],"Una hora exacta lleva に.",4],
+["駅＿ しんぶんを かいます。","で",["に","で","を","へ"],"Lugar donde ocurre una acción: で.",6],
+["ジュース＿ 飲みます。","を",["を","が","に","で"],"Objeto directo de 飲みます: を.",6],
+["犬＿ 好きです。","が",["が","を","は","に"],"好き marca su objeto con が.",9],
+["はし＿ 食べます。","で",["で","に","と","を"],"Herramienta: で.",7],
+["かぞく＿ 日本へ 来ました。","と",["と","や","に","で"],"«Con» alguien: と.",5],
+["つくえの 上＿ しゃしんが あります。","に",["に","で","へ","を"],"Lugar donde algo está, con あります: に.",10],
+["中国は 日本＿ 大きいです。","より",["より","から","まで","と"],"Comparación «más que»: より.",12],
+["9時＿ 5時まで はたらきます。","から",["から","まで","に","で"],"«Desde» las 9: から.",4],
+["父＿ ネクタイを あげました。","に",["に","を","で","と"],"Quien recibe, con あげます: に.",7],
+["電車＿ のります。","に",["に","を","で","へ"],"Subir a algo: に のります.",16],
+["電車＿ おります。","を",["を","に","で","から"],"Bajar de algo: を おります.",16],
+["どこへ＿ 行きません。","も",["も","は","が","か"],"Interrogativo ＋ も ＋ negativo: «a ningún lado».",5],
+["本＿ ノートなどが あります。","や",["や","と","も","の"],"Lista de ejemplos con など: や.",10],
+["金よう日＿ レポートを ださなければ なりません。","までに",["までに","まで","に","から"],"Plazo, «antes de»: までに.",17],
+["こうえん＿ さんぽします。","を",["を","で","に","へ"],"Lugar por donde se pasa: を.",13],
+["あめ＿ ふって います。","が",["が","は","を","に"],"Fenómeno natural que se describe: が.",14],
+["これは 先生＿ かばんです。","の",["の","と","が","は"],"Dueño de algo: の.",2],
+["1年＿ 2月が いちばん さむいです。","で",["で","に","は","から"],"Grupo dentro del cual se compara: で.",12],
+["げんき＿ なりました。","に",["に","が","で","を"],"な-adj ＋ に なります.",19],
+["時間が ありません＿、行きません。","から",["から","まで","が","よ"],"Causa después de una oración: から.",9],
+["何＿ 飲みませんか。","か",["か","も","を","が"],"何か = algo.",13],
+["マリアさんは かみ＿ ながいです。","が",["が","は","を","の"],"N₁ は N₂ が adj: la parte descripta lleva が.",16]
+];
+
+let ptab="cards", pq=null;
+function renderPart(){
+  document.querySelectorAll("#partSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===ptab));
+  $("#partIdx").hidden=ptab!=="cards";
+  const box=$("#partBody");
+  if(ptab==="cards"){
+    box.innerHTML=`<div class="pgrid">${PART.map(P=>`
+    <article class="pcard" id="p-${P.r}">
+      <div class="phead"><span class="pglyph" lang="ja">${P.k}</span><span><b>${esc(P.t)}</b><small>se lee «${P.r}»</small></span></div>
+      ${P.note?`<p class="pnote">${esc(P.note)}</p>`:""}
+      <ol class="puses">${P.uses.map(u=>`<li><div class="pu">${esc(u.u)} <span class="ltag">L${u.l}</span></div><div class="pex"><span class="ex-jp" lang="ja">${exHTML(u.ex)}</span><button class="ex-say" data-say="${esc(u.ex)}" aria-label="Escuchar">🔊</button><span class="ex-es">${esc(u.es)}</span></div></li>`).join("")}</ol>
+    </article>`).join("")}</div>`;
+  } else if(ptab==="pairs"){
+    box.innerHTML=PAIRS.map(x=>`
+    <article class="gp pair">
+      <div class="pvs"><span class="pglyph sm" lang="ja">${x.a}</span><span class="vs">vs</span><span class="pglyph sm alt" lang="ja">${x.b}</span></div>
+      <p class="gp-desc">${esc(x.d)}</p>
+      <div class="pcols">
+        <div class="pcol"><div class="ex-jp" lang="ja">${exHTML(x.ea[0])}</div><div class="ex-es">${esc(x.ea[1])}</div></div>
+        <div class="pcol alt"><div class="ex-jp" lang="ja">${exHTML(x.eb[0])}</div><div class="ex-es">${esc(x.eb[1])}</div></div>
+      </div>
+    </article>`).join("");
+  } else {
+    if(!pq) pq={order:shuffle(PRAC.map((_,i)=>i)),i:0,score:0,ans:null,opts:null};
+    if(pq.i>=pq.order.length){
+      box.innerHTML=`<div class="panel" style="align-items:center;text-align:center;padding:28px 16px"><div class="pglyph" lang="ja">終</div><div class="meaning">${pq.score} de ${pq.order.length}</div><p class="sub">${pq.score===pq.order.length?"¡Perfecto!":"Volvé a intentarlo para repasar las que fallaste."}</p><button class="btn primary" id="pAgain">Empezar de nuevo</button></div>`;
+      $("#pAgain").onclick=()=>{pq=null;renderPart()};return;
+    }
+    const Q=PRAC[pq.order[pq.i]];
+    if(!pq.opts) pq.opts=shuffle(Q[2]);
+    const filled=pq.ans===null?Q[0].replace("＿",'<span class="blank">？</span>'):Q[0].replace("＿",`<span class="blank ${pq.ans===Q[1]?"ok":"bad"}">${Q[1]}</span>`);
+    box.innerHTML=`
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="row between"><span class="stats">Pregunta <b>${pq.i+1}/${pq.order.length}</b></span><span class="stats">Aciertos <b>${pq.score}</b></span></div>
+      <div class="face" style="position:relative;min-height:160px"><span class="tag">L${Q[4]}</span><div class="psent" lang="ja">${filled}</div></div>
+      <div class="q-opts">${pq.opts.map(o=>{let c="q-opt jpopt";if(pq.ans!==null){if(o===Q[1])c+=" ok";else if(o===pq.ans)c+=" bad"}return `<button class="${c}" data-o="${o}" ${pq.ans!==null?"disabled":""} lang="ja">${o}</button>`}).join("")}</div>
+      ${pq.ans!==null?`<div class="row between"><span class="stats" style="color:var(--ink)">${pq.ans===Q[1]?"✓ ":"✗ "}${esc(Q[3])}</span><button class="btn primary" id="pNext">Siguiente →</button></div>`:""}
+    </div>`;
+    box.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>{pq.ans=b.dataset.o;if(pq.ans===Q[1])pq.score++;renderPart()});
+    const n=$("#pNext");if(n){n.onclick=()=>{pq.i++;pq.ans=null;pq.opts=null;renderPart()};n.focus()}
+  }
+}
+$("#partBody").addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)sayText(b.dataset.say)});
+document.querySelectorAll("#partSeg button").forEach(b=>b.onclick=()=>{ptab=b.dataset.t;renderPart()});
+(function(){const box=$("#partIdx");PART.forEach(P=>{const b=document.createElement("button");b.className="chip jpchip";b.lang="ja";b.textContent=P.k;b.title=P.t;
+  b.onclick=()=>{const el=document.getElementById("p-"+P.r);if(el)el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})};box.appendChild(b)})})();
+
 // ---- sections + drawer ----
 const drawer=$("#drawer"),scrim=$("#scrim"),burger=$("#burger");
 function openDrawer(){drawer.classList.add("open");scrim.hidden=false;burger.setAttribute("aria-expanded","true");const cur=drawer.querySelector('[aria-current="page"]')||drawer.querySelector(".nav-item");setTimeout(()=>cur.focus(),30)}
@@ -1454,8 +1664,9 @@ scrim.onclick=closeDrawer;$("#drawerClose").onclick=()=>{closeDrawer();burger.fo
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drawer.classList.contains("open")){closeDrawer();burger.focus()}});
 function setSec(sec,save){
   S.sec=sec;
-  $("#secVocab").hidden=sec!=="vocab";$("#secGram").hidden=sec!=="gram";
-  $("#secPill").textContent=sec==="gram"?"Gramática":"Vocabulario";
+  $("#secVocab").hidden=sec!=="vocab";$("#secGram").hidden=sec!=="gram";$("#secPart").hidden=sec!=="part";
+  $("#secPill").textContent={vocab:"Vocabulario",gram:"Gramática",part:"Partículas"}[sec];
+  if(sec==="part"&&!$("#partBody").innerHTML)renderPart();
   drawer.querySelectorAll(".nav-item").forEach(b=>b.dataset.sec===sec?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current"));
   if(sec==="gram"&&!$("#gramBody").innerHTML)renderGram();
   if(save)store.set("mn_sec",sec);
@@ -1463,7 +1674,7 @@ function setSec(sec,save){
 drawer.querySelectorAll(".nav-item").forEach(b=>b.onclick=()=>{setSec(b.dataset.sec,true);closeDrawer();window.scrollTo(0,0);burger.focus()});
 
 buildDeck();render();
-setSec(location.hash==="#gramatica"?"gram":location.hash==="#vocabulario"?"vocab":store.get("mn_sec","vocab"),false);
+setSec(location.hash==="#particulas"?"part":location.hash==="#gramatica"?"gram":location.hash==="#vocabulario"?"vocab":store.get("mn_sec","vocab"),false);
 try{speechSynthesis.getVoices()}catch(e){}
 </script>
 

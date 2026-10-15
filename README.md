@@ -1,6 +1,6 @@
 # Nihongo Sensei 日本語先生
 
-Para estudiar el vocabulario y la gramática de **Minna no Nihongo** (lecciones 1–19). Con el menú ☰ cambiás entre las dos secciones.
+Para estudiar el vocabulario, la gramática y las partículas de **Minna no Nihongo** (lecciones 1–19). Con el menú ☰ cambiás entre las secciones.
 
 ### Vocabulario
 
@@ -12,6 +12,10 @@ Para estudiar el vocabulario y la gramática de **Minna no Nihongo** (lecciones 
 ### Gramática
 
 Cheatsheet con los puntos de gramática de cada lección, ejemplos con traducción, tablas de conjugación (formas て, ない, diccionario y た) y buscador. Se puede abrir directo con `#gramatica` al final de la URL.
+
+### Partículas
+
+Una ficha por partícula (は, が, を, に, で…) con sus usos y la lección donde aparecen, comparaciones de las que más se confunden (は/が, に/で, まで/までに…) y práctica para completar oraciones. Se abre directo con `#particulas`.
 
 ---
 
