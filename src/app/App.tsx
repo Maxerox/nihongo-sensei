@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, MemoryRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from '../components/templates/AppShell'
 import { CountersPage } from '../pages/CountersPage'
 import { GrammarPage } from '../pages/GrammarPage'
@@ -9,10 +9,14 @@ import { SECTIONS } from './sections'
 /**
  * HashRouter: GitHub Pages no sabe redirigir rutas a index.html,
  * así que las rutas van después del # (…/nihongo-sensei/#/gramatica).
+ * Si la app se abre embebida sin una dirección propia (por ejemplo, una vista
+ * previa en about:srcdoc), no hay URL que leer y se usa un router en memoria.
  */
+const Router = /^(https?|file):$/.test(window.location.protocol) ? HashRouter : MemoryRouter
+
 export function App() {
   return (
-    <HashRouter>
+    <Router>
       <Routes>
         <Route element={<AppShell sections={SECTIONS} />}>
           <Route index element={<Navigate to="/vocabulario" replace />} />
@@ -23,6 +27,6 @@ export function App() {
           <Route path="*" element={<Navigate to="/vocabulario" replace />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </Router>
   )
 }
