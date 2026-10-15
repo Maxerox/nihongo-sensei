@@ -7,7 +7,8 @@ export interface ToastyPopupProps {
   onDone: () => void
 }
 
-const DURATION_MS = 1600
+// Como en Mortal Kombat: entra rápido, se queda casi dos segundos y se va.
+const DURATION_MS = 2400
 
 /** Easter egg: una cara asoma por la esquina con "Toasty!", como en Mortal Kombat. */
 export function ToastyPopup({ onDone }: ToastyPopupProps) {
