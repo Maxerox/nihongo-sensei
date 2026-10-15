@@ -1,0 +1,42 @@
+@use '../../../styles/mixins' as *;
+
+.picker {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.label {
+  @include label-caps;
+  float: left;
+  padding: 0;
+  line-height: 36px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: var(--space-2);
+}
+
+.action {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.chips {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.summary {
+  margin: var(--space-2) 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}

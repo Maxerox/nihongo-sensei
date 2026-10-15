@@ -1,0 +1,70 @@
+// Tokens de diseño. Los componentes usan solo estas variables (CONVENTIONS.md §4.2).
+
+@mixin light-palette {
+  --paper: #eef1f4;
+  --surface: #ffffff;
+  --card: #fdfdfb;
+  --ink: #1b2433;
+  --muted: #4d596b;
+  --line: #d5dbe4;
+  --ai: #2a4b7c;
+  --ai-soft: #dce5f2;
+  --on-ai: #ffffff;
+  --matcha: #3d6529;
+  --matcha-soft: #e1ecd9;
+  --beni: #9c3529;
+  --beni-soft: #f4e0dc;
+  --ring: #9aa5b5;
+  --scrim: rgba(10, 14, 20, 0.38);
+  --shadow: 0 1px 2px rgba(27, 36, 51, 0.06), 0 8px 24px rgba(27, 36, 51, 0.08);
+}
+
+@mixin dark-palette {
+  color-scheme: dark;
+  --paper: #12161d;
+  --surface: #1a2029;
+  --card: #1e2530;
+  --ink: #e7ecf3;
+  --muted: #9aa6b8;
+  --line: #2e3745;
+  --ai: #8fb0e3;
+  --ai-soft: #233349;
+  --on-ai: #12161d;
+  --matcha: #94c27a;
+  --matcha-soft: #22321d;
+  --beni: #e58b7e;
+  --beni-soft: #3a2320;
+  --ring: #56627a;
+  --scrim: rgba(0, 0, 0, 0.55);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+:root {
+  color-scheme: light;
+  @include light-palette;
+
+  --font-jp: 'Klee One', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --font-ui: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --gutter: 16px;
+  --content-width: 760px;
+  --topbar-height: 61px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-palette;
+  }
+}

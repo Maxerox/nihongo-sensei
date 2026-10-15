@@ -1,0 +1,58 @@
+@use '../../../styles/mixins' as *;
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+.option {
+  min-height: 56px;
+  padding: 10px 14px;
+  text-align: left;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  @include focus-ring;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.jp {
+  font-family: var(--font-jp);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ok {
+  background: var(--matcha-soft);
+  border-color: var(--matcha);
+  color: var(--matcha);
+}
+
+.bad {
+  background: var(--beni-soft);
+  border-color: var(--beni);
+  color: var(--beni);
+}
+
+.srState {
+  @include visually-hidden;
+}

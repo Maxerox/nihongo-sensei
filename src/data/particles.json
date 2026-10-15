@@ -1,0 +1,1313 @@
+{
+  "particles": [
+    {
+      "particle": "は",
+      "romaji": "wa",
+      "role": "tema",
+      "note": "Se escribe は pero se lee «wa».",
+      "uses": [
+        {
+          "description": "Marca el tema: de qué se habla.",
+          "example": {
+            "ja": "わたし[[は]] 学生です。",
+            "es": "Yo soy estudiante."
+          },
+          "lesson": 1
+        },
+        {
+          "description": "Contraste: «…en cambio, esto no».",
+          "example": {
+            "ja": "肉は 食べますが、魚[[は]] 食べません。",
+            "es": "Como carne, pero pescado no."
+          },
+          "lesson": 8
+        },
+        {
+          "description": "Hace tema al objeto, en lugar de を.",
+          "example": {
+            "ja": "にもつ[[は]] ここに おかないで ください。",
+            "es": "El equipaje, no lo deje acá."
+          },
+          "lesson": 17
+        }
+      ]
+    },
+    {
+      "particle": "が",
+      "romaji": "ga",
+      "role": "sujeto",
+      "uses": [
+        {
+          "description": "Objeto de 好き, きらい, じょうず, へた, わかる, ある y ほしい.",
+          "example": {
+            "ja": "犬[[が]] 好きです。",
+            "es": "Me gustan los perros."
+          },
+          "lesson": 9
+        },
+        {
+          "description": "Presenta algo nuevo con あります／います.",
+          "example": {
+            "ja": "あそこに 男の 人[[が]] います。",
+            "es": "Allá hay un hombre."
+          },
+          "lesson": 10
+        },
+        {
+          "description": "Sujeto de una palabra interrogativa y de su respuesta.",
+          "example": {
+            "ja": "だれ[[が]] 来ましたか。",
+            "es": "¿Quién vino?"
+          },
+          "lesson": 10
+        },
+        {
+          "description": "Fenómenos naturales o algo que se ve tal cual.",
+          "example": {
+            "ja": "あめ[[が]] ふって います。",
+            "es": "Está lloviendo."
+          },
+          "lesson": 14
+        },
+        {
+          "description": "La parte descripta en «N₁ は N₂ が adj».",
+          "example": {
+            "ja": "マリアさんは かみ[[が]] ながいです。",
+            "es": "María tiene el pelo largo."
+          },
+          "lesson": 16
+        },
+        {
+          "description": "Entre dos oraciones: «pero».",
+          "example": {
+            "ja": "おいしいです[[が]]、高いです。",
+            "es": "Es rico, pero caro."
+          },
+          "lesson": 8
+        }
+      ]
+    },
+    {
+      "particle": "を",
+      "romaji": "o",
+      "role": "objeto",
+      "note": "Se lee «o».",
+      "uses": [
+        {
+          "description": "Objeto directo de la acción.",
+          "example": {
+            "ja": "ジュース[[を]] 飲みます。",
+            "es": "Tomo jugo."
+          },
+          "lesson": 6
+        },
+        {
+          "description": "Lugar por donde se pasa.",
+          "example": {
+            "ja": "こうえん[[を]] さんぽします。",
+            "es": "Paseo por el parque."
+          },
+          "lesson": 13
+        },
+        {
+          "description": "Lugar del que se sale o se baja.",
+          "example": {
+            "ja": "電車[[を]] おります。",
+            "es": "Me bajo del tren."
+          },
+          "lesson": 16
+        }
+      ]
+    },
+    {
+      "particle": "に",
+      "romaji": "ni",
+      "role": "punto de llegada",
+      "uses": [
+        {
+          "description": "Momento exacto (hora, día, fecha).",
+          "example": {
+            "ja": "6時[[に]] おきます。",
+            "es": "Me levanto a las 6."
+          },
+          "lesson": 4
+        },
+        {
+          "description": "Persona que recibe: あげます, おしえます, かします.",
+          "example": {
+            "ja": "父[[に]] ネクタイを あげました。",
+            "es": "Le regalé una corbata a mi papá."
+          },
+          "lesson": 7
+        },
+        {
+          "description": "Persona de quien se recibe: もらいます, ならいます, かります.",
+          "example": {
+            "ja": "先生[[に]] にほんごを ならいます。",
+            "es": "Aprendo japonés con el profesor."
+          },
+          "lesson": 7
+        },
+        {
+          "description": "Lugar donde algo está o existe.",
+          "example": {
+            "ja": "ミラーさんは 会社[[に]] います。",
+            "es": "Miller está en la oficina."
+          },
+          "lesson": 10
+        },
+        {
+          "description": "Frecuencia: tantas veces cada tanto tiempo.",
+          "example": {
+            "ja": "1週間[[に]] 2かい プールへ 行きます。",
+            "es": "Voy a la pileta dos veces por semana."
+          },
+          "lesson": 11
+        },
+        {
+          "description": "Para qué se va: V(ます)／N ＋ に 行きます.",
+          "example": {
+            "ja": "デパートへ くつを かい[[に]] 行きます。",
+            "es": "Voy a la tienda a comprar zapatos."
+          },
+          "lesson": 13
+        },
+        {
+          "description": "Lugar al que se sube o se entra.",
+          "example": {
+            "ja": "電車[[に]] のります。",
+            "es": "Me subo al tren."
+          },
+          "lesson": 16
+        },
+        {
+          "description": "Resultado de un cambio, con なります.",
+          "example": {
+            "ja": "げんき[[に]] なりました。",
+            "es": "Me puse bien."
+          },
+          "lesson": 19
+        }
+      ]
+    },
+    {
+      "particle": "へ",
+      "romaji": "e",
+      "role": "dirección",
+      "note": "Se lee «e». Con verbos de movimiento muchas veces se puede usar に.",
+      "uses": [
+        {
+          "description": "Hacia dónde va el movimiento: 行きます, 来ます, かえります.",
+          "example": {
+            "ja": "日本[[へ]] 来ました。",
+            "es": "Vine a Japón."
+          },
+          "lesson": 5
+        }
+      ]
+    },
+    {
+      "particle": "で",
+      "romaji": "de",
+      "role": "lugar de la acción y medio",
+      "uses": [
+        {
+          "description": "Lugar donde se hace algo.",
+          "example": {
+            "ja": "駅[[で]] しんぶんを かいます。",
+            "es": "Compro el diario en la estación."
+          },
+          "lesson": 6
+        },
+        {
+          "description": "Medio de transporte.",
+          "example": {
+            "ja": "電車[[で]] 行きます。",
+            "es": "Voy en tren."
+          },
+          "lesson": 5
+        },
+        {
+          "description": "Herramienta o idioma.",
+          "example": {
+            "ja": "はし[[で]] 食べます。",
+            "es": "Como con palillos."
+          },
+          "lesson": 7
+        },
+        {
+          "description": "Cuántas personas lo hacen: 一人で, みんなで.",
+          "example": {
+            "ja": "一人[[で]] 行きます。",
+            "es": "Voy solo."
+          },
+          "lesson": 5
+        },
+        {
+          "description": "Grupo dentro del cual se compara (superlativo).",
+          "example": {
+            "ja": "1年[[で]] 2月が いちばん さむいです。",
+            "es": "Febrero es el mes más frío del año."
+          },
+          "lesson": 12
+        }
+      ]
+    },
+    {
+      "particle": "と",
+      "romaji": "to",
+      "role": "y, con",
+      "uses": [
+        {
+          "description": "Une sustantivos cuando la lista está completa.",
+          "example": {
+            "ja": "パン[[と]] たまごを 食べます。",
+            "es": "Como pan y huevo."
+          },
+          "lesson": 4
+        },
+        {
+          "description": "Con quién se hace algo.",
+          "example": {
+            "ja": "かぞく[[と]] 日本へ 来ました。",
+            "es": "Vine a Japón con mi familia."
+          },
+          "lesson": 5
+        },
+        {
+          "description": "Para comparar: N₁ と N₂ と どちらが…",
+          "example": {
+            "ja": "サッカー[[と]] やきゅう[[と]] どちらが 好きですか。",
+            "es": "¿Qué te gusta más, el fútbol o el béisbol?"
+          },
+          "lesson": 12
+        }
+      ]
+    },
+    {
+      "particle": "も",
+      "romaji": "mo",
+      "role": "también",
+      "uses": [
+        {
+          "description": "«También»: reemplaza a は, が o を.",
+          "example": {
+            "ja": "わたし[[も]] 学生です。",
+            "es": "Yo también soy estudiante."
+          },
+          "lesson": 1
+        },
+        {
+          "description": "Interrogativo ＋ も ＋ negativo: nada, nadie, ningún lado.",
+          "example": {
+            "ja": "何[[も]] 食べません。",
+            "es": "No como nada."
+          },
+          "lesson": 6
+        },
+        {
+          "description": "Se suma a otras partículas: へも, にも, とも.",
+          "example": {
+            "ja": "どこへ[[も]] 行きません。",
+            "es": "No voy a ningún lado."
+          },
+          "lesson": 5
+        }
+      ]
+    },
+    {
+      "particle": "の",
+      "romaji": "no",
+      "role": "une sustantivos",
+      "uses": [
+        {
+          "description": "A qué grupo o empresa pertenece.",
+          "example": {
+            "ja": "IMC[[の]] 社員です。",
+            "es": "Es empleado de IMC."
+          },
+          "lesson": 1
+        },
+        {
+          "description": "Dueño, o de qué trata algo.",
+          "example": {
+            "ja": "先生[[の]] かばんです。",
+            "es": "Es el bolso del profesor."
+          },
+          "lesson": 2
+        },
+        {
+          "description": "Origen.",
+          "example": {
+            "ja": "日本[[の]] 車です。",
+            "es": "Es un auto japonés."
+          },
+          "lesson": 3
+        },
+        {
+          "description": "Posición: N の 上／前／中…",
+          "example": {
+            "ja": "つくえ[[の]] 上に あります。",
+            "es": "Está sobre el escritorio."
+          },
+          "lesson": 10
+        },
+        {
+          "description": "Reemplaza un sustantivo que ya se sabe.",
+          "example": {
+            "ja": "この 本は わたし[[の]]です。",
+            "es": "Este libro es mío."
+          },
+          "lesson": 2
+        }
+      ]
+    },
+    {
+      "particle": "か",
+      "romaji": "ka",
+      "role": "pregunta",
+      "uses": [
+        {
+          "description": "Al final de la oración, la convierte en pregunta.",
+          "example": {
+            "ja": "学生です[[か]]。",
+            "es": "¿Es estudiante?"
+          },
+          "lesson": 1
+        },
+        {
+          "description": "Para elegir entre dos opciones: ～か、～か.",
+          "example": {
+            "ja": "「9」です[[か]]、「7」です[[か]]。",
+            "es": "¿Es un 9 o un 7?"
+          },
+          "lesson": 2
+        },
+        {
+          "description": "Interrogativo ＋ か: algo, algún lugar.",
+          "example": {
+            "ja": "何[[か]] 飲みませんか。",
+            "es": "¿Querés tomar algo?"
+          },
+          "lesson": 13
+        }
+      ]
+    },
+    {
+      "particle": "から",
+      "romaji": "kara",
+      "role": "desde, porque",
+      "uses": [
+        {
+          "description": "Desde (tiempo o lugar).",
+          "example": {
+            "ja": "9時[[から]] はたらきます。",
+            "es": "Trabajo desde las 9."
+          },
+          "lesson": 4
+        },
+        {
+          "description": "De quién se recibe (igual que に).",
+          "example": {
+            "ja": "ともだち[[から]] はなを もらいました。",
+            "es": "Un amigo me regaló flores."
+          },
+          "lesson": 7
+        },
+        {
+          "description": "Después de una oración: «porque».",
+          "example": {
+            "ja": "時間が ありません[[から]]、行きません。",
+            "es": "No voy porque no tengo tiempo."
+          },
+          "lesson": 9
+        },
+        {
+          "description": "V て から: «después de…».",
+          "example": {
+            "ja": "しごとが おわって[[から]]、飲みに 行きます。",
+            "es": "Después del trabajo voy a tomar algo."
+          },
+          "lesson": 16
+        }
+      ]
+    },
+    {
+      "particle": "まで",
+      "romaji": "made",
+      "role": "hasta",
+      "uses": [
+        {
+          "description": "Hasta (tiempo o lugar).",
+          "example": {
+            "ja": "5時[[まで]] はたらきます。",
+            "es": "Trabajo hasta las 5."
+          },
+          "lesson": 4
+        },
+        {
+          "description": "までに: antes de, a más tardar.",
+          "example": {
+            "ja": "金よう日[[までに]] ださなければ なりません。",
+            "es": "Tengo que entregarlo antes del viernes."
+          },
+          "lesson": 17
+        }
+      ]
+    },
+    {
+      "particle": "や",
+      "romaji": "ya",
+      "role": "y, entre otros",
+      "uses": [
+        {
+          "description": "Lista de ejemplos, no completa. Suele ir con など.",
+          "example": {
+            "ja": "本[[や]] ノート[[など]]が あります。",
+            "es": "Hay libros, cuadernos y otras cosas."
+          },
+          "lesson": 10
+        }
+      ]
+    },
+    {
+      "particle": "より",
+      "romaji": "yori",
+      "role": "más que",
+      "uses": [
+        {
+          "description": "Comparación: N₁ は N₂ より adj.",
+          "example": {
+            "ja": "中国は 日本[[より]] 大きいです。",
+            "es": "China es más grande que Japón."
+          },
+          "lesson": 12
+        }
+      ]
+    },
+    {
+      "particle": "だけ",
+      "romaji": "dake",
+      "role": "solo",
+      "uses": [
+        {
+          "description": "Limita a eso solamente.",
+          "example": {
+            "ja": "休みは 日よう日[[だけ]]です。",
+            "es": "Solo tengo libre el domingo."
+          },
+          "lesson": 11
+        }
+      ]
+    },
+    {
+      "particle": "ね",
+      "romaji": "ne",
+      "role": "¿no?",
+      "uses": [
+        {
+          "description": "Busca que el otro esté de acuerdo o muestra empatía.",
+          "example": {
+            "ja": "たいへんです[[ね]]。",
+            "es": "¡Qué duro!"
+          },
+          "lesson": 4
+        }
+      ]
+    },
+    {
+      "particle": "よ",
+      "romaji": "yo",
+      "role": "te aviso",
+      "uses": [
+        {
+          "description": "Da información que el otro no sabe.",
+          "example": {
+            "ja": "この 電車は こうしえんへ 行きません[[よ]]。",
+            "es": "Ojo, este tren no va a Koshien."
+          },
+          "lesson": 5
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "a": "は",
+      "b": "が",
+      "description": "は marca algo ya conocido y pone el foco en lo que viene después. が presenta algo nuevo o pone el foco en el sujeto. Las palabras interrogativas que funcionan como sujeto (だれ, 何) siempre llevan が.",
+      "exampleA": {
+        "ja": "ミラーさん[[は]] 来ましたか。",
+        "es": "¿Miller vino? (hablamos de Miller)"
+      },
+      "exampleB": {
+        "ja": "だれ[[が]] 来ましたか。",
+        "es": "¿Quién vino? (no sabemos quién)"
+      }
+    },
+    {
+      "a": "に",
+      "b": "で",
+      "description": "Las dos marcan lugares. に dice dónde está algo (あります, います, すんでいます). で dice dónde ocurre una acción.",
+      "exampleA": {
+        "ja": "駅[[に]] います。",
+        "es": "Estoy en la estación."
+      },
+      "exampleB": {
+        "ja": "駅[[で]] まちます。",
+        "es": "Espero en la estación."
+      }
+    },
+    {
+      "a": "に",
+      "b": "へ",
+      "description": "Con 行きます／来ます／かえります sirven las dos: へ marca la dirección y に el punto de llegada. Para la hora, las personas o los resultados solo se usa に.",
+      "exampleA": {
+        "ja": "駅[[に]] 行きます。",
+        "es": "Voy a la estación."
+      },
+      "exampleB": {
+        "ja": "日本[[へ]] 来ました。",
+        "es": "Vine a Japón."
+      }
+    },
+    {
+      "a": "まで",
+      "b": "までに",
+      "description": "まで es «hasta»: la acción dura hasta ese momento. までに es un plazo: la acción pasa una vez, antes de ese momento.",
+      "exampleA": {
+        "ja": "5時[[まで]] はたらきます。",
+        "es": "Trabajo hasta las 5."
+      },
+      "exampleB": {
+        "ja": "5時[[までに]] かえります。",
+        "es": "Vuelvo antes de las 5."
+      }
+    },
+    {
+      "a": "と",
+      "b": "や",
+      "description": "と da la lista completa. や da algunos ejemplos y deja otros afuera; suele ir con など.",
+      "exampleA": {
+        "ja": "パン[[と]] たまごを 食べます。",
+        "es": "Como pan y huevo (solo eso)."
+      },
+      "exampleB": {
+        "ja": "パン[[や]] たまごを 食べます。",
+        "es": "Como pan, huevo y otras cosas."
+      }
+    },
+    {
+      "a": "を",
+      "b": "が",
+      "description": "Con la mayoría de los verbos el objeto lleva を. Con 好き, きらい, じょうず, わかる, ある y ほしい lleva が.",
+      "exampleA": {
+        "ja": "ジュース[[を]] 飲みます。",
+        "es": "Tomo jugo."
+      },
+      "exampleB": {
+        "ja": "ジュース[[が]] 好きです。",
+        "es": "Me gusta el jugo."
+      }
+    },
+    {
+      "a": "から",
+      "b": "から",
+      "description": "Después de un sustantivo o de una hora significa «desde». Después de una oración completa significa «porque».",
+      "exampleA": {
+        "ja": "9時[[から]] はたらきます。",
+        "es": "Trabajo desde las 9."
+      },
+      "exampleB": {
+        "ja": "時間が ありません[[から]]。",
+        "es": "Porque no tengo tiempo."
+      }
+    }
+  ],
+  "practice": [
+    {
+      "sentence": "わたし＿ 学生です。",
+      "answer": "は",
+      "options": [
+        "は",
+        "が",
+        "を",
+        "も"
+      ],
+      "explanation": "は marca el tema de la oración.",
+      "lesson": 1
+    },
+    {
+      "sentence": "6時＿ おきます。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "へ",
+        "を"
+      ],
+      "explanation": "Una hora exacta lleva に.",
+      "lesson": 4
+    },
+    {
+      "sentence": "駅＿ しんぶんを かいます。",
+      "answer": "で",
+      "options": [
+        "に",
+        "で",
+        "を",
+        "へ"
+      ],
+      "explanation": "Lugar donde ocurre una acción: で.",
+      "lesson": 6
+    },
+    {
+      "sentence": "ジュース＿ 飲みます。",
+      "answer": "を",
+      "options": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "explanation": "Objeto directo de 飲みます: を.",
+      "lesson": 6
+    },
+    {
+      "sentence": "犬＿ 好きです。",
+      "answer": "が",
+      "options": [
+        "が",
+        "を",
+        "は",
+        "に"
+      ],
+      "explanation": "好き marca su objeto con が.",
+      "lesson": 9
+    },
+    {
+      "sentence": "はし＿ 食べます。",
+      "answer": "で",
+      "options": [
+        "で",
+        "に",
+        "と",
+        "を"
+      ],
+      "explanation": "Herramienta: で.",
+      "lesson": 7
+    },
+    {
+      "sentence": "かぞく＿ 日本へ 来ました。",
+      "answer": "と",
+      "options": [
+        "と",
+        "や",
+        "に",
+        "で"
+      ],
+      "explanation": "«Con» alguien: と.",
+      "lesson": 5
+    },
+    {
+      "sentence": "つくえの 上＿ しゃしんが あります。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "へ",
+        "を"
+      ],
+      "explanation": "Lugar donde algo está, con あります: に.",
+      "lesson": 10
+    },
+    {
+      "sentence": "中国は 日本＿ 大きいです。",
+      "answer": "より",
+      "options": [
+        "より",
+        "から",
+        "まで",
+        "と"
+      ],
+      "explanation": "Comparación «más que»: より.",
+      "lesson": 12
+    },
+    {
+      "sentence": "9時＿ 5時まで はたらきます。",
+      "answer": "から",
+      "options": [
+        "から",
+        "まで",
+        "に",
+        "で"
+      ],
+      "explanation": "«Desde» las 9: から.",
+      "lesson": 4
+    },
+    {
+      "sentence": "父＿ ネクタイを あげました。",
+      "answer": "に",
+      "options": [
+        "に",
+        "を",
+        "で",
+        "と"
+      ],
+      "explanation": "Quien recibe, con あげます: に.",
+      "lesson": 7
+    },
+    {
+      "sentence": "電車＿ のります。",
+      "answer": "に",
+      "options": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "explanation": "Subir a algo: に のります.",
+      "lesson": 16
+    },
+    {
+      "sentence": "電車＿ おります。",
+      "answer": "を",
+      "options": [
+        "を",
+        "に",
+        "で",
+        "から"
+      ],
+      "explanation": "Bajar de algo: を おります.",
+      "lesson": 16
+    },
+    {
+      "sentence": "どこへ＿ 行きません。",
+      "answer": "も",
+      "options": [
+        "も",
+        "は",
+        "が",
+        "か"
+      ],
+      "explanation": "Interrogativo ＋ も ＋ negativo: «a ningún lado».",
+      "lesson": 5
+    },
+    {
+      "sentence": "本＿ ノートなどが あります。",
+      "answer": "や",
+      "options": [
+        "や",
+        "と",
+        "も",
+        "の"
+      ],
+      "explanation": "Lista de ejemplos con など: や.",
+      "lesson": 10
+    },
+    {
+      "sentence": "金よう日＿ レポートを ださなければ なりません。",
+      "answer": "までに",
+      "options": [
+        "までに",
+        "まで",
+        "に",
+        "から"
+      ],
+      "explanation": "Plazo, «antes de»: までに.",
+      "lesson": 17
+    },
+    {
+      "sentence": "こうえん＿ さんぽします。",
+      "answer": "を",
+      "options": [
+        "を",
+        "で",
+        "に",
+        "へ"
+      ],
+      "explanation": "Lugar por donde se pasa: を.",
+      "lesson": 13
+    },
+    {
+      "sentence": "あめ＿ ふって います。",
+      "answer": "が",
+      "options": [
+        "が",
+        "は",
+        "を",
+        "に"
+      ],
+      "explanation": "Fenómeno natural que se describe: が.",
+      "lesson": 14
+    },
+    {
+      "sentence": "これは 先生＿ かばんです。",
+      "answer": "の",
+      "options": [
+        "の",
+        "と",
+        "が",
+        "は"
+      ],
+      "explanation": "Dueño de algo: の.",
+      "lesson": 2
+    },
+    {
+      "sentence": "1年＿ 2月が いちばん さむいです。",
+      "answer": "で",
+      "options": [
+        "で",
+        "に",
+        "は",
+        "から"
+      ],
+      "explanation": "Grupo dentro del cual se compara: で.",
+      "lesson": 12
+    },
+    {
+      "sentence": "げんき＿ なりました。",
+      "answer": "に",
+      "options": [
+        "に",
+        "が",
+        "で",
+        "を"
+      ],
+      "explanation": "な-adj ＋ に なります.",
+      "lesson": 19
+    },
+    {
+      "sentence": "時間が ありません＿、行きません。",
+      "answer": "から",
+      "options": [
+        "から",
+        "まで",
+        "が",
+        "よ"
+      ],
+      "explanation": "Causa después de una oración: から.",
+      "lesson": 9
+    },
+    {
+      "sentence": "何＿ 飲みませんか。",
+      "answer": "か",
+      "options": [
+        "か",
+        "も",
+        "を",
+        "が"
+      ],
+      "explanation": "何か = algo.",
+      "lesson": 13
+    },
+    {
+      "sentence": "マリアさんは かみ＿ ながいです。",
+      "answer": "が",
+      "options": [
+        "が",
+        "は",
+        "を",
+        "の"
+      ],
+      "explanation": "N₁ は N₂ が adj: la parte descripta lleva が.",
+      "lesson": 16
+    },
+    {
+      "sentence": "ミラーさん＿ 会社員です。",
+      "answer": "は",
+      "options": [
+        "は",
+        "を",
+        "に",
+        "で"
+      ],
+      "explanation": "Tema de la oración: は.",
+      "lesson": 1
+    },
+    {
+      "sentence": "ミラーさんは IMC＿ 社員です。",
+      "answer": "の",
+      "options": [
+        "の",
+        "に",
+        "で",
+        "と"
+      ],
+      "explanation": "A qué empresa pertenece: の.",
+      "lesson": 1
+    },
+    {
+      "sentence": "この 本は わたし＿です。",
+      "answer": "の",
+      "options": [
+        "の",
+        "が",
+        "を",
+        "は"
+      ],
+      "explanation": "«Mío»: わたしの, sin repetir el sustantivo.",
+      "lesson": 2
+    },
+    {
+      "sentence": "これは どこ＿ 車ですか。",
+      "answer": "の",
+      "options": [
+        "の",
+        "に",
+        "で",
+        "へ"
+      ],
+      "explanation": "Origen de algo: の.",
+      "lesson": 3
+    },
+    {
+      "sentence": "お国＿ どちらですか。",
+      "answer": "は",
+      "options": [
+        "は",
+        "を",
+        "が",
+        "に"
+      ],
+      "explanation": "Tema de la pregunta: は.",
+      "lesson": 3
+    },
+    {
+      "sentence": "土よう日＿ 日よう日は 休みです。",
+      "answer": "と",
+      "options": [
+        "と",
+        "や",
+        "も",
+        "の"
+      ],
+      "explanation": "Une dos sustantivos (lista completa): と.",
+      "lesson": 4
+    },
+    {
+      "sentence": "毎日 10時＿ べんきょうします。",
+      "answer": "まで",
+      "options": [
+        "まで",
+        "までに",
+        "から",
+        "に"
+      ],
+      "explanation": "«Hasta» las 10, la acción dura: まで.",
+      "lesson": 4
+    },
+    {
+      "sentence": "電車＿ 行きます。",
+      "answer": "で",
+      "options": [
+        "で",
+        "に",
+        "を",
+        "へ"
+      ],
+      "explanation": "Medio de transporte: で.",
+      "lesson": 5
+    },
+    {
+      "sentence": "きょうと＿ 行きます。",
+      "answer": "へ",
+      "options": [
+        "へ",
+        "を",
+        "で",
+        "と"
+      ],
+      "explanation": "Dirección del movimiento: へ (también sirve に).",
+      "lesson": 5
+    },
+    {
+      "sentence": "いっしょに 昼ごはん＿ 食べませんか。",
+      "answer": "を",
+      "options": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "explanation": "Objeto directo de 食べます: を.",
+      "lesson": 6
+    },
+    {
+      "sentence": "にほんご＿ レポートを かきます。",
+      "answer": "で",
+      "options": [
+        "で",
+        "に",
+        "を",
+        "と"
+      ],
+      "explanation": "Idioma en que se hace algo: で.",
+      "lesson": 7
+    },
+    {
+      "sentence": "カリナさん＿ チョコレートを もらいました。",
+      "answer": "に",
+      "options": [
+        "に",
+        "を",
+        "で",
+        "と"
+      ],
+      "explanation": "De quién se recibe: に (también sirve から).",
+      "lesson": 7
+    },
+    {
+      "sentence": "日本の 食べ物は おいしいです＿、高いです。",
+      "answer": "が",
+      "options": [
+        "が",
+        "から",
+        "も",
+        "ね"
+      ],
+      "explanation": "Contraste entre dos oraciones, «pero»: が.",
+      "lesson": 8
+    },
+    {
+      "sentence": "日本の 食べ物＿ どうですか。",
+      "answer": "は",
+      "options": [
+        "は",
+        "を",
+        "が",
+        "に"
+      ],
+      "explanation": "Pedir una opinión: N は どうですか.",
+      "lesson": 8
+    },
+    {
+      "sentence": "にほんご＿ すこし わかります。",
+      "answer": "が",
+      "options": [
+        "が",
+        "を",
+        "は",
+        "に"
+      ],
+      "explanation": "わかります marca su objeto con が.",
+      "lesson": 9
+    },
+    {
+      "sentence": "犬は いすの 下＿ います。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "を",
+        "へ"
+      ],
+      "explanation": "Lugar donde está, con います: に.",
+      "lesson": 10
+    },
+    {
+      "sentence": "あそこに 男の 人＿ います。",
+      "answer": "が",
+      "options": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "explanation": "Algo nuevo que existe, con います: が.",
+      "lesson": 10
+    },
+    {
+      "sentence": "りんご＿ 4つ かいました。",
+      "answer": "を",
+      "options": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "explanation": "Objeto directo; la cantidad va después: を.",
+      "lesson": 11
+    },
+    {
+      "sentence": "1か月＿ 2かい えいがを みます。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "は",
+        "を"
+      ],
+      "explanation": "Frecuencia, tantas veces por período: に.",
+      "lesson": 11
+    },
+    {
+      "sentence": "休みは 日よう日＿です。",
+      "answer": "だけ",
+      "options": [
+        "だけ",
+        "まで",
+        "から",
+        "より"
+      ],
+      "explanation": "«Solo»: だけ.",
+      "lesson": 11
+    },
+    {
+      "sentence": "サッカー＿ やきゅうと どちらが 好きですか。",
+      "answer": "と",
+      "options": [
+        "と",
+        "や",
+        "も",
+        "か"
+      ],
+      "explanation": "N₁ と N₂ と どちらが…",
+      "lesson": 12
+    },
+    {
+      "sentence": "デパートへ くつを かい＿ 行きます。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "を",
+        "へ"
+      ],
+      "explanation": "Para qué se va: V(ます) ＋ に 行きます.",
+      "lesson": 13
+    },
+    {
+      "sentence": "ここに なまえ＿ かいて ください。",
+      "answer": "を",
+      "options": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "explanation": "Objeto directo de かきます: を.",
+      "lesson": 14
+    },
+    {
+      "sentence": "ここ＿ たばこを すっては いけません。",
+      "answer": "で",
+      "options": [
+        "で",
+        "に",
+        "を",
+        "は"
+      ],
+      "explanation": "Lugar donde ocurre la acción: で.",
+      "lesson": 15
+    },
+    {
+      "sentence": "ブエノスアイレス＿ すんで います。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "へ",
+        "を"
+      ],
+      "explanation": "すんで います marca el lugar con に.",
+      "lesson": 15
+    },
+    {
+      "sentence": "大学まで 電車＿ 行きます。",
+      "answer": "で",
+      "options": [
+        "で",
+        "に",
+        "を",
+        "へ"
+      ],
+      "explanation": "Medio de transporte: で.",
+      "lesson": 16
+    },
+    {
+      "sentence": "しごとが おわって＿、飲みに 行きます。",
+      "answer": "から",
+      "options": [
+        "から",
+        "まで",
+        "に",
+        "で"
+      ],
+      "explanation": "V て から: «después de».",
+      "lesson": 16
+    },
+    {
+      "sentence": "くすり＿ 飲まなければ なりません。",
+      "answer": "を",
+      "options": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "explanation": "Objeto directo de 飲みます: を.",
+      "lesson": 17
+    },
+    {
+      "sentence": "ピアノを ひく こと＿ できます。",
+      "answer": "が",
+      "options": [
+        "が",
+        "を",
+        "は",
+        "に"
+      ],
+      "explanation": "V(dic.) ことが できます.",
+      "lesson": 18
+    },
+    {
+      "sentence": "ねる 前＿、本を よみます。",
+      "answer": "に",
+      "options": [
+        "に",
+        "で",
+        "を",
+        "から"
+      ],
+      "explanation": "V(dic.) 前に: «antes de».",
+      "lesson": 18
+    },
+    {
+      "sentence": "わたしの しゅみ＿ 本を よむ ことです。",
+      "answer": "は",
+      "options": [
+        "は",
+        "が",
+        "を",
+        "に"
+      ],
+      "explanation": "Tema de la oración: しゅみは….",
+      "lesson": 18
+    },
+    {
+      "sentence": "すもうを みた こと＿ あります。",
+      "answer": "が",
+      "options": [
+        "が",
+        "を",
+        "は",
+        "に"
+      ],
+      "explanation": "V た ことが あります.",
+      "lesson": 19
+    },
+    {
+      "sentence": "先生＿ なりたいです。",
+      "answer": "に",
+      "options": [
+        "に",
+        "が",
+        "を",
+        "で"
+      ],
+      "explanation": "N ＋ に なります.",
+      "lesson": 19
+    }
+  ]
+}

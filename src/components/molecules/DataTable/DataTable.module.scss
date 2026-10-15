@@ -1,0 +1,41 @@
+@use '../../../styles/mixins' as *;
+
+.wrap {
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--paper);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+
+  th,
+  td {
+    padding: 6px 10px;
+    text-align: left;
+    border-top: 1px solid var(--line);
+    line-height: 2;
+  }
+
+  thead th {
+    @include label-caps;
+    border-top: 0;
+    line-height: 1.5;
+  }
+
+  td {
+    font-size: 15.5px;
+  }
+
+  tbody th {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--muted);
+  }
+}
+
+.caption {
+  @include visually-hidden;
+}

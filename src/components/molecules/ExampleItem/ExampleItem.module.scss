@@ -1,0 +1,25 @@
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 10px;
+  align-items: center;
+  padding: var(--space-2) 10px;
+  background: var(--paper);
+  border-radius: var(--radius-sm);
+}
+
+.ja {
+  font-size: 17px;
+  line-height: 2.1;
+}
+
+.es {
+  grid-column: 1;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.speak {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}

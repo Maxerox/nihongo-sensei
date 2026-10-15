@@ -1,0 +1,72 @@
+@use '../../../styles/mixins' as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.count {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.heading {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+
+  span:last-child {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  @include surface;
+  overflow: hidden;
+
+  td {
+    padding: var(--space-2) 10px;
+    border-top: 1px solid var(--line);
+    vertical-align: middle;
+  }
+
+  tbody tr:first-child td {
+    border-top: 0;
+  }
+}
+
+.caption {
+  @include visually-hidden;
+}
+
+.emoji {
+  width: 38px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.word {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.known {
+  width: 28px;
+  text-align: center;
+  color: var(--matcha);
+  font-weight: 700;
+}

@@ -1,0 +1,62 @@
+@use '../../../styles/mixins' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 600;
+  cursor: pointer;
+  @include focus-ring;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.sm {
+  height: 32px;
+  padding: 0 var(--space-3);
+  font-size: 13px;
+}
+
+.md {
+  height: 40px;
+  padding: 0 14px;
+  font-size: 15px;
+}
+
+.lg {
+  height: 48px;
+  padding: 0 var(--space-4);
+  font-size: 15px;
+}
+
+.primary {
+  background: var(--ai);
+  border-color: var(--ai);
+  color: var(--on-ai);
+}
+
+.success {
+  background: var(--matcha-soft);
+  border-color: transparent;
+  color: var(--matcha);
+}
+
+.danger {
+  background: var(--beni-soft);
+  border-color: transparent;
+  color: var(--beni);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--muted);
+  font-weight: 500;
+}

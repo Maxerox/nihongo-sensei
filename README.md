@@ -1,28 +1,41 @@
 # Nihongo Sensei 日本語先生
 
-Para estudiar el vocabulario, la gramática, las partículas y los contadores de **Minna no Nihongo** (lecciones 1–19). Con el menú ☰ cambiás entre las secciones.
+App para estudiar *Minna no Nihongo* (lecciones 1–19): vocabulario, gramática, partículas, contadores y fechas.
 
-### Vocabulario
+**Publicada en:** https://maxerox.github.io/nihongo-sensei/
 
-- **Tarjetas:** se dan vuelta con un toque; marcás cada palabra como "Repasar" o "Lo sé".
-- **Quiz:** opción múltiple con puntaje y racha.
-- **Lista:** todo el vocabulario por lección, con buscador.
+## Secciones
 
+| Sección | Ruta | Qué tiene |
+| --- | --- | --- |
+| 単語 Vocabulario | `#/vocabulario` | Tarjetas, quiz y lista. Progreso guardado ("Lo sé" / "Repasar"). |
+| 文法 Gramática | `#/gramatica` | Cheatsheet por lección con ejemplos, tablas de conjugación y buscador. |
+| 数 Contadores y fechas | `#/contadores` | Contadores del 1 al 10 con las lecturas irregulares resaltadas, días del mes, meses y práctica. |
+| 助詞 Partículas | `#/particulas` | Usos de cada partícula, comparaciones y práctica filtrada por lección. |
 
-### Gramática
+Todos los kanji llevan furigana, y solo se usan los kanji de las unidades 1–8 del libro de kanji.
 
-Cheatsheet con los puntos de gramática de cada lección, ejemplos con traducción, tablas de conjugación (formas て, ない, diccionario y た) y buscador. Se puede abrir directo con `#gramatica` al final de la URL.
+## Desarrollo
 
-### Partículas
+```bash
+npm install
+npm run dev        # http://localhost:5173/nihongo-sensei/
+npm run lint       # oxlint con reglas de accesibilidad (jsx-a11y)
+npm test           # vitest: furigana, kanji y validación del contenido
+npm run build      # build de producción en dist/
+```
 
-Una ficha por partícula (は, が, を, に, で…) con sus usos y la lección donde aparecen, comparaciones de las que más se confunden (は/が, に/で, まで/までに…) y práctica para completar oraciones (57 oraciones, se puede elegir de qué lecciones). Se abre directo con `#particulas`.
+Hecha con React, TypeScript, Vite, SCSS Modules y React Router.
 
-### Contadores y fechas
+## Cómo está organizada
 
-Los contadores de las lecciones 1–19 (つ, 人, 台, 枚, 回, 階, 円, 歳, 時, 分, 時間, 週間, か月, 年) del 1 al 10 con las lecturas irregulares resaltadas, los días del mes, los meses y los días de la semana, y práctica de lectura. Se abre directo con `#contadores`.
+- `src/components/` en capas de *atomic design*: `atoms`, `molecules`, `organisms`, `templates`. Cada componente tiene su carpeta con su `.module.scss`.
+- `src/pages/` tiene una página por sección.
+- `src/data/` tiene todo el contenido en JSON: `vocabulary`, `grammar`, `particles`, `counters` y `kanji`.
+- `src/shared/` tiene las utils (furigana, kanji, voz, almacenamiento…), los hooks y los tipos.
 
----
+Las reglas del proyecto están en **[CONVENTIONS.md](./CONVENTIONS.md)**.
 
-Todos los kanji llevan furigana (la lectura en hiragana encima). Los kanji aparecen solo si están entre los de las unidades 1–8 del libro de Kanji de Minna; el resto va en kana (se puede cambiar con "Mostrar todos los kanji"). El progreso se guarda en el navegador.
+## Deploy
 
-Es una sola página HTML, sin dependencias: abrí `index.html` o entrá a la versión publicada en GitHub Pages.
+Cada push a `main` corre lint, tests y build, y publica en GitHub Pages con GitHub Actions (`.github/workflows/deploy.yml`).
