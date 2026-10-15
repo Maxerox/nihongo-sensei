@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { EmptyState } from '../../atoms/EmptyState'
 import { JpText } from '../../atoms/JpText'
 import { SearchInput } from '../../atoms/SearchInput'
 import type { VocabWord } from '../../../shared/types/content'
 import { displayWord } from '../../../shared/utils/kanji'
 import { lessonHeading } from '../../../shared/utils/lessons'
+import { kanaKey, looksLikeRomaji, romajiKey } from '../../../shared/utils/romaji'
 import styles from './VocabList.module.scss'
 
 export interface VocabListProps {
@@ -16,9 +17,18 @@ export interface VocabListProps {
 /** Lista de vocabulario por lección, con buscador. */
 export function VocabList({ words, showAllKanji, known }: VocabListProps) {
   const [query, setQuery] = useState('')
+  // Clave en romaji de cada palabra, calculada una sola vez.
+  const keys = useMemo(() => new Map(words.map((w) => [w.id, kanaKey(w.kana)])), [words])
   const q = query.trim().toLowerCase()
+  const romaji = looksLikeRomaji(q) ? romajiKey(q) : ''
   const filtered = q
-    ? words.filter((w) => w.kana.includes(q) || (w.kanji ?? '').includes(q) || w.es.toLowerCase().includes(q))
+    ? words.filter(
+        (w) =>
+          w.kana.includes(q) ||
+          (w.kanji ?? '').includes(q) ||
+          w.es.toLowerCase().includes(q) ||
+          (romaji !== '' && (keys.get(w.id) ?? '').includes(romaji)),
+      )
     : words
   const lessons = [...new Set(filtered.map((w) => w.lesson))].sort((a, b) => a - b)
 
@@ -26,8 +36,8 @@ export function VocabList({ words, showAllKanji, known }: VocabListProps) {
     <div className={styles.list}>
       <SearchInput
         id="vocab-search"
-        label="Buscar palabras"
-        placeholder="Buscar en japonés o español…"
+        label="Buscar palabras en japonés, romaji o español"
+        placeholder="Buscar en japonés, romaji o español…"
         value={query}
         onChange={setQuery}
       />
