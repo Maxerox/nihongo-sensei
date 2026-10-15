@@ -179,6 +179,7 @@ h1 .h1-jp{font-family:var(--jp)}
 .ncell.irr .nr{color:var(--beni);font-weight:600}
 .ncell.irr .nr.hid{color:transparent}
 #numTools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+[hidden]{display:none!important}
 /* furigana */
 ruby{ruby-position:over}
 rt{font-size:.52em;font-weight:400;color:var(--muted);letter-spacing:0}
@@ -1702,10 +1703,51 @@ const PRAC=[
 ["げんき＿ なりました。","に",["に","が","で","を"],"な-adj ＋ に なります.",19],
 ["時間が ありません＿、行きません。","から",["から","まで","が","よ"],"Causa después de una oración: から.",9],
 ["何＿ 飲みませんか。","か",["か","も","を","が"],"何か = algo.",13],
-["マリアさんは かみ＿ ながいです。","が",["が","は","を","の"],"N₁ は N₂ が adj: la parte descripta lleva が.",16]
+["マリアさんは かみ＿ ながいです。","が",["が","は","を","の"],"N₁ は N₂ が adj: la parte descripta lleva が.",16],
+["ミラーさん＿ 会社員です。","は",["は","を","に","で"],"Tema de la oración: は.",1],
+["ミラーさんは IMC＿ 社員です。","の",["の","に","で","と"],"A qué empresa pertenece: の.",1],
+["この 本は わたし＿です。","の",["の","が","を","は"],"«Mío»: わたしの, sin repetir el sustantivo.",2],
+["これは どこ＿ 車ですか。","の",["の","に","で","へ"],"Origen de algo: の.",3],
+["お国＿ どちらですか。","は",["は","を","が","に"],"Tema de la pregunta: は.",3],
+["土よう日＿ 日よう日は 休みです。","と",["と","や","も","の"],"Une dos sustantivos (lista completa): と.",4],
+["毎日 10時＿ べんきょうします。","まで",["まで","までに","から","に"],"«Hasta» las 10, la acción dura: まで.",4],
+["電車＿ 行きます。","で",["で","に","を","へ"],"Medio de transporte: で.",5],
+["きょうと＿ 行きます。","へ",["へ","を","で","と"],"Dirección del movimiento: へ (también sirve に).",5],
+["いっしょに 昼ごはん＿ 食べませんか。","を",["を","が","に","で"],"Objeto directo de 食べます: を.",6],
+["にほんご＿ レポートを かきます。","で",["で","に","を","と"],"Idioma en que se hace algo: で.",7],
+["カリナさん＿ チョコレートを もらいました。","に",["に","を","で","と"],"De quién se recibe: に (también sirve から).",7],
+["日本の 食べ物は おいしいです＿、高いです。","が",["が","から","も","ね"],"Contraste entre dos oraciones, «pero»: が.",8],
+["日本の 食べ物＿ どうですか。","は",["は","を","が","に"],"Pedir una opinión: N は どうですか.",8],
+["にほんご＿ すこし わかります。","が",["が","を","は","に"],"わかります marca su objeto con が.",9],
+["犬は いすの 下＿ います。","に",["に","で","を","へ"],"Lugar donde está, con います: に.",10],
+["あそこに 男の 人＿ います。","が",["が","を","に","で"],"Algo nuevo que existe, con います: が.",10],
+["りんご＿ 4つ かいました。","を",["を","が","に","で"],"Objeto directo; la cantidad va después: を.",11],
+["1か月＿ 2かい えいがを みます。","に",["に","で","は","を"],"Frecuencia, tantas veces por período: に.",11],
+["休みは 日よう日＿です。","だけ",["だけ","まで","から","より"],"«Solo»: だけ.",11],
+["サッカー＿ やきゅうと どちらが 好きですか。","と",["と","や","も","か"],"N₁ と N₂ と どちらが…",12],
+["デパートへ くつを かい＿ 行きます。","に",["に","で","を","へ"],"Para qué se va: V(ます) ＋ に 行きます.",13],
+["ここに なまえ＿ かいて ください。","を",["を","が","に","で"],"Objeto directo de かきます: を.",14],
+["ここ＿ たばこを すっては いけません。","で",["で","に","を","は"],"Lugar donde ocurre la acción: で.",15],
+["ブエノスアイレス＿ すんで います。","に",["に","で","へ","を"],"すんで います marca el lugar con に.",15],
+["大学まで 電車＿ 行きます。","で",["で","に","を","へ"],"Medio de transporte: で.",16],
+["しごとが おわって＿、飲みに 行きます。","から",["から","まで","に","で"],"V て から: «después de».",16],
+["くすり＿ 飲まなければ なりません。","を",["を","が","に","で"],"Objeto directo de 飲みます: を.",17],
+["ピアノを ひく こと＿ できます。","が",["が","を","は","に"],"V(dic.) ことが できます.",18],
+["ねる 前＿、本を よみます。","に",["に","で","を","から"],"V(dic.) 前に: «antes de».",18],
+["わたしの しゅみ＿ 本を よむ ことです。","は",["は","が","を","に"],"Tema de la oración: しゅみは….",18],
+["すもうを みた こと＿ あります。","が",["が","を","は","に"],"V た ことが あります.",19],
+["先生＿ なりたいです。","に",["に","が","を","で"],"N ＋ に なります.",19]
 ];
 
 let ptab="cards", pq=null;
+let pLess=new Set(store.get("mn_plessons",Array.from({length:19},(_,i)=>i+1)));
+function pPool(){return PRAC.map((_,i)=>i).filter(i=>pLess.has(PRAC[i][4]))}
+function plessHTML(){
+  const cnt={};PRAC.forEach(q=>cnt[q[4]]=(cnt[q[4]]||0)+1);
+  return `<div class="panel"><div class="row between"><span class="label">Practicar lecciones</span><div class="row"><button class="chip ghost" data-pl="all">Todas</button><button class="chip ghost" data-pl="none">Ninguna</button></div></div>
+  <div class="chips">${Array.from({length:19},(_,i)=>i+1).map(l=>`<button class="chip" data-pl="${l}" aria-pressed="${pLess.has(l)}" title="Lección ${l} · ${cnt[l]||0} oraciones">${l}</button>`).join("")}</div>
+  <span class="note">${pPool().length} oraciones de ${pLess.size} ${pLess.size===1?"lección":"lecciones"}</span></div>`;
+}
 function renderPart(){
   document.querySelectorAll("#partSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===ptab));
   $("#partIdx").hidden=ptab!=="cards";
@@ -1728,15 +1770,17 @@ function renderPart(){
       </div>
     </article>`).join("");
   } else {
-    if(!pq) pq={order:shuffle(PRAC.map((_,i)=>i)),i:0,score:0,ans:null,opts:null};
+    const pick=plessHTML(),pool=pPool();
+    if(!pool.length){box.innerHTML=pick+`<div class="empty">Elegí al menos una lección para practicar.</div>`;return}
+    if(!pq) pq={order:shuffle(pool),i:0,score:0,ans:null,opts:null};
     if(pq.i>=pq.order.length){
-      box.innerHTML=`<div class="panel" style="align-items:center;text-align:center;padding:28px 16px"><div class="pglyph" aria-hidden="true">🎉</div><div class="meaning">${pq.score} de ${pq.order.length}</div><p class="sub">${pq.score===pq.order.length?"¡Perfecto!":"Volvé a intentarlo para repasar las que fallaste."}</p><button class="btn primary" id="pAgain">Empezar de nuevo</button></div>`;
+      box.innerHTML=pick+`<div class="panel" style="align-items:center;text-align:center;padding:28px 16px"><div class="pglyph" aria-hidden="true">🎉</div><div class="meaning">${pq.score} de ${pq.order.length}</div><p class="sub">${pq.score===pq.order.length?"¡Perfecto!":"Volvé a intentarlo para repasar las que fallaste."}</p><button class="btn primary" id="pAgain">Empezar de nuevo</button></div>`;
       $("#pAgain").onclick=()=>{pq=null;renderPart()};return;
     }
     const Q=PRAC[pq.order[pq.i]];
     if(!pq.opts) pq.opts=shuffle(Q[2]);
     const filled=pq.ans===null?Q[0].replace("＿",'<span class="blank">？</span>'):Q[0].replace("＿",`<span class="blank ${pq.ans===Q[1]?"ok":"bad"}">${Q[1]}</span>`);
-    box.innerHTML=`
+    box.innerHTML=pick+`
     <div style="display:flex;flex-direction:column;gap:12px">
       <div class="row between"><span class="stats">Pregunta <b>${pq.i+1}/${pq.order.length}</b></span><span class="stats">Aciertos <b>${pq.score}</b></span></div>
       <div class="face" style="position:relative;min-height:160px"><span class="tag">L${Q[4]}</span><div class="psent" lang="ja">${furi(filled)}</div></div>
@@ -1747,7 +1791,10 @@ function renderPart(){
     const n=$("#pNext");if(n){n.onclick=()=>{pq.i++;pq.ans=null;pq.opts=null;renderPart()};n.focus()}
   }
 }
-$("#partBody").addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)sayText(b.dataset.say)});
+$("#partBody").addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b)sayText(b.dataset.say);
+  const pl=e.target.closest("[data-pl]");if(!pl)return;const v=pl.dataset.pl;
+  if(v==="all")for(let l=1;l<=19;l++)pLess.add(l);else if(v==="none")pLess.clear();else{const n=+v;pLess.has(n)?pLess.delete(n):pLess.add(n)}
+  store.set("mn_plessons",[...pLess]);pq=null;renderPart()});
 document.querySelectorAll("#partSeg button").forEach(b=>b.onclick=()=>{ptab=b.dataset.t;renderPart()});
 (function(){const box=$("#partIdx");PART.forEach(P=>{const b=document.createElement("button");b.className="chip jpchip";b.lang="ja";b.textContent=P.k;b.title=P.t;
   b.onclick=()=>{const el=document.getElementById("p-"+P.r);if(el)el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})};box.appendChild(b)})})();

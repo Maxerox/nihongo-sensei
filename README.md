@@ -15,7 +15,7 @@ Cheatsheet con los puntos de gramática de cada lección, ejemplos con traducci�
 
 ### Partículas
 
-Una ficha por partícula (は, が, を, に, で…) con sus usos y la lección donde aparecen, comparaciones de las que más se confunden (は/が, に/で, まで/までに…) y práctica para completar oraciones. Se abre directo con `#particulas`.
+Una ficha por partícula (は, が, を, に, で…) con sus usos y la lección donde aparecen, comparaciones de las que más se confunden (は/が, に/で, まで/までに…) y práctica para completar oraciones (57 oraciones, se puede elegir de qué lecciones). Se abre directo con `#particulas`.
 
 ### Contadores y fechas
 
