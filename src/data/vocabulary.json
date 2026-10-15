@@ -659,7 +659,8 @@
       "kana": "ちがいます",
       "kanji": "違います",
       "es": "no, está equivocado",
-      "emoji": "🙅"
+      "emoji": "🙅",
+      "verbGroup": 1
     },
     {
       "id": "2:43:あ",
@@ -1015,7 +1016,8 @@
       "kana": "おきます",
       "kanji": "起きます",
       "es": "levantarse, despertarse",
-      "emoji": "⏰"
+      "emoji": "⏰",
+      "verbGroup": 2
     },
     {
       "id": "4:1:ねます",
@@ -1023,7 +1025,8 @@
       "kana": "ねます",
       "kanji": "寝ます",
       "es": "dormir, acostarse",
-      "emoji": "😴"
+      "emoji": "😴",
+      "verbGroup": 2
     },
     {
       "id": "4:2:はたらきます",
@@ -1031,7 +1034,8 @@
       "kana": "はたらきます",
       "kanji": "働きます",
       "es": "trabajar",
-      "emoji": "💼"
+      "emoji": "💼",
+      "verbGroup": 1
     },
     {
       "id": "4:3:やすみます",
@@ -1039,7 +1043,8 @@
       "kana": "やすみます",
       "kanji": "休みます",
       "es": "descansar, tomarse el día",
-      "emoji": "🛌"
+      "emoji": "🛌",
+      "verbGroup": 1
     },
     {
       "id": "4:4:べんきょうします",
@@ -1047,7 +1052,8 @@
       "kana": "べんきょうします",
       "kanji": "勉強します",
       "es": "estudiar",
-      "emoji": "📚"
+      "emoji": "📚",
+      "verbGroup": 3
     },
     {
       "id": "4:5:おわります",
@@ -1055,7 +1061,8 @@
       "kana": "おわります",
       "kanji": "終わります",
       "es": "terminar",
-      "emoji": "🏁"
+      "emoji": "🏁",
+      "verbGroup": 1
     },
     {
       "id": "4:6:デパート",
@@ -1405,7 +1412,8 @@
       "kana": "いきます",
       "kanji": "行きます",
       "es": "ir",
-      "emoji": "🚶"
+      "emoji": "🚶",
+      "verbGroup": 1
     },
     {
       "id": "5:1:きます",
@@ -1413,7 +1421,8 @@
       "kana": "きます",
       "kanji": "来ます",
       "es": "venir",
-      "emoji": "👋"
+      "emoji": "👋",
+      "verbGroup": 3
     },
     {
       "id": "5:2:かえります",
@@ -1421,7 +1430,8 @@
       "kana": "かえります",
       "kanji": "帰ります",
       "es": "volver (a casa)",
-      "emoji": "🏠"
+      "emoji": "🏠",
+      "verbGroup": 1
     },
     {
       "id": "5:3:がっこう",
@@ -1844,7 +1854,8 @@
       "kana": "たべます",
       "kanji": "食べます",
       "es": "comer",
-      "emoji": "🍽️"
+      "emoji": "🍽️",
+      "verbGroup": 2
     },
     {
       "id": "6:1:のみます",
@@ -1852,7 +1863,8 @@
       "kana": "のみます",
       "kanji": "飲みます",
       "es": "beber, tomar",
-      "emoji": "🥤"
+      "emoji": "🥤",
+      "verbGroup": 1
     },
     {
       "id": "6:2:すいます［たばこを～］",
@@ -1860,7 +1872,8 @@
       "kana": "すいます［たばこを～］",
       "kanji": "吸います",
       "es": "fumar",
-      "emoji": "🚬"
+      "emoji": "🚬",
+      "verbGroup": 1
     },
     {
       "id": "6:3:みます",
@@ -1868,7 +1881,8 @@
       "kana": "みます",
       "kanji": "見ます",
       "es": "ver, mirar",
-      "emoji": "👀"
+      "emoji": "👀",
+      "verbGroup": 2
     },
     {
       "id": "6:4:ききます",
@@ -1876,7 +1890,8 @@
       "kana": "ききます",
       "kanji": "聞きます",
       "es": "escuchar",
-      "emoji": "👂"
+      "emoji": "👂",
+      "verbGroup": 1
     },
     {
       "id": "6:5:よみます",
@@ -1884,7 +1899,8 @@
       "kana": "よみます",
       "kanji": "読みます",
       "es": "leer",
-      "emoji": "📖"
+      "emoji": "📖",
+      "verbGroup": 1
     },
     {
       "id": "6:6:かきます",
@@ -1892,7 +1908,8 @@
       "kana": "かきます",
       "kanji": "書きます",
       "es": "escribir; dibujar",
-      "emoji": "✍️"
+      "emoji": "✍️",
+      "verbGroup": 1
     },
     {
       "id": "6:7:かいます",
@@ -1900,7 +1917,8 @@
       "kana": "かいます",
       "kanji": "買います",
       "es": "comprar",
-      "emoji": "🛍️"
+      "emoji": "🛍️",
+      "verbGroup": 1
     },
     {
       "id": "6:8:とります［しゃしんを～］",
@@ -1908,13 +1926,15 @@
       "kana": "とります［しゃしんを～］",
       "kanji": "撮ります［写真を～］",
       "es": "sacar (fotos)",
-      "emoji": "📸"
+      "emoji": "📸",
+      "verbGroup": 1
     },
     {
       "id": "6:9:します",
       "lesson": 6,
       "kana": "します",
-      "es": "hacer"
+      "es": "hacer",
+      "verbGroup": 3
     },
     {
       "id": "6:10:あいます［ともだちに～］",
@@ -1922,7 +1942,8 @@
       "kana": "あいます［ともだちに～］",
       "kanji": "会います［友達に～］",
       "es": "encontrarse (con un amigo)",
-      "emoji": "🤝"
+      "emoji": "🤝",
+      "verbGroup": 1
     },
     {
       "id": "6:11:ごはん",
@@ -2222,7 +2243,8 @@
       "kana": "きります",
       "kanji": "切ります",
       "es": "cortar",
-      "emoji": "✂️"
+      "emoji": "✂️",
+      "verbGroup": 1
     },
     {
       "id": "7:1:おくります",
@@ -2230,35 +2252,40 @@
       "kana": "おくります",
       "kanji": "送ります",
       "es": "enviar",
-      "emoji": "📤"
+      "emoji": "📤",
+      "verbGroup": 1
     },
     {
       "id": "7:2:あげます",
       "lesson": 7,
       "kana": "あげます",
       "es": "dar, regalar",
-      "emoji": "🎁"
+      "emoji": "🎁",
+      "verbGroup": 2
     },
     {
       "id": "7:3:もらいます",
       "lesson": 7,
       "kana": "もらいます",
       "es": "recibir",
-      "emoji": "🤲"
+      "emoji": "🤲",
+      "verbGroup": 1
     },
     {
       "id": "7:4:かします",
       "lesson": 7,
       "kana": "かします",
       "kanji": "貸します",
-      "es": "prestar"
+      "es": "prestar",
+      "verbGroup": 1
     },
     {
       "id": "7:5:かります",
       "lesson": 7,
       "kana": "かります",
       "kanji": "借ります",
-      "es": "pedir prestado"
+      "es": "pedir prestado",
+      "verbGroup": 2
     },
     {
       "id": "7:6:おしえます",
@@ -2266,7 +2293,8 @@
       "kana": "おしえます",
       "kanji": "教えます",
       "es": "enseñar",
-      "emoji": "👩‍🏫"
+      "emoji": "👩‍🏫",
+      "verbGroup": 2
     },
     {
       "id": "7:7:ならいます",
@@ -2274,7 +2302,8 @@
       "kana": "ならいます",
       "kanji": "習います",
       "es": "aprender",
-      "emoji": "📚"
+      "emoji": "📚",
+      "verbGroup": 1
     },
     {
       "id": "7:8:かけます［でんわを～］",
@@ -2282,7 +2311,8 @@
       "kana": "かけます［でんわを～］",
       "kanji": "かけます［電話を～］",
       "es": "hacer (una llamada)",
-      "emoji": "📞"
+      "emoji": "📞",
+      "verbGroup": 2
     },
     {
       "id": "7:9:て",
@@ -2975,13 +3005,15 @@
       "lesson": 9,
       "kana": "わかります",
       "es": "entender",
-      "emoji": "💡"
+      "emoji": "💡",
+      "verbGroup": 1
     },
     {
       "id": "9:1:あります",
       "lesson": 9,
       "kana": "あります",
-      "es": "tener"
+      "es": "tener",
+      "verbGroup": 1
     },
     {
       "id": "9:2:すき［な］",
@@ -3356,14 +3388,16 @@
       "lesson": 10,
       "kana": "あります",
       "es": "haber, estar (cosas)",
-      "emoji": "📦"
+      "emoji": "📦",
+      "verbGroup": 1
     },
     {
       "id": "10:1:います",
       "lesson": 10,
       "kana": "います",
       "es": "haber, estar (seres vivos)",
-      "emoji": "🐈"
+      "emoji": "🐈",
+      "verbGroup": 2
     },
     {
       "id": "10:2:いろいろ［な］",
@@ -3711,7 +3745,8 @@
       "kana": "います［こどもが～］",
       "kanji": "います［子どもが～］",
       "es": "tener (hijos)",
-      "emoji": "🧒"
+      "emoji": "🧒",
+      "verbGroup": 2
     },
     {
       "id": "11:1:います［にほんに～］",
@@ -3719,14 +3754,16 @@
       "kana": "います［にほんに～］",
       "kanji": "います［日本に～］",
       "es": "estar, quedarse (en Japón)",
-      "emoji": "🗾"
+      "emoji": "🗾",
+      "verbGroup": 2
     },
     {
       "id": "11:2:かかります",
       "lesson": 11,
       "kana": "かかります",
       "es": "tardar; costar",
-      "emoji": "⏳"
+      "emoji": "⏳",
+      "verbGroup": 1
     },
     {
       "id": "11:3:やすみます［かいしゃを～］",
@@ -3734,7 +3771,8 @@
       "kana": "やすみます［かいしゃを～］",
       "kanji": "休みます［会社を～］",
       "es": "faltar (al trabajo)",
-      "emoji": "🤒"
+      "emoji": "🤒",
+      "verbGroup": 1
     },
     {
       "id": "11:4:ひとつ",
@@ -4540,7 +4578,8 @@
       "kana": "あそびます",
       "kanji": "遊びます",
       "es": "jugar, divertirse",
-      "emoji": "🎈"
+      "emoji": "🎈",
+      "verbGroup": 1
     },
     {
       "id": "13:1:およぎます",
@@ -4548,7 +4587,8 @@
       "kana": "およぎます",
       "kanji": "泳ぎます",
       "es": "nadar",
-      "emoji": "🏊"
+      "emoji": "🏊",
+      "verbGroup": 1
     },
     {
       "id": "13:2:むかえます",
@@ -4556,7 +4596,8 @@
       "kana": "むかえます",
       "kanji": "迎えます",
       "es": "ir a buscar, recibir",
-      "emoji": "🙋"
+      "emoji": "🙋",
+      "verbGroup": 2
     },
     {
       "id": "13:3:つかれます",
@@ -4564,7 +4605,8 @@
       "kana": "つかれます",
       "kanji": "疲れます",
       "es": "cansarse",
-      "emoji": "😩"
+      "emoji": "😩",
+      "verbGroup": 2
     },
     {
       "id": "13:4:けっこんします",
@@ -4572,7 +4614,8 @@
       "kana": "けっこんします",
       "kanji": "結婚します",
       "es": "casarse",
-      "emoji": "💍"
+      "emoji": "💍",
+      "verbGroup": 3
     },
     {
       "id": "13:5:かいものします",
@@ -4580,7 +4623,8 @@
       "kana": "かいものします",
       "kanji": "買い物します",
       "es": "hacer compras",
-      "emoji": "🛍️"
+      "emoji": "🛍️",
+      "verbGroup": 3
     },
     {
       "id": "13:6:しょくじします",
@@ -4588,7 +4632,8 @@
       "kana": "しょくじします",
       "kanji": "食事します",
       "es": "comer (una comida)",
-      "emoji": "🍽️"
+      "emoji": "🍽️",
+      "verbGroup": 3
     },
     {
       "id": "13:7:さんぽします［こうえんを～］",
@@ -4596,7 +4641,8 @@
       "kana": "さんぽします［こうえんを～］",
       "kanji": "散歩します［公園を～］",
       "es": "pasear (por el parque)",
-      "emoji": "🚶"
+      "emoji": "🚶",
+      "verbGroup": 3
     },
     {
       "id": "13:8:たいへん［な］",
@@ -4708,14 +4754,16 @@
       "kana": "のどがかわきます",
       "kanji": "のどが渇きます",
       "es": "tener sed",
-      "emoji": "🥤"
+      "emoji": "🥤",
+      "verbGroup": 1
     },
     {
       "id": "13:23:おなかがすきます",
       "lesson": 13,
       "kana": "おなかがすきます",
       "es": "tener hambre",
-      "emoji": "😋"
+      "emoji": "😋",
+      "verbGroup": 1
     },
     {
       "id": "13:24:そうしましょう",
@@ -4774,28 +4822,32 @@
       "lesson": 14,
       "kana": "つけます",
       "es": "encender",
-      "emoji": "💡"
+      "emoji": "💡",
+      "verbGroup": 2
     },
     {
       "id": "14:1:けします",
       "lesson": 14,
       "kana": "けします",
       "kanji": "消します",
-      "es": "apagar; borrar"
+      "es": "apagar; borrar",
+      "verbGroup": 1
     },
     {
       "id": "14:2:あけます",
       "lesson": 14,
       "kana": "あけます",
       "kanji": "開けます",
-      "es": "abrir"
+      "es": "abrir",
+      "verbGroup": 2
     },
     {
       "id": "14:3:しめます",
       "lesson": 14,
       "kana": "しめます",
       "kanji": "閉めます",
-      "es": "cerrar"
+      "es": "cerrar",
+      "verbGroup": 2
     },
     {
       "id": "14:4:いそぎます",
@@ -4803,7 +4855,8 @@
       "kana": "いそぎます",
       "kanji": "急ぎます",
       "es": "apurarse",
-      "emoji": "🏃"
+      "emoji": "🏃",
+      "verbGroup": 1
     },
     {
       "id": "14:5:まちます",
@@ -4811,21 +4864,24 @@
       "kana": "まちます",
       "kanji": "待ちます",
       "es": "esperar",
-      "emoji": "⏳"
+      "emoji": "⏳",
+      "verbGroup": 1
     },
     {
       "id": "14:6:もちます",
       "lesson": 14,
       "kana": "もちます",
       "kanji": "持ちます",
-      "es": "sostener, llevar"
+      "es": "sostener, llevar",
+      "verbGroup": 1
     },
     {
       "id": "14:7:とります",
       "lesson": 14,
       "kana": "とります",
       "kanji": "取ります",
-      "es": "tomar, agarrar"
+      "es": "tomar, agarrar",
+      "verbGroup": 1
     },
     {
       "id": "14:8:てつだいます",
@@ -4833,7 +4889,8 @@
       "kana": "てつだいます",
       "kanji": "手伝います",
       "es": "ayudar",
-      "emoji": "🤝"
+      "emoji": "🤝",
+      "verbGroup": 1
     },
     {
       "id": "14:9:よびます",
@@ -4841,7 +4898,8 @@
       "kana": "よびます",
       "kanji": "呼びます",
       "es": "llamar (a alguien)",
-      "emoji": "📣"
+      "emoji": "📣",
+      "verbGroup": 1
     },
     {
       "id": "14:10:はなします",
@@ -4849,14 +4907,16 @@
       "kana": "はなします",
       "kanji": "話します",
       "es": "hablar",
-      "emoji": "🗣️"
+      "emoji": "🗣️",
+      "verbGroup": 1
     },
     {
       "id": "14:11:つかいます",
       "lesson": 14,
       "kana": "つかいます",
       "kanji": "使います",
-      "es": "usar"
+      "es": "usar",
+      "verbGroup": 1
     },
     {
       "id": "14:12:とめます",
@@ -4864,7 +4924,8 @@
       "kana": "とめます",
       "kanji": "止めます",
       "es": "parar; estacionar",
-      "emoji": "🛑"
+      "emoji": "🛑",
+      "verbGroup": 2
     },
     {
       "id": "14:13:みせます",
@@ -4872,14 +4933,16 @@
       "kana": "みせます",
       "kanji": "見せます",
       "es": "mostrar",
-      "emoji": "👀"
+      "emoji": "👀",
+      "verbGroup": 2
     },
     {
       "id": "14:14:おしえます［じゅうしょを～］",
       "lesson": 14,
       "kana": "おしえます［じゅうしょを～］",
       "kanji": "教えます［住所を～］",
-      "es": "decir, informar (la dirección)"
+      "es": "decir, informar (la dirección)",
+      "verbGroup": 2
     },
     {
       "id": "14:15:すわります",
@@ -4887,7 +4950,8 @@
       "kana": "すわります",
       "kanji": "座ります",
       "es": "sentarse",
-      "emoji": "🪑"
+      "emoji": "🪑",
+      "verbGroup": 1
     },
     {
       "id": "14:16:たちます",
@@ -4895,7 +4959,8 @@
       "kana": "たちます",
       "kanji": "立ちます",
       "es": "pararse",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "verbGroup": 1
     },
     {
       "id": "14:17:はいります［きっさてんに～］",
@@ -4903,7 +4968,8 @@
       "kana": "はいります［きっさてんに～］",
       "kanji": "入ります［喫茶店に～］",
       "es": "entrar (a la cafetería)",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "verbGroup": 1
     },
     {
       "id": "14:18:でます［きっさてんを～］",
@@ -4911,7 +4977,8 @@
       "kana": "でます［きっさてんを～］",
       "kanji": "出ます［喫茶店を～］",
       "es": "salir (de la cafetería)",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "verbGroup": 2
     },
     {
       "id": "14:19:ふります［あめが～］",
@@ -4919,14 +4986,16 @@
       "kana": "ふります［あめが～］",
       "kanji": "降ります［雨が～］",
       "es": "llover (caer lluvia)",
-      "emoji": "🌧️"
+      "emoji": "🌧️",
+      "verbGroup": 1
     },
     {
       "id": "14:20:コピーします",
       "lesson": 14,
       "kana": "コピーします",
       "es": "fotocopiar",
-      "emoji": "🖨️"
+      "emoji": "🖨️",
+      "verbGroup": 3
     },
     {
       "id": "14:21:でんき",
@@ -5110,7 +5179,8 @@
       "lesson": 15,
       "kana": "おきます",
       "kanji": "置きます",
-      "es": "poner, dejar"
+      "es": "poner, dejar",
+      "verbGroup": 1
     },
     {
       "id": "15:1:つくります",
@@ -5118,7 +5188,8 @@
       "kana": "つくります",
       "kanji": "作ります",
       "es": "hacer, fabricar",
-      "emoji": "🛠️"
+      "emoji": "🛠️",
+      "verbGroup": 1
     },
     {
       "id": "15:2:うります",
@@ -5126,7 +5197,8 @@
       "kana": "うります",
       "kanji": "売ります",
       "es": "vender",
-      "emoji": "🏷️"
+      "emoji": "🏷️",
+      "verbGroup": 1
     },
     {
       "id": "15:3:しります",
@@ -5134,7 +5206,8 @@
       "kana": "しります",
       "kanji": "知ります",
       "es": "llegar a saber, conocer",
-      "emoji": "💡"
+      "emoji": "💡",
+      "verbGroup": 1
     },
     {
       "id": "15:4:すみます",
@@ -5142,7 +5215,8 @@
       "kana": "すみます",
       "kanji": "住みます",
       "es": "vivir (en un lugar)",
-      "emoji": "🏠"
+      "emoji": "🏠",
+      "verbGroup": 1
     },
     {
       "id": "15:5:けんきゅうします",
@@ -5150,7 +5224,8 @@
       "kana": "けんきゅうします",
       "kanji": "研究します",
       "es": "investigar",
-      "emoji": "🔬"
+      "emoji": "🔬",
+      "verbGroup": 3
     },
     {
       "id": "15:6:しりょう",
@@ -5267,13 +5342,15 @@
       "kana": "おもいだします",
       "kanji": "思い出します",
       "es": "recordar",
-      "emoji": "💭"
+      "emoji": "💭",
+      "verbGroup": 1
     },
     {
       "id": "15:21:いらっしゃいます",
       "lesson": 15,
       "kana": "いらっしゃいます",
-      "es": "estar (honorífico de います)"
+      "es": "estar (honorífico de います)",
+      "verbGroup": 1
     },
     {
       "id": "16:0:のります［でんしゃに～］",
@@ -5281,7 +5358,8 @@
       "kana": "のります［でんしゃに～］",
       "kanji": "乗ります［電車に～］",
       "es": "subir (al tren)",
-      "emoji": "🚃"
+      "emoji": "🚃",
+      "verbGroup": 1
     },
     {
       "id": "16:1:おります［でんしゃを～］",
@@ -5289,7 +5367,8 @@
       "kana": "おります［でんしゃを～］",
       "kanji": "降ります［電車を～］",
       "es": "bajar (del tren)",
-      "emoji": "🚉"
+      "emoji": "🚉",
+      "verbGroup": 2
     },
     {
       "id": "16:2:のりかえます",
@@ -5297,7 +5376,8 @@
       "kana": "のりかえます",
       "kanji": "乗り換えます",
       "es": "hacer transbordo",
-      "emoji": "🔄"
+      "emoji": "🔄",
+      "verbGroup": 2
     },
     {
       "id": "16:3:あびます［シャワーを～］",
@@ -5305,7 +5385,8 @@
       "kana": "あびます［シャワーを～］",
       "kanji": "浴びます",
       "es": "darse (una ducha)",
-      "emoji": "🚿"
+      "emoji": "🚿",
+      "verbGroup": 2
     },
     {
       "id": "16:4:いれます",
@@ -5313,7 +5394,8 @@
       "kana": "いれます",
       "kanji": "入れます",
       "es": "meter, poner",
-      "emoji": "📥"
+      "emoji": "📥",
+      "verbGroup": 2
     },
     {
       "id": "16:5:だします",
@@ -5321,7 +5403,8 @@
       "kana": "だします",
       "kanji": "出します",
       "es": "sacar; entregar",
-      "emoji": "📤"
+      "emoji": "📤",
+      "verbGroup": 1
     },
     {
       "id": "16:6:おろします［おかねを～］",
@@ -5329,7 +5412,8 @@
       "kana": "おろします［おかねを～］",
       "kanji": "下ろします［お金を～］",
       "es": "sacar (dinero)",
-      "emoji": "🏧"
+      "emoji": "🏧",
+      "verbGroup": 1
     },
     {
       "id": "16:7:はいります［だいがくに～］",
@@ -5337,7 +5421,8 @@
       "kana": "はいります［だいがくに～］",
       "kanji": "入ります［大学に～］",
       "es": "entrar (a la universidad)",
-      "emoji": "🏫"
+      "emoji": "🏫",
+      "verbGroup": 1
     },
     {
       "id": "16:8:でます［だいがくを～］",
@@ -5345,7 +5430,8 @@
       "kana": "でます［だいがくを～］",
       "kanji": "出ます［大学を～］",
       "es": "recibirse (de la universidad)",
-      "emoji": "🎓"
+      "emoji": "🎓",
+      "verbGroup": 2
     },
     {
       "id": "16:9:おします",
@@ -5353,7 +5439,8 @@
       "kana": "おします",
       "kanji": "押します",
       "es": "empujar, apretar",
-      "emoji": "👆"
+      "emoji": "👆",
+      "verbGroup": 1
     },
     {
       "id": "16:10:やめます［かいしゃを～］",
@@ -5361,7 +5448,8 @@
       "kana": "やめます［かいしゃを～］",
       "kanji": "辞めます［会社を～］",
       "es": "renunciar (a la empresa)",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "verbGroup": 2
     },
     {
       "id": "16:11:はじめます",
@@ -5369,7 +5457,8 @@
       "kana": "はじめます",
       "kanji": "始めます",
       "es": "empezar",
-      "emoji": "▶️"
+      "emoji": "▶️",
+      "verbGroup": 2
     },
     {
       "id": "16:12:けんがくします",
@@ -5377,7 +5466,8 @@
       "kana": "けんがくします",
       "kanji": "見学します",
       "es": "visitar para conocer",
-      "emoji": "👀"
+      "emoji": "👀",
+      "verbGroup": 3
     },
     {
       "id": "16:13:でんわします",
@@ -5385,7 +5475,8 @@
       "kana": "でんわします",
       "kanji": "電話します",
       "es": "llamar por teléfono",
-      "emoji": "📞"
+      "emoji": "📞",
+      "verbGroup": 3
     },
     {
       "id": "16:14:わかい",
@@ -5675,7 +5766,8 @@
       "kana": "おぼえます",
       "kanji": "覚えます",
       "es": "memorizar",
-      "emoji": "🧠"
+      "emoji": "🧠",
+      "verbGroup": 2
     },
     {
       "id": "17:1:わすれます",
@@ -5683,14 +5775,16 @@
       "kana": "わすれます",
       "kanji": "忘れます",
       "es": "olvidar",
-      "emoji": "🤦"
+      "emoji": "🤦",
+      "verbGroup": 2
     },
     {
       "id": "17:2:なくします",
       "lesson": 17,
       "kana": "なくします",
       "es": "perder (algo)",
-      "emoji": "🔍"
+      "emoji": "🔍",
+      "verbGroup": 1
     },
     {
       "id": "17:3:はらいます",
@@ -5698,7 +5792,8 @@
       "kana": "はらいます",
       "kanji": "払います",
       "es": "pagar",
-      "emoji": "💴"
+      "emoji": "💴",
+      "verbGroup": 1
     },
     {
       "id": "17:4:かえします",
@@ -5706,7 +5801,8 @@
       "kana": "かえします",
       "kanji": "返します",
       "es": "devolver",
-      "emoji": "↩️"
+      "emoji": "↩️",
+      "verbGroup": 1
     },
     {
       "id": "17:5:でかけます",
@@ -5714,7 +5810,8 @@
       "kana": "でかけます",
       "kanji": "出かけます",
       "es": "salir (de casa)",
-      "emoji": "🚶"
+      "emoji": "🚶",
+      "verbGroup": 2
     },
     {
       "id": "17:6:ぬぎます",
@@ -5722,7 +5819,8 @@
       "kana": "ぬぎます",
       "kanji": "脱ぎます",
       "es": "quitarse (ropa, zapatos)",
-      "emoji": "👟"
+      "emoji": "👟",
+      "verbGroup": 1
     },
     {
       "id": "17:7:もっていきます",
@@ -5730,7 +5828,8 @@
       "kana": "もっていきます",
       "kanji": "持って行きます",
       "es": "llevar (algo)",
-      "emoji": "🎒"
+      "emoji": "🎒",
+      "verbGroup": 1
     },
     {
       "id": "17:8:もってきます",
@@ -5738,7 +5837,8 @@
       "kana": "もってきます",
       "kanji": "持って来ます",
       "es": "traer (algo)",
-      "emoji": "🎁"
+      "emoji": "🎁",
+      "verbGroup": 3
     },
     {
       "id": "17:9:しんぱいします",
@@ -5746,7 +5846,8 @@
       "kana": "しんぱいします",
       "kanji": "心配します",
       "es": "preocuparse",
-      "emoji": "😟"
+      "emoji": "😟",
+      "verbGroup": 3
     },
     {
       "id": "17:10:ざんぎょうします",
@@ -5754,7 +5855,8 @@
       "kana": "ざんぎょうします",
       "kanji": "残業します",
       "es": "hacer horas extra",
-      "emoji": "🌃"
+      "emoji": "🌃",
+      "verbGroup": 3
     },
     {
       "id": "17:11:しゅっちょうします",
@@ -5762,7 +5864,8 @@
       "kana": "しゅっちょうします",
       "kanji": "出張します",
       "es": "viajar por trabajo",
-      "emoji": "💼"
+      "emoji": "💼",
+      "verbGroup": 3
     },
     {
       "id": "17:12:のみます［くすりを～］",
@@ -5770,7 +5873,8 @@
       "kana": "のみます［くすりを～］",
       "kanji": "飲みます［薬を～］",
       "es": "tomar (un remedio)",
-      "emoji": "💊"
+      "emoji": "💊",
+      "verbGroup": 1
     },
     {
       "id": "17:13:はいります［おふろに～］",
@@ -5778,7 +5882,8 @@
       "kana": "はいります［おふろに～］",
       "kanji": "入ります［お風呂に～］",
       "es": "bañarse (en la bañera)",
-      "emoji": "🛁"
+      "emoji": "🛁",
+      "verbGroup": 1
     },
     {
       "id": "17:14:たいせつ［な］",
@@ -5943,7 +6048,8 @@
       "lesson": 18,
       "kana": "できます",
       "es": "poder, saber hacer",
-      "emoji": "💪"
+      "emoji": "💪",
+      "verbGroup": 2
     },
     {
       "id": "18:1:あらいます",
@@ -5951,7 +6057,8 @@
       "kana": "あらいます",
       "kanji": "洗います",
       "es": "lavar",
-      "emoji": "🧼"
+      "emoji": "🧼",
+      "verbGroup": 1
     },
     {
       "id": "18:2:ひきます",
@@ -5959,7 +6066,8 @@
       "kana": "ひきます",
       "kanji": "弾きます",
       "es": "tocar (un instrumento)",
-      "emoji": "🎹"
+      "emoji": "🎹",
+      "verbGroup": 1
     },
     {
       "id": "18:3:うたいます",
@@ -5967,7 +6075,8 @@
       "kana": "うたいます",
       "kanji": "歌います",
       "es": "cantar",
-      "emoji": "🎤"
+      "emoji": "🎤",
+      "verbGroup": 1
     },
     {
       "id": "18:4:あつめます",
@@ -5975,7 +6084,8 @@
       "kana": "あつめます",
       "kanji": "集めます",
       "es": "juntar, coleccionar",
-      "emoji": "🗃️"
+      "emoji": "🗃️",
+      "verbGroup": 2
     },
     {
       "id": "18:5:すてます",
@@ -5983,7 +6093,8 @@
       "kana": "すてます",
       "kanji": "捨てます",
       "es": "tirar (a la basura)",
-      "emoji": "🗑️"
+      "emoji": "🗑️",
+      "verbGroup": 2
     },
     {
       "id": "18:6:かえます",
@@ -5991,7 +6102,8 @@
       "kana": "かえます",
       "kanji": "換えます",
       "es": "cambiar (dinero, etc.)",
-      "emoji": "💱"
+      "emoji": "💱",
+      "verbGroup": 2
     },
     {
       "id": "18:7:うんてんします",
@@ -5999,7 +6111,8 @@
       "kana": "うんてんします",
       "kanji": "運転します",
       "es": "manejar",
-      "emoji": "🚗"
+      "emoji": "🚗",
+      "verbGroup": 3
     },
     {
       "id": "18:8:よやくします",
@@ -6007,7 +6120,8 @@
       "kana": "よやくします",
       "kanji": "予約します",
       "es": "reservar",
-      "emoji": "📅"
+      "emoji": "📅",
+      "verbGroup": 3
     },
     {
       "id": "18:9:ピアノ",
@@ -6159,7 +6273,8 @@
       "kana": "のぼります",
       "kanji": "登ります",
       "es": "subir, escalar",
-      "emoji": "🧗"
+      "emoji": "🧗",
+      "verbGroup": 1
     },
     {
       "id": "19:1:とまります［ホテルに～］",
@@ -6167,7 +6282,8 @@
       "kana": "とまります［ホテルに～］",
       "kanji": "泊まります",
       "es": "alojarse (en un hotel)",
-      "emoji": "🏨"
+      "emoji": "🏨",
+      "verbGroup": 1
     },
     {
       "id": "19:2:そうじします",
@@ -6175,7 +6291,8 @@
       "kana": "そうじします",
       "kanji": "掃除します",
       "es": "limpiar",
-      "emoji": "🧹"
+      "emoji": "🧹",
+      "verbGroup": 3
     },
     {
       "id": "19:3:せんたくします",
@@ -6183,14 +6300,16 @@
       "kana": "せんたくします",
       "kanji": "洗濯します",
       "es": "lavar la ropa",
-      "emoji": "🧺"
+      "emoji": "🧺",
+      "verbGroup": 3
     },
     {
       "id": "19:4:なります",
       "lesson": 19,
       "kana": "なります",
       "es": "volverse, llegar a ser",
-      "emoji": "🦋"
+      "emoji": "🦋",
+      "verbGroup": 1
     },
     {
       "id": "19:5:ねむい",

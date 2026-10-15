@@ -53,6 +53,19 @@ describe('contenido', () => {
     expect(new Set(v.words.map((w) => w.id)).size).toBe(v.words.length)
   })
 
+  it('los verbos tienen el grupo correcto en los casos con trampa', () => {
+    const group = (kana: string, kanji?: string) =>
+      v.words.find((w) => w.kana === kana && (kanji === undefined || w.kanji === kanji))?.verbGroup
+    expect(group('おきます', '起きます')).toBe(2)
+    expect(group('おきます', '置きます')).toBe(1)
+    expect(group('かえります')).toBe(1)
+    expect(group('はなします')).toBe(1)
+    expect(group('みます')).toBe(2)
+    expect(group('もってきます')).toBe(3)
+    expect(group('べんきょうします')).toBe(3)
+    expect(group('いただきます')).toBeUndefined()
+  })
+
   it('cada contador tiene 10 lecturas', () => {
     for (const x of c.counters) expect(x.readings).toHaveLength(10)
   })

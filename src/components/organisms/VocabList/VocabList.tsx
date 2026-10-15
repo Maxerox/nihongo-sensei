@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { EmptyState } from '../../atoms/EmptyState'
 import { JpText } from '../../atoms/JpText'
 import { SearchInput } from '../../atoms/SearchInput'
+import { VerbGroupTag } from '../../atoms/VerbGroupTag'
 import type { VocabWord } from '../../../shared/types/content'
 import { displayWord } from '../../../shared/utils/kanji'
 import { lessonHeading } from '../../../shared/utils/lessons'
@@ -74,6 +75,7 @@ export function VocabList({ words, showAllKanji, known }: VocabListProps) {
                         </td>
                         <td className={styles.word}>
                           <JpText text={d.main} reading={d.reading || undefined} />
+                          {w.verbGroup && <VerbGroupTag group={w.verbGroup} />}
                         </td>
                         <td>{w.es}</td>
                         <td className={styles.known}>{known.has(w.id) ? <span aria-label="sabida">✓</span> : ''}</td>

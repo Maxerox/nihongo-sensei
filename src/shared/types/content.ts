@@ -16,7 +16,10 @@ export interface VocabWord {
   kanji?: string
   es: string
   emoji?: string
+  /** Grupo del verbo (I, II o III). Solo en los verbos en forma ます. */
+  verbGroup?: VerbGroup
 }
+export type VerbGroup = 1 | 2 | 3
 export interface VocabularyData {
   lessons: number[]
   words: VocabWord[]
