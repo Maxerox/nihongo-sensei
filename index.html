@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Vocabulario, gramática y partículas de Minna no Nihongo, lecciones 1–19.">
+<meta name="description" content="Vocabulario, gramática, partículas, contadores y fechas de Minna no Nihongo, lecciones 1–19.">
 <title>Nihongo Sensei</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎌</text></svg>">
 <style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -163,6 +163,33 @@ h1 .h1-jp{font-family:var(--jp)}
 .blank.ok{color:var(--matcha);border-color:var(--matcha)}
 .blank.bad{color:var(--beni);border-color:var(--beni)}
 @media (max-width:520px){.pcols{grid-template-columns:1fr}}
+
+/* counters & dates */
+.pglyph.cnt{font-size:22px}
+.tipbox{background:var(--ai-soft);border-radius:12px;padding:12px 14px;font-size:14px;max-width:none}
+.tipbox b{color:var(--ai)}
+.ngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:6px}
+.ngrid.wk{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.ncell{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:7px 9px;border-radius:8px;border:1px solid transparent;background:var(--paper);color:var(--ink);cursor:pointer;text-align:left;font:inherit;min-width:0}
+.ncell:hover{border-color:var(--line)}
+.nn{font-size:12px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.nr{font-family:var(--jp);font-size:15.5px;line-height:1.35;overflow-wrap:anywhere;min-height:1.35em;min-width:3em;border-radius:4px}
+.nr.hid{color:transparent;background:var(--line)}
+.ncell.irr{background:var(--beni-soft)}
+.ncell.irr .nr{color:var(--beni);font-weight:600}
+.ncell.irr .nr.hid{color:transparent}
+#numTools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+/* furigana */
+ruby{ruby-position:over}
+rt{font-size:.52em;font-weight:400;color:var(--muted);letter-spacing:0}
+mark rt{color:var(--ai)}
+.pglyph rt,.nav-item[aria-current="page"] .nav-jp rt,.chip[aria-pressed="true"] rt{color:inherit;opacity:.85}
+.ex-jp,.gp-ex .ex-jp,.pex .ex-jp{line-height:2.1}
+.gp-desc,.pu,.pnote{line-height:1.9}
+.gp-pat{line-height:2}
+.gtbl td{line-height:2}
+.psent{line-height:2.1}
+.brand b rt{font-size:.45em}
 /* grammar */
 .gl{display:flex;flex-direction:column;gap:10px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 76px)}
 .gp{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
@@ -193,20 +220,21 @@ h1 .h1-jp{font-family:var(--jp)}
 <body>
 <div class="topbar">
   <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-  <div class="brand"><b>日本語先生</b><small>Nihongo Sensei</small></div>
+  <div class="brand"><b><ruby>日本語<rt>にほんご</rt></ruby><ruby>先生<rt>せんせい</rt></ruby></b><small>Nihongo Sensei</small></div>
   <span class="sec-pill" id="secPill">Vocabulario</span>
 </div>
 <div class="scrim" id="scrim" hidden></div>
 <nav class="drawer" id="drawer" aria-label="Secciones">
-  <div class="drawer-head"><b>日本語先生</b><button class="drawer-close" id="drawerClose" aria-label="Cerrar menú">✕</button></div>
-  <button class="nav-item" data-sec="vocab"><span class="nav-jp">単語</span><span>Vocabulario<small>Tarjetas, quiz y lista · L1–19</small></span></button>
-  <button class="nav-item" data-sec="gram"><span class="nav-jp">文法</span><span>Gramática<small>Cheatsheet por lección · L1–19</small></span></button>
-  <button class="nav-item" data-sec="part"><span class="nav-jp">助詞</span><span>Partículas<small>Usos, comparaciones y práctica</small></span></button>
+  <div class="drawer-head"><b><ruby>日本語<rt>にほんご</rt></ruby><ruby>先生<rt>せんせい</rt></ruby></b><button class="drawer-close" id="drawerClose" aria-label="Cerrar menú">✕</button></div>
+  <button class="nav-item" data-sec="vocab"><span class="nav-jp"><ruby>単語<rt>たんご</rt></ruby></span><span>Vocabulario<small>Tarjetas, quiz y lista · L1–19</small></span></button>
+  <button class="nav-item" data-sec="gram"><span class="nav-jp"><ruby>文法<rt>ぶんぽう</rt></ruby></span><span>Gramática<small>Cheatsheet por lección · L1–19</small></span></button>
+  <button class="nav-item" data-sec="num"><span class="nav-jp"><ruby>数<rt>かず</rt></ruby></span><span>Contadores y fechas<small>Contadores, días del mes y práctica</small></span></button>
+  <button class="nav-item" data-sec="part"><span class="nav-jp"><ruby>助詞<rt>じょし</rt></ruby></span><span>Partículas<small>Usos, comparaciones y práctica</small></span></button>
 </nav>
 
 <div class="wrap" id="secVocab">
   <header>
-    <h1><span class="h1-jp">単語</span> <small>Vocabulario · lecciones 1–19</small></h1>
+    <h1><span class="h1-jp"><ruby>単語<rt>たんご</rt></ruby></span> <small>Vocabulario · lecciones 1–19</small></h1>
     <p class="sub">Los kanji aparecen solo si están entre los que viste hasta la unidad 8 del libro de kanji. El resto va en kana.</p>
   </header>
 
@@ -228,7 +256,7 @@ h1 .h1-jp{font-family:var(--jp)}
       <div class="row">
         <label class="label" for="dir" style="margin:0">Dirección</label>
         <select id="dir">
-          <option value="jp">日本語 → español</option>
+          <option value="jp">japonés → español</option>
           <option value="es">español → 日本語</option>
         </select>
       </div>
@@ -250,9 +278,26 @@ h1 .h1-jp{font-family:var(--jp)}
   <p class="note">Vocabulario basado en la 2.ª edición del libro principal; puede haber alguna diferencia menor con tu edición. El botón 🔊 usa la voz japonesa de tu navegador, si la tiene. Tu progreso se guarda en este navegador.</p>
 </div>
 
+<div class="wrap" id="secNum" hidden>
+  <header>
+    <h1><span class="h1-jp"><ruby>数<rt>かぞ</rt></ruby>え<ruby>方<rt>かた</rt></ruby></span> <small>Contadores y fechas · lecciones 1–19</small></h1>
+    <p class="sub">Cómo se lee cada número con su contador, los días del mes y los meses. Tocá una lectura para escucharla.</p>
+  </header>
+  <section class="panel" aria-label="Opciones de contadores">
+    <div class="seg" role="group" aria-label="Vista" id="numSeg">
+      <button data-t="cnt" aria-pressed="true">Contadores</button>
+      <button data-t="cal" aria-pressed="false">Fechas</button>
+      <button data-t="prac" aria-pressed="false">Practicar</button>
+    </div>
+    <div id="numTools"><label class="toggle"><input type="checkbox" id="numShow" checked> Mostrar lecturas</label><span class="note">Si las ocultás, tocá cada casilla para ver la lectura.</span></div>
+    <div class="chips" id="numIdx"></div>
+  </section>
+  <div class="list" id="numBody"></div>
+</div>
+
 <div class="wrap" id="secPart" hidden>
   <header>
-    <h1><span class="h1-jp">助詞</span> <small>Partículas · lecciones 1–19</small></h1>
+    <h1><span class="h1-jp"><ruby>助詞<rt>じょし</rt></ruby></span> <small>Partículas · lecciones 1–19</small></h1>
     <p class="sub">Para qué sirve cada partícula, cuáles se confunden entre sí, y práctica para completar oraciones. El número de lección dice dónde aparece cada uso.</p>
   </header>
   <section class="panel" aria-label="Opciones de partículas">
@@ -268,7 +313,7 @@ h1 .h1-jp{font-family:var(--jp)}
 
 <div class="wrap" id="secGram" hidden>
   <header>
-    <h1><span class="h1-jp">文法</span> <small>Gramática · lecciones 1–19</small></h1>
+    <h1><span class="h1-jp"><ruby>文法<rt>ぶんぽう</rt></ruby></span> <small>Gramática · lecciones 1–19</small></h1>
     <p class="sub">Los puntos de gramática de cada lección, con un ejemplo. En los ejemplos, la parte resaltada es la estructura.</p>
   </header>
   <section class="panel" aria-label="Filtros de gramática">
@@ -1283,7 +1328,7 @@ function renderQuiz(){
     <div class="q-opts">${q.opts.map((o,i)=>{
       let cls="q-opt"+(S.dir==="es"?" jpopt":"");
       if(q.answered!==null){if(o.id===w.id)cls+=" ok";else if(i===q.answered)cls+=" bad"}
-      const label=S.dir==="jp"?esc(o.es):esc(display(o,S.allKanji).main);
+      const dd=display(o,S.allKanji);const label=S.dir==="jp"?esc(o.es):(dd.furi?rb(esc(dd.main),esc(dd.furi)):esc(dd.main));
       return `<button class="${cls}" data-i="${i}" ${q.answered!==null?"disabled":""} ${S.dir==="es"?'lang="ja"':""}>${label}</button>`}).join("")}</div>
     ${q.answered!==null?`<div class="row between"><span class="stats" lang="ja" style="font-family:var(--jp);font-size:16px;color:var(--ink)">${esc(w.kana)}${w.emoji?" "+w.emoji:""} — <span style="font-family:var(--ui)">${esc(w.es)}</span></span><button class="btn primary" id="next">Siguiente →</button></div>`:""}
   </div>`;
@@ -1309,12 +1354,64 @@ function fillList(){
   [...S.lessons].sort((a,b)=>a-b).forEach(l=>{
     const ws=WORDS.filter(w=>w.lesson===l&&(!q||w.kana.includes(q)||w.kanji.includes(q)||w.es.toLowerCase().includes(q)));
     if(!ws.length)return;
-    out.push(`<section><h2 class="lesson-h">第${l}課 <span>Lección ${l} · ${ws.length} palabras</span></h2><div style="overflow-x:auto"><table class="tbl"><tbody>${ws.map(w=>{
+    out.push(`<section><h2 class="lesson-h">${kaHead(l)} <span>Lección ${l} · ${ws.length} palabras</span></h2><div style="overflow-x:auto"><table class="tbl"><tbody>${ws.map(w=>{
       const d=display(w,S.allKanji);
       return `<tr><td class="e">${w.emoji||""}</td><td class="w" lang="ja">${esc(d.main)}${d.furi?`<small>${esc(d.furi)}</small>`:""}</td><td class="m">${esc(w.es)}</td><td class="k">${S.known.has(w.id)?"✓":""}</td></tr>`}).join("")}</tbody></table></div></section>`);
   });
   $("#listBody").innerHTML=out.join("")||`<div class="empty">No encontré nada con “${esc(query)}”.</div>`;
 }
+
+
+// ---- furigana ----
+const KATA=/[゠-ヿ]/;
+const FDICT={
+ "会社員":"かいしゃいん","社員":"しゃいん","会社":"かいしゃ","学生":"がくせい","学校":"がっこう","大学":"だいがく","先生":"せんせい",
+ "中国":"ちゅうごく","日本語":"にほんご","日本":"にほん","外国人":"がいこくじん","外国":"がいこく","電車":"でんしゃ","自転車":"じてんしゃ",
+ "毎日":"まいにち","毎朝":"まいあさ","毎晩":"まいばん","一人":"ひとり","時間":"じかん","週間":"しゅうかん","今":"いま","昼":"ひる","朝":"あさ",
+ "休":"やす","上":"うえ","下":"した","中":"なか","前":"まえ","後":"あと","古":"ふる","新":"あたら","高":"たか","大":"おお","小":"ちい",
+ "好":"す","子":"こ","手":"て","山":"やま","川":"かわ","白":"しろ","黒":"くろ","赤":"あか","青":"あお","肉":"にく","魚":"さかな","犬":"いぬ",
+ "男":"おとこ","女":"おんな","父":"ちち","母":"はは","右":"みぎ","左":"ひだり","外":"そと","近":"ちか","間":"あいだ","駅":"えき","車":"くるま",
+ "本":"ほん","物":"もの","食":"た","飲":"の","行":"い","半":"はん","国":"くに","円":"えん","分":"ふん","年":"ねん","時":"じ",
+ "台":"だい","火":"か","水":"すい","木":"もく","金":"きん","土":"ど",
+ "人":(s,i)=>{const p=pv(s,i,1);return KATA.test(p)?"じん":/[何～]/.test(p)?"にん":"ひと"},
+ "来":(s,i)=>{const n=nx(s,i+1,1);return n==="な"?"こ":n==="る"?"く":"き"},
+ "何":(s,i)=>{const n=nx(s,i+1,2);return /^(か[い月]|かげ)/.test(n)||/^[でのさまじ時人年分日月週ぷ]/.test(n)||/^(にち|がつ|がい|ばん|よう)/.test(n)?"なん":"なに"},
+ "日":(s,i)=>pv(s,i,2)==="よう"?"び":"にち",
+ "月":(s,i)=>pv(s,i,1)==="か"||nx(s,i+1,2)==="よう"?"げつ":"がつ"
+};
+function nx(s,j,n){let r="";while(r.length<n&&j<s.length){if(s[j]==="<"){j=s.indexOf(">",j)+1;continue}r+=s[j];j++}return r}
+function pv(s,j,n){let r="";j--;while(r.length<n&&j>=0){if(s[j]===">"){j=s.lastIndexOf("<",j)-1;continue}r=s[j]+r;j--}return r}
+const FKEYS=Object.keys(FDICT).sort((a,b)=>b.length-a.length);
+const NUMEXC={"600円":"ろっぴゃくえん","18,600円":"いちまんはっせんろっぴゃくえん"};
+function numRead(n,c){
+  const k=n+c;if(NUMEXC[k])return NUMEXC[k];const v=+n.replace(/,/g,"");
+  if(c==="日")return DAYS[v-1]||null;
+  if(c==="月")return MONTHS[v-1]||null;
+  const t=CNT.find(x=>x.lab===c);
+  if(t&&v>=1&&v<=10)return t.r[v-1].split("／")[0];
+  if(c==="時"&&v<=12)return ["じゅういちじ","じゅうにじ"][v-11];
+  return null;
+}
+function rb(k,r){return `<ruby>${k}<rt>${r}</rt></ruby>`}
+function furi(s){
+  let out="",i=0;
+  while(i<s.length){
+    const ch=s[i];
+    if(ch==="<"){const j=s.indexOf(">",i);out+=s.slice(i,j+1);i=j+1;continue}
+    if(/[0-9]/.test(ch)&&(i===0||!/[0-9,]/.test(s[i-1]))){
+      const m=s.slice(i).match(/^([0-9][0-9,]*)(時間|週間|か月|人|日|月|時|分|円|年)/);
+      if(m){const r=numRead(m[1],m[2]);if(r){out+=rb(m[0],r);i+=m[0].length;continue}}
+    }
+    if(/[一-鿿]/.test(ch)){
+      const k=FKEYS.find(k=>s.startsWith(k,i));
+      if(k){const v=FDICT[k];out+=rb(k,typeof v==="function"?v(s,i):v);i+=k.length;continue}
+    }
+    out+=ch;i++;
+  }
+  return out;
+}
+const fx=t=>furi(esc(t));
+function kaHead(n){const a=["いっ","に","さん","よん","ご","ろっ","なな","はっ","きゅう","じゅっ"];const t=n>=10?"じゅう":"",u=n%10;return rb("第","だい")+n+rb("課",n===10?"じゅっか":t+(u?a[u-1]:"").replace(/^じゅう$/,"じゅっ")+"か")}
 
 // [[...]] marca la parte gramatical dentro del ejemplo
 const GRAM=[
@@ -1464,7 +1561,7 @@ const GRAM=[
 ];
 
 // ---- grammar render ----
-function exHTML(t){return esc(t).replace(/\[\[(.+?)\]\]/g,"<mark>$1</mark>")}
+function exHTML(t){return furi(esc(t).replace(/\[\[(.+?)\]\]/g,"<mark>$1</mark>"))}
 function sayText(t){speak({kana:t.replace(/\[\[|\]\]/g,"")})}
 let gq="";
 function renderGram(){
@@ -1473,11 +1570,11 @@ function renderGram(){
   GRAM.forEach(L=>{
     const pts=L.pts.filter(p=>!q||[p.p,p.d,...(p.ex||[]).flat(),...(p.table?p.table.r.flat():[])].join(" ").replace(/\[\[|\]\]/g,"").toLowerCase().includes(q));
     if(!pts.length)return;
-    out.push(`<section class="gl" id="g${L.l}"><h2 class="lesson-h">第${L.l}課 <span>Lección ${L.l} · ${esc(L.t)}</span></h2>${pts.map(p=>`
+    out.push(`<section class="gl" id="g${L.l}"><h2 class="lesson-h">${kaHead(L.l)} <span>Lección ${L.l} · ${esc(L.t)}</span></h2>${pts.map(p=>`
       <article class="gp">
-        <div class="gp-pat" lang="ja">${esc(p.p)}</div>
-        <p class="gp-desc">${esc(p.d)}</p>
-        ${p.table?`<div class="tbl-wrap"><table class="gtbl"><thead><tr>${p.table.h.map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${p.table.r.map(r=>`<tr>${r.map(c=>`<td lang="ja">${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:""}
+        <div class="gp-pat" lang="ja">${fx(p.p)}</div>
+        <p class="gp-desc">${fx(p.d)}</p>
+        ${p.table?`<div class="tbl-wrap"><table class="gtbl"><thead><tr>${p.table.h.map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${p.table.r.map(r=>`<tr>${r.map(c=>`<td lang="ja">${fx(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:""}
         ${p.ex?`<ul class="gp-ex">${p.ex.map(e=>`<li><div class="ex-jp" lang="ja">${exHTML(e[0])}</div><div class="ex-es">${esc(e[1])}</div><button class="ex-say" data-say="${esc(e[0])}" aria-label="Escuchar">🔊</button></li>`).join("")}</ul>`:""}
       </article>`).join("")}</section>`);
   });
@@ -1617,14 +1714,14 @@ function renderPart(){
     box.innerHTML=`<div class="pgrid">${PART.map(P=>`
     <article class="pcard" id="p-${P.r}">
       <div class="phead"><span class="pglyph" lang="ja">${P.k}</span><span><b>${esc(P.t)}</b><small>se lee «${P.r}»</small></span></div>
-      ${P.note?`<p class="pnote">${esc(P.note)}</p>`:""}
-      <ol class="puses">${P.uses.map(u=>`<li><div class="pu">${esc(u.u)} <span class="ltag">L${u.l}</span></div><div class="pex"><span class="ex-jp" lang="ja">${exHTML(u.ex)}</span><button class="ex-say" data-say="${esc(u.ex)}" aria-label="Escuchar">🔊</button><span class="ex-es">${esc(u.es)}</span></div></li>`).join("")}</ol>
+      ${P.note?`<p class="pnote">${fx(P.note)}</p>`:""}
+      <ol class="puses">${P.uses.map(u=>`<li><div class="pu">${fx(u.u)} <span class="ltag">L${u.l}</span></div><div class="pex"><span class="ex-jp" lang="ja">${exHTML(u.ex)}</span><button class="ex-say" data-say="${esc(u.ex)}" aria-label="Escuchar">🔊</button><span class="ex-es">${esc(u.es)}</span></div></li>`).join("")}</ol>
     </article>`).join("")}</div>`;
   } else if(ptab==="pairs"){
     box.innerHTML=PAIRS.map(x=>`
     <article class="gp pair">
       <div class="pvs"><span class="pglyph sm" lang="ja">${x.a}</span><span class="vs">vs</span><span class="pglyph sm alt" lang="ja">${x.b}</span></div>
-      <p class="gp-desc">${esc(x.d)}</p>
+      <p class="gp-desc">${fx(x.d)}</p>
       <div class="pcols">
         <div class="pcol"><div class="ex-jp" lang="ja">${exHTML(x.ea[0])}</div><div class="ex-es">${esc(x.ea[1])}</div></div>
         <div class="pcol alt"><div class="ex-jp" lang="ja">${exHTML(x.eb[0])}</div><div class="ex-es">${esc(x.eb[1])}</div></div>
@@ -1633,7 +1730,7 @@ function renderPart(){
   } else {
     if(!pq) pq={order:shuffle(PRAC.map((_,i)=>i)),i:0,score:0,ans:null,opts:null};
     if(pq.i>=pq.order.length){
-      box.innerHTML=`<div class="panel" style="align-items:center;text-align:center;padding:28px 16px"><div class="pglyph" lang="ja">終</div><div class="meaning">${pq.score} de ${pq.order.length}</div><p class="sub">${pq.score===pq.order.length?"¡Perfecto!":"Volvé a intentarlo para repasar las que fallaste."}</p><button class="btn primary" id="pAgain">Empezar de nuevo</button></div>`;
+      box.innerHTML=`<div class="panel" style="align-items:center;text-align:center;padding:28px 16px"><div class="pglyph" aria-hidden="true">🎉</div><div class="meaning">${pq.score} de ${pq.order.length}</div><p class="sub">${pq.score===pq.order.length?"¡Perfecto!":"Volvé a intentarlo para repasar las que fallaste."}</p><button class="btn primary" id="pAgain">Empezar de nuevo</button></div>`;
       $("#pAgain").onclick=()=>{pq=null;renderPart()};return;
     }
     const Q=PRAC[pq.order[pq.i]];
@@ -1642,9 +1739,9 @@ function renderPart(){
     box.innerHTML=`
     <div style="display:flex;flex-direction:column;gap:12px">
       <div class="row between"><span class="stats">Pregunta <b>${pq.i+1}/${pq.order.length}</b></span><span class="stats">Aciertos <b>${pq.score}</b></span></div>
-      <div class="face" style="position:relative;min-height:160px"><span class="tag">L${Q[4]}</span><div class="psent" lang="ja">${filled}</div></div>
+      <div class="face" style="position:relative;min-height:160px"><span class="tag">L${Q[4]}</span><div class="psent" lang="ja">${furi(filled)}</div></div>
       <div class="q-opts">${pq.opts.map(o=>{let c="q-opt jpopt";if(pq.ans!==null){if(o===Q[1])c+=" ok";else if(o===pq.ans)c+=" bad"}return `<button class="${c}" data-o="${o}" ${pq.ans!==null?"disabled":""} lang="ja">${o}</button>`}).join("")}</div>
-      ${pq.ans!==null?`<div class="row between"><span class="stats" style="color:var(--ink)">${pq.ans===Q[1]?"✓ ":"✗ "}${esc(Q[3])}</span><button class="btn primary" id="pNext">Siguiente →</button></div>`:""}
+      ${pq.ans!==null?`<div class="row between"><span class="stats" style="color:var(--ink)">${pq.ans===Q[1]?"✓ ":"✗ "}${fx(Q[3])}</span><button class="btn primary" id="pNext">Siguiente →</button></div>`:""}
     </div>`;
     box.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>{pq.ans=b.dataset.o;if(pq.ans===Q[1])pq.score++;renderPart()});
     const n=$("#pNext");if(n){n.onclick=()=>{pq.i++;pq.ans=null;pq.opts=null;renderPart()};n.focus()}
@@ -1655,6 +1752,105 @@ document.querySelectorAll("#partSeg button").forEach(b=>b.onclick=()=>{ptab=b.da
 (function(){const box=$("#partIdx");PART.forEach(P=>{const b=document.createElement("button");b.className="chip jpchip";b.lang="ja";b.textContent=P.k;b.title=P.t;
   b.onclick=()=>{const el=document.getElementById("p-"+P.r);if(el)el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})};box.appendChild(b)})})();
 
+// ---- contadores y fechas ----
+const NBASE=["いち","に","さん","よん","ご","ろく","なな","はち","きゅう","じゅう"];
+const CNT=[
+{lab:"つ",base:null,what:"cosas en general",emo:"🍎",l:11,q:"いくつ",note:"Números japoneses originales; solo llegan a 10 (とお, sin つ). De 11 en adelante se dice el número solo.",r:["ひとつ","ふたつ","みっつ","よっつ","いつつ","むっつ","ななつ","やっつ","ここのつ","とお"]},
+{lab:"人",base:"にん",what:"personas",emo:"🧑",l:11,q:"なんにん",note:"1 y 2 son especiales: ひとり y ふたり.",r:["ひとり","ふたり","さんにん","よにん","ごにん","ろくにん","ななにん／しちにん","はちにん","きゅうにん","じゅうにん"]},
+{lab:"だい",base:"だい",what:"máquinas y vehículos",emo:"🚗",l:11,q:"なんだい",r:["いちだい","にだい","さんだい","よんだい","ごだい","ろくだい","ななだい","はちだい","きゅうだい","じゅうだい"]},
+{lab:"まい",base:"まい",what:"cosas planas: papel, camisas, estampillas",emo:"📄",l:11,q:"なんまい",r:["いちまい","にまい","さんまい","よんまい","ごまい","ろくまい","ななまい","はちまい","きゅうまい","じゅうまい"]},
+{lab:"かい",base:"かい",what:"veces",emo:"🔁",l:11,q:"なんかい",r:["いっかい","にかい","さんかい","よんかい","ごかい","ろっかい","ななかい","はっかい","きゅうかい","じゅっかい"]},
+{lab:"かい",id:"kai2",base:"かい",what:"pisos de un edificio",emo:"🏢",l:3,q:"なんがい",note:"Mismo sonido que «veces», pero 3 y 何 cambian a がい.",r:["いっかい","にかい","さんがい","よんかい","ごかい","ろっかい","ななかい","はっかい","きゅうかい","じゅっかい"]},
+{lab:"円",base:"えん",what:"yenes",emo:"💴",l:3,q:"いくら",r:["いちえん","にえん","さんえん","よえん","ごえん","ろくえん","ななえん","はちえん","きゅうえん","じゅうえん"]},
+{lab:"さい",base:"さい",what:"años de edad",emo:"🎂",l:1,q:"なんさい",note:"20 años se dice はたち.",r:["いっさい","にさい","さんさい","よんさい","ごさい","ろくさい","ななさい","はっさい","きゅうさい","じゅっさい"]},
+{lab:"時",base:"じ",what:"hora del reloj",emo:"🕐",l:4,q:"なんじ",note:"Atención con 4, 7 y 9: よじ, しちじ, くじ.",r:["いちじ","にじ","さんじ","よじ","ごじ","ろくじ","しちじ","はちじ","くじ","じゅうじ"]},
+{lab:"分",base:"ふん",what:"minutos",emo:"⏱️",l:4,q:"なんぷん",note:"ふん pasa a ぷん con 1, 3, 4, 6, 8 y 10.",r:["いっぷん","にふん","さんぷん","よんぷん","ごふん","ろっぷん","ななふん","はっぷん","きゅうふん","じゅっぷん"]},
+{lab:"時間",base:"じかん",what:"horas de duración",emo:"⏳",l:11,q:"なんじかん",r:["いちじかん","にじかん","さんじかん","よじかん","ごじかん","ろくじかん","ななじかん／しちじかん","はちじかん","くじかん","じゅうじかん"]},
+{lab:"週間",base:"しゅうかん",what:"semanas de duración",emo:"🗓️",l:11,q:"なんしゅうかん",r:["いっしゅうかん","にしゅうかん","さんしゅうかん","よんしゅうかん","ごしゅうかん","ろくしゅうかん","ななしゅうかん","はっしゅうかん","きゅうしゅうかん","じゅっしゅうかん"]},
+{lab:"か月",base:"かげつ",what:"meses de duración",emo:"📆",l:11,q:"なんかげつ",r:["いっかげつ","にかげつ","さんかげつ","よんかげつ","ごかげつ","ろっかげつ","ななかげつ","はっかげつ","きゅうかげつ","じゅっかげつ"]},
+{lab:"年",base:"ねん",what:"años (fecha o duración)",emo:"📅",l:5,q:"なんねん",r:["いちねん","にねん","さんねん","よねん","ごねん","ろくねん","ななねん／しちねん","はちねん","きゅうねん","じゅうねん"]}
+];
+const DAYS=["ついたち","ふつか","みっか","よっか","いつか","むいか","なのか","ようか","ここのか","とおか","じゅういちにち","じゅうににち","じゅうさんにち","じゅうよっか","じゅうごにち","じゅうろくにち","じゅうしちにち","じゅうはちにち","じゅうくにち","はつか","にじゅういちにち","にじゅうににち","にじゅうさんにち","にじゅうよっか","にじゅうごにち","にじゅうろくにち","にじゅうしちにち","にじゅうはちにち","にじゅうくにち","さんじゅうにち","さんじゅういちにち"];
+const DAYNAIVE=n=>{const t=Math.floor(n/10),u=n%10;return (t?(t>1?NBASE[t-1]:"")+"じゅう":"")+(u?NBASE[u-1]:"")+"にち"};
+const MONTHS=["いちがつ","にがつ","さんがつ","しがつ","ごがつ","ろくがつ","しちがつ","はちがつ","くがつ","じゅうがつ","じゅういちがつ","じゅうにがつ"];
+const MONTHNAIVE=n=>(n<=10?NBASE[n-1]:"じゅう"+NBASE[n-11])+"がつ";
+const WEEK=[["月","げつようび","lunes"],["火","かようび","martes"],["水","すいようび","miércoles"],["木","もくようび","jueves"],["金","きんようび","viernes"],["土","どようび","sábado"],["日","にちようび","domingo"]];
+const isIrr=(r,naive)=>!r.split("／").includes(naive);
+const labRuby=c=>/[\u4E00-\u9FFF]/.test(c.lab)?rb(c.lab,c.lab==="か月"?"かげつ":c.base):c.lab;
+const cntDisp=(c,n)=>c.lab==="つ"&&n===10?"10":n+c.lab;
+
+let ntab="cnt", nshow=true, nq=null, nmix="all";
+function cellHTML(top,reading,irr){return `<button class="ncell${irr?" irr":""}" data-say="${esc(reading.split("／")[0])}"><span class="nn">${esc(String(top))}</span><span class="nr${nshow?"":" hid"}" lang="ja">${esc(reading)}</span></button>`}
+function renderNum(){
+  document.querySelectorAll("#numSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===ntab));
+  $("#numTools").hidden=ntab==="prac";$("#numIdx").hidden=ntab!=="cnt";
+  const box=$("#numBody");
+  if(ntab==="cnt"){
+    box.innerHTML=`<div class="tipbox"><b>Regla general.</b> Con 1, 6, 8 y 10, un contador que empieza con k, s, t o p suele duplicar la consonante: いっかい, ろっぷん, はっさい, じゅっかい. Con h, además, la h pasa a p: いっぷん. Las lecturas resaltadas son las que no siguen la forma «número ＋ contador».</div>`+
+    CNT.map((c,i)=>`<article class="pcard" id="c-${i}">
+      <div class="phead"><span class="pglyph cnt" lang="ja">${labRuby(c)}</span><span><b>${esc(c.what)} ${c.emo}</b><small>L${c.l} · pregunta: <span lang="ja">${esc(c.q)}</span></small></span></div>
+      ${c.note?`<p class="pnote">${fx(c.note)}</p>`:""}
+      <div class="ngrid">${c.r.map((r,n)=>cellHTML(cntDisp(c,n+1),r,c.base!==null&&isIrr(r,NBASE[n]+c.base))).join("")}</div>
+    </article>`).join("");
+  } else if(ntab==="cal"){
+    box.innerHTML=`
+    <article class="pcard"><div class="phead"><span class="pglyph cnt" lang="ja">${rb("日","にち")}</span><span><b>Días del mes</b><small>L5 · pregunta: <span lang="ja">なんにち</span></small></span></div>
+      <p class="pnote">Del 1 al 10, el 14, el 20 y el 24 tienen lectura propia. El resto es «número ＋ にち»; los que terminan en 7 y 9 usan しち y く (${furi("17日")} = じゅうしちにち).</p>
+      <div class="ngrid cal">${DAYS.map((r,i)=>cellHTML(i+1,r,isIrr(r,DAYNAIVE(i+1)))).join("")}</div></article>
+    <article class="pcard"><div class="phead"><span class="pglyph cnt" lang="ja">${rb("月","がつ")}</span><span><b>Meses</b><small>L5 · pregunta: <span lang="ja">なんがつ</span></small></span></div>
+      <p class="pnote">Los meses se nombran con número: ${furi("4月")} es abril. Ojo con 4, 7 y 9: しがつ, しちがつ, くがつ.</p>
+      <div class="ngrid">${MONTHS.map((r,i)=>cellHTML((i+1)+"月",r,isIrr(r,MONTHNAIVE(i+1)))).join("")}</div></article>
+    <article class="pcard"><div class="phead"><span class="pglyph cnt" lang="ja">よう</span><span><b>Días de la semana</b><small>L4 · pregunta: <span lang="ja">なんようび</span></small></span></div>
+      <div class="ngrid wk">${WEEK.map(w=>cellHTML(w[0]+" · "+w[2],w[1],false)).join("")}</div></article>`;
+  } else {
+    if(!nq) nq={i:0,score:0,total:0,ans:null,q:null};
+    if(!nq.q) nq.q=makeNumQ();
+    const Q=nq.q;
+    box.innerHTML=`<div style="display:flex;flex-direction:column;gap:12px">
+      <div class="row between"><span class="stats">Aciertos <b>${nq.score}/${nq.total}</b></span>
+        <div class="seg" role="group" aria-label="Qué practicar" id="numMix">
+          <button data-m="all" aria-pressed="${nmix==="all"}">Todo</button><button data-m="cnt" aria-pressed="${nmix==="cnt"}">Contadores</button><button data-m="cal" aria-pressed="${nmix==="cal"}">Fechas</button></div></div>
+      <div class="face" style="position:relative;min-height:190px"><span class="tag">L${Q.l}</span>
+        <div class="jp" lang="ja">${esc(Q.disp)}</div><div class="hint">${esc(Q.hint)}</div></div>
+      <div class="q-opts">${Q.opts.map(o=>{let c="q-opt jpopt";if(nq.ans!==null){if(o===Q.ans)c+=" ok";else if(o===nq.ans)c+=" bad"}return `<button class="${c}" data-o="${esc(o)}" ${nq.ans!==null?"disabled":""} lang="ja">${esc(o)}</button>`}).join("")}</div>
+      ${nq.ans!==null?`<div class="row between"><span class="stats" style="color:var(--ink)">${nq.ans===Q.ans?"✓ ¡Bien!":"✗ Es "+esc(Q.ans)+"."}${Q.tip?" "+esc(Q.tip):""}</span><button class="btn primary" id="nNext">Siguiente →</button></div>`:""}
+    </div>`;
+    box.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>{nq.ans=b.dataset.o;nq.total++;if(nq.ans===Q.ans)nq.score++;sayText(Q.ans.split("／")[0]);renderNum()});
+    box.querySelectorAll("#numMix button").forEach(b=>b.onclick=()=>{nmix=b.dataset.m;nq.q=null;nq.ans=null;renderNum()});
+    const n=$("#nNext");if(n){n.onclick=()=>{nq.q=null;nq.ans=null;renderNum()};n.focus()}
+  }
+}
+function pickOpts(ans,naive,others){
+  const set=[ans];const add=x=>{if(x&&!set.includes(x)&&!ans.split("／").includes(x))set.push(x)};
+  if(naive)add(naive);
+  for(const o of shuffle(others)){if(set.length>=4)break;add(o)}
+  return shuffle(set);
+}
+function makeNumQ(){
+  const kind=nmix==="all"?(Math.random()<.6?"cnt":"cal"):nmix;
+  if(kind==="cnt"){
+    const c=CNT[Math.floor(Math.random()*CNT.length)];
+    if(c.lab!=="つ"&&Math.random()<.1) return {disp:"何"+(c.lab==="つ"?"":c.lab),ans:c.q,l:c.l,hint:"¿Cómo se pregunta? · "+c.what,opts:pickOpts(c.q,null,CNT.map(x=>x.q)),tip:""};
+    const n=Math.floor(Math.random()*10)+1, ans=c.r[n-1];
+    const naive=c.base?NBASE[n-1]+c.base:null;
+    const near=c.r.filter((_,i)=>i!==n-1&&Math.abs(i-(n-1))<=3);
+    return {disp:cntDisp(c,n),ans,l:c.l,hint:"¿Cómo se lee? · "+c.what+" "+c.emo,opts:pickOpts(ans,naive,near),tip:c.note||""};
+  }
+  if(Math.random()<.25){
+    const m=Math.floor(Math.random()*12)+1,ans=MONTHS[m-1];
+    return {disp:m+"月",ans,l:5,hint:"¿Cómo se lee? · mes",opts:pickOpts(ans,MONTHNAIVE(m),MONTHS.filter((_,i)=>Math.abs(i-(m-1))<=3&&i!==m-1)),tip:""};
+  }
+  const pool=[1,2,3,4,5,6,7,8,9,10,14,20,24,17,19,11,30];
+  const d=pool[Math.floor(Math.random()*pool.length)],ans=DAYS[d-1];
+  const near=DAYS.filter((_,i)=>i!==d-1&&(Math.abs(i-(d-1))<=2||(d<=10&&i<10)));
+  return {disp:d+"日",ans,l:5,hint:"¿Cómo se lee? · día del mes",opts:pickOpts(ans,DAYNAIVE(d),near),tip:""};
+}
+$("#numBody").addEventListener("click",e=>{const b=e.target.closest(".ncell");if(!b)return;const r=b.querySelector(".nr");if(r&&r.classList.contains("hid")){r.classList.remove("hid");}sayText(b.dataset.say)});
+document.querySelectorAll("#numSeg button").forEach(b=>b.onclick=()=>{ntab=b.dataset.t;renderNum()});
+$("#numShow").onchange=e=>{nshow=e.target.checked;renderNum()};
+(function(){const box=$("#numIdx");CNT.forEach((c,i)=>{const b=document.createElement("button");b.className="chip jpchip";b.lang="ja";b.innerHTML=labRuby(c);b.title=c.what;
+  b.onclick=()=>{const el=document.getElementById("c-"+i);if(el)el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})};box.appendChild(b)})})();
+
 // ---- sections + drawer ----
 const drawer=$("#drawer"),scrim=$("#scrim"),burger=$("#burger");
 function openDrawer(){drawer.classList.add("open");scrim.hidden=false;burger.setAttribute("aria-expanded","true");const cur=drawer.querySelector('[aria-current="page"]')||drawer.querySelector(".nav-item");setTimeout(()=>cur.focus(),30)}
@@ -1664,8 +1860,9 @@ scrim.onclick=closeDrawer;$("#drawerClose").onclick=()=>{closeDrawer();burger.fo
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&drawer.classList.contains("open")){closeDrawer();burger.focus()}});
 function setSec(sec,save){
   S.sec=sec;
-  $("#secVocab").hidden=sec!=="vocab";$("#secGram").hidden=sec!=="gram";$("#secPart").hidden=sec!=="part";
-  $("#secPill").textContent={vocab:"Vocabulario",gram:"Gramática",part:"Partículas"}[sec];
+  $("#secVocab").hidden=sec!=="vocab";$("#secGram").hidden=sec!=="gram";$("#secPart").hidden=sec!=="part";$("#secNum").hidden=sec!=="num";
+  $("#secPill").textContent={vocab:"Vocabulario",gram:"Gramática",part:"Partículas",num:"Contadores"}[sec];
+  if(sec==="num"&&!$("#numBody").innerHTML)renderNum();
   if(sec==="part"&&!$("#partBody").innerHTML)renderPart();
   drawer.querySelectorAll(".nav-item").forEach(b=>b.dataset.sec===sec?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current"));
   if(sec==="gram"&&!$("#gramBody").innerHTML)renderGram();
@@ -1674,7 +1871,7 @@ function setSec(sec,save){
 drawer.querySelectorAll(".nav-item").forEach(b=>b.onclick=()=>{setSec(b.dataset.sec,true);closeDrawer();window.scrollTo(0,0);burger.focus()});
 
 buildDeck();render();
-setSec(location.hash==="#particulas"?"part":location.hash==="#gramatica"?"gram":location.hash==="#vocabulario"?"vocab":store.get("mn_sec","vocab"),false);
+setSec(location.hash==="#contadores"?"num":location.hash==="#particulas"?"part":location.hash==="#gramatica"?"gram":location.hash==="#vocabulario"?"vocab":store.get("mn_sec","vocab"),false);
 try{speechSynthesis.getVoices()}catch(e){}
 </script>
 
