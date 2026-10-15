@@ -10,9 +10,11 @@ export interface TopBarProps {
   drawerId: string
   /** Nombre de la sección actual. */
   sectionLabel?: string
+  /** Click en el indicador de sección (lo usa el easter egg). */
+  onSectionClick?: () => void
 }
 
-export function TopBar({ menuOpen, onOpenMenu, menuButtonRef, drawerId, sectionLabel }: TopBarProps) {
+export function TopBar({ menuOpen, onOpenMenu, menuButtonRef, drawerId, sectionLabel, onSectionClick }: TopBarProps) {
   return (
     <header className={styles.bar}>
       <button
@@ -34,9 +36,9 @@ export function TopBar({ menuOpen, onOpenMenu, menuButtonRef, drawerId, sectionL
         <small aria-hidden="true">Nihongo Sensei</small>
       </Link>
       {sectionLabel && (
-        <span className={styles.pill} aria-hidden="true">
+        <button type="button" className={styles.pill} aria-label={`Sección actual: ${sectionLabel}`} onClick={onSectionClick}>
           {sectionLabel}
-        </span>
+        </button>
       )}
     </header>
   )

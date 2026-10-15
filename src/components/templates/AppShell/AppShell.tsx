@@ -2,6 +2,8 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { SkipLink } from '../../atoms/SkipLink'
 import { NavDrawer, type NavItem } from '../../organisms/NavDrawer'
+import { ToastyPopup } from '../../organisms/ToastyPopup'
+import { useRapidClicks } from '../../../shared/hooks/useRapidClicks'
 import { TopBar } from '../../organisms/TopBar'
 import styles from './AppShell.module.scss'
 
@@ -19,6 +21,10 @@ export function AppShell({ sections }: AppShellProps) {
   const { pathname } = useLocation()
   const firstRender = useRef(true)
   const current = sections.find((s) => pathname.startsWith(s.to))
+  // Easter egg: 5 toques seguidos en el indicador de sección.
+  const [toasty, setToasty] = useState(false)
+  const hideToasty = useCallback(() => setToasty(false), [])
+  const onSectionClick = useRapidClicks(5, 600, useCallback(() => setToasty(true), []))
 
   const close = useCallback(() => {
     setOpen(false)
@@ -49,12 +55,14 @@ export function AppShell({ sections }: AppShellProps) {
           menuButtonRef={menuButton}
           drawerId={DRAWER_ID}
           sectionLabel={current?.title}
+          onSectionClick={onSectionClick}
         />
         <main id={MAIN_ID} tabIndex={-1} className={styles.main}>
           <Outlet />
         </main>
       </div>
       <NavDrawer id={DRAWER_ID} open={open} onClose={close} items={sections} />
+      {toasty && <ToastyPopup onDone={hideToasty} />}
     </>
   )
 }

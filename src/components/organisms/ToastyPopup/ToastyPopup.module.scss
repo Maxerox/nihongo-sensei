@@ -1,0 +1,36 @@
+@use '../../../styles/mixins' as *;
+
+.popup {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  pointer-events: none;
+  transform: translate(100%, 100%);
+  animation: toasty 1.6s ease-in-out forwards;
+
+  @include reduced-motion {
+    animation: none;
+    transform: translate(12%, 12%) rotate(-18deg);
+  }
+}
+
+.face {
+  display: block;
+  width: clamp(120px, 28vw, 200px);
+  height: auto;
+}
+
+// Asoma desde la esquina inferior derecha, se queda un momento y se va.
+@keyframes toasty {
+  0% {
+    transform: translate(100%, 100%) rotate(-18deg);
+  }
+  14%,
+  78% {
+    transform: translate(12%, 12%) rotate(-18deg);
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(-18deg);
+  }
+}
