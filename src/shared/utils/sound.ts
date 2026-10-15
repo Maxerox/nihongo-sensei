@@ -2,7 +2,7 @@ import toastySound from '../../assets/toasty.mp3'
 
 /**
  * Grito del easter egg "Toasty!" (grabación propia, en src/assets/toasty.mp3).
- * La "i" final está estirada para que dure lo mismo que la cara en pantalla (~2,3 s).
+ * Se usa tal cual se grabó; solo se convirtió de OGG/Opus a MP3.
  */
 export function playToasty(): void {
   try {
