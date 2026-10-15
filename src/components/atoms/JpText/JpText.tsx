@@ -1,12 +1,12 @@
 import { useMemo, type ReactNode } from 'react'
-import { toFurigana, toMarkedFurigana, type FuriganaSegment } from '../../../shared/utils/furigana'
+import { alignReading, toFurigana, toMarkedFurigana, type FuriganaSegment } from '../../../shared/utils/furigana'
 import { cx } from '../../../shared/utils/classNames'
 import styles from './JpText.module.scss'
 
 export interface JpTextProps {
   /** Texto en japonés. Con `marked`, `[[...]]` se resalta. */
   text: string
-  /** Lectura de la palabra entera (si ya se conoce, por ejemplo en el vocabulario). */
+  /** Lectura de la palabra entera (por ejemplo en el vocabulario). Se reparte entre los kanji. */
   reading?: string
   marked?: boolean
   /**
@@ -54,14 +54,8 @@ function renderSegments(segments: FuriganaSegment[], mixed = false) {
  */
 export function JpText({ text, reading, marked, mixed, as: Tag = 'span', className }: JpTextProps) {
   const content = useMemo(() => {
-    if (reading) {
-      return (
-        <ruby>
-          {text}
-          <rt>{reading}</rt>
-        </ruby>
-      )
-    }
+    // Con la lectura de la palabra entera, la furigana va solo sobre los kanji.
+    if (reading) return renderSegments(alignReading(text, reading), mixed)
     return renderSegments(marked ? toMarkedFurigana(text) : toFurigana(text), mixed)
   }, [text, reading, marked, mixed])
 

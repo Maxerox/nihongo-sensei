@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { readNumber, toFurigana, toMarkedFurigana } from '../furigana'
+import { alignReading, readNumber, toFurigana, toMarkedFurigana } from '../furigana'
 
 const readings = (text: string) =>
   toFurigana(text)
@@ -40,7 +40,7 @@ describe('toFurigana', () => {
   it('lee números con contador', () => {
     expect(readings('4時')).toEqual(['4時:よじ'])
     expect(readings('25日に')).toEqual(['25日:にじゅうごにち'])
-    expect(readings('1か月')).toEqual(['1か月:いっかげつ'])
+    expect(readings('1か月')).toEqual(['1:いっ', '月:げつ'])
     expect(readings('2時間半')).toEqual(['2時間:にじかん', '半:はん'])
     expect(readings('18,600円')).toEqual(['18,600円:いちまんはっせんろっぴゃくえん'])
   })
@@ -70,5 +70,42 @@ describe('readNumber', () => {
     expect(readNumber('2', '人')).toBe('ふたり')
     expect(readNumber('7', '時間')).toBe('ななじかん')
     expect(readNumber('99', '人')).toBeNull()
+  })
+})
+
+describe('alignReading', () => {
+  const show = (text: string, reading: string) =>
+    alignReading(text, reading)
+      .map((s) => (s.reading ? `${s.text}(${s.reading})` : s.text))
+      .join('')
+
+  it('pone la lectura solo sobre los kanji', () => {
+    expect(show('食べます', 'たべます')).toBe('食(た)べます')
+    expect(show('お父さん', 'おとうさん')).toBe('お父(とう)さん')
+    expect(show('大きい', 'おおきい')).toBe('大(おお)きい')
+    expect(show('一人で', 'ひとりで')).toBe('一人(ひとり)で')
+  })
+
+  it('separa varios grupos de kanji', () => {
+    expect(show('乗り換えます', 'のりかえます')).toBe('乗(の)り換(か)えます')
+    expect(show('持って来ます', 'もってきます')).toBe('持(も)って来(き)ます')
+    expect(show('撮ります［写真を～］', 'とります［しゃしんを～］')).toBe('撮(と)ります［写真(しゃしん)を～］')
+  })
+
+  it('incluye los números en el grupo del kanji', () => {
+    expect(show('1日', 'ついたち')).toBe('1日(ついたち)')
+    expect(show('か月', 'かげつ')).toBe('か月(げつ)')
+  })
+
+  it('ignora la aclaración ［…］ que solo tiene la lectura', () => {
+    expect(show('吸います', 'すいます［たばこを～］')).toBe('吸(す)います')
+  })
+
+  it('alinea cada escritura cuando hay dos', () => {
+    expect(show('暖かい／温かい', 'あたたかい')).toBe('暖(あたた)かい／温(あたた)かい')
+  })
+
+  it('si no se puede alinear, usa la lectura completa', () => {
+    expect(alignReading('日本', 'xyz')).toEqual([{ text: '日本', reading: 'xyz' }])
   })
 })

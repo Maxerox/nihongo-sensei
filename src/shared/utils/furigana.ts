@@ -70,7 +70,8 @@ export function toFurigana(text: string): FuriganaSegment[] {
       const m = text.slice(i).match(NUMBER_COUNTER_RE)
       const reading = m ? readNumber(m[1], m[2]) : null
       if (m && reading) {
-        out.push({ text: m[0], reading })
+        // 1か月 → 1(いっ)か月(げつ): la か queda sin furigana.
+        out.push(...alignReading(m[0], reading))
         i += m[0].length
         continue
       }
@@ -131,6 +132,56 @@ export function toMarkedFurigana(raw: string): FuriganaSegment[] {
     pos += seg.text.length
   }
   return out
+}
+
+const KANJI_RUN = /[\u4E00-\u9FFF々0-9０-９]+/g
+
+/**
+ * Reparte la lectura de una palabra entre sus kanji: 食べます + たべます → 食(た)べます.
+ * Las partes en kana tienen que coincidir tal cual en la lectura. Si no se puede
+ * alinear, devuelve la palabra entera con la lectura completa encima.
+ */
+export function alignReading(text: string, reading: string): FuriganaSegment[] {
+  const exact = alignExact(text, reading)
+  if (exact) return exact
+  // La lectura trae una aclaración ［…］ que la forma con kanji no tiene: 吸います / すいます［たばこを～］.
+  const bare = reading.replace(/［[^］]*］/g, '')
+  if (bare !== reading) {
+    const aligned = alignExact(text, bare)
+    if (aligned) return aligned
+  }
+  // Dos escrituras con la misma lectura: 早く／速く / はやく.
+  if (text.includes('／') && !reading.includes('／')) {
+    const alternatives = text.split('／').map((t) => alignExact(t, reading))
+    if (alternatives.every(Boolean)) {
+      return alternatives.flatMap((segs, i) => (i === 0 ? segs! : [{ text: '／' }, ...segs!]))
+    }
+  }
+  return [{ text, reading }]
+}
+
+function alignExact(text: string, reading: string): FuriganaSegment[] | null {
+  const parts: Array<{ text: string; kanji: boolean }> = []
+  let last = 0
+  for (const m of text.matchAll(KANJI_RUN)) {
+    if (m.index > last) parts.push({ text: text.slice(last, m.index), kanji: false })
+    parts.push({ text: m[0], kanji: true })
+    last = m.index + m[0].length
+  }
+  if (last < text.length) parts.push({ text: text.slice(last), kanji: false })
+  if (!parts.some((p) => p.kanji)) return [{ text }]
+
+  const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const pattern = new RegExp('^' + parts.map((p) => (p.kanji ? '(.+?)' : escape(p.text))).join('') + '$')
+  const m = reading.match(pattern)
+  if (!m) return null
+
+  let group = 1
+  return parts.map((p) => {
+    if (!p.kanji) return { text: p.text }
+    const r = m[group++]
+    return r === p.text ? { text: p.text } : { text: p.text, reading: r }
+  })
 }
 
 /** Texto sin marcas, para leer en voz alta. */
