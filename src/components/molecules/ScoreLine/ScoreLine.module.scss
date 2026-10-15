@@ -1,0 +1,16 @@
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.item {
+  font-size: 14px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+
+  b {
+    color: var(--ink);
+  }
+}

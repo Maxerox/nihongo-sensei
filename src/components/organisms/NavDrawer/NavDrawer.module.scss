@@ -1,0 +1,122 @@
+@use '../../../styles/mixins' as *;
+
+.drawer {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: min(300px, 86vw);
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: calc(env(safe-area-inset-top, 0px) + 16px) 12px 16px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  flex-direction: column;
+  gap: 6px;
+  transform: translateX(-102%);
+  transition:
+    transform 0.25s ease,
+    overlay 0.25s allow-discrete,
+    display 0.25s allow-discrete;
+
+  &[open] {
+    display: flex;
+    transform: none;
+
+    @starting-style {
+      transform: translateX(-102%);
+    }
+  }
+
+  &::backdrop {
+    background: var(--scrim);
+  }
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--muted);
+  font-size: 20px;
+  cursor: pointer;
+  @include focus-ring;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  @include focus-ring;
+
+  &:hover {
+    background: var(--paper);
+  }
+
+  &[aria-current='page'] {
+    background: var(--ai-soft);
+
+    .badge {
+      background: var(--ai);
+      color: var(--on-ai);
+
+      rt {
+        color: inherit;
+        opacity: 0.85;
+      }
+    }
+  }
+}
+
+.badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ai);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.text small {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+}

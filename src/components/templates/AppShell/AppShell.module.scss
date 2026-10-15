@@ -1,0 +1,13 @@
+.shell {
+  min-height: 100dvh;
+}
+
+.main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 18px var(--gutter) 48px;
+
+  &:focus {
+    outline: none;
+  }
+}

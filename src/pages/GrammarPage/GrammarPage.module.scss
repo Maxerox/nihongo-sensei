@@ -1,0 +1,17 @@
+@use '../../styles/mixins' as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.label {
+  @include label-caps;
+}
+
+.count {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}

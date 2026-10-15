@@ -1,0 +1,36 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+
+  &:focus-visible {
+    outline: 2px solid var(--ai);
+    outline-offset: 4px;
+    border-radius: var(--radius-md);
+  }
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.note {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.tip {
+  margin: 0;
+  padding: var(--space-3) 14px;
+  border-radius: var(--radius-md);
+  background: var(--ai-soft);
+  font-size: 14px;
+
+  b {
+    color: var(--ai);
+  }
+}

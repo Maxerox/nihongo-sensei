@@ -1,0 +1,1603 @@
+{
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Presentarse",
+      "points": [
+        {
+          "pattern": "N₁ は N₂ です",
+          "description": "Afirma que N₁ es N₂. は marca el tema y se lee «wa». です hace la oración cortés.",
+          "examples": [
+            {
+              "ja": "わたしは マイク・ミラー[[です]]。",
+              "es": "Soy Mike Miller."
+            },
+            {
+              "ja": "わたし[[は]] 学生です。",
+              "es": "Yo soy estudiante."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ は N₂ じゃ（では）ありません",
+          "description": "Negación de です. じゃ es la forma hablada; では es más formal o escrita.",
+          "examples": [
+            {
+              "ja": "サントスさんは 学生[[じゃ ありません]]。",
+              "es": "Santos no es estudiante."
+            }
+          ]
+        },
+        {
+          "pattern": "Oración ＋ か",
+          "description": "か al final convierte la oración en pregunta, sin cambiar el orden de las palabras. Se responde con はい／いいえ.",
+          "examples": [
+            {
+              "ja": "ミラーさんは 会社員です[[か]]。",
+              "es": "¿Miller es empleado de empresa?"
+            },
+            {
+              "ja": "はい、会社員です。",
+              "es": "Sí, es empleado de empresa."
+            }
+          ]
+        },
+        {
+          "pattern": "N も",
+          "description": "も reemplaza a は y significa «también».",
+          "examples": [
+            {
+              "ja": "サントスさん[[も]] 会社員です。",
+              "es": "Santos también es empleado de empresa."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ の N₂",
+          "description": "の une dos sustantivos: N₁ dice a qué pertenece o a qué grupo pertenece N₂.",
+          "examples": [
+            {
+              "ja": "ミラーさんは IMC[[の]] 社員です。",
+              "es": "Miller es empleado de IMC."
+            }
+          ]
+        },
+        {
+          "pattern": "～さん",
+          "description": "Sufijo de respeto que va detrás del nombre o apellido de otra persona. Nunca se usa con el propio nombre. Para niños se usa ～ちゃん.",
+          "examples": [
+            {
+              "ja": "あの 人は きむら[[さん]]です。",
+              "es": "Esa persona es la Sra. Kimura."
+            }
+          ]
+        },
+        {
+          "pattern": "なんさい／おいくつ",
+          "description": "Para preguntar la edad. おいくつ es más cortés.",
+          "examples": [
+            {
+              "ja": "テレサちゃんは [[何さい]]ですか。",
+              "es": "¿Cuántos años tiene Teresa?"
+            },
+            {
+              "ja": "9さいです。",
+              "es": "Tiene 9 años."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "title": "Esto, eso, aquello",
+      "points": [
+        {
+          "pattern": "これ／それ／あれ",
+          "description": "Pronombres que reemplazan a un objeto. これ: cerca de quien habla. それ: cerca de quien escucha. あれ: lejos de los dos.",
+          "examples": [
+            {
+              "ja": "[[これ]]は 本です。",
+              "es": "Esto es un libro."
+            },
+            {
+              "ja": "[[あれ]]は 何ですか。",
+              "es": "¿Qué es aquello?"
+            }
+          ]
+        },
+        {
+          "pattern": "この／その／あの ＋ N",
+          "description": "Igual que これ／それ／あれ, pero siempre van delante de un sustantivo.",
+          "examples": [
+            {
+              "ja": "[[この]] 本は わたしのです。",
+              "es": "Este libro es mío."
+            }
+          ]
+        },
+        {
+          "pattern": "そうです／そうじゃ ありません",
+          "description": "Respuesta corta a una pregunta del tipo «N です か».",
+          "examples": [
+            {
+              "ja": "それは 車の かぎですか。",
+              "es": "¿Eso es la llave del auto?"
+            },
+            {
+              "ja": "はい、[[そうです]]。",
+              "es": "Sí, así es."
+            }
+          ]
+        },
+        {
+          "pattern": "Oración₁ か、Oración₂ か",
+          "description": "Pregunta para elegir entre dos opciones. No se responde con はい／いいえ.",
+          "examples": [
+            {
+              "ja": "これは「9」です[[か]]、「7」です[[か]]。",
+              "es": "¿Esto es un 9 o un 7?"
+            },
+            {
+              "ja": "「9」です。",
+              "es": "Es un 9."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ の N₂ (tema y dueño)",
+          "description": "の también indica de qué trata algo o de quién es.",
+          "examples": [
+            {
+              "ja": "これは コンピューター[[の]] 本です。",
+              "es": "Es un libro de computación."
+            },
+            {
+              "ja": "それは 先生[[の]] かばんです。",
+              "es": "Eso es el bolso del profesor."
+            }
+          ]
+        },
+        {
+          "pattern": "N の (sin el segundo sustantivo)",
+          "description": "Si ya se sabe de qué se habla, se puede omitir el segundo sustantivo.",
+          "examples": [
+            {
+              "ja": "この かさは わたし[[の]]です。",
+              "es": "Este paraguas es mío."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "title": "Lugares y precios",
+      "points": [
+        {
+          "pattern": "ここ／そこ／あそこ／どこ",
+          "description": "Indican lugares: aquí, ahí, allá y ¿dónde?",
+          "examples": [
+            {
+              "ja": "[[ここ]]は しょくどうです。",
+              "es": "Esto es el comedor."
+            }
+          ]
+        },
+        {
+          "pattern": "N は Lugar です",
+          "description": "Dice dónde está algo o alguien.",
+          "examples": [
+            {
+              "ja": "トイレは [[あそこです]]。",
+              "es": "El baño está allá."
+            },
+            {
+              "ja": "でんわは 2かいです。",
+              "es": "El teléfono está en el 2.º piso."
+            }
+          ]
+        },
+        {
+          "pattern": "こちら／そちら／あちら／どちら",
+          "description": "Versión cortés de ここ／そこ／あそこ／どこ. どちら también se usa para preguntar el nombre de una empresa, escuela o país.",
+          "examples": [
+            {
+              "ja": "お国は [[どちら]]ですか。",
+              "es": "¿De qué país es usted?"
+            },
+            {
+              "ja": "会社は [[どちら]]ですか。",
+              "es": "¿En qué empresa trabaja?"
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ の N₂ (origen)",
+          "description": "N₁ indica el país o la empresa de donde viene N₂.",
+          "examples": [
+            {
+              "ja": "これは [[どこの]] 車ですか。",
+              "es": "¿De dónde es este auto?"
+            },
+            {
+              "ja": "日本[[の]] 車です。",
+              "es": "Es un auto japonés."
+            }
+          ]
+        },
+        {
+          "pattern": "いくら",
+          "description": "¿Cuánto cuesta?",
+          "examples": [
+            {
+              "ja": "この とけいは [[いくら]]ですか。",
+              "es": "¿Cuánto cuesta este reloj?"
+            },
+            {
+              "ja": "18,600円です。",
+              "es": "Cuesta 18 600 yenes."
+            }
+          ]
+        },
+        {
+          "pattern": "Sistema こ・そ・あ・ど",
+          "description": "Cerca de quien habla (こ), cerca de quien escucha (そ), lejos de los dos (あ) y pregunta (ど).",
+          "table": {
+            "head": [
+              "",
+              "こ",
+              "そ",
+              "あ",
+              "ど"
+            ],
+            "rows": [
+              [
+                "cosa",
+                "これ",
+                "それ",
+                "あれ",
+                "どれ"
+              ],
+              [
+                "＋N",
+                "この",
+                "その",
+                "あの",
+                "どの"
+              ],
+              [
+                "lugar",
+                "ここ",
+                "そこ",
+                "あそこ",
+                "どこ"
+              ],
+              [
+                "cortés",
+                "こちら",
+                "そちら",
+                "あちら",
+                "どちら"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson": 4,
+      "title": "Hora y verbos",
+      "points": [
+        {
+          "pattern": "今 ～時～分です",
+          "description": "Para decir la hora. 分 se lee ふん o ぷん según el número.",
+          "examples": [
+            {
+              "ja": "今 4時5分です。",
+              "es": "Son las 4 y 5."
+            },
+            {
+              "ja": "今 [[何時]]ですか。",
+              "es": "¿Qué hora es?"
+            }
+          ]
+        },
+        {
+          "pattern": "V ます／ません／ました／ませんでした",
+          "description": "Las cuatro formas corteses del verbo: presente o futuro, su negación, pasado y pasado negativo.",
+          "examples": [
+            {
+              "ja": "きのう べんきょう[[しました]]。",
+              "es": "Ayer estudié."
+            }
+          ],
+          "table": {
+            "head": [
+              "",
+              "afirmativo",
+              "negativo"
+            ],
+            "rows": [
+              [
+                "no pasado",
+                "おきます",
+                "おきません"
+              ],
+              [
+                "pasado",
+                "おきました",
+                "おきませんでした"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "Tiempo ＋ に ＋ V",
+          "description": "に marca el momento exacto en que pasa algo. No se usa con palabras relativas como きょう, あした o 毎日.",
+          "examples": [
+            {
+              "ja": "毎朝 6時[[に]] おきます。",
+              "es": "Todas las mañanas me levanto a las 6."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ から N₂ まで",
+          "description": "Desde N₁ hasta N₂, para tiempo o lugar.",
+          "examples": [
+            {
+              "ja": "9時[[から]] 5時[[まで]] はたらきます。",
+              "es": "Trabajo de 9 a 5."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ と N₂",
+          "description": "と une sustantivos: «N₁ y N₂». No sirve para unir oraciones.",
+          "examples": [
+            {
+              "ja": "土よう日[[と]] 日よう日は 休みです。",
+              "es": "Los sábados y domingos tengo libre."
+            }
+          ]
+        },
+        {
+          "pattern": "Oración ＋ ね",
+          "description": "Busca que el otro esté de acuerdo o muestra empatía.",
+          "examples": [
+            {
+              "ja": "毎日 10時まで べんきょうします。",
+              "es": "Estudio hasta las 10 todos los días."
+            },
+            {
+              "ja": "たいへんです[[ね]]。",
+              "es": "¡Qué duro!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 5,
+      "title": "Ir y venir",
+      "points": [
+        {
+          "pattern": "Lugar ＋ へ ＋ 行きます／来ます／かえります",
+          "description": "へ marca hacia dónde va el movimiento y se lee «e».",
+          "examples": [
+            {
+              "ja": "きょうと[[へ]] 行きます。",
+              "es": "Voy a Kioto."
+            }
+          ]
+        },
+        {
+          "pattern": "どこ［へ］も 行きません",
+          "description": "Palabra interrogativa ＋ も ＋ verbo negativo: «a ningún lado» o «nada».",
+          "examples": [
+            {
+              "ja": "[[どこへも]] 行きません。",
+              "es": "No voy a ningún lado."
+            }
+          ]
+        },
+        {
+          "pattern": "Vehículo ＋ で ＋ V",
+          "description": "で indica el medio de transporte. «A pie» es あるいて, sin で.",
+          "examples": [
+            {
+              "ja": "電車[[で]] 行きます。",
+              "es": "Voy en tren."
+            },
+            {
+              "ja": "駅から [[あるいて]] かえりました。",
+              "es": "Volví caminando desde la estación."
+            }
+          ]
+        },
+        {
+          "pattern": "Persona ＋ と ＋ V",
+          "description": "と significa «con» alguien. «Solo» es 一人で.",
+          "examples": [
+            {
+              "ja": "かぞく[[と]] 日本へ 来ました。",
+              "es": "Vine a Japón con mi familia."
+            }
+          ]
+        },
+        {
+          "pattern": "いつ",
+          "description": "¿Cuándo? Con いつ no se usa に.",
+          "examples": [
+            {
+              "ja": "[[いつ]] 日本へ 来ましたか。",
+              "es": "¿Cuándo vino a Japón?"
+            },
+            {
+              "ja": "3月25日に 来ました。",
+              "es": "Vine el 25 de marzo."
+            }
+          ]
+        },
+        {
+          "pattern": "Oración ＋ よ",
+          "description": "Avisa algo que el otro no sabe.",
+          "examples": [
+            {
+              "ja": "この 電車は こうしえんへ 行きませんよ。つぎの ふつうです[[よ]]。",
+              "es": "Este tren no va a Koshien. Es el próximo local."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 6,
+      "title": "Acciones",
+      "points": [
+        {
+          "pattern": "N を V",
+          "description": "を marca el objeto directo del verbo y se lee «o».",
+          "examples": [
+            {
+              "ja": "ジュース[[を]] 飲みます。",
+              "es": "Tomo jugo."
+            }
+          ]
+        },
+        {
+          "pattern": "N を します",
+          "description": "します sirve para muchas actividades: deportes, juegos, tareas y más.",
+          "examples": [
+            {
+              "ja": "サッカーを [[します]]。",
+              "es": "Juego al fútbol."
+            }
+          ]
+        },
+        {
+          "pattern": "何を しますか",
+          "description": "¿Qué hace (o qué va a hacer)?",
+          "examples": [
+            {
+              "ja": "日よう日 [[何を しますか]]。",
+              "es": "¿Qué hacés el domingo?"
+            }
+          ]
+        },
+        {
+          "pattern": "Lugar ＋ で ＋ V",
+          "description": "で marca el lugar donde ocurre una acción. Para dónde está algo se usa に (lección 10).",
+          "examples": [
+            {
+              "ja": "駅[[で]] しんぶんを かいます。",
+              "es": "Compro el diario en la estación."
+            }
+          ]
+        },
+        {
+          "pattern": "V ませんか",
+          "description": "Invitación amable: «¿No querés…?».",
+          "examples": [
+            {
+              "ja": "いっしょに きょうとへ 行き[[ませんか]]。",
+              "es": "¿Vamos juntos a Kioto?"
+            },
+            {
+              "ja": "ええ、いいですね。",
+              "es": "Sí, ¡buena idea!"
+            }
+          ]
+        },
+        {
+          "pattern": "V ましょう",
+          "description": "Propuesta: «hagamos…». También sirve para aceptar una invitación.",
+          "examples": [
+            {
+              "ja": "ちょっと 休み[[ましょう]]。",
+              "es": "Descansemos un poco."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 7,
+      "title": "Dar y recibir",
+      "points": [
+        {
+          "pattern": "Herramienta ＋ で ＋ V",
+          "description": "で indica el instrumento o medio con que se hace algo.",
+          "examples": [
+            {
+              "ja": "はし[[で]] 食べます。",
+              "es": "Como con palillos."
+            },
+            {
+              "ja": "にほんご[[で]] レポートを かきます。",
+              "es": "Escribo el informe en japonés."
+            }
+          ]
+        },
+        {
+          "pattern": "«palabra» は ～ごで 何ですか",
+          "description": "Para preguntar cómo se dice algo en otro idioma.",
+          "examples": [
+            {
+              "ja": "「ありがとう」は えいご[[で 何ですか]]。",
+              "es": "¿Cómo se dice «arigatō» en inglés?"
+            }
+          ]
+        },
+        {
+          "pattern": "Persona ＋ に ＋ あげます／かします／おしえます",
+          "description": "に marca a quién se le da, presta o enseña algo.",
+          "examples": [
+            {
+              "ja": "父[[に]] ネクタイを [[あげました]]。",
+              "es": "Le regalé una corbata a mi papá."
+            }
+          ]
+        },
+        {
+          "pattern": "Persona ＋ に／から ＋ もらいます／かります／ならいます",
+          "description": "に o から marcan de quién se recibe, pide prestado o aprende.",
+          "examples": [
+            {
+              "ja": "カリナさん[[に]] チョコレートを [[もらいました]]。",
+              "es": "Karina me dio chocolate."
+            }
+          ]
+        },
+        {
+          "pattern": "もう V ました",
+          "description": "«Ya hice…». Para decir que todavía no: いいえ、まだです.",
+          "examples": [
+            {
+              "ja": "[[もう]] 昼ごはんを 食べ[[ました]]か。",
+              "es": "¿Ya almorzaste?"
+            },
+            {
+              "ja": "いいえ、[[まだです]]。",
+              "es": "No, todavía no."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "title": "Adjetivos",
+      "points": [
+        {
+          "pattern": "い-adj です／な-adj です",
+          "description": "Hay dos tipos de adjetivos. Los い terminan en い (高い, 古い). Los な llevan な delante de un sustantivo (しずかな, きれいな).",
+          "examples": [
+            {
+              "ja": "この 車は [[新しいです]]。",
+              "es": "Este auto es nuevo."
+            },
+            {
+              "ja": "この まちは [[しずかです]]。",
+              "es": "Esta ciudad es tranquila."
+            }
+          ]
+        },
+        {
+          "pattern": "Negativo",
+          "description": "Adjetivo い: cambia い por くないです (いい pasa a よくないです). Adjetivo な: じゃ ありません.",
+          "examples": [
+            {
+              "ja": "あの 学校は 大[[きくないです]]。",
+              "es": "Esa escuela no es grande."
+            }
+          ],
+          "table": {
+            "head": [
+              "tipo",
+              "afirmativo",
+              "negativo"
+            ],
+            "rows": [
+              [
+                "い-adj",
+                "大きいです",
+                "大きくないです"
+              ],
+              [
+                "いい",
+                "いいです",
+                "よくないです"
+              ],
+              [
+                "な-adj",
+                "しずかです",
+                "しずかじゃ ありません"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "Adjetivo ＋ N",
+          "description": "El adjetivo い va tal cual delante del sustantivo. El adjetivo な agrega な.",
+          "examples": [
+            {
+              "ja": "[[高い]] 山",
+              "es": "una montaña alta"
+            },
+            {
+              "ja": "[[きれいな]] はな",
+              "es": "una flor linda"
+            }
+          ]
+        },
+        {
+          "pattern": "とても／あまり",
+          "description": "とても = muy (con afirmativo). あまり = no muy (con negativo).",
+          "examples": [
+            {
+              "ja": "[[あまり]] おいしくないです。",
+              "es": "No es muy rico."
+            }
+          ]
+        },
+        {
+          "pattern": "N は どうですか",
+          "description": "Pide una opinión o impresión.",
+          "examples": [
+            {
+              "ja": "日本の 食べ物は [[どうですか]]。",
+              "es": "¿Qué tal la comida japonesa?"
+            },
+            {
+              "ja": "おいしいです。",
+              "es": "Es rica."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ は どんな N₂ ですか",
+          "description": "Pregunta cómo es algo: «¿qué tipo de N₂?».",
+          "examples": [
+            {
+              "ja": "ならは [[どんな]] まちですか。",
+              "es": "¿Cómo es Nara?"
+            },
+            {
+              "ja": "古い まちです。",
+              "es": "Es una ciudad antigua."
+            }
+          ]
+        },
+        {
+          "pattern": "Oración₁ が、Oración₂",
+          "description": "が une dos oraciones que contrastan: «…, pero…».",
+          "examples": [
+            {
+              "ja": "日本の 食べ物は おいしいです[[が]]、高いです。",
+              "es": "La comida japonesa es rica, pero cara."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 9,
+      "title": "Gustos y habilidades",
+      "points": [
+        {
+          "pattern": "N が 好きです／きらいです／じょうずです／へたです",
+          "description": "Con estos adjetivos el objeto se marca con が, no con を.",
+          "examples": [
+            {
+              "ja": "わたしは イタリアりょうり[[が 好きです]]。",
+              "es": "Me gusta la comida italiana."
+            },
+            {
+              "ja": "マリアさんは ダンス[[が じょうずです]]。",
+              "es": "María baila bien."
+            }
+          ]
+        },
+        {
+          "pattern": "N が わかります／あります",
+          "description": "わかります (entender) y あります (tener) también llevan が.",
+          "examples": [
+            {
+              "ja": "にほんご[[が]] すこし [[わかります]]。",
+              "es": "Entiendo un poco de japonés."
+            },
+            {
+              "ja": "車[[が あります]]。",
+              "es": "Tengo auto."
+            }
+          ]
+        },
+        {
+          "pattern": "Grado: よく／だいたい／たくさん／すこし／あまり／ぜんぜん",
+          "description": "あまり y ぜんぜん van siempre con verbo negativo.",
+          "examples": [
+            {
+              "ja": "かんじが [[ぜんぜん]] わかりません。",
+              "es": "No entiendo nada de kanji."
+            }
+          ]
+        },
+        {
+          "pattern": "Oración₁ から、Oración₂",
+          "description": "から después de una oración da la causa: «porque…».",
+          "examples": [
+            {
+              "ja": "時間が ありません[[から]]、しんぶんを よみません。",
+              "es": "Como no tengo tiempo, no leo el diario."
+            }
+          ]
+        },
+        {
+          "pattern": "どうして",
+          "description": "¿Por qué? Se responde con «…から です».",
+          "examples": [
+            {
+              "ja": "[[どうして]] はやく かえりますか。",
+              "es": "¿Por qué te vas temprano?"
+            },
+            {
+              "ja": "子どもの たんじょうびです[[から]]。",
+              "es": "Porque es el cumpleaños de mi hijo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 10,
+      "title": "Existencia y ubicación",
+      "points": [
+        {
+          "pattern": "N が あります／います",
+          "description": "あります es para cosas y plantas; います, para personas y animales.",
+          "examples": [
+            {
+              "ja": "あそこに 男の 人が [[います]]。",
+              "es": "Allá hay un hombre."
+            },
+            {
+              "ja": "つくえの 上に しゃしんが [[あります]]。",
+              "es": "Hay una foto sobre el escritorio."
+            }
+          ]
+        },
+        {
+          "pattern": "Lugar に N が あります／います",
+          "description": "«En tal lugar hay N»: presenta algo nuevo.",
+          "examples": [
+            {
+              "ja": "駅の 近く[[に]] 本や[[が あります]]。",
+              "es": "Cerca de la estación hay una librería."
+            }
+          ]
+        },
+        {
+          "pattern": "N は Lugar に あります／います",
+          "description": "«N está en tal lugar»: el tema ya es conocido.",
+          "examples": [
+            {
+              "ja": "ミラーさん[[は]] 会社[[に います]]。",
+              "es": "Miller está en la oficina."
+            },
+            {
+              "ja": "犬は いすの 下に います。",
+              "es": "El perro está debajo de la silla."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ の ＋ posición",
+          "description": "Posición respecto de N₁: 上 (arriba), 下 (abajo), 前 (delante), うしろ (detrás), 右 (derecha), 左 (izquierda), 中 (dentro), 外 (fuera), となり (al lado), 近く (cerca), 間 (entre).",
+          "examples": [
+            {
+              "ja": "ゆうびんきょくは 駅[[の 前]]に あります。",
+              "es": "El correo está delante de la estación."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ や N₂ ［など］",
+          "description": "Enumera algunos ejemplos sin dar la lista completa.",
+          "examples": [
+            {
+              "ja": "はこの 中に 本[[や]] ノート[[など]]が あります。",
+              "es": "En la caja hay libros, cuadernos y otras cosas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 11,
+      "title": "Cantidades",
+      "points": [
+        {
+          "pattern": "Contadores",
+          "description": "ひとつ, ふたつ… sirven para cosas en general. ～人 es para personas (ひとり y ふたり son irregulares), ～だい para máquinas, ～まい para cosas planas y ～かい para veces.",
+          "examples": [
+            {
+              "ja": "りんごを [[4つ]] かいました。",
+              "es": "Compré 4 manzanas."
+            },
+            {
+              "ja": "きってを [[3まい]] ください。",
+              "es": "Deme 3 estampillas."
+            }
+          ]
+        },
+        {
+          "pattern": "N を ＋ cantidad ＋ V",
+          "description": "La cantidad suele ir después de la partícula y justo antes del verbo.",
+          "examples": [
+            {
+              "ja": "この クラスに 外国人の 学生が [[2人]] います。",
+              "es": "En esta clase hay 2 estudiantes extranjeros."
+            }
+          ]
+        },
+        {
+          "pattern": "いくつ／何人／何まい…",
+          "description": "Para preguntar la cantidad se usa 何 con el contador, o いくつ.",
+          "examples": [
+            {
+              "ja": "みかんを [[いくつ]] かいましたか。",
+              "es": "¿Cuántas mandarinas compraste?"
+            }
+          ]
+        },
+        {
+          "pattern": "Período ＋ に ＋ ～かい",
+          "description": "Frecuencia: tantas veces cada tanto tiempo.",
+          "examples": [
+            {
+              "ja": "1か月[[に]] 2かい えいがを みます。",
+              "es": "Veo películas dos veces por mes."
+            }
+          ]
+        },
+        {
+          "pattern": "Duración ＋ かかります",
+          "description": "Lo que tarda algo. Duraciones: ～時間, ～週間, ～か月, ～年.",
+          "examples": [
+            {
+              "ja": "しんかんせんで 2時間半 [[かかります]]。",
+              "es": "En tren bala se tarda dos horas y media."
+            }
+          ]
+        },
+        {
+          "pattern": "～だけ／～ぐらい／どのくらい",
+          "description": "だけ = solo. ぐらい = más o menos. どのくらい = ¿cuánto (tiempo)?",
+          "examples": [
+            {
+              "ja": "休みは 日よう日[[だけ]]です。",
+              "es": "Solo tengo libre el domingo."
+            },
+            {
+              "ja": "[[どのくらい]] べんきょうしましたか。",
+              "es": "¿Cuánto tiempo estudiaste?"
+            },
+            {
+              "ja": "3年[[ぐらい]] べんきょうしました。",
+              "es": "Estudié unos 3 años."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "title": "Pasado y comparaciones",
+      "points": [
+        {
+          "pattern": "Pasado de N y de adjetivos な",
+          "description": "でした (pasado) y じゃ ありませんでした (pasado negativo).",
+          "examples": [
+            {
+              "ja": "きのうは あめ[[でした]]。",
+              "es": "Ayer llovió."
+            },
+            {
+              "ja": "テストは かんたん[[じゃ ありませんでした]]。",
+              "es": "El examen no fue fácil."
+            }
+          ]
+        },
+        {
+          "pattern": "Pasado de adjetivos い",
+          "description": "Cambia い por かったです (pasado) o por くなかったです (pasado negativo). いい pasa a よかった.",
+          "examples": [
+            {
+              "ja": "りょこうは たのし[[かったです]]。",
+              "es": "El viaje fue divertido."
+            }
+          ],
+          "table": {
+            "head": [
+              "",
+              "pasado",
+              "pasado negativo"
+            ],
+            "rows": [
+              [
+                "高い",
+                "高かったです",
+                "高くなかったです"
+              ],
+              [
+                "いい",
+                "よかったです",
+                "よくなかったです"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "N₁ は N₂ より adj です",
+          "description": "Comparación: «N₁ es más… que N₂».",
+          "examples": [
+            {
+              "ja": "中国は 日本[[より]] 大きいです。",
+              "es": "China es más grande que Japón."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ と N₂ と どちらが adj ですか",
+          "description": "Pregunta cuál de dos opciones. Se responde «N の ほうが…». Si son iguales: どちらも.",
+          "examples": [
+            {
+              "ja": "サッカーと やきゅうと [[どちらが]] おもしろいですか。",
+              "es": "¿Qué es más divertido, el fútbol o el béisbol?"
+            },
+            {
+              "ja": "サッカー[[の ほうが]] おもしろいです。",
+              "es": "El fútbol es más divertido."
+            }
+          ]
+        },
+        {
+          "pattern": "N［の 中］で 何／どこ／だれ／いつ が いちばん adj ですか",
+          "description": "Superlativo: lo más… dentro de un grupo.",
+          "examples": [
+            {
+              "ja": "1年[[で]] いつが [[いちばん]] さむいですか。",
+              "es": "¿Cuándo hace más frío en el año?"
+            },
+            {
+              "ja": "2月が いちばん さむいです。",
+              "es": "Febrero es el mes más frío."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "title": "Deseos y propósito",
+      "points": [
+        {
+          "pattern": "N が ほしいです",
+          "description": "«Quiero (tener) N». Se usa para uno mismo o para preguntar al otro.",
+          "examples": [
+            {
+              "ja": "新しい 車[[が ほしいです]]。",
+              "es": "Quiero un auto nuevo."
+            }
+          ]
+        },
+        {
+          "pattern": "V（ます） たいです",
+          "description": "«Quiero hacer…». Se saca ます y se agrega たい, que se conjuga como un adjetivo い.",
+          "examples": [
+            {
+              "ja": "すしを 食べ[[たいです]]。",
+              "es": "Quiero comer sushi."
+            },
+            {
+              "ja": "どこへも 行き[[たくないです]]。",
+              "es": "No quiero ir a ningún lado."
+            }
+          ]
+        },
+        {
+          "pattern": "Lugar へ V（ます）／N に 行きます／来ます",
+          "description": "Para decir a qué se va: el verbo sin ます o un sustantivo de acción, seguido de に.",
+          "examples": [
+            {
+              "ja": "デパートへ くつを かい[[に]] 行きます。",
+              "es": "Voy a la tienda a comprar zapatos."
+            },
+            {
+              "ja": "日本へ びじゅつの べんきょう[[に]] 来ました。",
+              "es": "Vine a Japón a estudiar arte."
+            }
+          ]
+        },
+        {
+          "pattern": "何か／どこか",
+          "description": "«Algo» y «algún lugar». Se puede omitir を o へ.",
+          "examples": [
+            {
+              "ja": "[[何か]] 飲みませんか。",
+              "es": "¿Querés tomar algo?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 14,
+      "title": "Forma て",
+      "points": [
+        {
+          "pattern": "Grupos de verbos",
+          "description": "Grupo I: la sílaba antes de ます termina en «i» (かきます). Grupo II: termina en «e» (たべます), más algunos con «i» (みます, おきます). Grupo III: します y 来ます.",
+          "table": {
+            "head": [
+              "grupo",
+              "ejemplos"
+            ],
+            "rows": [
+              [
+                "I",
+                "かきます・のみます・かえります"
+              ],
+              [
+                "II",
+                "たべます・ねます・みます・おきます"
+              ],
+              [
+                "III",
+                "します・来ます"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "Cómo formar la forma て",
+          "description": "En el grupo I depende de la sílaba antes de ます. En los grupos II y III se reemplaza ます por て.",
+          "table": {
+            "head": [
+              "ます",
+              "て",
+              "ejemplo"
+            ],
+            "rows": [
+              [
+                "い・ち・り",
+                "って",
+                "かいます → かって"
+              ],
+              [
+                "み・び・に",
+                "んで",
+                "飲みます → 飲んで"
+              ],
+              [
+                "き",
+                "いて",
+                "かきます → かいて"
+              ],
+              [
+                "ぎ",
+                "いで",
+                "いそぎます → いそいで"
+              ],
+              [
+                "し",
+                "して",
+                "はなします → はなして"
+              ],
+              [
+                "行きます",
+                "行って",
+                "(excepción)"
+              ],
+              [
+                "II・III",
+                "て",
+                "食べて・して・来て"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "V て ください",
+          "description": "Pedido amable: «por favor, haga…».",
+          "examples": [
+            {
+              "ja": "ちょっと まっ[[て ください]]。",
+              "es": "Espere un momento, por favor."
+            },
+            {
+              "ja": "ここに なまえを かい[[て ください]]。",
+              "es": "Escriba su nombre acá, por favor."
+            }
+          ]
+        },
+        {
+          "pattern": "V て います (en curso)",
+          "description": "Acción que está pasando ahora.",
+          "examples": [
+            {
+              "ja": "ミラーさんは 今 でんわを かけ[[て います]]。",
+              "es": "Miller está hablando por teléfono ahora."
+            },
+            {
+              "ja": "あめが ふっ[[て います]]。",
+              "es": "Está lloviendo."
+            }
+          ]
+        },
+        {
+          "pattern": "V（ます） ましょうか",
+          "description": "Ofrecer ayuda: «¿quiere que…?».",
+          "examples": [
+            {
+              "ja": "かさを かし[[ましょうか]]。",
+              "es": "¿Le presto un paraguas?"
+            },
+            {
+              "ja": "すみません。おねがいします。",
+              "es": "Sí, gracias, por favor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "title": "Permiso y estados",
+      "points": [
+        {
+          "pattern": "V て も いいですか",
+          "description": "Pedir permiso: «¿puedo…?».",
+          "examples": [
+            {
+              "ja": "しゃしんを とっ[[ても いいですか]]。",
+              "es": "¿Puedo sacar una foto?"
+            },
+            {
+              "ja": "ええ、いいですよ。",
+              "es": "Sí, claro."
+            }
+          ]
+        },
+        {
+          "pattern": "V て は いけません",
+          "description": "Prohibición: «no se puede…». Suena fuerte; se usa para reglas.",
+          "examples": [
+            {
+              "ja": "ここで たばこを すっ[[ては いけません]]。",
+              "es": "Acá no se puede fumar."
+            }
+          ]
+        },
+        {
+          "pattern": "V て います (estado)",
+          "description": "Estado que dura como resultado de una acción: estar casado, saber, vivir en un lugar.",
+          "examples": [
+            {
+              "ja": "わたしは けっこんし[[て います]]。",
+              "es": "Estoy casado/a."
+            },
+            {
+              "ja": "ブエノスアイレスに すんで[[います]]。",
+              "es": "Vivo en Buenos Aires."
+            }
+          ]
+        },
+        {
+          "pattern": "しって います／しりません",
+          "description": "«Sé» o «conozco» es しって います, pero el negativo es しりません (no しって いません).",
+          "examples": [
+            {
+              "ja": "ミラーさんの じゅうしょを [[しって いますか]]。",
+              "es": "¿Sabés la dirección de Miller?"
+            },
+            {
+              "ja": "いいえ、[[しりません]]。",
+              "es": "No, no la sé."
+            }
+          ]
+        },
+        {
+          "pattern": "V て います (hábito o profesión)",
+          "description": "Acción habitual o a qué se dedica alguien.",
+          "examples": [
+            {
+              "ja": "IMCは コンピューターソフトを つくっ[[て います]]。",
+              "es": "IMC fabrica software."
+            },
+            {
+              "ja": "わたしは でんきの 会社で はたらい[[て います]]。",
+              "es": "Trabajo en una empresa de electricidad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 16,
+      "title": "Unir acciones y descripciones",
+      "points": [
+        {
+          "pattern": "V₁ て、V₂ て、V₃",
+          "description": "Une acciones en el orden en que pasan. El tiempo verbal lo marca el último verbo.",
+          "examples": [
+            {
+              "ja": "朝 ジョギングを し[[て]]、シャワーを あび[[て]]、会社へ 行きます。",
+              "es": "A la mañana troto, me ducho y voy a la oficina."
+            }
+          ]
+        },
+        {
+          "pattern": "い-adj → くて／な-adj・N → で",
+          "description": "Para unir adjetivos o sustantivos: «…y…».",
+          "examples": [
+            {
+              "ja": "この へやは 大き[[くて]]、きれいです。",
+              "es": "Esta habitación es grande y linda."
+            },
+            {
+              "ja": "カリナさんは 学生[[で]]、インドネシア人です。",
+              "es": "Karina es estudiante y es indonesia."
+            }
+          ]
+        },
+        {
+          "pattern": "V₁ て から、V₂",
+          "description": "«Después de V₁, V₂».",
+          "examples": [
+            {
+              "ja": "しごとが おわっ[[てから]]、飲みに 行きます。",
+              "es": "Después del trabajo voy a tomar algo."
+            }
+          ]
+        },
+        {
+          "pattern": "N₁ は N₂ が adj",
+          "description": "Describe un rasgo de N₁. N₂ es la parte de la que se habla.",
+          "examples": [
+            {
+              "ja": "マリアさんは かみ[[が]] ながいです。",
+              "es": "María tiene el pelo largo."
+            },
+            {
+              "ja": "ここは 食べ物[[が]] おいしいです。",
+              "es": "Acá la comida es rica."
+            }
+          ]
+        },
+        {
+          "pattern": "どうやって",
+          "description": "¿Cómo? ¿De qué manera?",
+          "examples": [
+            {
+              "ja": "大学まで [[どうやって]] 行きますか。",
+              "es": "¿Cómo vas a la universidad?"
+            },
+            {
+              "ja": "駅から 電車で 行きます。",
+              "es": "Voy en tren desde la estación."
+            }
+          ]
+        },
+        {
+          "pattern": "どれ／どの N",
+          "description": "«¿Cuál?» entre tres o más. どの va con un sustantivo.",
+          "examples": [
+            {
+              "ja": "サントスさんは [[どの]] 人ですか。",
+              "es": "¿Cuál de ellos es Santos?"
+            },
+            {
+              "ja": "あの 白い シャツの 人です。",
+              "es": "Es el de camisa blanca."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 17,
+      "title": "Forma ない",
+      "points": [
+        {
+          "pattern": "Cómo formar la forma ない",
+          "description": "Grupo I: la sílaba en «i» pasa a «a» y se agrega ない (si termina en い, pasa a わ). Grupo II: ます → ない. Grupo III: しない y こない.",
+          "table": {
+            "head": [
+              "grupo",
+              "ます",
+              "ない"
+            ],
+            "rows": [
+              [
+                "I",
+                "かきます",
+                "かかない"
+              ],
+              [
+                "I (い)",
+                "かいます",
+                "かわない"
+              ],
+              [
+                "II",
+                "食べます",
+                "食べない"
+              ],
+              [
+                "III",
+                "します・来ます",
+                "しない・こない"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "V ないで ください",
+          "description": "Pedido amable para que alguien no haga algo.",
+          "examples": [
+            {
+              "ja": "ここに 車を とめ[[ないで ください]]。",
+              "es": "Por favor, no estacione acá."
+            },
+            {
+              "ja": "しんぱいし[[ないで ください]]。",
+              "es": "No se preocupe."
+            }
+          ]
+        },
+        {
+          "pattern": "V なければ なりません",
+          "description": "Obligación: «tengo que…».",
+          "examples": [
+            {
+              "ja": "くすりを 飲ま[[なければ なりません]]。",
+              "es": "Tengo que tomar el remedio."
+            }
+          ]
+        },
+        {
+          "pattern": "V なくても いいです",
+          "description": "No es necesario: «no hace falta que…».",
+          "examples": [
+            {
+              "ja": "あした 来[[なくても いいです]]。",
+              "es": "No hace falta que vengas mañana."
+            }
+          ]
+        },
+        {
+          "pattern": "N（objeto） は ＋ V",
+          "description": "El objeto puede pasar a ser el tema con は, en lugar de を.",
+          "examples": [
+            {
+              "ja": "にもつ[[は]] ここに おかないで ください。",
+              "es": "El equipaje, por favor no lo deje acá."
+            }
+          ]
+        },
+        {
+          "pattern": "Tiempo ＋ までに ＋ V",
+          "description": "までに es «antes de» o «a más tardar». まで, en cambio, es «hasta».",
+          "examples": [
+            {
+              "ja": "金よう日[[までに]] レポートを ださなければ なりません。",
+              "es": "Tengo que entregar el informe antes del viernes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 18,
+      "title": "Forma diccionario",
+      "points": [
+        {
+          "pattern": "Cómo formar la forma diccionario",
+          "description": "Grupo I: la sílaba en «i» pasa a «u». Grupo II: ます → る. Grupo III: する y くる.",
+          "table": {
+            "head": [
+              "grupo",
+              "ます",
+              "diccionario"
+            ],
+            "rows": [
+              [
+                "I",
+                "飲みます",
+                "飲む"
+              ],
+              [
+                "I",
+                "かきます",
+                "かく"
+              ],
+              [
+                "II",
+                "食べます",
+                "食べる"
+              ],
+              [
+                "III",
+                "します・来ます",
+                "する・くる"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "N／V（dic.） こと が できます",
+          "description": "Habilidad o posibilidad: «puedo…».",
+          "examples": [
+            {
+              "ja": "ピアノを ひく[[ことが できます]]。",
+              "es": "Sé tocar el piano."
+            },
+            {
+              "ja": "カードで はらう[[ことが できますか]]。",
+              "es": "¿Se puede pagar con tarjeta?"
+            }
+          ]
+        },
+        {
+          "pattern": "わたしの しゅみは N／V（dic.） こと です",
+          "description": "Para contar tu hobby.",
+          "examples": [
+            {
+              "ja": "わたしの しゅみは 本を よむ[[こと]]です。",
+              "es": "Mi hobby es leer."
+            }
+          ]
+        },
+        {
+          "pattern": "V（dic.）／N の／período ＋ 前に、V₂",
+          "description": "«Antes de…». Con un período de tiempo significa «hace…».",
+          "examples": [
+            {
+              "ja": "ねる[[前に]]、本を よみます。",
+              "es": "Antes de dormir leo."
+            },
+            {
+              "ja": "ごはん[[の 前に]] 手を あらいます。",
+              "es": "Antes de comer me lavo las manos."
+            },
+            {
+              "ja": "3年[[前に]] 日本へ 来ました。",
+              "es": "Vine a Japón hace 3 años."
+            }
+          ]
+        },
+        {
+          "pattern": "なかなか ＋ negativo",
+          "description": "«No es fácil…», «no logro…».",
+          "examples": [
+            {
+              "ja": "日本では [[なかなか]] うまを みる ことが できません。",
+              "es": "En Japón no es fácil ver caballos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 19,
+      "title": "Forma た y experiencias",
+      "points": [
+        {
+          "pattern": "Cómo formar la forma た",
+          "description": "Igual que la forma て, cambiando て por た y で por だ.",
+          "table": {
+            "head": [
+              "て",
+              "た"
+            ],
+            "rows": [
+              [
+                "かって",
+                "かった"
+              ],
+              [
+                "飲んで",
+                "飲んだ"
+              ],
+              [
+                "かいて",
+                "かいた"
+              ],
+              [
+                "行って",
+                "行った"
+              ],
+              [
+                "食べて",
+                "食べた"
+              ],
+              [
+                "して・来て",
+                "した・来た"
+              ]
+            ]
+          }
+        },
+        {
+          "pattern": "V た ことが あります",
+          "description": "Contar una experiencia: «alguna vez…».",
+          "examples": [
+            {
+              "ja": "すもうを みた[[ことが あります]]。",
+              "es": "Alguna vez vi sumo."
+            },
+            {
+              "ja": "ほっかいどうへ 行った[[ことが ありますか]]。",
+              "es": "¿Fuiste alguna vez a Hokkaido?"
+            },
+            {
+              "ja": "いいえ、いちども ありません。",
+              "es": "No, nunca."
+            }
+          ]
+        },
+        {
+          "pattern": "V₁ たり、V₂ たり します",
+          "description": "Nombra algunas actividades como ejemplo, sin dar la lista completa.",
+          "examples": [
+            {
+              "ja": "日よう日は テニスを し[[たり]]、えいがを み[[たり]] します。",
+              "es": "Los domingos juego al tenis, veo películas, cosas así."
+            }
+          ]
+        },
+        {
+          "pattern": "い-adj → く／な-adj・N → に ＋ なります",
+          "description": "Cambio de estado: «volverse…».",
+          "examples": [
+            {
+              "ja": "さむ[[く なりました]]。",
+              "es": "Empezó a hacer frío."
+            },
+            {
+              "ja": "げんき[[に なりました]]。",
+              "es": "Me puse bien."
+            },
+            {
+              "ja": "わたしは 先生[[に なりたいです]]。",
+              "es": "Quiero ser profesor."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

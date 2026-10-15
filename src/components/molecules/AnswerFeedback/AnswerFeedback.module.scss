@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.message {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  flex: 1 1 240px;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.ok {
+  color: var(--matcha);
+}
+
+.bad {
+  color: var(--beni);
+}

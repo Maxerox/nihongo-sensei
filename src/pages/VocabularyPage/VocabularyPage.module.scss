@@ -1,0 +1,38 @@
+@use '../../styles/mixins' as *;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stats {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+
+  b {
+    color: var(--ink);
+  }
+}
+
+.reset {
+  height: 28px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.panel:focus-visible {
+  outline: 2px solid var(--ai);
+  outline-offset: 4px;
+  border-radius: var(--radius-md);
+}

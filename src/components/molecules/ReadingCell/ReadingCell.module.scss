@@ -1,0 +1,52 @@
+@use '../../../styles/mixins' as *;
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+  padding: 7px 9px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  @include focus-ring;
+
+  &:hover {
+    border-color: var(--line);
+  }
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.reading {
+  font-family: var(--font-jp);
+  font-size: 15.5px;
+  line-height: 1.35;
+  min-height: 1.35em;
+  min-width: 3em;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+.covered {
+  color: transparent !important;
+  background: var(--line);
+}
+
+.irregular {
+  background: var(--beni-soft);
+
+  .reading {
+    color: var(--beni);
+    font-weight: 600;
+  }
+}
