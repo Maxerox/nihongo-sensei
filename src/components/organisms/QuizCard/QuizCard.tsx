@@ -14,6 +14,8 @@ export interface QuizCardProps {
   /** Nombre accesible de la pregunta. */
   promptLabel: string
   lesson?: number
+  /** Si `lesson` es una lección del libro principal o una unidad del libro de kanji. */
+  lessonKind?: 'lesson' | 'unit'
   /** Japonés para leer en voz alta (si corresponde). */
   speakText?: string
   options: OptionItem[]
@@ -30,7 +32,7 @@ export interface QuizCardProps {
 
 /** Pregunta de opción múltiple: puntaje, pregunta, opciones y resultado. */
 export function QuizCard(props: QuizCardProps) {
-  const { prompt, hint, promptLabel, lesson, speakText, options, answer, chosen, onChoose, jpOptions, feedback, onNext, score, header } = props
+  const { prompt, hint, promptLabel, lesson, lessonKind, speakText, options, answer, chosen, onChoose, jpOptions, feedback, onNext, score, header } = props
   return (
     <div className={styles.quiz}>
       {header}
@@ -38,7 +40,7 @@ export function QuizCard(props: QuizCardProps) {
       <section className={styles.card} aria-label={promptLabel}>
         {lesson !== undefined && (
           <span className={styles.tag}>
-            <LessonTag lesson={lesson} />
+            <LessonTag lesson={lesson} kind={lessonKind} />
           </span>
         )}
         <div className={styles.prompt}>{prompt}</div>

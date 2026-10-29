@@ -14,7 +14,7 @@ Secciones actuales, cada una es una página:
 | Ruta            | Página               | Contenido                                     |
 | --------------- | -------------------- | --------------------------------------------- |
 | `/vocabulario`  | `VocabularyPage`     | Tarjetas, quiz y lista de vocabulario         |
-| `/kanji`        | `KanjiPage`          | Tarjetas, dibujo con corrección y lista de kanji (漢字マスターN5, unidades 1–9) |
+| `/kanji`        | `KanjiPage`          | Tarjetas, quiz, dibujo con corrección y lista de kanji (漢字マスターN5, unidades 1–9) |
 | `/gramatica`    | `GrammarPage`        | Cheatsheet de gramática por lección           |
 | `/particulas`   | `ParticlesPage`      | Usos, comparaciones y práctica de partículas  |
 | `/contadores`   | `CountersPage`       | Contadores, fechas y práctica                 |
@@ -38,7 +38,8 @@ Secciones actuales, cada una es una página:
      `src/shared/utils/furigana.ts` (人, 来, 何, 日, 月). Si aparece un kanji nuevo, se agrega
      al diccionario y el test de contenido lo verifica.
    - Excepciones: cuando la lectura **es la respuesta** de una práctica (por ejemplo "8日"
-     en la práctica de contadores, o el frente de una tarjeta de kanji), se muestra después
+     en la práctica de contadores, el frente de una tarjeta de kanji o la pregunta del quiz de
+     kanji), se muestra después
      de responder. En la sección Kanji, el kanji que se estudia va solo y grande, con sus
      lecturas on y kun al lado (`KanjiReadings`); los ejemplos sí llevan furigana.
    - Cuando ya se conoce la lectura de la palabra entera, se pasa a `JpText` con `reading`:
@@ -136,6 +137,7 @@ actuales (no se renombran, para no perder el progreso):
 | `mn_kanji_units` | Unidades elegidas en Kanji                 |
 | `mn_kanji_known` | Kanji marcados como sabidos                |
 | `mn_kanji_dir`   | Dirección de las tarjetas de kanji (`kanji` / `meaning`) |
+| `mn_kanji_quiz`  | Tipo de pregunta del quiz de kanji (`mix` / `meaning` / `kanji` / `reading`) |
 
 ## 5. Accesibilidad (obligatorio)
 

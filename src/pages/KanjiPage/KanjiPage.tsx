@@ -5,11 +5,13 @@ import { SegmentedTabs, tabPanelProps } from '../../components/molecules/Segment
 import { KanjiDeck, type KanjiDirection } from '../../components/organisms/KanjiDeck'
 import { KanjiDrawPractice, type KanjiPracticeItem } from '../../components/organisms/KanjiDrawPractice'
 import { KanjiList } from '../../components/organisms/KanjiList'
+import { KanjiQuiz } from '../../components/organisms/KanjiQuiz'
 import { PageLayout } from '../../components/templates/PageLayout'
 import kanjiBook from '../../data/kanji-book.json'
 import kanjiStrokes from '../../data/kanji-strokes.json'
 import { useLocalStorage } from '../../shared/hooks/useLocalStorage'
 import type { KanjiBookData, KanjiStrokesData } from '../../shared/types/content'
+import type { KanjiQuizMode } from '../../shared/utils/kanjiQuiz'
 import { STORAGE_KEYS } from '../../shared/utils/storage'
 import styles from './KanjiPage.module.scss'
 
@@ -17,13 +19,14 @@ const book = kanjiBook as KanjiBookData
 const strokes = kanjiStrokes as unknown as KanjiStrokesData
 const ALL_UNITS = book.units.map((u) => u.unit)
 const ALL: KanjiPracticeItem[] = book.units.flatMap((u) => u.kanji.map((k) => ({ ...k, unit: u.unit })))
-type Tab = 'cards' | 'draw' | 'list'
+type Tab = 'cards' | 'quiz' | 'draw' | 'list'
 const TABS_ID = 'kanji-vista'
 
 export function KanjiPage() {
   const [units, setUnits] = useLocalStorage<number[]>(STORAGE_KEYS.kanjiUnits, ALL_UNITS)
   const [knownList, setKnownList] = useLocalStorage<string[]>(STORAGE_KEYS.kanjiKnown, [])
   const [direction, setDirection] = useLocalStorage<KanjiDirection>(STORAGE_KEYS.kanjiDirection, 'kanji')
+  const [quizMode, setQuizMode] = useLocalStorage<KanjiQuizMode>(STORAGE_KEYS.kanjiQuizMode, 'mix')
   const [tab, setTab] = useState<Tab>('cards')
   const [drawStart, setDrawStart] = useState<string | undefined>()
 
@@ -45,7 +48,7 @@ export function KanjiPage() {
         titleJa: '漢字',
         titleReading: 'かんじ',
         title: 'Kanji · unidades 1–9',
-        description: 'Los kanji de las unidades 1 a 9 de 漢字マスターN5 (Kanji Master N5): lecturas, significados y trazos.',
+        description: 'Los kanji de las unidades 1 a 9 de 漢字マスターN5 (Kanji Master N5): lecturas, significados, quiz y trazos.',
       }}
       toolbarLabel="Opciones de kanji"
       toolbar={
@@ -64,6 +67,7 @@ export function KanjiPage() {
               label="Modo de estudio"
               tabs={[
                 { id: 'cards', label: 'Tarjetas' },
+                { id: 'quiz', label: 'Quiz' },
                 { id: 'draw', label: 'Dibujar' },
                 { id: 'list', label: 'Lista' },
               ]}
@@ -79,6 +83,20 @@ export function KanjiPage() {
                 options={[
                   { value: 'kanji', label: 'kanji → lecturas y significado' },
                   { value: 'meaning', label: 'significado → kanji' },
+                ]}
+              />
+            )}
+            {tab === 'quiz' && (
+              <Select
+                id="kanji-quiz-modo"
+                label="Preguntas"
+                value={quizMode}
+                onChange={(v) => setQuizMode(v as KanjiQuizMode)}
+                options={[
+                  { value: 'mix', label: 'de todo un poco' },
+                  { value: 'meaning', label: 'kanji → significado' },
+                  { value: 'kanji', label: 'significado → kanji' },
+                  { value: 'reading', label: 'palabra → lectura' },
                 ]}
               />
             )}
@@ -101,6 +119,7 @@ export function KanjiPage() {
     >
       <div {...tabPanelProps(TABS_ID, tab)} className={styles.panel}>
         {tab === 'cards' && <KanjiDeck items={items} resetKey={units.join(',')} direction={direction} known={known} onMark={mark} />}
+        {tab === 'quiz' && <KanjiQuiz key={`${units.join(',')}|${quizMode}`} items={items} mode={quizMode} />}
         {tab === 'draw' && <KanjiDrawPractice key={`${units.join(',')}|${drawStart ?? ''}`} items={items} strokes={strokes} startWith={drawStart} />}
         {tab === 'list' && (
           <KanjiList
