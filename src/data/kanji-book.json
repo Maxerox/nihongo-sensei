@@ -1176,24 +1176,29 @@
           ]
         },
         {
-          "kanji": "休",
-          "meaning": "descansar",
+          "kanji": "体",
+          "meaning": "cuerpo",
           "on": [
-            "キュウ"
+            "タイ"
           ],
           "kun": [
-            "やす.む"
+            "からだ"
           ],
           "examples": [
             {
-              "word": "休みます",
-              "reading": "やすみます",
-              "es": "descansar"
+              "word": "体",
+              "reading": "からだ",
+              "es": "cuerpo"
             },
             {
-              "word": "休み",
-              "reading": "やすみ",
-              "es": "día libre"
+              "word": "体育",
+              "reading": "たいいく",
+              "es": "educación física"
+            },
+            {
+              "word": "体重",
+              "reading": "たいじゅう",
+              "es": "peso (corporal)"
             }
           ]
         }
@@ -1549,6 +1554,28 @@
               "word": "国立",
               "reading": "こくりつ",
               "es": "nacional"
+            }
+          ]
+        },
+        {
+          "kanji": "休",
+          "meaning": "descansar",
+          "on": [
+            "キュウ"
+          ],
+          "kun": [
+            "やす.む"
+          ],
+          "examples": [
+            {
+              "word": "休みます",
+              "reading": "やすみます",
+              "es": "descansar"
+            },
+            {
+              "word": "休み",
+              "reading": "やすみ",
+              "es": "día libre"
             }
           ]
         },

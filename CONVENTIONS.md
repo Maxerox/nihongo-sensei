@@ -100,7 +100,7 @@ components/atoms/Button/
 ### 4.3 Contenido en JSON
 
 - Todo el contenido vive en `src/data/*.json`: `vocabulary`, `grammar`, `particles`,
-  `counters`, `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 71 kanji de
+  `counters`, `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 72 kanji de
   las unidades 1–9 de 漢字マスターN5) y `kanji-strokes` (trazos). Los componentes no tienen textos de estudio
   escritos adentro.
 - `kanji-strokes.json` se genera a partir de **KanjiVG** (© Ulrich Apel, licencia
