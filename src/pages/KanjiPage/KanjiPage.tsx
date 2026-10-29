@@ -44,8 +44,8 @@ export function KanjiPage() {
       header={{
         titleJa: '漢字',
         titleReading: 'かんじ',
-        title: 'Kanji · unidades 1–10',
-        description: 'Los 104 kanji de las unidades 1 a 10 del libro de kanji de Minna no Nihongo: lecturas, significados y trazos.',
+        title: 'Kanji · unidades 1–9',
+        description: 'Los kanji de las unidades 1 a 9 de 漢字マスターN5 (Kanji Master N5): lecturas, significados y trazos.',
       }}
       toolbarLabel="Opciones de kanji"
       toolbar={

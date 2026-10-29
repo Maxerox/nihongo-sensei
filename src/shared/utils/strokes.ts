@@ -8,8 +8,18 @@ export const VIEWBOX = 109
 const SAMPLES = 24
 /** Distancia media máxima (en unidades de 109) para aceptar un trazo. */
 const TOLERANCE = 15
+/** El inicio y el final de cada trazo tienen que quedar a menos de esto de los del modelo. */
+const END_TOLERANCE = 18
+/** En el modelo, dos trazos "se tocan" si quedan a menos de esto… */
+const TOUCH = 4
+/** …y "están separados" si quedan a más de esto. */
+const APART = 14
+/** En el dibujo: si deberían tocarse y quedan más lejos que esto, está mal. */
+const DRAWN_GAP = 16
+/** En el dibujo: si deberían estar separados y quedan más cerca que esto, está mal. */
+const DRAWN_TOUCH = 3
 
-export type StrokeStatus = 'ok' | 'direction' | 'order' | 'shape'
+export type StrokeStatus = 'ok' | 'direction' | 'order' | 'shape' | 'touch' | 'apart'
 
 export interface StrokeFeedback {
   /** Número de trazo dibujado (1, 2, 3…). */
@@ -17,6 +27,8 @@ export interface StrokeFeedback {
   status: StrokeStatus
   /** Con 'order': el número de trazo que parece ser. */
   looksLike?: number
+  /** Con 'touch' (debería tocarlo) o 'apart' (no debería tocarlo): el otro trazo. */
+  other?: number
 }
 
 export interface DrawingResult {
@@ -74,6 +86,22 @@ export function fitToReference(drawn: Stroke[], reference: Stroke[]): Stroke[] {
   return drawn.map((st) => st.map(([x, y]) => [(x - a.cx) * s + b.cx, (y - a.cy) * s + b.cy] as Point))
 }
 
+/** Distancia más corta entre dos trazos. */
+function minDistance(a: Stroke, b: Stroke): number {
+  let best = Infinity
+  for (const p of a) for (const q of b) best = Math.min(best, dist(p, q))
+  return best
+}
+
+/** El trazo coincide con el modelo: forma parecida y empieza y termina donde corresponde. */
+function matches(user: Stroke, target: Stroke): boolean {
+  return (
+    meanDistance(user, target) <= TOLERANCE &&
+    dist(user[0], target[0]) <= END_TOLERANCE &&
+    dist(user[user.length - 1], target[target.length - 1]) <= END_TOLERANCE
+  )
+}
+
 const meanDistance = (a: Stroke, b: Stroke) => a.reduce((sum, p, i) => sum + dist(p, b[i]), 0) / a.length
 
 /** Compara un dibujo con los trazos de referencia (puntos de muestra de KanjiVG). */
@@ -84,16 +112,37 @@ export function checkDrawing(drawn: Stroke[], reference: Stroke[]): DrawingResul
   const strokes: StrokeFeedback[] = fitted.map((user, i) => {
     const target = ref[i]
     if (target) {
-      const forward = meanDistance(user, target)
-      if (forward <= TOLERANCE) return { index: i + 1, status: 'ok' }
-      const backward = meanDistance(user, [...target].reverse())
-      if (backward <= TOLERANCE) return { index: i + 1, status: 'direction' }
+      if (matches(user, target)) return { index: i + 1, status: 'ok' }
+      if (matches(user, [...target].reverse())) return { index: i + 1, status: 'direction' }
     }
     // ¿Coincide con otro trazo? Entonces el orden está mal.
-    const other = ref.findIndex((r, j) => j !== i && meanDistance(user, r) <= TOLERANCE)
+    const other = ref.findIndex((r, j) => j !== i && matches(user, r))
     if (other >= 0) return { index: i + 1, status: 'order', looksLike: other + 1 }
     return { index: i + 1, status: 'shape' }
   })
+
+  // Cómo se tocan los trazos entre sí (distingue, por ejemplo, 入 de 八).
+  if (drawn.length === reference.length) {
+    const dense = (s: Stroke) => resample(s, 48)
+    const refD = reference.map(dense)
+    const userD = fitToReference(drawn, reference).map(dense)
+    for (let j = 1; j < strokes.length; j++) {
+      if (strokes[j].status !== 'ok') continue
+      for (let i = 0; i < j; i++) {
+        if (strokes[i].status !== 'ok') continue
+        const model = minDistance(refD[i], refD[j])
+        const user = minDistance(userD[i], userD[j])
+        if (model < TOUCH && user > DRAWN_GAP) {
+          strokes[j] = { index: j + 1, status: 'touch', other: i + 1 }
+          break
+        }
+        if (model > APART && user < DRAWN_TOUCH) {
+          strokes[j] = { index: j + 1, status: 'apart', other: i + 1 }
+          break
+        }
+      }
+    }
+  }
 
   const ok = strokes.filter((s) => s.status === 'ok').length
   return {
@@ -116,6 +165,8 @@ export function describeResult(r: DrawingResult): string[] {
     if (s.status === 'direction') out.push(`Trazo ${s.index}: va en la dirección contraria.`)
     else if (s.status === 'order') out.push(`Trazo ${s.index}: parece el trazo ${s.looksLike}. Revisá el orden.`)
     else if (s.status === 'shape' && s.index <= r.expected) out.push(`Trazo ${s.index}: la forma o la posición no coinciden.`)
+    else if (s.status === 'touch') out.push(`Trazo ${s.index}: tiene que tocar el trazo ${s.other}.`)
+    else if (s.status === 'apart') out.push(`Trazo ${s.index}: no tiene que tocar el trazo ${s.other}.`)
   }
   return out
 }

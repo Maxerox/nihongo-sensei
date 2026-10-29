@@ -118,7 +118,7 @@ export interface KanjiData {
   numberExceptions: Record<string, string>
 }
 
-// kanji-book.json (libro "Minna no Nihongo – Kanji", unidades 1–10)
+// kanji-book.json (libro 漢字マスターN5, unidades 1–9)
 export interface KanjiExample {
   word: string
   reading: string

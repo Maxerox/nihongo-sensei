@@ -4,247 +4,6 @@
       "unit": 1,
       "kanji": [
         {
-          "kanji": "日",
-          "meaning": "día; sol",
-          "on": [
-            "ニチ",
-            "ジツ"
-          ],
-          "kun": [
-            "ひ",
-            "か"
-          ],
-          "examples": [
-            {
-              "word": "日本",
-              "reading": "にほん",
-              "es": "Japón"
-            },
-            {
-              "word": "毎日",
-              "reading": "まいにち",
-              "es": "todos los días"
-            },
-            {
-              "word": "日よう日",
-              "reading": "にちようび",
-              "es": "domingo"
-            }
-          ]
-        },
-        {
-          "kanji": "月",
-          "meaning": "luna; mes",
-          "on": [
-            "ゲツ",
-            "ガツ"
-          ],
-          "kun": [
-            "つき"
-          ],
-          "examples": [
-            {
-              "word": "月",
-              "reading": "つき",
-              "es": "luna"
-            },
-            {
-              "word": "月よう日",
-              "reading": "げつようび",
-              "es": "lunes"
-            },
-            {
-              "word": "一月",
-              "reading": "いちがつ",
-              "es": "enero"
-            }
-          ]
-        },
-        {
-          "kanji": "火",
-          "meaning": "fuego",
-          "on": [
-            "カ"
-          ],
-          "kun": [
-            "ひ"
-          ],
-          "examples": [
-            {
-              "word": "火",
-              "reading": "ひ",
-              "es": "fuego"
-            },
-            {
-              "word": "火よう日",
-              "reading": "かようび",
-              "es": "martes"
-            }
-          ]
-        },
-        {
-          "kanji": "水",
-          "meaning": "agua",
-          "on": [
-            "スイ"
-          ],
-          "kun": [
-            "みず"
-          ],
-          "examples": [
-            {
-              "word": "水",
-              "reading": "みず",
-              "es": "agua"
-            },
-            {
-              "word": "水よう日",
-              "reading": "すいようび",
-              "es": "miércoles"
-            }
-          ]
-        },
-        {
-          "kanji": "木",
-          "meaning": "árbol; madera",
-          "on": [
-            "モク",
-            "ボク"
-          ],
-          "kun": [
-            "き"
-          ],
-          "examples": [
-            {
-              "word": "木",
-              "reading": "き",
-              "es": "árbol"
-            },
-            {
-              "word": "木よう日",
-              "reading": "もくようび",
-              "es": "jueves"
-            }
-          ]
-        },
-        {
-          "kanji": "金",
-          "meaning": "oro; dinero",
-          "on": [
-            "キン",
-            "コン"
-          ],
-          "kun": [
-            "かね"
-          ],
-          "examples": [
-            {
-              "word": "お金",
-              "reading": "おかね",
-              "es": "dinero"
-            },
-            {
-              "word": "金よう日",
-              "reading": "きんようび",
-              "es": "viernes"
-            }
-          ]
-        },
-        {
-          "kanji": "土",
-          "meaning": "tierra",
-          "on": [
-            "ド",
-            "ト"
-          ],
-          "kun": [
-            "つち"
-          ],
-          "examples": [
-            {
-              "word": "土",
-              "reading": "つち",
-              "es": "tierra"
-            },
-            {
-              "word": "土よう日",
-              "reading": "どようび",
-              "es": "sábado"
-            }
-          ]
-        },
-        {
-          "kanji": "山",
-          "meaning": "montaña",
-          "on": [
-            "サン"
-          ],
-          "kun": [
-            "やま"
-          ],
-          "examples": [
-            {
-              "word": "山",
-              "reading": "やま",
-              "es": "montaña"
-            },
-            {
-              "word": "山田",
-              "reading": "やまだ",
-              "es": "Yamada (apellido)"
-            }
-          ]
-        },
-        {
-          "kanji": "川",
-          "meaning": "río",
-          "on": [
-            "セン"
-          ],
-          "kun": [
-            "かわ"
-          ],
-          "examples": [
-            {
-              "word": "川",
-              "reading": "かわ",
-              "es": "río"
-            },
-            {
-              "word": "小川",
-              "reading": "おがわ",
-              "es": "arroyo"
-            }
-          ]
-        },
-        {
-          "kanji": "田",
-          "meaning": "arrozal",
-          "on": [
-            "デン"
-          ],
-          "kun": [
-            "た"
-          ],
-          "examples": [
-            {
-              "word": "田中",
-              "reading": "たなか",
-              "es": "Tanaka (apellido)"
-            },
-            {
-              "word": "山田",
-              "reading": "やまだ",
-              "es": "Yamada (apellido)"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 2,
-      "kanji": [
-        {
           "kanji": "一",
           "meaning": "uno",
           "on": [
@@ -571,7 +330,690 @@
       ]
     },
     {
+      "unit": 2,
+      "kanji": [
+        {
+          "kanji": "日",
+          "meaning": "día; sol",
+          "on": [
+            "ニチ",
+            "ジツ"
+          ],
+          "kun": [
+            "ひ",
+            "か"
+          ],
+          "examples": [
+            {
+              "word": "日本",
+              "reading": "にほん",
+              "es": "Japón"
+            },
+            {
+              "word": "毎日",
+              "reading": "まいにち",
+              "es": "todos los días"
+            },
+            {
+              "word": "日よう日",
+              "reading": "にちようび",
+              "es": "domingo"
+            }
+          ]
+        },
+        {
+          "kanji": "月",
+          "meaning": "luna; mes",
+          "on": [
+            "ゲツ",
+            "ガツ"
+          ],
+          "kun": [
+            "つき"
+          ],
+          "examples": [
+            {
+              "word": "月",
+              "reading": "つき",
+              "es": "luna"
+            },
+            {
+              "word": "月よう日",
+              "reading": "げつようび",
+              "es": "lunes"
+            },
+            {
+              "word": "一月",
+              "reading": "いちがつ",
+              "es": "enero"
+            }
+          ]
+        },
+        {
+          "kanji": "火",
+          "meaning": "fuego",
+          "on": [
+            "カ"
+          ],
+          "kun": [
+            "ひ"
+          ],
+          "examples": [
+            {
+              "word": "火",
+              "reading": "ひ",
+              "es": "fuego"
+            },
+            {
+              "word": "火よう日",
+              "reading": "かようび",
+              "es": "martes"
+            }
+          ]
+        },
+        {
+          "kanji": "水",
+          "meaning": "agua",
+          "on": [
+            "スイ"
+          ],
+          "kun": [
+            "みず"
+          ],
+          "examples": [
+            {
+              "word": "水",
+              "reading": "みず",
+              "es": "agua"
+            },
+            {
+              "word": "水よう日",
+              "reading": "すいようび",
+              "es": "miércoles"
+            }
+          ]
+        },
+        {
+          "kanji": "木",
+          "meaning": "árbol; madera",
+          "on": [
+            "モク",
+            "ボク"
+          ],
+          "kun": [
+            "き"
+          ],
+          "examples": [
+            {
+              "word": "木",
+              "reading": "き",
+              "es": "árbol"
+            },
+            {
+              "word": "木よう日",
+              "reading": "もくようび",
+              "es": "jueves"
+            }
+          ]
+        },
+        {
+          "kanji": "金",
+          "meaning": "oro; dinero",
+          "on": [
+            "キン",
+            "コン"
+          ],
+          "kun": [
+            "かね"
+          ],
+          "examples": [
+            {
+              "word": "お金",
+              "reading": "おかね",
+              "es": "dinero"
+            },
+            {
+              "word": "金よう日",
+              "reading": "きんようび",
+              "es": "viernes"
+            }
+          ]
+        },
+        {
+          "kanji": "土",
+          "meaning": "tierra",
+          "on": [
+            "ド",
+            "ト"
+          ],
+          "kun": [
+            "つち"
+          ],
+          "examples": [
+            {
+              "word": "土",
+              "reading": "つち",
+              "es": "tierra"
+            },
+            {
+              "word": "土よう日",
+              "reading": "どようび",
+              "es": "sábado"
+            }
+          ]
+        },
+        {
+          "kanji": "年",
+          "meaning": "año",
+          "on": [
+            "ネン"
+          ],
+          "kun": [
+            "とし"
+          ],
+          "examples": [
+            {
+              "word": "去年",
+              "reading": "きょねん",
+              "es": "el año pasado"
+            },
+            {
+              "word": "毎年",
+              "reading": "まいとし",
+              "es": "todos los años"
+            },
+            {
+              "word": "年",
+              "reading": "とし",
+              "es": "año; edad"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "unit": 3,
+      "kanji": [
+        {
+          "kanji": "人",
+          "meaning": "persona",
+          "on": [
+            "ジン",
+            "ニン"
+          ],
+          "kun": [
+            "ひと"
+          ],
+          "examples": [
+            {
+              "word": "人",
+              "reading": "ひと",
+              "es": "persona"
+            },
+            {
+              "word": "日本人",
+              "reading": "にほんじん",
+              "es": "japonés/a"
+            },
+            {
+              "word": "三人",
+              "reading": "さんにん",
+              "es": "tres personas"
+            }
+          ]
+        },
+        {
+          "kanji": "目",
+          "meaning": "ojo",
+          "on": [
+            "モク"
+          ],
+          "kun": [
+            "め"
+          ],
+          "examples": [
+            {
+              "word": "目",
+              "reading": "め",
+              "es": "ojo"
+            },
+            {
+              "word": "一つ目",
+              "reading": "ひとつめ",
+              "es": "el primero"
+            }
+          ]
+        },
+        {
+          "kanji": "口",
+          "meaning": "boca; entrada",
+          "on": [
+            "コウ",
+            "ク"
+          ],
+          "kun": [
+            "くち"
+          ],
+          "examples": [
+            {
+              "word": "口",
+              "reading": "くち",
+              "es": "boca"
+            },
+            {
+              "word": "入口",
+              "reading": "いりぐち",
+              "es": "entrada"
+            },
+            {
+              "word": "出口",
+              "reading": "でぐち",
+              "es": "salida"
+            }
+          ]
+        },
+        {
+          "kanji": "耳",
+          "meaning": "oreja",
+          "on": [
+            "ジ"
+          ],
+          "kun": [
+            "みみ"
+          ],
+          "examples": [
+            {
+              "word": "耳",
+              "reading": "みみ",
+              "es": "oreja"
+            }
+          ]
+        },
+        {
+          "kanji": "手",
+          "meaning": "mano",
+          "on": [
+            "シュ"
+          ],
+          "kun": [
+            "て"
+          ],
+          "examples": [
+            {
+              "word": "手",
+              "reading": "て",
+              "es": "mano"
+            },
+            {
+              "word": "上手",
+              "reading": "じょうず",
+              "es": "hábil"
+            },
+            {
+              "word": "手紙",
+              "reading": "てがみ",
+              "es": "carta"
+            }
+          ]
+        },
+        {
+          "kanji": "足",
+          "meaning": "pie; pierna; alcanzar",
+          "on": [
+            "ソク"
+          ],
+          "kun": [
+            "あし",
+            "た.りる"
+          ],
+          "examples": [
+            {
+              "word": "足",
+              "reading": "あし",
+              "es": "pie; pierna"
+            },
+            {
+              "word": "一足",
+              "reading": "いっそく",
+              "es": "un par (de zapatos)"
+            }
+          ]
+        },
+        {
+          "kanji": "力",
+          "meaning": "fuerza",
+          "on": [
+            "リョク",
+            "リキ"
+          ],
+          "kun": [
+            "ちから"
+          ],
+          "examples": [
+            {
+              "word": "力",
+              "reading": "ちから",
+              "es": "fuerza"
+            },
+            {
+              "word": "学力",
+              "reading": "がくりょく",
+              "es": "nivel académico"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "kanji": [
+        {
+          "kanji": "山",
+          "meaning": "montaña",
+          "on": [
+            "サン"
+          ],
+          "kun": [
+            "やま"
+          ],
+          "examples": [
+            {
+              "word": "山",
+              "reading": "やま",
+              "es": "montaña"
+            },
+            {
+              "word": "山田",
+              "reading": "やまだ",
+              "es": "Yamada (apellido)"
+            }
+          ]
+        },
+        {
+          "kanji": "川",
+          "meaning": "río",
+          "on": [
+            "セン"
+          ],
+          "kun": [
+            "かわ"
+          ],
+          "examples": [
+            {
+              "word": "川",
+              "reading": "かわ",
+              "es": "río"
+            },
+            {
+              "word": "小川",
+              "reading": "おがわ",
+              "es": "arroyo"
+            }
+          ]
+        },
+        {
+          "kanji": "田",
+          "meaning": "arrozal",
+          "on": [
+            "デン"
+          ],
+          "kun": [
+            "た"
+          ],
+          "examples": [
+            {
+              "word": "田中",
+              "reading": "たなか",
+              "es": "Tanaka (apellido)"
+            },
+            {
+              "word": "山田",
+              "reading": "やまだ",
+              "es": "Yamada (apellido)"
+            }
+          ]
+        },
+        {
+          "kanji": "石",
+          "meaning": "piedra",
+          "on": [
+            "セキ"
+          ],
+          "kun": [
+            "いし"
+          ],
+          "examples": [
+            {
+              "word": "石",
+              "reading": "いし",
+              "es": "piedra"
+            }
+          ]
+        },
+        {
+          "kanji": "花",
+          "meaning": "flor",
+          "on": [
+            "カ"
+          ],
+          "kun": [
+            "はな"
+          ],
+          "examples": [
+            {
+              "word": "花",
+              "reading": "はな",
+              "es": "flor"
+            },
+            {
+              "word": "花見",
+              "reading": "はなみ",
+              "es": "ver los cerezos en flor"
+            },
+            {
+              "word": "花火",
+              "reading": "はなび",
+              "es": "fuegos artificiales"
+            }
+          ]
+        },
+        {
+          "kanji": "竹",
+          "meaning": "bambú",
+          "on": [
+            "チク"
+          ],
+          "kun": [
+            "たけ"
+          ],
+          "examples": [
+            {
+              "word": "竹",
+              "reading": "たけ",
+              "es": "bambú"
+            }
+          ]
+        },
+        {
+          "kanji": "雨",
+          "meaning": "lluvia",
+          "on": [
+            "ウ"
+          ],
+          "kun": [
+            "あめ"
+          ],
+          "examples": [
+            {
+              "word": "雨",
+              "reading": "あめ",
+              "es": "lluvia"
+            },
+            {
+              "word": "大雨",
+              "reading": "おおあめ",
+              "es": "lluvia fuerte"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "kanji": [
+        {
+          "kanji": "上",
+          "meaning": "arriba",
+          "on": [
+            "ジョウ"
+          ],
+          "kun": [
+            "うえ",
+            "あ.がる"
+          ],
+          "examples": [
+            {
+              "word": "上",
+              "reading": "うえ",
+              "es": "arriba"
+            },
+            {
+              "word": "上手",
+              "reading": "じょうず",
+              "es": "hábil"
+            }
+          ]
+        },
+        {
+          "kanji": "下",
+          "meaning": "abajo",
+          "on": [
+            "カ",
+            "ゲ"
+          ],
+          "kun": [
+            "した",
+            "さ.がる",
+            "くだ.さい"
+          ],
+          "examples": [
+            {
+              "word": "下",
+              "reading": "した",
+              "es": "abajo"
+            },
+            {
+              "word": "地下鉄",
+              "reading": "ちかてつ",
+              "es": "subte"
+            }
+          ]
+        },
+        {
+          "kanji": "右",
+          "meaning": "derecha",
+          "on": [
+            "ウ",
+            "ユウ"
+          ],
+          "kun": [
+            "みぎ"
+          ],
+          "examples": [
+            {
+              "word": "右",
+              "reading": "みぎ",
+              "es": "derecha"
+            }
+          ]
+        },
+        {
+          "kanji": "左",
+          "meaning": "izquierda",
+          "on": [
+            "サ"
+          ],
+          "kun": [
+            "ひだり"
+          ],
+          "examples": [
+            {
+              "word": "左",
+              "reading": "ひだり",
+              "es": "izquierda"
+            }
+          ]
+        },
+        {
+          "kanji": "中",
+          "meaning": "medio; dentro",
+          "on": [
+            "チュウ"
+          ],
+          "kun": [
+            "なか"
+          ],
+          "examples": [
+            {
+              "word": "中",
+              "reading": "なか",
+              "es": "dentro"
+            },
+            {
+              "word": "中国",
+              "reading": "ちゅうごく",
+              "es": "China"
+            }
+          ]
+        },
+        {
+          "kanji": "外",
+          "meaning": "afuera",
+          "on": [
+            "ガイ"
+          ],
+          "kun": [
+            "そと"
+          ],
+          "examples": [
+            {
+              "word": "外",
+              "reading": "そと",
+              "es": "afuera"
+            },
+            {
+              "word": "外国",
+              "reading": "がいこく",
+              "es": "el extranjero"
+            }
+          ]
+        },
+        {
+          "kanji": "内",
+          "meaning": "dentro",
+          "on": [
+            "ナイ"
+          ],
+          "kun": [
+            "うち"
+          ],
+          "examples": [
+            {
+              "word": "内",
+              "reading": "うち",
+              "es": "dentro"
+            },
+            {
+              "word": "国内",
+              "reading": "こくない",
+              "es": "dentro del país"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 6,
       "kanji": [
         {
           "kanji": "学",
@@ -592,6 +1034,48 @@
               "word": "大学",
               "reading": "だいがく",
               "es": "universidad"
+            }
+          ]
+        },
+        {
+          "kanji": "校",
+          "meaning": "escuela",
+          "on": [
+            "コウ"
+          ],
+          "kun": [],
+          "examples": [
+            {
+              "word": "学校",
+              "reading": "がっこう",
+              "es": "escuela"
+            },
+            {
+              "word": "高校",
+              "reading": "こうこう",
+              "es": "escuela secundaria"
+            }
+          ]
+        },
+        {
+          "kanji": "先",
+          "meaning": "antes; adelante",
+          "on": [
+            "セン"
+          ],
+          "kun": [
+            "さき"
+          ],
+          "examples": [
+            {
+              "word": "先生",
+              "reading": "せんせい",
+              "es": "profesor/a"
+            },
+            {
+              "word": "先週",
+              "reading": "せんしゅう",
+              "es": "la semana pasada"
             }
           ]
         },
@@ -620,88 +1104,52 @@
           ]
         },
         {
-          "kanji": "先",
-          "meaning": "antes; adelante",
+          "kanji": "名",
+          "meaning": "nombre",
           "on": [
-            "セン"
+            "メイ",
+            "ミョウ"
           ],
           "kun": [
-            "さき"
+            "な"
           ],
           "examples": [
             {
-              "word": "先生",
-              "reading": "せんせい",
-              "es": "profesor/a"
+              "word": "名前",
+              "reading": "なまえ",
+              "es": "nombre"
             },
             {
-              "word": "先週",
-              "reading": "せんしゅう",
-              "es": "la semana pasada"
+              "word": "有名",
+              "reading": "ゆうめい",
+              "es": "famoso"
             }
           ]
         },
         {
-          "kanji": "会",
-          "meaning": "reunirse",
+          "kanji": "字",
+          "meaning": "letra; carácter",
           "on": [
-            "カイ"
+            "ジ"
           ],
           "kun": [
-            "あ.う"
+            "あざ"
           ],
           "examples": [
             {
-              "word": "会社",
-              "reading": "かいしゃ",
-              "es": "empresa"
+              "word": "字",
+              "reading": "じ",
+              "es": "letra"
             },
             {
-              "word": "会います",
-              "reading": "あいます",
-              "es": "encontrarse con alguien"
-            }
-          ]
-        },
-        {
-          "kanji": "社",
-          "meaning": "empresa; santuario",
-          "on": [
-            "シャ"
-          ],
-          "kun": [
-            "やしろ"
-          ],
-          "examples": [
-            {
-              "word": "会社",
-              "reading": "かいしゃ",
-              "es": "empresa"
+              "word": "漢字",
+              "reading": "かんじ",
+              "es": "kanji"
             },
             {
-              "word": "社員",
-              "reading": "しゃいん",
-              "es": "empleado"
-            }
-          ]
-        },
-        {
-          "kanji": "員",
-          "meaning": "miembro",
-          "on": [
-            "イン"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "会社員",
-              "reading": "かいしゃいん",
-              "es": "empleado de empresa"
-            },
-            {
-              "word": "社員",
-              "reading": "しゃいん",
-              "es": "empleado"
+              "word": "名字",
+              "reading": "みょうじ",
+              "es": "apellido"
             }
           ]
         },
@@ -728,328 +1176,6 @@
           ]
         },
         {
-          "kanji": "中",
-          "meaning": "medio; dentro",
-          "on": [
-            "チュウ"
-          ],
-          "kun": [
-            "なか"
-          ],
-          "examples": [
-            {
-              "word": "中",
-              "reading": "なか",
-              "es": "dentro"
-            },
-            {
-              "word": "中国",
-              "reading": "ちゅうごく",
-              "es": "China"
-            }
-          ]
-        },
-        {
-          "kanji": "国",
-          "meaning": "país",
-          "on": [
-            "コク"
-          ],
-          "kun": [
-            "くに"
-          ],
-          "examples": [
-            {
-              "word": "国",
-              "reading": "くに",
-              "es": "país"
-            },
-            {
-              "word": "中国",
-              "reading": "ちゅうごく",
-              "es": "China"
-            },
-            {
-              "word": "外国",
-              "reading": "がいこく",
-              "es": "el extranjero"
-            }
-          ]
-        },
-        {
-          "kanji": "人",
-          "meaning": "persona",
-          "on": [
-            "ジン",
-            "ニン"
-          ],
-          "kun": [
-            "ひと"
-          ],
-          "examples": [
-            {
-              "word": "人",
-              "reading": "ひと",
-              "es": "persona"
-            },
-            {
-              "word": "日本人",
-              "reading": "にほんじん",
-              "es": "japonés/a"
-            },
-            {
-              "word": "三人",
-              "reading": "さんにん",
-              "es": "tres personas"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 4,
-      "kanji": [
-        {
-          "kanji": "今",
-          "meaning": "ahora",
-          "on": [
-            "コン"
-          ],
-          "kun": [
-            "いま"
-          ],
-          "examples": [
-            {
-              "word": "今",
-              "reading": "いま",
-              "es": "ahora"
-            },
-            {
-              "word": "今月",
-              "reading": "こんげつ",
-              "es": "este mes"
-            },
-            {
-              "word": "今日",
-              "reading": "きょう",
-              "es": "hoy"
-            }
-          ]
-        },
-        {
-          "kanji": "朝",
-          "meaning": "mañana (parte del día)",
-          "on": [
-            "チョウ"
-          ],
-          "kun": [
-            "あさ"
-          ],
-          "examples": [
-            {
-              "word": "朝",
-              "reading": "あさ",
-              "es": "mañana"
-            },
-            {
-              "word": "毎朝",
-              "reading": "まいあさ",
-              "es": "todas las mañanas"
-            }
-          ]
-        },
-        {
-          "kanji": "昼",
-          "meaning": "mediodía",
-          "on": [
-            "チュウ"
-          ],
-          "kun": [
-            "ひる"
-          ],
-          "examples": [
-            {
-              "word": "昼",
-              "reading": "ひる",
-              "es": "mediodía"
-            },
-            {
-              "word": "昼休み",
-              "reading": "ひるやすみ",
-              "es": "descanso del mediodía"
-            }
-          ]
-        },
-        {
-          "kanji": "晩",
-          "meaning": "noche",
-          "on": [
-            "バン"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "晩",
-              "reading": "ばん",
-              "es": "noche"
-            },
-            {
-              "word": "今晩",
-              "reading": "こんばん",
-              "es": "esta noche"
-            }
-          ]
-        },
-        {
-          "kanji": "時",
-          "meaning": "hora; tiempo",
-          "on": [
-            "ジ"
-          ],
-          "kun": [
-            "とき"
-          ],
-          "examples": [
-            {
-              "word": "時間",
-              "reading": "じかん",
-              "es": "tiempo; horas"
-            },
-            {
-              "word": "四時",
-              "reading": "よじ",
-              "es": "las cuatro"
-            },
-            {
-              "word": "時",
-              "reading": "とき",
-              "es": "cuando"
-            }
-          ]
-        },
-        {
-          "kanji": "分",
-          "meaning": "minuto; parte; entender",
-          "on": [
-            "ブン",
-            "フン"
-          ],
-          "kun": [
-            "わ.かる"
-          ],
-          "examples": [
-            {
-              "word": "五分",
-              "reading": "ごふん",
-              "es": "cinco minutos"
-            },
-            {
-              "word": "分かります",
-              "reading": "わかります",
-              "es": "entender"
-            },
-            {
-              "word": "半分",
-              "reading": "はんぶん",
-              "es": "la mitad"
-            }
-          ]
-        },
-        {
-          "kanji": "半",
-          "meaning": "mitad",
-          "on": [
-            "ハン"
-          ],
-          "kun": [
-            "なか.ば"
-          ],
-          "examples": [
-            {
-              "word": "三時半",
-              "reading": "さんじはん",
-              "es": "las tres y media"
-            },
-            {
-              "word": "半分",
-              "reading": "はんぶん",
-              "es": "la mitad"
-            }
-          ]
-        },
-        {
-          "kanji": "午",
-          "meaning": "mediodía (horas)",
-          "on": [
-            "ゴ"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "午前",
-              "reading": "ごぜん",
-              "es": "a. m."
-            },
-            {
-              "word": "午後",
-              "reading": "ごご",
-              "es": "p. m."
-            }
-          ]
-        },
-        {
-          "kanji": "前",
-          "meaning": "antes; delante",
-          "on": [
-            "ゼン"
-          ],
-          "kun": [
-            "まえ"
-          ],
-          "examples": [
-            {
-              "word": "前",
-              "reading": "まえ",
-              "es": "delante; antes"
-            },
-            {
-              "word": "午前",
-              "reading": "ごぜん",
-              "es": "a. m."
-            }
-          ]
-        },
-        {
-          "kanji": "後",
-          "meaning": "después; detrás",
-          "on": [
-            "ゴ",
-            "コウ"
-          ],
-          "kun": [
-            "うし.ろ",
-            "あと",
-            "のち"
-          ],
-          "examples": [
-            {
-              "word": "午後",
-              "reading": "ごご",
-              "es": "p. m."
-            },
-            {
-              "word": "後ろ",
-              "reading": "うしろ",
-              "es": "detrás"
-            },
-            {
-              "word": "後で",
-              "reading": "あとで",
-              "es": "después"
-            }
-          ]
-        },
-        {
           "kanji": "休",
           "meaning": "descansar",
           "on": [
@@ -1070,60 +1196,406 @@
               "es": "día libre"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "kanji": [
         {
-          "kanji": "毎",
-          "meaning": "cada",
+          "kanji": "大",
+          "meaning": "grande",
           "on": [
-            "マイ"
+            "ダイ",
+            "タイ"
           ],
-          "kun": [],
+          "kun": [
+            "おお.きい"
+          ],
           "examples": [
             {
-              "word": "毎日",
-              "reading": "まいにち",
-              "es": "todos los días"
+              "word": "大きい",
+              "reading": "おおきい",
+              "es": "grande"
             },
             {
-              "word": "毎週",
-              "reading": "まいしゅう",
-              "es": "todas las semanas"
+              "word": "大学",
+              "reading": "だいがく",
+              "es": "universidad"
             }
           ]
         },
         {
-          "kanji": "何",
-          "meaning": "qué",
+          "kanji": "小",
+          "meaning": "pequeño",
           "on": [
-            "カ"
+            "ショウ"
           ],
           "kun": [
-            "なに",
-            "なん"
+            "ちい.さい",
+            "こ"
           ],
           "examples": [
             {
-              "word": "何",
-              "reading": "なに",
-              "es": "qué"
+              "word": "小さい",
+              "reading": "ちいさい",
+              "es": "chico"
             },
             {
-              "word": "何時",
-              "reading": "なんじ",
-              "es": "qué hora"
+              "word": "小学校",
+              "reading": "しょうがっこう",
+              "es": "escuela primaria"
+            }
+          ]
+        },
+        {
+          "kanji": "高",
+          "meaning": "alto; caro",
+          "on": [
+            "コウ"
+          ],
+          "kun": [
+            "たか.い"
+          ],
+          "examples": [
+            {
+              "word": "高い",
+              "reading": "たかい",
+              "es": "alto; caro"
             },
             {
-              "word": "何人",
-              "reading": "なんにん",
-              "es": "cuántas personas"
+              "word": "高校",
+              "reading": "こうこう",
+              "es": "escuela secundaria"
+            }
+          ]
+        },
+        {
+          "kanji": "友",
+          "meaning": "amigo",
+          "on": [
+            "ユウ"
+          ],
+          "kun": [
+            "とも"
+          ],
+          "examples": [
+            {
+              "word": "友達",
+              "reading": "ともだち",
+              "es": "amigo"
+            },
+            {
+              "word": "友人",
+              "reading": "ゆうじん",
+              "es": "amigo (formal)"
+            }
+          ]
+        },
+        {
+          "kanji": "入",
+          "meaning": "entrar; meter",
+          "on": [
+            "ニュウ"
+          ],
+          "kun": [
+            "い.れる",
+            "はい.る"
+          ],
+          "examples": [
+            {
+              "word": "入ります",
+              "reading": "はいります",
+              "es": "entrar"
+            },
+            {
+              "word": "入れます",
+              "reading": "いれます",
+              "es": "meter"
+            },
+            {
+              "word": "入口",
+              "reading": "いりぐち",
+              "es": "entrada"
+            }
+          ]
+        },
+        {
+          "kanji": "出",
+          "meaning": "salir; sacar",
+          "on": [
+            "シュツ"
+          ],
+          "kun": [
+            "で.る",
+            "だ.す"
+          ],
+          "examples": [
+            {
+              "word": "出ます",
+              "reading": "でます",
+              "es": "salir"
+            },
+            {
+              "word": "出します",
+              "reading": "だします",
+              "es": "sacar; entregar"
+            },
+            {
+              "word": "出口",
+              "reading": "でぐち",
+              "es": "salida"
+            }
+          ]
+        },
+        {
+          "kanji": "門",
+          "meaning": "portón",
+          "on": [
+            "モン"
+          ],
+          "kun": [
+            "かど"
+          ],
+          "examples": [
+            {
+              "word": "門",
+              "reading": "もん",
+              "es": "portón"
+            },
+            {
+              "word": "校門",
+              "reading": "こうもん",
+              "es": "puerta de la escuela"
             }
           ]
         }
       ]
     },
     {
-      "unit": 5,
+      "unit": 8,
       "kanji": [
+        {
+          "kanji": "父",
+          "meaning": "padre",
+          "on": [
+            "フ"
+          ],
+          "kun": [
+            "ちち"
+          ],
+          "examples": [
+            {
+              "word": "父",
+              "reading": "ちち",
+              "es": "(mi) padre"
+            },
+            {
+              "word": "お父さん",
+              "reading": "おとうさん",
+              "es": "padre (de otro)"
+            }
+          ]
+        },
+        {
+          "kanji": "母",
+          "meaning": "madre",
+          "on": [
+            "ボ"
+          ],
+          "kun": [
+            "はは"
+          ],
+          "examples": [
+            {
+              "word": "母",
+              "reading": "はは",
+              "es": "(mi) madre"
+            },
+            {
+              "word": "お母さん",
+              "reading": "おかあさん",
+              "es": "madre (de otro)"
+            }
+          ]
+        },
+        {
+          "kanji": "男",
+          "meaning": "hombre",
+          "on": [
+            "ダン",
+            "ナン"
+          ],
+          "kun": [
+            "おとこ"
+          ],
+          "examples": [
+            {
+              "word": "男の人",
+              "reading": "おとこのひと",
+              "es": "hombre"
+            },
+            {
+              "word": "男の子",
+              "reading": "おとこのこ",
+              "es": "niño"
+            }
+          ]
+        },
+        {
+          "kanji": "女",
+          "meaning": "mujer",
+          "on": [
+            "ジョ"
+          ],
+          "kun": [
+            "おんな"
+          ],
+          "examples": [
+            {
+              "word": "女の人",
+              "reading": "おんなのひと",
+              "es": "mujer"
+            },
+            {
+              "word": "女の子",
+              "reading": "おんなのこ",
+              "es": "niña"
+            }
+          ]
+        },
+        {
+          "kanji": "子",
+          "meaning": "niño",
+          "on": [
+            "シ"
+          ],
+          "kun": [
+            "こ"
+          ],
+          "examples": [
+            {
+              "word": "子ども",
+              "reading": "こども",
+              "es": "niño"
+            },
+            {
+              "word": "女の子",
+              "reading": "おんなのこ",
+              "es": "niña"
+            }
+          ]
+        },
+        {
+          "kanji": "犬",
+          "meaning": "perro",
+          "on": [
+            "ケン"
+          ],
+          "kun": [
+            "いぬ"
+          ],
+          "examples": [
+            {
+              "word": "犬",
+              "reading": "いぬ",
+              "es": "perro"
+            }
+          ]
+        },
+        {
+          "kanji": "鳥",
+          "meaning": "pájaro",
+          "on": [
+            "チョウ"
+          ],
+          "kun": [
+            "とり"
+          ],
+          "examples": [
+            {
+              "word": "鳥",
+              "reading": "とり",
+              "es": "pájaro"
+            },
+            {
+              "word": "小鳥",
+              "reading": "ことり",
+              "es": "pajarito"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "kanji": [
+        {
+          "kanji": "立",
+          "meaning": "pararse",
+          "on": [
+            "リツ"
+          ],
+          "kun": [
+            "た.つ"
+          ],
+          "examples": [
+            {
+              "word": "立ちます",
+              "reading": "たちます",
+              "es": "pararse"
+            },
+            {
+              "word": "国立",
+              "reading": "こくりつ",
+              "es": "nacional"
+            }
+          ]
+        },
+        {
+          "kanji": "見",
+          "meaning": "ver",
+          "on": [
+            "ケン"
+          ],
+          "kun": [
+            "み.る"
+          ],
+          "examples": [
+            {
+              "word": "見ます",
+              "reading": "みます",
+              "es": "ver"
+            },
+            {
+              "word": "見せます",
+              "reading": "みせます",
+              "es": "mostrar"
+            }
+          ]
+        },
+        {
+          "kanji": "聞",
+          "meaning": "escuchar; preguntar",
+          "on": [
+            "ブン"
+          ],
+          "kun": [
+            "き.く"
+          ],
+          "examples": [
+            {
+              "word": "聞きます",
+              "reading": "ききます",
+              "es": "escuchar"
+            },
+            {
+              "word": "新聞",
+              "reading": "しんぶん",
+              "es": "diario"
+            }
+          ]
+        },
         {
           "kanji": "行",
           "meaning": "ir",
@@ -1178,978 +1650,6 @@
           ]
         },
         {
-          "kanji": "校",
-          "meaning": "escuela",
-          "on": [
-            "コウ"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "学校",
-              "reading": "がっこう",
-              "es": "escuela"
-            },
-            {
-              "word": "高校",
-              "reading": "こうこう",
-              "es": "escuela secundaria"
-            }
-          ]
-        },
-        {
-          "kanji": "週",
-          "meaning": "semana",
-          "on": [
-            "シュウ"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "今週",
-              "reading": "こんしゅう",
-              "es": "esta semana"
-            },
-            {
-              "word": "毎週",
-              "reading": "まいしゅう",
-              "es": "todas las semanas"
-            }
-          ]
-        },
-        {
-          "kanji": "去",
-          "meaning": "pasado; irse",
-          "on": [
-            "キョ",
-            "コ"
-          ],
-          "kun": [
-            "さ.る"
-          ],
-          "examples": [
-            {
-              "word": "去年",
-              "reading": "きょねん",
-              "es": "el año pasado"
-            }
-          ]
-        },
-        {
-          "kanji": "年",
-          "meaning": "año",
-          "on": [
-            "ネン"
-          ],
-          "kun": [
-            "とし"
-          ],
-          "examples": [
-            {
-              "word": "去年",
-              "reading": "きょねん",
-              "es": "el año pasado"
-            },
-            {
-              "word": "毎年",
-              "reading": "まいとし",
-              "es": "todos los años"
-            },
-            {
-              "word": "年",
-              "reading": "とし",
-              "es": "año; edad"
-            }
-          ]
-        },
-        {
-          "kanji": "駅",
-          "meaning": "estación",
-          "on": [
-            "エキ"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "駅",
-              "reading": "えき",
-              "es": "estación"
-            }
-          ]
-        },
-        {
-          "kanji": "電",
-          "meaning": "electricidad",
-          "on": [
-            "デン"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "電車",
-              "reading": "でんしゃ",
-              "es": "tren"
-            },
-            {
-              "word": "電気",
-              "reading": "でんき",
-              "es": "electricidad; luz"
-            }
-          ]
-        },
-        {
-          "kanji": "車",
-          "meaning": "auto; vehículo",
-          "on": [
-            "シャ"
-          ],
-          "kun": [
-            "くるま"
-          ],
-          "examples": [
-            {
-              "word": "車",
-              "reading": "くるま",
-              "es": "auto"
-            },
-            {
-              "word": "電車",
-              "reading": "でんしゃ",
-              "es": "tren"
-            }
-          ]
-        },
-        {
-          "kanji": "自",
-          "meaning": "uno mismo",
-          "on": [
-            "ジ",
-            "シ"
-          ],
-          "kun": [
-            "みずか.ら"
-          ],
-          "examples": [
-            {
-              "word": "自転車",
-              "reading": "じてんしゃ",
-              "es": "bicicleta"
-            },
-            {
-              "word": "自分",
-              "reading": "じぶん",
-              "es": "uno mismo"
-            }
-          ]
-        },
-        {
-          "kanji": "転",
-          "meaning": "girar; rodar",
-          "on": [
-            "テン"
-          ],
-          "kun": [
-            "ころ.ぶ"
-          ],
-          "examples": [
-            {
-              "word": "自転車",
-              "reading": "じてんしゃ",
-              "es": "bicicleta"
-            },
-            {
-              "word": "運転",
-              "reading": "うんてん",
-              "es": "manejar"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 6,
-      "kanji": [
-        {
-          "kanji": "高",
-          "meaning": "alto; caro",
-          "on": [
-            "コウ"
-          ],
-          "kun": [
-            "たか.い"
-          ],
-          "examples": [
-            {
-              "word": "高い",
-              "reading": "たかい",
-              "es": "alto; caro"
-            },
-            {
-              "word": "高校",
-              "reading": "こうこう",
-              "es": "escuela secundaria"
-            }
-          ]
-        },
-        {
-          "kanji": "安",
-          "meaning": "barato; tranquilo",
-          "on": [
-            "アン"
-          ],
-          "kun": [
-            "やす.い"
-          ],
-          "examples": [
-            {
-              "word": "安い",
-              "reading": "やすい",
-              "es": "barato"
-            }
-          ]
-        },
-        {
-          "kanji": "大",
-          "meaning": "grande",
-          "on": [
-            "ダイ",
-            "タイ"
-          ],
-          "kun": [
-            "おお.きい"
-          ],
-          "examples": [
-            {
-              "word": "大きい",
-              "reading": "おおきい",
-              "es": "grande"
-            },
-            {
-              "word": "大学",
-              "reading": "だいがく",
-              "es": "universidad"
-            }
-          ]
-        },
-        {
-          "kanji": "小",
-          "meaning": "pequeño",
-          "on": [
-            "ショウ"
-          ],
-          "kun": [
-            "ちい.さい",
-            "こ"
-          ],
-          "examples": [
-            {
-              "word": "小さい",
-              "reading": "ちいさい",
-              "es": "chico"
-            },
-            {
-              "word": "小学校",
-              "reading": "しょうがっこう",
-              "es": "escuela primaria"
-            }
-          ]
-        },
-        {
-          "kanji": "新",
-          "meaning": "nuevo",
-          "on": [
-            "シン"
-          ],
-          "kun": [
-            "あたら.しい"
-          ],
-          "examples": [
-            {
-              "word": "新しい",
-              "reading": "あたらしい",
-              "es": "nuevo"
-            },
-            {
-              "word": "新聞",
-              "reading": "しんぶん",
-              "es": "diario"
-            }
-          ]
-        },
-        {
-          "kanji": "古",
-          "meaning": "viejo",
-          "on": [
-            "コ"
-          ],
-          "kun": [
-            "ふる.い"
-          ],
-          "examples": [
-            {
-              "word": "古い",
-              "reading": "ふるい",
-              "es": "viejo (cosas)"
-            }
-          ]
-        },
-        {
-          "kanji": "青",
-          "meaning": "azul",
-          "on": [
-            "セイ"
-          ],
-          "kun": [
-            "あお",
-            "あお.い"
-          ],
-          "examples": [
-            {
-              "word": "青い",
-              "reading": "あおい",
-              "es": "azul"
-            }
-          ]
-        },
-        {
-          "kanji": "白",
-          "meaning": "blanco",
-          "on": [
-            "ハク"
-          ],
-          "kun": [
-            "しろ",
-            "しろ.い"
-          ],
-          "examples": [
-            {
-              "word": "白い",
-              "reading": "しろい",
-              "es": "blanco"
-            }
-          ]
-        },
-        {
-          "kanji": "赤",
-          "meaning": "rojo",
-          "on": [
-            "セキ"
-          ],
-          "kun": [
-            "あか",
-            "あか.い"
-          ],
-          "examples": [
-            {
-              "word": "赤い",
-              "reading": "あかい",
-              "es": "rojo"
-            },
-            {
-              "word": "赤ちゃん",
-              "reading": "あかちゃん",
-              "es": "bebé"
-            }
-          ]
-        },
-        {
-          "kanji": "黒",
-          "meaning": "negro",
-          "on": [
-            "コク"
-          ],
-          "kun": [
-            "くろ",
-            "くろ.い"
-          ],
-          "examples": [
-            {
-              "word": "黒い",
-              "reading": "くろい",
-              "es": "negro"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 7,
-      "kanji": [
-        {
-          "kanji": "上",
-          "meaning": "arriba",
-          "on": [
-            "ジョウ"
-          ],
-          "kun": [
-            "うえ",
-            "あ.がる"
-          ],
-          "examples": [
-            {
-              "word": "上",
-              "reading": "うえ",
-              "es": "arriba"
-            },
-            {
-              "word": "上手",
-              "reading": "じょうず",
-              "es": "hábil"
-            }
-          ]
-        },
-        {
-          "kanji": "下",
-          "meaning": "abajo",
-          "on": [
-            "カ",
-            "ゲ"
-          ],
-          "kun": [
-            "した",
-            "さ.がる",
-            "くだ.さい"
-          ],
-          "examples": [
-            {
-              "word": "下",
-              "reading": "した",
-              "es": "abajo"
-            },
-            {
-              "word": "地下鉄",
-              "reading": "ちかてつ",
-              "es": "subte"
-            }
-          ]
-        },
-        {
-          "kanji": "父",
-          "meaning": "padre",
-          "on": [
-            "フ"
-          ],
-          "kun": [
-            "ちち"
-          ],
-          "examples": [
-            {
-              "word": "父",
-              "reading": "ちち",
-              "es": "(mi) padre"
-            },
-            {
-              "word": "お父さん",
-              "reading": "おとうさん",
-              "es": "padre (de otro)"
-            }
-          ]
-        },
-        {
-          "kanji": "母",
-          "meaning": "madre",
-          "on": [
-            "ボ"
-          ],
-          "kun": [
-            "はは"
-          ],
-          "examples": [
-            {
-              "word": "母",
-              "reading": "はは",
-              "es": "(mi) madre"
-            },
-            {
-              "word": "お母さん",
-              "reading": "おかあさん",
-              "es": "madre (de otro)"
-            }
-          ]
-        },
-        {
-          "kanji": "子",
-          "meaning": "niño",
-          "on": [
-            "シ"
-          ],
-          "kun": [
-            "こ"
-          ],
-          "examples": [
-            {
-              "word": "子ども",
-              "reading": "こども",
-              "es": "niño"
-            },
-            {
-              "word": "女の子",
-              "reading": "おんなのこ",
-              "es": "niña"
-            }
-          ]
-        },
-        {
-          "kanji": "手",
-          "meaning": "mano",
-          "on": [
-            "シュ"
-          ],
-          "kun": [
-            "て"
-          ],
-          "examples": [
-            {
-              "word": "手",
-              "reading": "て",
-              "es": "mano"
-            },
-            {
-              "word": "上手",
-              "reading": "じょうず",
-              "es": "hábil"
-            },
-            {
-              "word": "手紙",
-              "reading": "てがみ",
-              "es": "carta"
-            }
-          ]
-        },
-        {
-          "kanji": "好",
-          "meaning": "gustar",
-          "on": [
-            "コウ"
-          ],
-          "kun": [
-            "す.き"
-          ],
-          "examples": [
-            {
-              "word": "好き",
-              "reading": "すき",
-              "es": "que gusta"
-            },
-            {
-              "word": "大好き",
-              "reading": "だいすき",
-              "es": "que gusta mucho"
-            }
-          ]
-        },
-        {
-          "kanji": "肉",
-          "meaning": "carne",
-          "on": [
-            "ニク"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "肉",
-              "reading": "にく",
-              "es": "carne"
-            }
-          ]
-        },
-        {
-          "kanji": "魚",
-          "meaning": "pez; pescado",
-          "on": [
-            "ギョ"
-          ],
-          "kun": [
-            "さかな"
-          ],
-          "examples": [
-            {
-              "word": "魚",
-              "reading": "さかな",
-              "es": "pescado"
-            }
-          ]
-        },
-        {
-          "kanji": "食",
-          "meaning": "comer",
-          "on": [
-            "ショク"
-          ],
-          "kun": [
-            "た.べる"
-          ],
-          "examples": [
-            {
-              "word": "食べます",
-              "reading": "たべます",
-              "es": "comer"
-            },
-            {
-              "word": "食べ物",
-              "reading": "たべもの",
-              "es": "comida"
-            },
-            {
-              "word": "食堂",
-              "reading": "しょくどう",
-              "es": "comedor"
-            }
-          ]
-        },
-        {
-          "kanji": "飲",
-          "meaning": "beber",
-          "on": [
-            "イン"
-          ],
-          "kun": [
-            "の.む"
-          ],
-          "examples": [
-            {
-              "word": "飲みます",
-              "reading": "のみます",
-              "es": "beber"
-            },
-            {
-              "word": "飲み物",
-              "reading": "のみもの",
-              "es": "bebida"
-            }
-          ]
-        },
-        {
-          "kanji": "物",
-          "meaning": "cosa",
-          "on": [
-            "ブツ",
-            "モツ"
-          ],
-          "kun": [
-            "もの"
-          ],
-          "examples": [
-            {
-              "word": "物",
-              "reading": "もの",
-              "es": "cosa"
-            },
-            {
-              "word": "食べ物",
-              "reading": "たべもの",
-              "es": "comida"
-            },
-            {
-              "word": "買い物",
-              "reading": "かいもの",
-              "es": "compras"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 8,
-      "kanji": [
-        {
-          "kanji": "近",
-          "meaning": "cerca",
-          "on": [
-            "キン"
-          ],
-          "kun": [
-            "ちか.い"
-          ],
-          "examples": [
-            {
-              "word": "近い",
-              "reading": "ちかい",
-              "es": "cercano"
-            },
-            {
-              "word": "近く",
-              "reading": "ちかく",
-              "es": "cerca"
-            }
-          ]
-        },
-        {
-          "kanji": "間",
-          "meaning": "intervalo; entre",
-          "on": [
-            "カン"
-          ],
-          "kun": [
-            "あいだ",
-            "ま"
-          ],
-          "examples": [
-            {
-              "word": "間",
-              "reading": "あいだ",
-              "es": "entre"
-            },
-            {
-              "word": "時間",
-              "reading": "じかん",
-              "es": "tiempo; horas"
-            }
-          ]
-        },
-        {
-          "kanji": "右",
-          "meaning": "derecha",
-          "on": [
-            "ウ",
-            "ユウ"
-          ],
-          "kun": [
-            "みぎ"
-          ],
-          "examples": [
-            {
-              "word": "右",
-              "reading": "みぎ",
-              "es": "derecha"
-            }
-          ]
-        },
-        {
-          "kanji": "左",
-          "meaning": "izquierda",
-          "on": [
-            "サ"
-          ],
-          "kun": [
-            "ひだり"
-          ],
-          "examples": [
-            {
-              "word": "左",
-              "reading": "ひだり",
-              "es": "izquierda"
-            }
-          ]
-        },
-        {
-          "kanji": "外",
-          "meaning": "afuera",
-          "on": [
-            "ガイ"
-          ],
-          "kun": [
-            "そと"
-          ],
-          "examples": [
-            {
-              "word": "外",
-              "reading": "そと",
-              "es": "afuera"
-            },
-            {
-              "word": "外国",
-              "reading": "がいこく",
-              "es": "el extranjero"
-            }
-          ]
-        },
-        {
-          "kanji": "男",
-          "meaning": "hombre",
-          "on": [
-            "ダン",
-            "ナン"
-          ],
-          "kun": [
-            "おとこ"
-          ],
-          "examples": [
-            {
-              "word": "男の人",
-              "reading": "おとこのひと",
-              "es": "hombre"
-            },
-            {
-              "word": "男の子",
-              "reading": "おとこのこ",
-              "es": "niño"
-            }
-          ]
-        },
-        {
-          "kanji": "女",
-          "meaning": "mujer",
-          "on": [
-            "ジョ"
-          ],
-          "kun": [
-            "おんな"
-          ],
-          "examples": [
-            {
-              "word": "女の人",
-              "reading": "おんなのひと",
-              "es": "mujer"
-            },
-            {
-              "word": "女の子",
-              "reading": "おんなのこ",
-              "es": "niña"
-            }
-          ]
-        },
-        {
-          "kanji": "犬",
-          "meaning": "perro",
-          "on": [
-            "ケン"
-          ],
-          "kun": [
-            "いぬ"
-          ],
-          "examples": [
-            {
-              "word": "犬",
-              "reading": "いぬ",
-              "es": "perro"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 9,
-      "kanji": [
-        {
-          "kanji": "書",
-          "meaning": "escribir",
-          "on": [
-            "ショ"
-          ],
-          "kun": [
-            "か.く"
-          ],
-          "examples": [
-            {
-              "word": "書きます",
-              "reading": "かきます",
-              "es": "escribir"
-            },
-            {
-              "word": "辞書",
-              "reading": "じしょ",
-              "es": "diccionario"
-            }
-          ]
-        },
-        {
-          "kanji": "聞",
-          "meaning": "escuchar; preguntar",
-          "on": [
-            "ブン"
-          ],
-          "kun": [
-            "き.く"
-          ],
-          "examples": [
-            {
-              "word": "聞きます",
-              "reading": "ききます",
-              "es": "escuchar"
-            },
-            {
-              "word": "新聞",
-              "reading": "しんぶん",
-              "es": "diario"
-            }
-          ]
-        },
-        {
-          "kanji": "読",
-          "meaning": "leer",
-          "on": [
-            "ドク"
-          ],
-          "kun": [
-            "よ.む"
-          ],
-          "examples": [
-            {
-              "word": "読みます",
-              "reading": "よみます",
-              "es": "leer"
-            }
-          ]
-        },
-        {
-          "kanji": "見",
-          "meaning": "ver",
-          "on": [
-            "ケン"
-          ],
-          "kun": [
-            "み.る"
-          ],
-          "examples": [
-            {
-              "word": "見ます",
-              "reading": "みます",
-              "es": "ver"
-            },
-            {
-              "word": "見せます",
-              "reading": "みせます",
-              "es": "mostrar"
-            }
-          ]
-        },
-        {
-          "kanji": "話",
-          "meaning": "hablar; historia",
-          "on": [
-            "ワ"
-          ],
-          "kun": [
-            "はな.す",
-            "はなし"
-          ],
-          "examples": [
-            {
-              "word": "話します",
-              "reading": "はなします",
-              "es": "hablar"
-            },
-            {
-              "word": "電話",
-              "reading": "でんわ",
-              "es": "teléfono"
-            }
-          ]
-        },
-        {
-          "kanji": "買",
-          "meaning": "comprar",
-          "on": [
-            "バイ"
-          ],
-          "kun": [
-            "か.う"
-          ],
-          "examples": [
-            {
-              "word": "買います",
-              "reading": "かいます",
-              "es": "comprar"
-            },
-            {
-              "word": "買い物",
-              "reading": "かいもの",
-              "es": "compras"
-            }
-          ]
-        },
-        {
           "kanji": "帰",
           "meaning": "volver",
           "on": [
@@ -2163,196 +1663,6 @@
               "word": "帰ります",
               "reading": "かえります",
               "es": "volver (a casa)"
-            }
-          ]
-        },
-        {
-          "kanji": "友",
-          "meaning": "amigo",
-          "on": [
-            "ユウ"
-          ],
-          "kun": [
-            "とも"
-          ],
-          "examples": [
-            {
-              "word": "友達",
-              "reading": "ともだち",
-              "es": "amigo"
-            },
-            {
-              "word": "友人",
-              "reading": "ゆうじん",
-              "es": "amigo (formal)"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "unit": 10,
-      "kanji": [
-        {
-          "kanji": "茶",
-          "meaning": "té",
-          "on": [
-            "チャ",
-            "サ"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "お茶",
-              "reading": "おちゃ",
-              "es": "té verde"
-            },
-            {
-              "word": "茶色",
-              "reading": "ちゃいろ",
-              "es": "marrón"
-            }
-          ]
-        },
-        {
-          "kanji": "酒",
-          "meaning": "sake; alcohol",
-          "on": [
-            "シュ"
-          ],
-          "kun": [
-            "さけ"
-          ],
-          "examples": [
-            {
-              "word": "お酒",
-              "reading": "おさけ",
-              "es": "bebida alcohólica"
-            },
-            {
-              "word": "日本酒",
-              "reading": "にほんしゅ",
-              "es": "sake japonés"
-            }
-          ]
-        },
-        {
-          "kanji": "写",
-          "meaning": "copiar; reflejar",
-          "on": [
-            "シャ"
-          ],
-          "kun": [
-            "うつ.す"
-          ],
-          "examples": [
-            {
-              "word": "写真",
-              "reading": "しゃしん",
-              "es": "foto"
-            }
-          ]
-        },
-        {
-          "kanji": "真",
-          "meaning": "verdadero",
-          "on": [
-            "シン"
-          ],
-          "kun": [
-            "ま"
-          ],
-          "examples": [
-            {
-              "word": "写真",
-              "reading": "しゃしん",
-              "es": "foto"
-            },
-            {
-              "word": "真ん中",
-              "reading": "まんなか",
-              "es": "el centro"
-            }
-          ]
-        },
-        {
-          "kanji": "紙",
-          "meaning": "papel",
-          "on": [
-            "シ"
-          ],
-          "kun": [
-            "かみ"
-          ],
-          "examples": [
-            {
-              "word": "紙",
-              "reading": "かみ",
-              "es": "papel"
-            },
-            {
-              "word": "手紙",
-              "reading": "てがみ",
-              "es": "carta"
-            }
-          ]
-        },
-        {
-          "kanji": "店",
-          "meaning": "tienda",
-          "on": [
-            "テン"
-          ],
-          "kun": [
-            "みせ"
-          ],
-          "examples": [
-            {
-              "word": "店",
-              "reading": "みせ",
-              "es": "tienda"
-            },
-            {
-              "word": "店員",
-              "reading": "てんいん",
-              "es": "empleado de tienda"
-            }
-          ]
-        },
-        {
-          "kanji": "英",
-          "meaning": "inglés; excelente",
-          "on": [
-            "エイ"
-          ],
-          "kun": [],
-          "examples": [
-            {
-              "word": "英語",
-              "reading": "えいご",
-              "es": "inglés"
-            }
-          ]
-        },
-        {
-          "kanji": "語",
-          "meaning": "idioma; palabra",
-          "on": [
-            "ゴ"
-          ],
-          "kun": [
-            "かた.る"
-          ],
-          "examples": [
-            {
-              "word": "日本語",
-              "reading": "にほんご",
-              "es": "japonés"
-            },
-            {
-              "word": "英語",
-              "reading": "えいご",
-              "es": "inglés"
             }
           ]
         }

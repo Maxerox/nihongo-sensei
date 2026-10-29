@@ -10,9 +10,10 @@ const strokes = kanjiStrokes as unknown as KanjiStrokesData
 const all = book.units.flatMap((u) => u.kanji)
 
 describe('libro de kanji', () => {
-  it('tiene las unidades 1 a 10 y 104 kanji sin repetir', () => {
-    expect(book.units.map((u) => u.unit)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-    expect(new Set(all.map((k) => k.kanji)).size).toBe(104)
+  it('tiene las unidades 1 a 9 y 71 kanji sin repetir', () => {
+    expect(book.units.map((u) => u.unit)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    expect(all).toHaveLength(71)
+    expect(new Set(all.map((k) => k.kanji)).size).toBe(71)
   })
 
   it('cada kanji tiene trazos, con un número por trazo', () => {

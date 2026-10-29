@@ -14,7 +14,7 @@ Secciones actuales, cada una es una página:
 | Ruta            | Página               | Contenido                                     |
 | --------------- | -------------------- | --------------------------------------------- |
 | `/vocabulario`  | `VocabularyPage`     | Tarjetas, quiz y lista de vocabulario         |
-| `/kanji`        | `KanjiPage`          | Tarjetas, dibujo con corrección y lista de kanji (unidades 1–10) |
+| `/kanji`        | `KanjiPage`          | Tarjetas, dibujo con corrección y lista de kanji (漢字マスターN5, unidades 1–9) |
 | `/gramatica`    | `GrammarPage`        | Cheatsheet de gramática por lección           |
 | `/particulas`   | `ParticlesPage`      | Usos, comparaciones y práctica de partículas  |
 | `/contadores`   | `CountersPage`       | Contadores, fechas y práctica                 |
@@ -25,8 +25,10 @@ Secciones actuales, cada una es una página:
    La lista está en `src/data/kanji.json` (`allowedKanji`). Una palabra se muestra en kanji
    solo si **todos** sus kanji están en esa lista; si no, va en kana.
    - Excepción: el vocabulario tiene la opción "Mostrar todos los kanji".
-   - Excepción: la sección **Kanji** usa las unidades 1–10 (`kanji-book.json`), porque su
-     objetivo es estudiar esos kanji.
+   - Excepción: la sección **Kanji** usa su propia lista, las unidades 1–9 del libro
+     **漢字マスターN5** (Kanji Master N5, Arc Academy) en `kanji-book.json`, porque su objetivo
+     es estudiar esos kanji. Las unidades siguen el libro de la persona: si cambian, se cambia
+     ese JSON.
    - Los textos nuevos (ejemplos, oraciones de práctica) se escriben solo con kanji permitidos.
      El test `src/shared/utils/__tests__/content.test.ts` lo controla.
 2. **Furigana siempre:** todo kanji que se muestre lleva su lectura en hiragana encima
@@ -98,8 +100,8 @@ components/atoms/Button/
 ### 4.3 Contenido en JSON
 
 - Todo el contenido vive en `src/data/*.json`: `vocabulary`, `grammar`, `particles`,
-  `counters`, `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 104 kanji de
-  las unidades 1–10) y `kanji-strokes` (trazos). Los componentes no tienen textos de estudio
+  `counters`, `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 71 kanji de
+  las unidades 1–9 de 漢字マスターN5) y `kanji-strokes` (trazos). Los componentes no tienen textos de estudio
   escritos adentro.
 - `kanji-strokes.json` se genera a partir de **KanjiVG** (© Ulrich Apel, licencia
   CC BY-SA 3.0): esos datos se comparten con la misma licencia y se cita la fuente en la
