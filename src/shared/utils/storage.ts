@@ -24,4 +24,7 @@ export const STORAGE_KEYS = {
   direction: 'mn_dir',
   allKanji: 'mn_allk',
   particleLessons: 'mn_plessons',
+  kanjiUnits: 'mn_kanji_units',
+  kanjiKnown: 'mn_kanji_known',
+  kanjiDirection: 'mn_kanji_dir',
 } as const

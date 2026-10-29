@@ -1,8 +1,7 @@
-import { useId } from 'react'
 import { JpText } from '../../atoms/JpText'
 import { LessonTag } from '../../atoms/LessonTag'
 import { SpeakButton } from '../../atoms/SpeakButton'
-import { VisuallyHidden } from '../../atoms/VisuallyHidden'
+import { FlipCard } from '../../molecules/FlipCard'
 import type { VocabWord } from '../../../shared/types/content'
 import { cx } from '../../../shared/utils/classNames'
 import { displayWord } from '../../../shared/utils/kanji'
@@ -20,9 +19,8 @@ export interface FlashcardProps {
   position: { index: number; total: number }
 }
 
-/** Tarjeta que se da vuelta. La cara oculta queda fuera del árbol de accesibilidad. */
+/** Tarjeta de vocabulario: japonés de un lado, significado del otro. */
 export function Flashcard({ word, direction, showAllKanji, known, flipped, onFlip, position }: FlashcardProps) {
-  const hintId = useId()
   const d = displayWord(word, showAllKanji)
   const long = d.main.length > 7
 
@@ -42,37 +40,20 @@ export function Flashcard({ word, direction, showAllKanji, known, flipped, onFli
       <span className={styles.meaning}>{word.es}</span>
     </>
   )
-  const front = direction === 'jp' ? japanese : spanish
-  const back = direction === 'jp' ? spanish : japanese
-  const counter = `${position.index + 1}/${position.total}`
 
   return (
-    <div className={styles.stage}>
-      <button
-        type="button"
-        className={cx(styles.card, flipped && styles.flipped)}
-        onClick={onFlip}
-        aria-describedby={hintId}
-      >
-        <span className={cx(styles.face, styles.front)} aria-hidden={flipped}>
-          <span className={styles.meta}>
-            <LessonTag lesson={word.lesson} /> {counter}
-          </span>
-          {front}
-          {known && <span className={styles.known}>✓ sabida</span>}
-        </span>
-        <span className={cx(styles.face, styles.back)} aria-hidden={!flipped}>
-          <span className={styles.meta}>
-            <LessonTag lesson={word.lesson} /> {counter}
-          </span>
-          {back}
-          {known && <span className={styles.known}>✓ sabida</span>}
-        </span>
-      </button>
-      <VisuallyHidden id={hintId}>
-        {flipped ? 'Mostrando la respuesta. Tocá para volver.' : 'Tocá para ver la respuesta.'}
-      </VisuallyHidden>
-      <SpeakButton text={word.kana} className={styles.speak} />
-    </div>
+    <FlipCard
+      front={direction === 'jp' ? japanese : spanish}
+      back={direction === 'jp' ? spanish : japanese}
+      meta={
+        <>
+          <LessonTag lesson={word.lesson} /> {position.index + 1}/{position.total}
+        </>
+      }
+      knownLabel={known ? '✓ sabida' : undefined}
+      flipped={flipped}
+      onFlip={onFlip}
+      corner={<SpeakButton text={word.kana} />}
+    />
   )
 }

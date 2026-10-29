@@ -14,6 +14,7 @@ Secciones actuales, cada una es una página:
 | Ruta            | Página               | Contenido                                     |
 | --------------- | -------------------- | --------------------------------------------- |
 | `/vocabulario`  | `VocabularyPage`     | Tarjetas, quiz y lista de vocabulario         |
+| `/kanji`        | `KanjiPage`          | Tarjetas, dibujo con corrección y lista de kanji (unidades 1–10) |
 | `/gramatica`    | `GrammarPage`        | Cheatsheet de gramática por lección           |
 | `/particulas`   | `ParticlesPage`      | Usos, comparaciones y práctica de partículas  |
 | `/contadores`   | `CountersPage`       | Contadores, fechas y práctica                 |
@@ -24,6 +25,8 @@ Secciones actuales, cada una es una página:
    La lista está en `src/data/kanji.json` (`allowedKanji`). Una palabra se muestra en kanji
    solo si **todos** sus kanji están en esa lista; si no, va en kana.
    - Excepción: el vocabulario tiene la opción "Mostrar todos los kanji".
+   - Excepción: la sección **Kanji** usa las unidades 1–10 (`kanji-book.json`), porque su
+     objetivo es estudiar esos kanji.
    - Los textos nuevos (ejemplos, oraciones de práctica) se escriben solo con kanji permitidos.
      El test `src/shared/utils/__tests__/content.test.ts` lo controla.
 2. **Furigana siempre:** todo kanji que se muestre lleva su lectura en hiragana encima
@@ -32,8 +35,12 @@ Secciones actuales, cada una es una página:
    - Las lecturas salen de `furiganaDictionary` en `kanji.json` y de las reglas de contexto de
      `src/shared/utils/furigana.ts` (人, 来, 何, 日, 月). Si aparece un kanji nuevo, se agrega
      al diccionario y el test de contenido lo verifica.
-   - Única excepción: cuando la lectura **es la respuesta** de una práctica (por ejemplo "8日"
-     en la práctica de contadores), se muestra después de responder.
+   - Excepciones: cuando la lectura **es la respuesta** de una práctica (por ejemplo "8日"
+     en la práctica de contadores, o el frente de una tarjeta de kanji), se muestra después
+     de responder. En la sección Kanji, el kanji que se estudia va solo y grande, con sus
+     lecturas on y kun al lado (`KanjiReadings`); los ejemplos sí llevan furigana.
+   - Cuando ya se conoce la lectura de la palabra entera, se pasa a `JpText` con `reading`:
+     `alignReading` la reparte para que la furigana quede solo sobre los kanji.
 3. En los ejemplos, `[[...]]` marca la parte gramatical que se resalta.
 4. Los números van en cifras arábigas, como en el libro (3人, 8日).
 5. Todo texto japonés en el DOM lleva `lang="ja"`.
@@ -91,7 +98,13 @@ components/atoms/Button/
 ### 4.3 Contenido en JSON
 
 - Todo el contenido vive en `src/data/*.json`: `vocabulary`, `grammar`, `particles`,
-  `counters` y `kanji`. Los componentes no tienen textos de estudio escritos adentro.
+  `counters`, `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 104 kanji de
+  las unidades 1–10) y `kanji-strokes` (trazos). Los componentes no tienen textos de estudio
+  escritos adentro.
+- `kanji-strokes.json` se genera a partir de **KanjiVG** (© Ulrich Apel, licencia
+  CC BY-SA 3.0): esos datos se comparten con la misma licencia y se cita la fuente en la
+  página de Kanji y en el README. No se edita a mano: si hacen falta más kanji, se vuelve a
+  generar desde KanjiVG.
 - Los tipos de cada JSON están en `src/shared/types/content.ts`. Si se cambia la forma
   de un JSON, se actualiza el tipo.
 - Los `id` del vocabulario (`"lección:índice:kana"`) no se cambian: el progreso guardado
@@ -101,7 +114,10 @@ components/atoms/Button/
 
 - `shared/utils` tiene funciones **puras** y testeadas. Si una función se usa en más de un
   componente, va acá.
-- `shared/hooks` tiene hooks que se reusan entre páginas.
+- `shared/hooks` tiene hooks que se reusan entre páginas. Por ejemplo, `useDeck` maneja
+  cualquier mazo de tarjetas (barajar, avanzar, marcar y atajos de teclado).
+- Las páginas se cargan por separado (`React.lazy` en `App.tsx`), así lo pesado (como los
+  trazos de kanji) se descarga solo al abrir esa página.
 
 ### 4.5 Estado guardado
 
@@ -115,6 +131,9 @@ actuales (no se renombran, para no perder el progreso):
 | `mn_dir`       | Dirección de las tarjetas (`jp` / `es`)      |
 | `mn_allk`      | Mostrar todos los kanji                      |
 | `mn_plessons`  | Lecciones elegidas para practicar partículas |
+| `mn_kanji_units` | Unidades elegidas en Kanji                 |
+| `mn_kanji_known` | Kanji marcados como sabidos                |
+| `mn_kanji_dir`   | Dirección de las tarjetas de kanji (`kanji` / `meaning`) |
 
 ## 5. Accesibilidad (obligatorio)
 

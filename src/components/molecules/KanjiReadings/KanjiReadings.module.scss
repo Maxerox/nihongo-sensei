@@ -1,0 +1,38 @@
+@use '../../../styles/mixins' as *;
+
+.readings {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+
+  dt {
+    @include label-caps;
+    min-width: 2.6em;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--font-jp);
+    font-size: 17px;
+  }
+}
+
+.compact .row dd {
+  font-size: 15px;
+}
+
+.reading {
+  font-weight: 600;
+}
+
+.okurigana {
+  font-weight: 400;
+  color: var(--muted);
+}

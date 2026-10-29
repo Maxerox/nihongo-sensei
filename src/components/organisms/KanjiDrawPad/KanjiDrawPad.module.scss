@@ -1,0 +1,173 @@
+@use '../../../styles/mixins' as *;
+
+.pad {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.board {
+  width: min(100%, 340px);
+  aspect-ratio: 1;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+  user-select: none;
+}
+
+.grid {
+  stroke: var(--line);
+  stroke-width: 0.6;
+  stroke-dasharray: 2 2;
+}
+
+.guide path {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ink path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ink .ok {
+  stroke: var(--matcha);
+}
+
+.ink .bad {
+  stroke: var(--beni);
+}
+
+.labels text,
+.replayStroke text {
+  paint-order: stroke;
+  stroke: var(--card);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+
+.labels text {
+  font: 700 8px var(--font-ui);
+}
+
+.okText {
+  fill: var(--matcha);
+}
+
+.badText {
+  fill: var(--beni);
+}
+
+// Animación del orden de trazos: cada trazo se dibuja después del anterior.
+.replayStroke path {
+  fill: none;
+  stroke: var(--ai);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  // "both": antes de que le toque, el trazo queda invisible (sin el puntito del extremo redondeado).
+  animation: draw 0.6s ease-out both;
+}
+
+.replayStroke text {
+  font: 700 7px var(--font-ui);
+  fill: var(--ai);
+  opacity: 0;
+  animation: appear 0.2s forwards;
+}
+
+@keyframes draw {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 1;
+  }
+  1% {
+    opacity: 1;
+    stroke-dashoffset: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@include reduced-motion {
+  .replayStroke path {
+    animation: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+
+  .replayStroke text {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.help {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  max-width: 44ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.feedback {
+  width: 100%;
+  min-height: 1px;
+}
+
+.messages {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  list-style: none;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.good {
+  background: var(--matcha-soft);
+  color: var(--matcha);
+  font-weight: 600;
+}
+
+.wrong {
+  background: var(--beni-soft);
+  color: var(--beni);
+}

@@ -1,0 +1,1 @@
+export { KanjiPage } from './KanjiPage'

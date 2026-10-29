@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { SkipLink } from '../../atoms/SkipLink'
 import { NavDrawer, type NavItem } from '../../organisms/NavDrawer'
@@ -58,7 +58,10 @@ export function AppShell({ sections }: AppShellProps) {
           onSectionClick={onSectionClick}
         />
         <main id={MAIN_ID} tabIndex={-1} className={styles.main}>
-          <Outlet />
+          {/* Mientras se descarga una página, la barra y el menú siguen a la vista. */}
+          <Suspense fallback={<p aria-live="polite">Cargando…</p>}>
+            <Outlet />
+          </Suspense>
         </main>
       </div>
       <NavDrawer id={DRAWER_ID} open={open} onClose={close} items={sections} />

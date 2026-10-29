@@ -117,3 +117,37 @@ export interface KanjiData {
   /** Números con contador que no se pueden armar con las tablas (600円…). */
   numberExceptions: Record<string, string>
 }
+
+// kanji-book.json (libro "Minna no Nihongo – Kanji", unidades 1–10)
+export interface KanjiExample {
+  word: string
+  reading: string
+  es: string
+}
+export interface KanjiEntry {
+  kanji: string
+  meaning: string
+  /** Lecturas on, en katakana. */
+  on: string[]
+  /** Lecturas kun, en hiragana. El punto separa la okurigana: た.べる = 食べる. */
+  kun: string[]
+  examples: KanjiExample[]
+}
+export interface KanjiUnit {
+  unit: number
+  kanji: KanjiEntry[]
+}
+export interface KanjiBookData {
+  units: KanjiUnit[]
+}
+
+// kanji-strokes.json (derivado de KanjiVG, CC BY-SA 3.0)
+export interface KanjiStrokeData {
+  /** Trazos en orden, como path de SVG en un viewBox de 109 × 109. */
+  strokes: string[]
+  /** Puntos de muestra de cada trazo (24 por trazo), para corregir dibujos. */
+  points: [number, number][][]
+  /** Dónde va el número de cada trazo. */
+  numbers: [number, number][]
+}
+export type KanjiStrokesData = Record<string, KanjiStrokeData>
