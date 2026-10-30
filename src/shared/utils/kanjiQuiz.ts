@@ -76,17 +76,6 @@ export function makeKanjiQuestion<T extends KanjiEntry>(pool: readonly T[], item
   return { kind, item, example, answer, options: shuffle([answer, ...wrong]) }
 }
 
-/**
- * Elige el próximo kanji: no repite el anterior y, de vez en cuando,
- * vuelve a preguntar uno que se respondió mal.
- */
-export function pickNext<T extends KanjiEntry>(pool: readonly T[], previous?: string, review: readonly string[] = [], random = Math.random): T {
-  const fresh = pool.length > 1 ? pool.filter((k) => k.kanji !== previous) : pool
-  const toReview = fresh.filter((k) => review.includes(k.kanji))
-  const from = toReview.length > 0 && random() < 0.35 ? toReview : fresh
-  return from[Math.floor(random() * from.length)]
-}
-
 /** Tipo de pregunta para el modo elegido. */
 export function kindFor(mode: KanjiQuizMode, random = Math.random): KanjiQuizKind {
   return mode === 'mix' ? KANJI_QUIZ_KINDS[Math.floor(random() * KANJI_QUIZ_KINDS.length)] : mode

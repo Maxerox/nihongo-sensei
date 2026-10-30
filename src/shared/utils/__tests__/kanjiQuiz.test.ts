@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import kanjiBook from '../../../data/kanji-book.json'
 import type { KanjiBookData } from '../../types/content'
-import { canAsk, KANJI_QUIZ_KINDS, kindFor, makeKanjiQuestion, meaningsOverlap, pickNext } from '../kanjiQuiz'
+import { canAsk, KANJI_QUIZ_KINDS, kindFor, makeKanjiQuestion, meaningsOverlap } from '../kanjiQuiz'
 
 const book = kanjiBook as KanjiBookData
 const all = book.units.flatMap((u) => u.kanji)
@@ -54,18 +54,6 @@ describe('canAsk', () => {
   it('pide al menos 4 kanji', () => {
     expect(canAsk(unit(9).slice(0, 3), 'meaning')).toBe(false)
     expect(canAsk(unit(9), 'meaning')).toBe(true)
-  })
-})
-
-describe('pickNext', () => {
-  it('no repite el kanji anterior', () => {
-    const pool = unit(3)
-    for (let i = 0; i < 50; i++) expect(pickNext(pool, '人').kanji).not.toBe('人')
-  })
-
-  it('vuelve a preguntar los que salieron mal', () => {
-    const pool = unit(3)
-    expect(pickNext(pool, undefined, ['耳'], () => 0).kanji).toBe('耳')
   })
 })
 

@@ -37,16 +37,14 @@
   @include visually-hidden;
 }
 
-.big {
-  font-size: 48px;
-}
-
-.result {
+.missed {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   margin: 0;
-  font-size: 24px;
-}
-
-.sub {
-  margin: 0;
-  color: var(--muted);
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-jp);
+  line-height: 1.9;
+  text-align: center;
 }

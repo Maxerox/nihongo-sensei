@@ -9,10 +9,12 @@ App para estudiar *Minna no Nihongo* (lecciones 1–19): vocabulario, kanji, gra
 | Sección | Ruta | Qué tiene |
 | --- | --- | --- |
 | 単語 Vocabulario | `#/vocabulario` | Tarjetas, quiz y lista. Progreso guardado ("Lo sé" / "Repasar"). |
-| 漢字 Kanji | `#/kanji` | Los 72 kanji de las unidades 1–9 de 漢字マスターN5 (Kanji Master N5): tarjetas de lecturas y significados, quiz de significados, kanji y lecturas (los que salen mal vuelven a aparecer), dibujo con corrección del orden, la dirección y la forma de cada trazo, y lista. |
+| 漢字 Kanji | `#/kanji` | Los 72 kanji de las unidades 1–9 de 漢字マスターN5 (Kanji Master N5): tarjetas de lecturas y significados, quiz de significados, kanji y lecturas, dibujo con corrección del orden, la dirección y la forma de cada trazo, y lista. |
 | 文法 Gramática | `#/gramatica` | Cheatsheet por lección con ejemplos, tablas de conjugación y buscador. |
 | 数 Contadores y fechas | `#/contadores` | Contadores del 1 al 10 con las lecturas irregulares resaltadas, días del mes, meses y práctica. |
 | 助詞 Partículas | `#/particulas` | Usos de cada partícula, comparaciones y práctica filtrada por lección. |
+
+Los quizzes y prácticas van por rondas: lo que respondés bien no vuelve a salir y lo que respondés mal vuelve hasta que lo aciertes.
 
 Todos los kanji llevan furigana, y fuera de la sección Kanji solo se usan los kanji de las unidades 1–8 del libro de kanji.
 

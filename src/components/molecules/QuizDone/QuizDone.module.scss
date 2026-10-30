@@ -1,0 +1,44 @@
+.big {
+  font-size: 48px;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+.sub {
+  margin: 0;
+  color: var(--muted);
+}
+
+.missed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+}
+
+.missedLabel {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+}

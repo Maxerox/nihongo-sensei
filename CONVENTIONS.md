@@ -67,7 +67,7 @@ src/
 │   └── templates/        # Estructura de página: PageLayout
 ├── data/                 # Contenido en JSON (sin lógica)
 ├── shared/
-│   ├── hooks/            # Hooks reutilizables (useLocalStorage, useSpeech…)
+│   ├── hooks/            # Hooks reutilizables (useLocalStorage, useDeck, useQuizRound…)
 │   ├── types/            # Tipos del contenido JSON
 │   └── utils/            # Funciones puras (furigana, kanji, shuffle, storage…)
 └── styles/               # Tokens, mixins y estilos globales
@@ -138,6 +138,19 @@ actuales (no se renombran, para no perder el progreso):
 | `mn_kanji_known` | Kanji marcados como sabidos                |
 | `mn_kanji_dir`   | Dirección de las tarjetas de kanji (`kanji` / `meaning`) |
 | `mn_kanji_quiz`  | Tipo de pregunta del quiz de kanji (`mix` / `meaning` / `kanji` / `reading`) |
+
+### 4.6 Quizzes
+
+Todo quiz o práctica de opción múltiple funciona por rondas, con `useQuizRound`
+(lógica pura en `shared/utils/quizRound.ts`):
+
+- Lo que se responde **bien no vuelve a salir** en la ronda.
+- Lo que se responde **mal vuelve** unas preguntas después (`RETRY_GAP`), hasta acertarlo.
+- El marcador muestra cuántas faltan y cuántas salieron bien a la primera.
+- Al terminar se muestra `QuizDone`: resultado, las que costaron, "Practicar las que fallé"
+  y "Empezar de nuevo".
+- Cada pregunta necesita una clave fija (id de palabra, kanji, índice de oración,
+  `c:3:7` en contadores) para que la ronda sepa cuáles ya se acertaron.
 
 ## 5. Accesibilidad (obligatorio)
 

@@ -1,0 +1,20 @@
+.promptJp {
+  font-size: clamp(30px, 7vw, 48px);
+  font-weight: 600;
+}
+
+.promptEs {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.missed {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.9;
+  text-align: center;
+}

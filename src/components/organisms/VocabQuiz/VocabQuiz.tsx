@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import { EmptyState } from '../../atoms/EmptyState'
 import { JpText } from '../../atoms/JpText'
+import { QuizDone } from '../../molecules/QuizDone'
+import { useQuizRound } from '../../../shared/hooks/useQuizRound'
 import type { VocabWord } from '../../../shared/types/content'
 import { displayWord } from '../../../shared/utils/kanji'
-import { pick, shuffle } from '../../../shared/utils/random'
+import { shuffle } from '../../../shared/utils/random'
 import type { Direction } from '../Flashcard'
 import { QuizCard } from '../QuizCard'
+import styles from './VocabQuiz.module.scss'
 
 export interface VocabQuizProps {
   words: VocabWord[]
@@ -18,9 +20,7 @@ interface Question {
   options: VocabWord[]
 }
 
-function makeQuestion(pool: VocabWord[], previous?: VocabWord): Question {
-  let word = pick(pool)
-  if (previous && pool.length > 1) while (word.id === previous.id) word = pick(pool)
+function makeQuestion(pool: VocabWord[], word: VocabWord): Question {
   const options = [word]
   const seen = new Set([word.es, word.kana])
   for (const w of shuffle(pool)) {
@@ -33,16 +33,45 @@ function makeQuestion(pool: VocabWord[], previous?: VocabWord): Question {
   return { word, options: shuffle(options) }
 }
 
-/** Quiz de opción múltiple con las palabras elegidas. */
+/**
+ * Quiz de opción múltiple con las palabras elegidas.
+ * Las que se aciertan no vuelven a salir en la ronda; las que se fallan, sí.
+ */
 export function VocabQuiz({ words, direction, showAllKanji }: VocabQuizProps) {
-  const [q, setQ] = useState<Question | null>(() => (words.length >= 4 ? makeQuestion(words) : null))
-  const [chosen, setChosen] = useState<string | null>(null)
-  const [score, setScore] = useState({ ok: 0, total: 0, streak: 0 })
+  const byId = new Map(words.map((w) => [w.id, w]))
+  const r = useQuizRound(
+    words.map((w) => w.id),
+    `${words.length}:${words[0]?.id ?? ''}:${words.at(-1)?.id ?? ''}|${direction}`,
+    (id) => makeQuestion(words, byId.get(id)!),
+  )
 
-  if (words.length < 4 || !q) return <EmptyState>Elegí más lecciones para el quiz (hacen falta al menos 4 palabras).</EmptyState>
+  if (words.length < 4) return <EmptyState>Elegí más lecciones para el quiz (hacen falta al menos 4 palabras).</EmptyState>
 
-  // Si cambió la lista y la palabra ya no está, se arma otra pregunta.
-  const current = words.some((w) => w.id === q.word.id) ? q : makeQuestion(words)
+  if (r.done || !r.question) {
+    const missed = r.missed.map((id) => byId.get(id)).filter((w): w is VocabWord => w !== undefined)
+    return (
+      <QuizDone
+        total={r.total}
+        firstTry={r.firstTry}
+        missed={
+          <ul className={styles.missed}>
+            {missed.map((w) => {
+              const d = displayWord(w, showAllKanji)
+              return (
+                <li key={w.id}>
+                  <JpText text={d.main} reading={d.reading || undefined} /> = {w.es}
+                </li>
+              )
+            })}
+          </ul>
+        }
+        onRestart={r.restart}
+        onRetryMissed={r.retryMissed}
+      />
+    )
+  }
+
+  const current = r.question
   const d = displayWord(current.word, showAllKanji)
 
   const prompt =
@@ -58,12 +87,12 @@ export function VocabQuiz({ words, direction, showAllKanji }: VocabQuizProps) {
   return (
     <QuizCard
       score={[
-        { label: 'Puntaje', value: `${score.ok}/${score.total}` },
-        { label: 'Racha', value: `${score.streak} 🔥` },
+        { label: 'Faltan', value: `${r.left}/${r.total}` },
+        { label: 'A la primera', value: r.firstTry },
       ]}
       lesson={current.word.lesson}
       promptLabel={direction === 'jp' ? `¿Qué significa ${current.word.kana}?` : `¿Cómo se dice «${current.word.es}» en japonés?`}
-      prompt={<div style={{ fontSize: direction === 'jp' ? 'clamp(30px,7vw,48px)' : '22px', fontWeight: 600 }}>{prompt}</div>}
+      prompt={<div className={direction === 'jp' ? styles.promptJp : styles.promptEs}>{prompt}</div>}
       speakText={direction === 'jp' ? current.word.kana : undefined}
       jpOptions={direction === 'es'}
       options={current.options.map((o) => {
@@ -73,21 +102,14 @@ export function VocabQuiz({ words, direction, showAllKanji }: VocabQuizProps) {
           : { value: o.id, content: <JpText text={od.main} reading={od.reading || undefined} />, label: o.kana }
       })}
       answer={current.word.id}
-      chosen={chosen}
-      onChoose={(id) => {
-        setChosen(id)
-        const ok = id === current.word.id
-        setScore((s) => ({ ok: s.ok + (ok ? 1 : 0), total: s.total + 1, streak: ok ? s.streak + 1 : 0 }))
-      }}
+      chosen={r.chosen}
+      onChoose={(id) => r.answer(id, id === current.word.id)}
       feedback={
         <>
           <JpText text={current.word.kana} /> = {current.word.es}
         </>
       }
-      onNext={() => {
-        setChosen(null)
-        setQ(makeQuestion(words, current.word))
-      }}
+      onNext={r.next}
     />
   )
 }
