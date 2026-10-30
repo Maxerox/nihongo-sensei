@@ -28,4 +28,5 @@ export const STORAGE_KEYS = {
   kanjiKnown: 'mn_kanji_known',
   kanjiDirection: 'mn_kanji_dir',
   kanjiQuizMode: 'mn_kanji_quiz',
+  quizSound: 'mn_sound',
 } as const

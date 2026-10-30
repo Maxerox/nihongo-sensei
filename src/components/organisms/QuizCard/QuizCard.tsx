@@ -1,9 +1,13 @@
 import type { ReactNode } from 'react'
+import { Chip } from '../../atoms/Chip'
 import { LessonTag } from '../../atoms/LessonTag'
 import { SpeakButton } from '../../atoms/SpeakButton'
 import { AnswerFeedback } from '../../molecules/AnswerFeedback'
 import { OptionGrid, type OptionItem } from '../../molecules/OptionGrid'
 import { ScoreLine, type ScoreItem } from '../../molecules/ScoreLine'
+import { useLocalStorage } from '../../../shared/hooks/useLocalStorage'
+import { playFeedback } from '../../../shared/utils/sound'
+import { STORAGE_KEYS } from '../../../shared/utils/storage'
 import styles from './QuizCard.module.scss'
 
 export interface QuizCardProps {
@@ -30,13 +34,19 @@ export interface QuizCardProps {
   header?: ReactNode
 }
 
-/** Pregunta de opción múltiple: puntaje, pregunta, opciones y resultado. */
+/** Pregunta de opción múltiple: puntaje, pregunta, opciones y resultado, con sonido de acierto o error. */
 export function QuizCard(props: QuizCardProps) {
   const { prompt, hint, promptLabel, lesson, lessonKind, speakText, options, answer, chosen, onChoose, jpOptions, feedback, onNext, score, header } = props
+  const [sound, setSound] = useLocalStorage(STORAGE_KEYS.quizSound, true)
   return (
     <div className={styles.quiz}>
       {header}
-      {score && <ScoreLine items={score} />}
+      <div className={styles.top}>
+        <div className={styles.score}>{score && <ScoreLine items={score} />}</div>
+        <Chip pressed={sound} onClick={() => setSound(!sound)} className={styles.sound}>
+          <span aria-hidden="true">{sound ? '🔊' : '🔇'}</span> Sonido
+        </Chip>
+      </div>
       <section className={styles.card} aria-label={promptLabel}>
         {lesson !== undefined && (
           <span className={styles.tag}>
@@ -47,7 +57,17 @@ export function QuizCard(props: QuizCardProps) {
         {hint && <p className={styles.hint}>{hint}</p>}
         {speakText && <SpeakButton text={speakText} className={styles.speak} />}
       </section>
-      <OptionGrid label="Opciones" options={options} answer={answer} chosen={chosen} onChoose={onChoose} jp={jpOptions} />
+      <OptionGrid
+        label="Opciones"
+        options={options}
+        answer={answer}
+        chosen={chosen}
+        onChoose={(value) => {
+          if (sound) playFeedback(value === answer)
+          onChoose(value)
+        }}
+        jp={jpOptions}
+      />
       <AnswerFeedback correct={chosen === null ? null : chosen === answer} message={feedback} onNext={onNext} />
     </div>
   )

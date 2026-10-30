@@ -138,6 +138,7 @@ actuales (no se renombran, para no perder el progreso):
 | `mn_kanji_known` | Kanji marcados como sabidos                |
 | `mn_kanji_dir`   | Dirección de las tarjetas de kanji (`kanji` / `meaning`) |
 | `mn_kanji_quiz`  | Tipo de pregunta del quiz de kanji (`mix` / `meaning` / `kanji` / `reading`) |
+| `mn_sound`       | Sonido de acierto y error en los quizzes (`true` / `false`) |
 
 ### 4.6 Quizzes
 
@@ -149,6 +150,8 @@ Todo quiz o práctica de opción múltiple funciona por rondas, con `useQuizRoun
 - El marcador muestra cuántas faltan y cuántas salieron bien a la primera.
 - Al terminar se muestra `QuizDone`: resultado, las que costaron, "Practicar las que fallé"
   y "Empezar de nuevo".
+- `QuizCard` hace un sonido al responder (sube si es acierto, baja si es error). Se genera
+  con Web Audio en `playFeedback` (sin archivos) y se apaga con el botón "Sonido".
 - Cada pregunta necesita una clave fija (id de palabra, kanji, índice de oración,
   `c:3:7` en contadores) para que la ronda sepa cuáles ya se acertaron.
 

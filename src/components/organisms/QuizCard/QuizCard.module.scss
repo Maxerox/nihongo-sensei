@@ -4,6 +4,23 @@
   gap: var(--space-3);
 }
 
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.score {
+  flex: 1;
+  min-width: 0;
+}
+
+.sound {
+  flex: none;
+  font-size: 13px;
+  height: 32px;
+}
+
 .card {
   position: relative;
   min-height: 190px;
