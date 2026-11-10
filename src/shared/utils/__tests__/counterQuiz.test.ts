@@ -31,6 +31,15 @@ describe('makeCounterQuestion', () => {
     }
   })
 
+  it('cuenta días de duración: 1日 es いちにち y ofrece ついたち como trampa', () => {
+    const i = data.counters.findIndex((c) => c.label === '日')
+    const q = makeCounterQuestion(data, `c:${i}:1`)
+    expect(q).toMatchObject({ display: '1日', answer: 'いちにち' })
+    expect(q.options).toContain('ついたち')
+    expect(makeCounterQuestion(data, `c:${i}:3`).answer).toBe('みっか')
+    expect(makeCounterQuestion(data, `q:${i}`).answer).toBe('なんにち')
+  })
+
   it('lee días y meses', () => {
     expect(makeCounterQuestion(data, 'd:8')).toMatchObject({ display: '8日', answer: 'ようか' })
     expect(makeCounterQuestion(data, 'm:4')).toMatchObject({ display: '4月', answer: 'しがつ' })

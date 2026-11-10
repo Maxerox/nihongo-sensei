@@ -27,6 +27,11 @@ export function counterQuestionKeys(data: CountersData, mix: CounterMix): string
   return mix === 'counters' ? counters : mix === 'dates' ? dates : [...counters, ...dates]
 }
 
+/** La trampa clásica: 1日 de duración es いちにち, no ついたち (la fecha). */
+function trap(data: CountersData, label: string, n: number, answer: string): string | null {
+  return label === '日' && data.days[n - 1] !== answer ? data.days[n - 1] : null
+}
+
 /** Arma la pregunta de una clave de `counterQuestionKeys`. */
 export function makeCounterQuestion(data: CountersData, key: string): CounterQuestion {
   const [kind, a, b] = key.split(':')
@@ -51,7 +56,7 @@ export function makeCounterQuestion(data: CountersData, key: string): CounterQue
       answer,
       lesson: c.lesson,
       hint: `¿Cómo se lee? · ${c.meaning} ${c.emoji}`,
-      options: buildOptions(answer, c.reading ? naiveReading(base, n, c.reading) : null, near),
+      options: buildOptions(answer, trap(data, c.label, n, answer) ?? (c.reading ? naiveReading(base, n, c.reading) : null), near),
       tip: c.note,
     }
   }

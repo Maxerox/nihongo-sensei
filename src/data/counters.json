@@ -250,6 +250,28 @@
       ]
     },
     {
+      "id": "nichi",
+      "label": "日",
+      "reading": "にち",
+      "meaning": "días de duración",
+      "emoji": "☀️",
+      "lesson": 11,
+      "question": "なんにち",
+      "note": "Del 2 al 10 se leen igual que las fechas (ふつか, みっか…), pero 1 día es いちにち, no ついたち.",
+      "readings": [
+        "いちにち",
+        "ふつか",
+        "みっか",
+        "よっか",
+        "いつか",
+        "むいか",
+        "なのか",
+        "ようか",
+        "ここのか",
+        "とおか"
+      ]
+    },
+    {
       "id": "shuukan",
       "label": "週間",
       "reading": "しゅうかん",
