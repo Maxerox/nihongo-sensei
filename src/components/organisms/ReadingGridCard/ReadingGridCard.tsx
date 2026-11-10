@@ -10,6 +10,7 @@ export interface ReadingGridItem {
   key: string
   label: string
   reading: string
+  speak?: string
   irregular?: boolean
 }
 
@@ -55,6 +56,7 @@ export function ReadingGridCard({ id, glyph, title, lesson, question, note, item
             <ReadingCell
               label={it.label}
               reading={it.reading}
+              speak={it.speak}
               irregular={it.irregular}
               hidden={!showReadings && !revealed.has(it.key)}
               onReveal={() => setRevealed((s) => new Set(s).add(it.key))}

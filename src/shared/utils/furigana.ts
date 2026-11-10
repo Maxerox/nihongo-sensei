@@ -40,7 +40,7 @@ const DICTIONARY_KEYS = [...Object.keys(kanji.furiganaDictionary), ...Object.key
   (a, b) => b.length - a.length,
 )
 
-const NUMBER_COUNTER_RE = /^([0-9][0-9,]*)(時間|週間|か月|人|日|月|時|分|円|年)/
+const NUMBER_COUNTER_RE = /^([0-9][0-9,]*)(時間|週間|日間|か月|人|日|月|時|分|円|年)/
 
 /** Lectura de "número + contador" (4時 → よじ, 25日 → にじゅうごにち). */
 export function readNumber(num: string, counter: string): string | null {
@@ -48,6 +48,8 @@ export function readNumber(num: string, counter: string): string | null {
   if (exception) return exception
   const n = Number(num.replace(/,/g, ''))
   if (counter === '日') return counters.days[n - 1] ?? null
+  // Duración: 3日間 = みっかかん, pero 1日間 = いちにちかん (no ついたち).
+  if (counter === '日間') return n === 1 ? 'いちにちかん' : counters.days[n - 1] ? counters.days[n - 1] + 'かん' : null
   if (counter === '月') return counters.months[n - 1] ?? null
   const table = counters.counters.find((c) => c.label === counter)
   if (table && n >= 1 && n <= 10) return table.readings[n - 1].split('／')[0]

@@ -8,7 +8,7 @@ import { ReadingGridCard } from '../../components/organisms/ReadingGridCard'
 import { PageLayout } from '../../components/templates/PageLayout'
 import counters from '../../data/counters.json'
 import type { CountersData } from '../../shared/types/content'
-import { counterDisplay, counterLabelReading, isIrregular, naiveDay, naiveMonth, naiveReading } from '../../shared/utils/counters'
+import { counterItems, counterLabelReading, isIrregular, naiveDay, naiveMonth } from '../../shared/utils/counters'
 import styles from './CountersPage.module.scss'
 
 const data = counters as CountersData
@@ -82,12 +82,7 @@ export function CountersPage() {
                 question={c.question}
                 note={c.note}
                 showReadings={showReadings}
-                items={c.readings.map((r, i) => ({
-                  key: String(i + 1),
-                  label: counterDisplay(c, i + 1),
-                  reading: r,
-                  irregular: c.reading !== null && isIrregular(r, naiveReading(base, i + 1, c.reading)),
-                }))}
+                items={counterItems(c, base).map((it) => ({ key: String(it.n), label: it.label, reading: it.display, speak: it.speak, irregular: it.irregular }))}
               />
             ))}
           </>

@@ -94,6 +94,14 @@ export interface Counter {
   note?: string
   /** Lecturas del 1 al 10. Las variantes van separadas por ／. */
   readings: string[]
+  /** Números después del 10 que vale la pena aprender (14日 = じゅうよっか…). */
+  extra?: CounterExtra[]
+  /** Lo que se puede agregar o no después del contador: 日 → 日(間), con su lectura. */
+  optionalSuffix?: { text: string; reading: string }
+}
+export interface CounterExtra {
+  n: number
+  reading: string
 }
 export interface Weekday {
   kanji: string

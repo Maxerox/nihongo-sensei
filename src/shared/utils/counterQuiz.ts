@@ -1,7 +1,7 @@
 // Preguntas de la práctica de contadores y fechas. Cada pregunta tiene una clave fija
 // ("c:3:7" = contador 3 con el número 7), así la ronda sabe cuáles ya se acertaron.
 import type { CountersData } from '../types/content'
-import { counterDisplay, naiveDay, naiveMonth, naiveReading } from './counters'
+import { counterItems, naiveDay, naiveMonth, naiveNumber } from './counters'
 import { buildOptions } from './random'
 
 export type CounterMix = 'all' | 'counters' | 'dates'
@@ -22,14 +22,15 @@ const range = (n: number) => Array.from({ length: n }, (_, i) => i + 1)
 
 /** Todas las preguntas posibles para lo que se eligió practicar. */
 export function counterQuestionKeys(data: CountersData, mix: CounterMix): string[] {
-  const counters = data.counters.flatMap((c, i) => [...range(10).map((n) => `c:${i}:${n}`), ...(c.label !== 'つ' ? [`q:${i}`] : [])])
+  const counters = data.counters.flatMap((c, i) => [...counterItems(c, data.numberBase).map((it) => `c:${i}:${it.n}`), ...(c.label !== 'つ' ? [`q:${i}`] : [])])
   const dates = [...range(12).map((m) => `m:${m}`), ...DAY_POOL.map((d) => `d:${d}`)]
   return mix === 'counters' ? counters : mix === 'dates' ? dates : [...counters, ...dates]
 }
 
 /** La trampa clásica: 1日 de duración es いちにち, no ついたち (la fecha). */
 function trap(data: CountersData, label: string, n: number, answer: string): string | null {
-  return label === '日' && data.days[n - 1] !== answer ? data.days[n - 1] : null
+  const date = data.days[n - 1]
+  return label === '日' && date && !answer.split('／').includes(date) ? date : null
 }
 
 /** Arma la pregunta de una clave de `counterQuestionKeys`. */
@@ -49,14 +50,17 @@ export function makeCounterQuestion(data: CountersData, key: string): CounterQue
   if (kind === 'c') {
     const c = data.counters[Number(a)]
     const n = Number(b)
-    const answer = c.readings[n - 1]
-    const near = c.readings.filter((_, i) => i !== n - 1 && Math.abs(i - (n - 1)) <= 3)
+    const items = counterItems(c, base)
+    const at = items.findIndex((it) => it.n === n)
+    const { label, reading: answer } = items[at]
+    const near = items.filter((_, i) => i !== at && Math.abs(i - at) <= 3).map((it) => it.reading)
+    const naive = c.reading ? naiveNumber(base, n) + c.reading : null
     return {
-      display: counterDisplay(c, n),
+      display: label,
       answer,
       lesson: c.lesson,
       hint: `¿Cómo se lee? · ${c.meaning} ${c.emoji}`,
-      options: buildOptions(answer, trap(data, c.label, n, answer) ?? (c.reading ? naiveReading(base, n, c.reading) : null), near),
+      options: buildOptions(answer, trap(data, c.label, n, answer) ?? naive, near),
       tip: c.note,
     }
   }

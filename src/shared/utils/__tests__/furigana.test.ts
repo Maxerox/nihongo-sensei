@@ -43,6 +43,9 @@ describe('toFurigana', () => {
     expect(readings('1か月')).toEqual(['1:いっ', '月:げつ'])
     expect(readings('2時間半')).toEqual(['2時間:にじかん', '半:はん'])
     expect(readings('18,600円')).toEqual(['18,600円:いちまんはっせんろっぴゃくえん'])
+    expect(readings('3日間')).toEqual(['3日間:みっかかん'])
+    expect(readings('1日間')).toEqual(['1日間:いちにちかん'])
+    expect(readings('20日間')).toEqual(['20日間:はつかかん'])
   })
 
   it('no toca el texto sin kanji', () => {
