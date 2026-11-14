@@ -5,7 +5,7 @@ import { useQuizRound } from '../../../shared/hooks/useQuizRound'
 import type { VocabWord } from '../../../shared/types/content'
 import { displayWord } from '../../../shared/utils/kanji'
 import { shuffle } from '../../../shared/utils/random'
-import { categoryLabel, pickDistractors } from '../../../shared/utils/wordCategories'
+import { pickDistractors } from '../../../shared/utils/wordCategories'
 import type { Direction } from '../Flashcard'
 import { QuizCard } from '../QuizCard'
 import styles from './VocabQuiz.module.scss'
@@ -90,7 +90,6 @@ export function VocabQuiz({ words, direction, showAllKanji, hard = false, fallba
         { label: 'A la primera', value: r.firstTry },
       ]}
       lesson={current.word.lesson}
-      hint={hard ? `Difícil · todas las opciones son del mismo tipo: ${categoryLabel(current.word.category)}` : undefined}
       promptLabel={direction === 'jp' ? `¿Qué significa ${current.word.kana}?` : `¿Cómo se dice «${current.word.es}» en japonés?`}
       prompt={<div className={direction === 'jp' ? styles.promptJp : styles.promptEs}>{prompt}</div>}
       speakText={direction === 'jp' ? current.word.kana : undefined}
