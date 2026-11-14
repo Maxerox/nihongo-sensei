@@ -9,6 +9,8 @@ import { PageLayout } from '../../components/templates/PageLayout'
 import counters from '../../data/counters.json'
 import type { CountersData } from '../../shared/types/content'
 import { counterItems, counterLabelReading, isIrregular, naiveDay, naiveMonth } from '../../shared/utils/counters'
+import { useSessionStorage } from '../../shared/hooks/useLocalStorage'
+import { SESSION_KEYS } from '../../shared/utils/storage'
 import styles from './CountersPage.module.scss'
 
 const data = counters as CountersData
@@ -17,7 +19,7 @@ const TABS_ID = 'contadores-vista'
 const anchor = (id: string) => `contador-${id}`
 
 export function CountersPage() {
-  const [tab, setTab] = useState<Tab>('counters')
+  const [tab, setTab] = useSessionStorage<Tab>(SESSION_KEYS.countersTab, 'counters')
   const [showReadings, setShowReadings] = useState(true)
   const base = data.numberBase
 

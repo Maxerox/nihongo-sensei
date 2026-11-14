@@ -7,13 +7,13 @@ const base = ['いち', 'に', 'さん', 'よん', 'ご', 'ろく', 'なな', '�
 
 describe('displayWord', () => {
   it('muestra kanji si todos están permitidos', () => {
-    expect(displayWord({ id: 'x', lesson: 1, kana: 'がくせい', kanji: '学生', es: '' })).toEqual({ main: '学生', reading: 'がくせい' })
+    expect(displayWord({ id: 'x', lesson: 1, kana: 'がくせい', kanji: '学生', es: '', category: 'noun' })).toEqual({ main: '学生', reading: 'がくせい' })
   })
   it('usa kana si hay un kanji no visto', () => {
-    expect(displayWord({ id: 'x', lesson: 3, kana: 'でんわ', kanji: '電話', es: '' })).toEqual({ main: 'でんわ', reading: '' })
+    expect(displayWord({ id: 'x', lesson: 3, kana: 'でんわ', kanji: '電話', es: '', category: 'noun' })).toEqual({ main: 'でんわ', reading: '' })
   })
   it('muestra todos los kanji si se pide', () => {
-    expect(displayWord({ id: 'x', lesson: 3, kana: 'でんわ', kanji: '電話', es: '' }, true).main).toBe('電話')
+    expect(displayWord({ id: 'x', lesson: 3, kana: 'でんわ', kanji: '電話', es: '', category: 'noun' }, true).main).toBe('電話')
   })
 })
 

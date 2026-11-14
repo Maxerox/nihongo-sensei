@@ -6,6 +6,7 @@ import { canAsk, kindFor, makeKanjiQuestion, type KanjiQuizMode } from '../../..
 import type { KanjiPracticeItem } from '../KanjiDrawPractice'
 import { QuizCard } from '../QuizCard'
 import styles from './KanjiQuiz.module.scss'
+import { SESSION_KEYS } from '../../../shared/utils/storage'
 
 export interface KanjiQuizProps {
   items: KanjiPracticeItem[]
@@ -30,6 +31,7 @@ export function KanjiQuiz({ items, mode }: KanjiQuizProps) {
       // Con pocas unidades puede no alcanzar para preguntar lecturas: se pregunta el significado.
       return makeKanjiQuestion(items, byKanji.get(kanji)!, canAsk(items, kind) ? kind : 'meaning')
     },
+    SESSION_KEYS.kanjiQuiz,
   )
 
   if (!enough) return <EmptyState>Elegí más unidades para el quiz (hacen falta al menos 4 kanji).</EmptyState>

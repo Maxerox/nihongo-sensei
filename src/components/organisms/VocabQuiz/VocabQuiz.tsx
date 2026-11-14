@@ -5,6 +5,7 @@ import { useQuizRound } from '../../../shared/hooks/useQuizRound'
 import type { VocabWord } from '../../../shared/types/content'
 import { displayWord } from '../../../shared/utils/kanji'
 import { shuffle } from '../../../shared/utils/random'
+import { categoryLabel, pickDistractors } from '../../../shared/utils/wordCategories'
 import type { Direction } from '../Flashcard'
 import { QuizCard } from '../QuizCard'
 import styles from './VocabQuiz.module.scss'
@@ -13,6 +14,12 @@ export interface VocabQuizProps {
   words: VocabWord[]
   direction: Direction
   showAllKanji: boolean
+  /** Difícil: las opciones son del mismo tipo de palabra (verbos con verbos…). */
+  hard?: boolean
+  /** De dónde sacar opciones si en `words` no alcanzan las del mismo tipo. */
+  fallback?: VocabWord[]
+  /** Para guardar la ronda en sessionStorage. */
+  storageKey?: string
 }
 
 interface Question {
@@ -20,29 +27,21 @@ interface Question {
   options: VocabWord[]
 }
 
-function makeQuestion(pool: VocabWord[], word: VocabWord): Question {
-  const options = [word]
-  const seen = new Set([word.es, word.kana])
-  for (const w of shuffle(pool)) {
-    if (options.length >= 4) break
-    if (seen.has(w.es) || seen.has(w.kana)) continue
-    seen.add(w.es)
-    seen.add(w.kana)
-    options.push(w)
-  }
-  return { word, options: shuffle(options) }
+function makeQuestion(pool: VocabWord[], word: VocabWord, hard: boolean, fallback: VocabWord[]): Question {
+  return { word, options: shuffle([word, ...pickDistractors(word, pool, hard, hard ? fallback : [])]) }
 }
 
 /**
  * Quiz de opción múltiple con las palabras elegidas.
  * Las que se aciertan no vuelven a salir en la ronda; las que se fallan, sí.
  */
-export function VocabQuiz({ words, direction, showAllKanji }: VocabQuizProps) {
+export function VocabQuiz({ words, direction, showAllKanji, hard = false, fallback = [], storageKey }: VocabQuizProps) {
   const byId = new Map(words.map((w) => [w.id, w]))
   const r = useQuizRound(
     words.map((w) => w.id),
-    `${words.length}:${words[0]?.id ?? ''}:${words.at(-1)?.id ?? ''}|${direction}`,
-    (id) => makeQuestion(words, byId.get(id)!),
+    `${words.length}:${words[0]?.id ?? ''}:${words.at(-1)?.id ?? ''}|${direction}|${hard ? 'dificil' : 'normal'}`,
+    (id) => makeQuestion(words, byId.get(id)!, hard, fallback),
+    storageKey,
   )
 
   if (words.length < 4) return <EmptyState>Elegí más lecciones para el quiz (hacen falta al menos 4 palabras).</EmptyState>
@@ -91,6 +90,7 @@ export function VocabQuiz({ words, direction, showAllKanji }: VocabQuizProps) {
         { label: 'A la primera', value: r.firstTry },
       ]}
       lesson={current.word.lesson}
+      hint={hard ? `Difícil · todas las opciones son del mismo tipo: ${categoryLabel(current.word.category)}` : undefined}
       promptLabel={direction === 'jp' ? `¿Qué significa ${current.word.kana}?` : `¿Cómo se dice «${current.word.es}» en japonés?`}
       prompt={<div className={direction === 'jp' ? styles.promptJp : styles.promptEs}>{prompt}</div>}
       speakText={direction === 'jp' ? current.word.kana : undefined}

@@ -9,6 +9,7 @@ import { KanjiReadings } from '../../molecules/KanjiReadings'
 import { useDeck } from '../../../shared/hooks/useDeck'
 import type { KanjiPracticeItem } from '../KanjiDrawPractice'
 import styles from './KanjiDeck.module.scss'
+import { SESSION_KEYS } from '../../../shared/utils/storage'
 
 export type KanjiDirection = 'kanji' | 'meaning'
 
@@ -22,7 +23,7 @@ export interface KanjiDeckProps {
 
 /** Tarjetas de kanji: del kanji a sus lecturas y significado, o al revés. */
 export function KanjiDeck({ items, resetKey, direction, known, onMark }: KanjiDeckProps) {
-  const d = useDeck(items, `${resetKey}|${direction}`, (k, isKnown) => onMark(k.kanji, isKnown))
+  const d = useDeck(items, `${resetKey}|${direction}`, (k, isKnown) => onMark(k.kanji, isKnown), SESSION_KEYS.kanjiDeck)
   const k = d.current
 
   if (d.deck.length === 0) return <EmptyState>Elegí al menos una unidad.</EmptyState>

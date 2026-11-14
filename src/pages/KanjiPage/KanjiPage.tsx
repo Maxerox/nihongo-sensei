@@ -9,10 +9,10 @@ import { KanjiQuiz } from '../../components/organisms/KanjiQuiz'
 import { PageLayout } from '../../components/templates/PageLayout'
 import kanjiBook from '../../data/kanji-book.json'
 import kanjiStrokes from '../../data/kanji-strokes.json'
-import { useLocalStorage } from '../../shared/hooks/useLocalStorage'
+import { useLocalStorage, useSessionStorage } from '../../shared/hooks/useLocalStorage'
 import type { KanjiBookData, KanjiStrokesData } from '../../shared/types/content'
 import type { KanjiQuizMode } from '../../shared/utils/kanjiQuiz'
-import { STORAGE_KEYS } from '../../shared/utils/storage'
+import { SESSION_KEYS, STORAGE_KEYS } from '../../shared/utils/storage'
 import styles from './KanjiPage.module.scss'
 
 const book = kanjiBook as KanjiBookData
@@ -27,7 +27,7 @@ export function KanjiPage() {
   const [knownList, setKnownList] = useLocalStorage<string[]>(STORAGE_KEYS.kanjiKnown, [])
   const [direction, setDirection] = useLocalStorage<KanjiDirection>(STORAGE_KEYS.kanjiDirection, 'kanji')
   const [quizMode, setQuizMode] = useLocalStorage<KanjiQuizMode>(STORAGE_KEYS.kanjiQuizMode, 'mix')
-  const [tab, setTab] = useState<Tab>('cards')
+  const [tab, setTab] = useSessionStorage<Tab>(SESSION_KEYS.kanjiTab, 'cards')
   const [drawStart, setDrawStart] = useState<string | undefined>()
 
   const known = useMemo(() => new Set(knownList), [knownList])

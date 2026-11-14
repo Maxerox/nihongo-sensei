@@ -112,6 +112,10 @@ components/atoms/Button/
   de un JSON, se actualiza el tipo.
 - Los `id` del vocabulario (`"lección:índice:kana"`) no se cambian: el progreso guardado
   de cada persona depende de ellos.
+- Cada palabra del vocabulario tiene `category` (`verb`, `adj-i`, `adj-na`, `noun`, `adverb`,
+  `question`, `expression`, `other`; nombres en `shared/utils/wordCategories.ts`). Se usa
+  para filtrar y para el quiz difícil. Una palabra nueva lleva su categoría; los verbos son
+  justo los que tienen `verbGroup`, y los adjetivos な los que llevan ［な］ (lo controla el test).
 
 ### 4.4 Shared utils
 
@@ -124,8 +128,16 @@ components/atoms/Button/
 
 ### 4.5 Estado guardado
 
-Se usa `localStorage` mediante `useLocalStorage`, siempre dentro de `try/catch`. Claves
-actuales (no se renombran, para no perder el progreso):
+Hay dos lugares, siempre dentro de `try/catch` (`readStorage` / `writeStorage`):
+
+- **localStorage** (`useLocalStorage`): lo que se guarda para siempre (palabras sabidas,
+  lecciones elegidas, preferencias).
+- **sessionStorage** (`useSessionStorage`, y `storageKey` en `useQuizRound` y `useDeck`): lo
+  que se está practicando ahora. La ronda de cada quiz, la tarjeta del mazo y la pestaña
+  abierta sobreviven a recargar la página y se borran al cerrar la pestaña. Las claves están
+  en `SESSION_KEYS` (`mn_s_…`).
+
+Claves de localStorage (no se renombran, para no perder el progreso):
 
 | Clave          | Qué guarda                                   |
 | -------------- | -------------------------------------------- |
@@ -139,6 +151,8 @@ actuales (no se renombran, para no perder el progreso):
 | `mn_kanji_dir`   | Dirección de las tarjetas de kanji (`kanji` / `meaning`) |
 | `mn_kanji_quiz`  | Tipo de pregunta del quiz de kanji (`mix` / `meaning` / `kanji` / `reading`) |
 | `mn_sound`       | Sonido de acierto y error en los quizzes (`true` / `false`) |
+| `mn_vocab_cat`   | Tipo de palabra elegido en vocabulario (`all`, `verb`, `adj-i`…) |
+| `mn_vocab_hard`  | Quiz de vocabulario difícil (opciones del mismo tipo de palabra) |
 
 ### 4.6 Quizzes
 

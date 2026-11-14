@@ -17,11 +17,13 @@ export interface FlashcardDeckProps {
   onMark: (id: string, known: boolean) => void
   /** Texto si no hay palabras. */
   emptyMessage: string
+  /** Para guardar el mazo en sessionStorage. */
+  storageKey?: string
 }
 
 /** Mazo de tarjetas de vocabulario con controles y atajos de teclado. */
-export function FlashcardDeck({ words, resetKey, direction, showAllKanji, known, onMark, emptyMessage }: FlashcardDeckProps) {
-  const d = useDeck(words, resetKey, (w, k) => onMark(w.id, k))
+export function FlashcardDeck({ words, resetKey, direction, showAllKanji, known, onMark, emptyMessage, storageKey }: FlashcardDeckProps) {
+  const d = useDeck(words, resetKey, (w, k) => onMark(w.id, k), storageKey)
   const word = d.current
 
   if (d.deck.length === 0) return <EmptyState>{emptyMessage}</EmptyState>

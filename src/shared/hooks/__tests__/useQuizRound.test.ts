@@ -50,3 +50,39 @@ describe('useQuizRound', () => {
     expect(result.current).toMatchObject({ total: 1, current: 'z' })
   })
 })
+
+describe('useQuizRound con sessionStorage', () => {
+  it('al recargar sigue la misma ronda, sin repetir lo acertado', () => {
+    sessionStorage.clear()
+    const first = renderHook(() => useQuizRound(keys, 'r', (k) => k, 'test_round'))
+    const asked = first.result.current.current!
+    act(() => first.result.current.answer('x', true))
+    act(() => first.result.current.next())
+    first.unmount()
+    const again = renderHook(() => useQuizRound(keys, 'r', (k) => k, 'test_round'))
+    expect(again.result.current).toMatchObject({ total: 3, left: 2, firstTry: 1 })
+    expect(again.result.current.current).not.toBe(asked)
+  })
+
+  it('si se recarga con la pregunta ya respondida, pasa a la siguiente', () => {
+    sessionStorage.clear()
+    const first = renderHook(() => useQuizRound(keys, 'r', (k) => k, 'test_round'))
+    act(() => first.result.current.answer('x', false))
+    const failed = first.result.current.current
+    first.unmount()
+    const again = renderHook(() => useQuizRound(keys, 'r', (k) => k, 'test_round'))
+    expect(again.result.current.chosen).toBeNull()
+    expect(again.result.current.current).not.toBe(failed)
+    expect(again.result.current.missed).toEqual([failed])
+  })
+
+  it('con otra clave (otras lecciones) empieza de cero', () => {
+    sessionStorage.clear()
+    const first = renderHook(() => useQuizRound(keys, 'r', (k) => k, 'test_round'))
+    act(() => first.result.current.answer('x', true))
+    act(() => first.result.current.next())
+    first.unmount()
+    const other = renderHook(() => useQuizRound(['z', 'y'], 'otra', (k) => k, 'test_round'))
+    expect(other.result.current).toMatchObject({ total: 2, left: 2, firstTry: 0 })
+  })
+})

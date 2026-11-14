@@ -9,6 +9,7 @@ import { lessonRange } from '../../../shared/utils/lessons'
 import { shuffle } from '../../../shared/utils/random'
 import { QuizCard } from '../QuizCard'
 import styles from './ParticlePractice.module.scss'
+import { SESSION_KEYS } from '../../../shared/utils/storage'
 
 export interface ParticlePracticeProps {
   exercises: ParticleExercise[]
@@ -25,7 +26,7 @@ const BLANK = '＿'
 export function ParticlePractice({ exercises, lessons, onLessonsChange }: ParticlePracticeProps) {
   const pool = exercises.map((_, i) => i).filter((i) => lessons.includes(exercises[i].lesson))
   const poolKey = pool.join(',')
-  const r = useQuizRound(pool, poolKey, (i) => ({ index: i, options: shuffle(exercises[i].options) }))
+  const r = useQuizRound(pool, poolKey, (i) => ({ index: i, options: shuffle(exercises[i].options) }), SESSION_KEYS.particlesQuiz)
 
   const counts = new Map<number, number>()
   exercises.forEach((e) => counts.set(e.lesson, (counts.get(e.lesson) ?? 0) + 1))

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { shuffle } from '../utils/random'
+import { readStorage, writeStorage } from '../utils/storage'
 
 interface DeckState<T> {
   key: string
@@ -24,19 +25,48 @@ export interface Deck<T> {
 const isTyping = (el: EventTarget | null) =>
   el instanceof HTMLElement && (el.matches('input, select, textarea, button, a') || el.isContentEditable)
 
+interface SavedDeck {
+  key: string
+  /** Orden del mazo, como posiciones en `items`. */
+  order: number[]
+  index: number
+}
+
+/** Mazo guardado para `resetKey`, si coincide con los items actuales. */
+function restore<T>(storageKey: string | undefined, resetKey: string, items: T[]): DeckState<T> | null {
+  if (!storageKey) return null
+  const saved = readStorage<SavedDeck | null>(storageKey, null, 'session')
+  if (!saved || saved.key !== resetKey || !Array.isArray(saved.order) || saved.order.length !== items.length) return null
+  if (saved.order.some((i) => items[i] === undefined)) return null
+  const index = Math.min(Math.max(0, Number(saved.index) || 0), items.length)
+  return { key: `${resetKey}#0`, deck: saved.order.map((i) => items[i]), index, flipped: false }
+}
+
 /**
  * Estado de un mazo de tarjetas: barajado, posición, cara visible y atajos de teclado
  * (espacio o Enter da vuelta, flechas para moverse, 1 repasar, 2 lo sé).
  * El mazo se vuelve a barajar solo cuando cambia `resetKey` o se llama a `reshuffle`.
+ * Con `storageKey`, el orden y la tarjeta actual se guardan en sessionStorage.
  */
-export function useDeck<T>(items: T[], resetKey: string, onMark: (item: T, known: boolean) => void): Deck<T> {
+export function useDeck<T>(items: T[], resetKey: string, onMark: (item: T, known: boolean) => void, storageKey?: string): Deck<T> {
   const [seed, setSeed] = useState(0)
+  // Al recargar, la semilla vuelve a 0 y se recupera el mazo guardado para `resetKey`.
   const key = `${resetKey}#${seed}`
-  const [state, setState] = useState<DeckState<T>>(() => ({ key, deck: shuffle(items), index: 0, flipped: false }))
+  const [state, setStored] = useState<DeckState<T>>(
+    () => restore(storageKey, resetKey, items) ?? { key, deck: shuffle(items), index: 0, flipped: false },
+  )
+  const setState = (s: DeckState<T>) => {
+    setStored(s)
+    if (storageKey) {
+      const position = new Map(items.map((it, i) => [it, i]))
+      const order = s.deck.map((it) => position.get(it) ?? -1)
+      writeStorage<SavedDeck>(storageKey, { key: resetKey, order, index: s.index }, 'session')
+    }
+  }
   // Estado derivado: si cambió la clave, se arma un mazo nuevo (patrón recomendado por React).
   let now = state
   if (state.key !== key) {
-    now = { key, deck: shuffle(items), index: 0, flipped: false }
+    now = (seed === 0 ? restore(storageKey, resetKey, items) : null) ?? { key, deck: shuffle(items), index: 0, flipped: false }
     setState(now)
   }
   const { deck, index, flipped } = now

@@ -27,7 +27,8 @@
       "kana": "わたし",
       "kanji": "私",
       "es": "yo",
-      "emoji": "🙋"
+      "emoji": "🙋",
+      "category": "noun"
     },
     {
       "id": "1:1:わたしたち",
@@ -35,14 +36,16 @@
       "kana": "わたしたち",
       "kanji": "私たち",
       "es": "nosotros",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "noun"
     },
     {
       "id": "1:2:あなた",
       "lesson": 1,
       "kana": "あなた",
       "es": "tú, usted",
-      "emoji": "👉"
+      "emoji": "👉",
+      "category": "noun"
     },
     {
       "id": "1:3:あのひと",
@@ -50,7 +53,8 @@
       "kana": "あのひと",
       "kanji": "あの人",
       "es": "esa persona, él / ella",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "noun"
     },
     {
       "id": "1:4:あのかた",
@@ -58,7 +62,8 @@
       "kana": "あのかた",
       "kanji": "あの方",
       "es": "esa persona (formal)",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "noun"
     },
     {
       "id": "1:5:みなさん",
@@ -66,27 +71,31 @@
       "kana": "みなさん",
       "kanji": "皆さん",
       "es": "todos ustedes; damas y caballeros",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "noun"
     },
     {
       "id": "1:6:～さん",
       "lesson": 1,
       "kana": "～さん",
-      "es": "Sr. / Sra. ~ (sufijo de respeto)"
+      "es": "Sr. / Sra. ~ (sufijo de respeto)",
+      "category": "other"
     },
     {
       "id": "1:7:～ちゃん",
       "lesson": 1,
       "kana": "～ちゃん",
       "es": "sufijo cariñoso para niños",
-      "emoji": "🧒"
+      "emoji": "🧒",
+      "category": "other"
     },
     {
       "id": "1:8:～じん",
       "lesson": 1,
       "kana": "～じん",
       "kanji": "～人",
-      "es": "de nacionalidad ~"
+      "es": "de nacionalidad ~",
+      "category": "other"
     },
     {
       "id": "1:9:せんせい",
@@ -94,7 +103,8 @@
       "kana": "せんせい",
       "kanji": "先生",
       "es": "profesor/a (no para uno mismo)",
-      "emoji": "👩‍🏫"
+      "emoji": "👩‍🏫",
+      "category": "noun"
     },
     {
       "id": "1:10:きょうし",
@@ -102,7 +112,8 @@
       "kana": "きょうし",
       "kanji": "教師",
       "es": "profesor/a (profesión)",
-      "emoji": "👨‍🏫"
+      "emoji": "👨‍🏫",
+      "category": "noun"
     },
     {
       "id": "1:11:がくせい",
@@ -110,7 +121,8 @@
       "kana": "がくせい",
       "kanji": "学生",
       "es": "estudiante",
-      "emoji": "🧑‍🎓"
+      "emoji": "🧑‍🎓",
+      "category": "noun"
     },
     {
       "id": "1:12:かいしゃいん",
@@ -118,7 +130,8 @@
       "kana": "かいしゃいん",
       "kanji": "会社員",
       "es": "empleado de empresa",
-      "emoji": "👔"
+      "emoji": "👔",
+      "category": "noun"
     },
     {
       "id": "1:13:しゃいん",
@@ -126,7 +139,8 @@
       "kana": "しゃいん",
       "kanji": "社員",
       "es": "empleado de (la empresa) ~",
-      "emoji": "💼"
+      "emoji": "💼",
+      "category": "noun"
     },
     {
       "id": "1:14:ぎんこういん",
@@ -134,7 +148,8 @@
       "kana": "ぎんこういん",
       "kanji": "銀行員",
       "es": "empleado bancario",
-      "emoji": "🏦"
+      "emoji": "🏦",
+      "category": "noun"
     },
     {
       "id": "1:15:いしゃ",
@@ -142,7 +157,8 @@
       "kana": "いしゃ",
       "kanji": "医者",
       "es": "médico",
-      "emoji": "🩺"
+      "emoji": "🩺",
+      "category": "noun"
     },
     {
       "id": "1:16:けんきゅうしゃ",
@@ -150,14 +166,16 @@
       "kana": "けんきゅうしゃ",
       "kanji": "研究者",
       "es": "investigador",
-      "emoji": "🔬"
+      "emoji": "🔬",
+      "category": "noun"
     },
     {
       "id": "1:17:エンジニア",
       "lesson": 1,
       "kana": "エンジニア",
       "es": "ingeniero",
-      "emoji": "⚙️"
+      "emoji": "⚙️",
+      "category": "noun"
     },
     {
       "id": "1:18:だいがく",
@@ -165,7 +183,8 @@
       "kana": "だいがく",
       "kanji": "大学",
       "es": "universidad",
-      "emoji": "🏫"
+      "emoji": "🏫",
+      "category": "noun"
     },
     {
       "id": "1:19:びょういん",
@@ -173,7 +192,8 @@
       "kana": "びょういん",
       "kanji": "病院",
       "es": "hospital",
-      "emoji": "🏥"
+      "emoji": "🏥",
+      "category": "noun"
     },
     {
       "id": "1:20:でんき",
@@ -181,21 +201,24 @@
       "kana": "でんき",
       "kanji": "電気",
       "es": "electricidad, luz",
-      "emoji": "💡"
+      "emoji": "💡",
+      "category": "noun"
     },
     {
       "id": "1:21:だれ",
       "lesson": 1,
       "kana": "だれ",
       "es": "¿quién?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "1:22:どなた",
       "lesson": 1,
       "kana": "どなた",
       "es": "¿quién? (formal)",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "1:23:～さい",
@@ -203,7 +226,8 @@
       "kana": "～さい",
       "kanji": "～歳",
       "es": "~ años (de edad)",
-      "emoji": "🎂"
+      "emoji": "🎂",
+      "category": "other"
     },
     {
       "id": "1:24:なんさい",
@@ -211,42 +235,48 @@
       "kana": "なんさい",
       "kanji": "何歳",
       "es": "¿cuántos años?",
-      "emoji": "🎂"
+      "emoji": "🎂",
+      "category": "question"
     },
     {
       "id": "1:25:おいくつ",
       "lesson": 1,
       "kana": "おいくつ",
       "es": "¿cuántos años? (formal)",
-      "emoji": "🎂"
+      "emoji": "🎂",
+      "category": "question"
     },
     {
       "id": "1:26:はい",
       "lesson": 1,
       "kana": "はい",
       "es": "sí",
-      "emoji": "⭕"
+      "emoji": "⭕",
+      "category": "expression"
     },
     {
       "id": "1:27:いいえ",
       "lesson": 1,
       "kana": "いいえ",
       "es": "no",
-      "emoji": "❌"
+      "emoji": "❌",
+      "category": "expression"
     },
     {
       "id": "1:28:しつれいですが",
       "lesson": 1,
       "kana": "しつれいですが",
       "kanji": "失礼ですが",
-      "es": "disculpe, pero…"
+      "es": "disculpe, pero…",
+      "category": "expression"
     },
     {
       "id": "1:29:おなまえは？",
       "lesson": 1,
       "kana": "おなまえは？",
       "kanji": "お名前は？",
-      "es": "¿cómo se llama?"
+      "es": "¿cómo se llama?",
+      "category": "expression"
     },
     {
       "id": "1:30:はじめまして",
@@ -254,7 +284,8 @@
       "kana": "はじめまして",
       "kanji": "初めまして",
       "es": "mucho gusto (al conocerse)",
-      "emoji": "🤝"
+      "emoji": "🤝",
+      "category": "expression"
     },
     {
       "id": "1:31:どうぞよろしく［おねがいします］",
@@ -262,48 +293,55 @@
       "kana": "どうぞよろしく［おねがいします］",
       "kanji": "どうぞよろしく［お願いします］",
       "es": "encantado, un placer",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "1:32:こちらは～さんです",
       "lesson": 1,
       "kana": "こちらは～さんです",
-      "es": "le presento a ~"
+      "es": "le presento a ~",
+      "category": "expression"
     },
     {
       "id": "1:33:～からきました",
       "lesson": 1,
       "kana": "～からきました",
       "kanji": "～から来ました",
-      "es": "vengo de ~"
+      "es": "vengo de ~",
+      "category": "expression"
     },
     {
       "id": "1:34:アメリカ",
       "lesson": 1,
       "kana": "アメリカ",
       "es": "Estados Unidos",
-      "emoji": "🇺🇸"
+      "emoji": "🇺🇸",
+      "category": "noun"
     },
     {
       "id": "1:35:イギリス",
       "lesson": 1,
       "kana": "イギリス",
       "es": "Reino Unido",
-      "emoji": "🇬🇧"
+      "emoji": "🇬🇧",
+      "category": "noun"
     },
     {
       "id": "1:36:インド",
       "lesson": 1,
       "kana": "インド",
       "es": "India",
-      "emoji": "🇮🇳"
+      "emoji": "🇮🇳",
+      "category": "noun"
     },
     {
       "id": "1:37:インドネシア",
       "lesson": 1,
       "kana": "インドネシア",
       "es": "Indonesia",
-      "emoji": "🇮🇩"
+      "emoji": "🇮🇩",
+      "category": "noun"
     },
     {
       "id": "1:38:かんこく",
@@ -311,14 +349,16 @@
       "kana": "かんこく",
       "kanji": "韓国",
       "es": "Corea del Sur",
-      "emoji": "🇰🇷"
+      "emoji": "🇰🇷",
+      "category": "noun"
     },
     {
       "id": "1:39:タイ",
       "lesson": 1,
       "kana": "タイ",
       "es": "Tailandia",
-      "emoji": "🇹🇭"
+      "emoji": "🇹🇭",
+      "category": "noun"
     },
     {
       "id": "1:40:ちゅうごく",
@@ -326,14 +366,16 @@
       "kana": "ちゅうごく",
       "kanji": "中国",
       "es": "China",
-      "emoji": "🇨🇳"
+      "emoji": "🇨🇳",
+      "category": "noun"
     },
     {
       "id": "1:41:ドイツ",
       "lesson": 1,
       "kana": "ドイツ",
       "es": "Alemania",
-      "emoji": "🇩🇪"
+      "emoji": "🇩🇪",
+      "category": "noun"
     },
     {
       "id": "1:42:にほん",
@@ -341,53 +383,61 @@
       "kana": "にほん",
       "kanji": "日本",
       "es": "Japón",
-      "emoji": "🇯🇵"
+      "emoji": "🇯🇵",
+      "category": "noun"
     },
     {
       "id": "1:43:ブラジル",
       "lesson": 1,
       "kana": "ブラジル",
       "es": "Brasil",
-      "emoji": "🇧🇷"
+      "emoji": "🇧🇷",
+      "category": "noun"
     },
     {
       "id": "2:0:これ",
       "lesson": 2,
       "kana": "これ",
       "es": "esto (cerca de mí)",
-      "emoji": "👇"
+      "emoji": "👇",
+      "category": "noun"
     },
     {
       "id": "2:1:それ",
       "lesson": 2,
       "kana": "それ",
       "es": "eso (cerca de vos)",
-      "emoji": "👉"
+      "emoji": "👉",
+      "category": "noun"
     },
     {
       "id": "2:2:あれ",
       "lesson": 2,
       "kana": "あれ",
       "es": "aquello (lejos de ambos)",
-      "emoji": "👆"
+      "emoji": "👆",
+      "category": "noun"
     },
     {
       "id": "2:3:この～",
       "lesson": 2,
       "kana": "この～",
-      "es": "este ~"
+      "es": "este ~",
+      "category": "other"
     },
     {
       "id": "2:4:その～",
       "lesson": 2,
       "kana": "その～",
-      "es": "ese ~"
+      "es": "ese ~",
+      "category": "other"
     },
     {
       "id": "2:5:あの～",
       "lesson": 2,
       "kana": "あの～",
-      "es": "aquel ~"
+      "es": "aquel ~",
+      "category": "other"
     },
     {
       "id": "2:6:ほん",
@@ -395,7 +445,8 @@
       "kana": "ほん",
       "kanji": "本",
       "es": "libro",
-      "emoji": "📕"
+      "emoji": "📕",
+      "category": "noun"
     },
     {
       "id": "2:7:じしょ",
@@ -403,7 +454,8 @@
       "kana": "じしょ",
       "kanji": "辞書",
       "es": "diccionario",
-      "emoji": "📖"
+      "emoji": "📖",
+      "category": "noun"
     },
     {
       "id": "2:8:ざっし",
@@ -411,7 +463,8 @@
       "kana": "ざっし",
       "kanji": "雑誌",
       "es": "revista",
-      "emoji": "📔"
+      "emoji": "📔",
+      "category": "noun"
     },
     {
       "id": "2:9:しんぶん",
@@ -419,14 +472,16 @@
       "kana": "しんぶん",
       "kanji": "新聞",
       "es": "diario, periódico",
-      "emoji": "📰"
+      "emoji": "📰",
+      "category": "noun"
     },
     {
       "id": "2:10:ノート",
       "lesson": 2,
       "kana": "ノート",
       "es": "cuaderno",
-      "emoji": "📓"
+      "emoji": "📓",
+      "category": "noun"
     },
     {
       "id": "2:11:てちょう",
@@ -434,7 +489,8 @@
       "kana": "てちょう",
       "kanji": "手帳",
       "es": "agenda",
-      "emoji": "📒"
+      "emoji": "📒",
+      "category": "noun"
     },
     {
       "id": "2:12:めいし",
@@ -442,14 +498,16 @@
       "kana": "めいし",
       "kanji": "名刺",
       "es": "tarjeta personal",
-      "emoji": "📇"
+      "emoji": "📇",
+      "category": "noun"
     },
     {
       "id": "2:13:カード",
       "lesson": 2,
       "kana": "カード",
       "es": "tarjeta",
-      "emoji": "💳"
+      "emoji": "💳",
+      "category": "noun"
     },
     {
       "id": "2:14:えんぴつ",
@@ -457,28 +515,32 @@
       "kana": "えんぴつ",
       "kanji": "鉛筆",
       "es": "lápiz",
-      "emoji": "✏️"
+      "emoji": "✏️",
+      "category": "noun"
     },
     {
       "id": "2:15:ボールペン",
       "lesson": 2,
       "kana": "ボールペン",
       "es": "birome, bolígrafo",
-      "emoji": "🖊️"
+      "emoji": "🖊️",
+      "category": "noun"
     },
     {
       "id": "2:16:シャープペンシル",
       "lesson": 2,
       "kana": "シャープペンシル",
       "es": "portaminas",
-      "emoji": "✏️"
+      "emoji": "✏️",
+      "category": "noun"
     },
     {
       "id": "2:17:かぎ",
       "lesson": 2,
       "kana": "かぎ",
       "es": "llave",
-      "emoji": "🔑"
+      "emoji": "🔑",
+      "category": "noun"
     },
     {
       "id": "2:18:とけい",
@@ -486,7 +548,8 @@
       "kana": "とけい",
       "kanji": "時計",
       "es": "reloj",
-      "emoji": "⌚"
+      "emoji": "⌚",
+      "category": "noun"
     },
     {
       "id": "2:19:かさ",
@@ -494,49 +557,56 @@
       "kana": "かさ",
       "kanji": "傘",
       "es": "paraguas",
-      "emoji": "☂️"
+      "emoji": "☂️",
+      "category": "noun"
     },
     {
       "id": "2:20:かばん",
       "lesson": 2,
       "kana": "かばん",
       "es": "bolso, mochila",
-      "emoji": "👜"
+      "emoji": "👜",
+      "category": "noun"
     },
     {
       "id": "2:21:CD",
       "lesson": 2,
       "kana": "CD",
       "es": "CD",
-      "emoji": "💿"
+      "emoji": "💿",
+      "category": "noun"
     },
     {
       "id": "2:22:テレビ",
       "lesson": 2,
       "kana": "テレビ",
       "es": "televisor",
-      "emoji": "📺"
+      "emoji": "📺",
+      "category": "noun"
     },
     {
       "id": "2:23:ラジオ",
       "lesson": 2,
       "kana": "ラジオ",
       "es": "radio",
-      "emoji": "📻"
+      "emoji": "📻",
+      "category": "noun"
     },
     {
       "id": "2:24:カメラ",
       "lesson": 2,
       "kana": "カメラ",
       "es": "cámara",
-      "emoji": "📷"
+      "emoji": "📷",
+      "category": "noun"
     },
     {
       "id": "2:25:コンピューター",
       "lesson": 2,
       "kana": "コンピューター",
       "es": "computadora",
-      "emoji": "💻"
+      "emoji": "💻",
+      "category": "noun"
     },
     {
       "id": "2:26:くるま",
@@ -544,35 +614,40 @@
       "kana": "くるま",
       "kanji": "車",
       "es": "auto",
-      "emoji": "🚗"
+      "emoji": "🚗",
+      "category": "noun"
     },
     {
       "id": "2:27:つくえ",
       "lesson": 2,
       "kana": "つくえ",
       "kanji": "机",
-      "es": "escritorio"
+      "es": "escritorio",
+      "category": "noun"
     },
     {
       "id": "2:28:いす",
       "lesson": 2,
       "kana": "いす",
       "es": "silla",
-      "emoji": "🪑"
+      "emoji": "🪑",
+      "category": "noun"
     },
     {
       "id": "2:29:チョコレート",
       "lesson": 2,
       "kana": "チョコレート",
       "es": "chocolate",
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "category": "noun"
     },
     {
       "id": "2:30:コーヒー",
       "lesson": 2,
       "kana": "コーヒー",
       "es": "café",
-      "emoji": "☕"
+      "emoji": "☕",
+      "category": "noun"
     },
     {
       "id": "2:31:［お］みやげ",
@@ -580,7 +655,8 @@
       "kana": "［お］みやげ",
       "kanji": "［お］土産",
       "es": "souvenir, regalo de viaje",
-      "emoji": "🎁"
+      "emoji": "🎁",
+      "category": "noun"
     },
     {
       "id": "2:32:えいご",
@@ -588,7 +664,8 @@
       "kana": "えいご",
       "kanji": "英語",
       "es": "inglés (idioma)",
-      "emoji": "🇬🇧"
+      "emoji": "🇬🇧",
+      "category": "noun"
     },
     {
       "id": "2:33:にほんご",
@@ -596,7 +673,8 @@
       "kana": "にほんご",
       "kanji": "日本語",
       "es": "japonés (idioma)",
-      "emoji": "🇯🇵"
+      "emoji": "🇯🇵",
+      "category": "noun"
     },
     {
       "id": "2:34:～ご",
@@ -604,7 +682,8 @@
       "kana": "～ご",
       "kanji": "～語",
       "es": "idioma ~",
-      "emoji": "🗣️"
+      "emoji": "🗣️",
+      "category": "other"
     },
     {
       "id": "2:35:なん",
@@ -612,46 +691,53 @@
       "kana": "なん",
       "kanji": "何",
       "es": "¿qué?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "2:36:そう",
       "lesson": 2,
       "kana": "そう",
-      "es": "así, eso"
+      "es": "así, eso",
+      "category": "other"
     },
     {
       "id": "2:37:あのう",
       "lesson": 2,
       "kana": "あのう",
-      "es": "eh… (al dudar)"
+      "es": "eh… (al dudar)",
+      "category": "expression"
     },
     {
       "id": "2:38:えっ",
       "lesson": 2,
       "kana": "えっ",
       "es": "¿eh? (sorpresa)",
-      "emoji": "😮"
+      "emoji": "😮",
+      "category": "expression"
     },
     {
       "id": "2:39:どうぞ",
       "lesson": 2,
       "kana": "どうぞ",
       "es": "tome, adelante",
-      "emoji": "🤲"
+      "emoji": "🤲",
+      "category": "expression"
     },
     {
       "id": "2:40:［どうも］ありがとう［ございます］",
       "lesson": 2,
       "kana": "［どうも］ありがとう［ございます］",
       "es": "muchas gracias",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "expression"
     },
     {
       "id": "2:41:そうですか",
       "lesson": 2,
       "kana": "そうですか",
-      "es": "ah, ¿sí? / ya veo"
+      "es": "ah, ¿sí? / ya veo",
+      "category": "expression"
     },
     {
       "id": "2:42:ちがいます",
@@ -660,13 +746,15 @@
       "kanji": "違います",
       "es": "no, está equivocado",
       "emoji": "🙅",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "2:43:あ",
       "lesson": 2,
       "kana": "あ",
-      "es": "¡ah!"
+      "es": "¡ah!",
+      "category": "expression"
     },
     {
       "id": "2:44:これからおせわになります",
@@ -674,65 +762,75 @@
       "kana": "これからおせわになります",
       "kanji": "これからお世話になります",
       "es": "cuento con su ayuda de ahora en más",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "2:45:こちらこそよろしく",
       "lesson": 2,
       "kana": "こちらこそよろしく",
       "es": "el gusto es mío",
-      "emoji": "🤝"
+      "emoji": "🤝",
+      "category": "expression"
     },
     {
       "id": "3:0:ここ",
       "lesson": 3,
       "kana": "ここ",
       "es": "aquí",
-      "emoji": "📍"
+      "emoji": "📍",
+      "category": "noun"
     },
     {
       "id": "3:1:そこ",
       "lesson": 3,
       "kana": "そこ",
-      "es": "ahí"
+      "es": "ahí",
+      "category": "noun"
     },
     {
       "id": "3:2:あそこ",
       "lesson": 3,
       "kana": "あそこ",
-      "es": "allá"
+      "es": "allá",
+      "category": "noun"
     },
     {
       "id": "3:3:どこ",
       "lesson": 3,
       "kana": "どこ",
       "es": "¿dónde?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "3:4:こちら",
       "lesson": 3,
       "kana": "こちら",
-      "es": "aquí (formal)"
+      "es": "aquí (formal)",
+      "category": "noun"
     },
     {
       "id": "3:5:そちら",
       "lesson": 3,
       "kana": "そちら",
-      "es": "ahí (formal)"
+      "es": "ahí (formal)",
+      "category": "noun"
     },
     {
       "id": "3:6:あちら",
       "lesson": 3,
       "kana": "あちら",
-      "es": "allá (formal)"
+      "es": "allá (formal)",
+      "category": "noun"
     },
     {
       "id": "3:7:どちら",
       "lesson": 3,
       "kana": "どちら",
       "es": "¿dónde? (formal)",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "3:8:きょうしつ",
@@ -740,7 +838,8 @@
       "kana": "きょうしつ",
       "kanji": "教室",
       "es": "aula",
-      "emoji": "🏫"
+      "emoji": "🏫",
+      "category": "noun"
     },
     {
       "id": "3:9:しょくどう",
@@ -748,7 +847,8 @@
       "kana": "しょくどう",
       "kanji": "食堂",
       "es": "comedor",
-      "emoji": "🍽️"
+      "emoji": "🍽️",
+      "category": "noun"
     },
     {
       "id": "3:10:じむしょ",
@@ -756,7 +856,8 @@
       "kana": "じむしょ",
       "kanji": "事務所",
       "es": "oficina",
-      "emoji": "🏢"
+      "emoji": "🏢",
+      "category": "noun"
     },
     {
       "id": "3:11:かいぎしつ",
@@ -764,7 +865,8 @@
       "kana": "かいぎしつ",
       "kanji": "会議室",
       "es": "sala de reuniones",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "noun"
     },
     {
       "id": "3:12:うけつけ",
@@ -772,14 +874,16 @@
       "kana": "うけつけ",
       "kanji": "受付",
       "es": "recepción",
-      "emoji": "🛎️"
+      "emoji": "🛎️",
+      "category": "noun"
     },
     {
       "id": "3:13:ロビー",
       "lesson": 3,
       "kana": "ロビー",
       "es": "lobby, vestíbulo",
-      "emoji": "🛋️"
+      "emoji": "🛋️",
+      "category": "noun"
     },
     {
       "id": "3:14:へや",
@@ -787,7 +891,8 @@
       "kana": "へや",
       "kanji": "部屋",
       "es": "habitación",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "category": "noun"
     },
     {
       "id": "3:15:トイレ（おてあらい）",
@@ -795,7 +900,8 @@
       "kana": "トイレ（おてあらい）",
       "kanji": "トイレ（お手洗い）",
       "es": "baño",
-      "emoji": "🚻"
+      "emoji": "🚻",
+      "category": "noun"
     },
     {
       "id": "3:16:かいだん",
@@ -803,20 +909,23 @@
       "kana": "かいだん",
       "kanji": "階段",
       "es": "escalera",
-      "emoji": "🪜"
+      "emoji": "🪜",
+      "category": "noun"
     },
     {
       "id": "3:17:エレベーター",
       "lesson": 3,
       "kana": "エレベーター",
       "es": "ascensor",
-      "emoji": "🛗"
+      "emoji": "🛗",
+      "category": "noun"
     },
     {
       "id": "3:18:エスカレーター",
       "lesson": 3,
       "kana": "エスカレーター",
-      "es": "escalera mecánica"
+      "es": "escalera mecánica",
+      "category": "noun"
     },
     {
       "id": "3:19:じどうはんばいき",
@@ -824,7 +933,8 @@
       "kana": "じどうはんばいき",
       "kanji": "自動販売機",
       "es": "máquina expendedora",
-      "emoji": "🥤"
+      "emoji": "🥤",
+      "category": "noun"
     },
     {
       "id": "3:20:でんわ",
@@ -832,7 +942,8 @@
       "kana": "でんわ",
       "kanji": "電話",
       "es": "teléfono",
-      "emoji": "📞"
+      "emoji": "📞",
+      "category": "noun"
     },
     {
       "id": "3:21:［お］くに",
@@ -840,7 +951,8 @@
       "kana": "［お］くに",
       "kanji": "［お］国",
       "es": "país",
-      "emoji": "🌏"
+      "emoji": "🌏",
+      "category": "noun"
     },
     {
       "id": "3:22:かいしゃ",
@@ -848,14 +960,16 @@
       "kana": "かいしゃ",
       "kanji": "会社",
       "es": "empresa",
-      "emoji": "🏢"
+      "emoji": "🏢",
+      "category": "noun"
     },
     {
       "id": "3:23:うち",
       "lesson": 3,
       "kana": "うち",
       "es": "casa",
-      "emoji": "🏠"
+      "emoji": "🏠",
+      "category": "noun"
     },
     {
       "id": "3:24:くつ",
@@ -863,21 +977,24 @@
       "kana": "くつ",
       "kanji": "靴",
       "es": "zapatos",
-      "emoji": "👞"
+      "emoji": "👞",
+      "category": "noun"
     },
     {
       "id": "3:25:ネクタイ",
       "lesson": 3,
       "kana": "ネクタイ",
       "es": "corbata",
-      "emoji": "👔"
+      "emoji": "👔",
+      "category": "noun"
     },
     {
       "id": "3:26:ワイン",
       "lesson": 3,
       "kana": "ワイン",
       "es": "vino",
-      "emoji": "🍷"
+      "emoji": "🍷",
+      "category": "noun"
     },
     {
       "id": "3:27:うりば",
@@ -885,7 +1002,8 @@
       "kana": "うりば",
       "kanji": "売り場",
       "es": "sección (de una tienda)",
-      "emoji": "🏬"
+      "emoji": "🏬",
+      "category": "noun"
     },
     {
       "id": "3:28:ちか",
@@ -893,7 +1011,8 @@
       "kana": "ちか",
       "kanji": "地下",
       "es": "subsuelo",
-      "emoji": "⬇️"
+      "emoji": "⬇️",
+      "category": "noun"
     },
     {
       "id": "3:29:―かい（―がい）",
@@ -901,7 +1020,8 @@
       "kana": "―かい（―がい）",
       "kanji": "―階",
       "es": "piso ~",
-      "emoji": "🏢"
+      "emoji": "🏢",
+      "category": "other"
     },
     {
       "id": "3:30:なんがい",
@@ -909,7 +1029,8 @@
       "kana": "なんがい",
       "kanji": "何階",
       "es": "¿qué piso?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "3:31:―えん",
@@ -917,14 +1038,16 @@
       "kana": "―えん",
       "kanji": "―円",
       "es": "~ yenes",
-      "emoji": "💴"
+      "emoji": "💴",
+      "category": "other"
     },
     {
       "id": "3:32:いくら",
       "lesson": 3,
       "kana": "いくら",
       "es": "¿cuánto cuesta?",
-      "emoji": "💰"
+      "emoji": "💰",
+      "category": "question"
     },
     {
       "id": "3:33:ひゃく",
@@ -932,41 +1055,47 @@
       "kana": "ひゃく",
       "kanji": "百",
       "es": "cien",
-      "emoji": "💯"
+      "emoji": "💯",
+      "category": "noun"
     },
     {
       "id": "3:34:せん",
       "lesson": 3,
       "kana": "せん",
       "kanji": "千",
-      "es": "mil"
+      "es": "mil",
+      "category": "noun"
     },
     {
       "id": "3:35:まん",
       "lesson": 3,
       "kana": "まん",
       "kanji": "万",
-      "es": "diez mil"
+      "es": "diez mil",
+      "category": "noun"
     },
     {
       "id": "3:36:すみません",
       "lesson": 3,
       "kana": "すみません",
       "es": "disculpe",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "3:37:どうも",
       "lesson": 3,
       "kana": "どうも",
-      "es": "gracias"
+      "es": "gracias",
+      "category": "expression"
     },
     {
       "id": "3:38:いらっしゃいませ",
       "lesson": 3,
       "kana": "いらっしゃいませ",
       "es": "¡bienvenido! (en negocios)",
-      "emoji": "🙌"
+      "emoji": "🙌",
+      "category": "expression"
     },
     {
       "id": "3:39:［～を］みせてください",
@@ -974,41 +1103,47 @@
       "kana": "［～を］みせてください",
       "kanji": "［～を］見せてください",
       "es": "muéstreme ~",
-      "emoji": "👀"
+      "emoji": "👀",
+      "category": "expression"
     },
     {
       "id": "3:40:じゃ",
       "lesson": 3,
       "kana": "じゃ",
-      "es": "entonces"
+      "es": "entonces",
+      "category": "other"
     },
     {
       "id": "3:41:［～を］ください",
       "lesson": 3,
       "kana": "［～を］ください",
       "es": "deme ~ / quiero ~",
-      "emoji": "🤲"
+      "emoji": "🤲",
+      "category": "expression"
     },
     {
       "id": "3:42:イタリア",
       "lesson": 3,
       "kana": "イタリア",
       "es": "Italia",
-      "emoji": "🇮🇹"
+      "emoji": "🇮🇹",
+      "category": "noun"
     },
     {
       "id": "3:43:スイス",
       "lesson": 3,
       "kana": "スイス",
       "es": "Suiza",
-      "emoji": "🇨🇭"
+      "emoji": "🇨🇭",
+      "category": "noun"
     },
     {
       "id": "3:44:フランス",
       "lesson": 3,
       "kana": "フランス",
       "es": "Francia",
-      "emoji": "🇫🇷"
+      "emoji": "🇫🇷",
+      "category": "noun"
     },
     {
       "id": "4:0:おきます",
@@ -1017,7 +1152,8 @@
       "kanji": "起きます",
       "es": "levantarse, despertarse",
       "emoji": "⏰",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "4:1:ねます",
@@ -1026,7 +1162,8 @@
       "kanji": "寝ます",
       "es": "dormir, acostarse",
       "emoji": "😴",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "4:2:はたらきます",
@@ -1035,7 +1172,8 @@
       "kanji": "働きます",
       "es": "trabajar",
       "emoji": "💼",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "4:3:やすみます",
@@ -1044,7 +1182,8 @@
       "kanji": "休みます",
       "es": "descansar, tomarse el día",
       "emoji": "🛌",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "4:4:べんきょうします",
@@ -1053,7 +1192,8 @@
       "kanji": "勉強します",
       "es": "estudiar",
       "emoji": "📚",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "4:5:おわります",
@@ -1062,14 +1202,16 @@
       "kanji": "終わります",
       "es": "terminar",
       "emoji": "🏁",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "4:6:デパート",
       "lesson": 4,
       "kana": "デパート",
       "es": "tienda departamental",
-      "emoji": "🏬"
+      "emoji": "🏬",
+      "category": "noun"
     },
     {
       "id": "4:7:ぎんこう",
@@ -1077,7 +1219,8 @@
       "kana": "ぎんこう",
       "kanji": "銀行",
       "es": "banco",
-      "emoji": "🏦"
+      "emoji": "🏦",
+      "category": "noun"
     },
     {
       "id": "4:8:ゆうびんきょく",
@@ -1085,7 +1228,8 @@
       "kana": "ゆうびんきょく",
       "kanji": "郵便局",
       "es": "correo (oficina postal)",
-      "emoji": "🏣"
+      "emoji": "🏣",
+      "category": "noun"
     },
     {
       "id": "4:9:としょかん",
@@ -1093,7 +1237,8 @@
       "kana": "としょかん",
       "kanji": "図書館",
       "es": "biblioteca",
-      "emoji": "📚"
+      "emoji": "📚",
+      "category": "noun"
     },
     {
       "id": "4:10:びじゅつかん",
@@ -1101,7 +1246,8 @@
       "kana": "びじゅつかん",
       "kanji": "美術館",
       "es": "museo de arte",
-      "emoji": "🖼️"
+      "emoji": "🖼️",
+      "category": "noun"
     },
     {
       "id": "4:11:いま",
@@ -1109,7 +1255,8 @@
       "kana": "いま",
       "kanji": "今",
       "es": "ahora",
-      "emoji": "⏱️"
+      "emoji": "⏱️",
+      "category": "noun"
     },
     {
       "id": "4:12:―じ",
@@ -1117,7 +1264,8 @@
       "kana": "―じ",
       "kanji": "―時",
       "es": "las ~ (hora)",
-      "emoji": "🕐"
+      "emoji": "🕐",
+      "category": "other"
     },
     {
       "id": "4:13:―ふん（―ぷん）",
@@ -1125,7 +1273,8 @@
       "kana": "―ふん（―ぷん）",
       "kanji": "―分",
       "es": "~ minutos",
-      "emoji": "⏱️"
+      "emoji": "⏱️",
+      "category": "other"
     },
     {
       "id": "4:14:はん",
@@ -1133,7 +1282,8 @@
       "kana": "はん",
       "kanji": "半",
       "es": "y media",
-      "emoji": "🕧"
+      "emoji": "🕧",
+      "category": "noun"
     },
     {
       "id": "4:15:なんじ",
@@ -1141,7 +1291,8 @@
       "kana": "なんじ",
       "kanji": "何時",
       "es": "¿qué hora?",
-      "emoji": "🕒"
+      "emoji": "🕒",
+      "category": "question"
     },
     {
       "id": "4:16:なんぷん",
@@ -1149,7 +1300,8 @@
       "kana": "なんぷん",
       "kanji": "何分",
       "es": "¿cuántos minutos?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "4:17:ごぜん",
@@ -1157,7 +1309,8 @@
       "kana": "ごぜん",
       "kanji": "午前",
       "es": "a. m., por la mañana",
-      "emoji": "🌄"
+      "emoji": "🌄",
+      "category": "noun"
     },
     {
       "id": "4:18:ごご",
@@ -1165,7 +1318,8 @@
       "kana": "ごご",
       "kanji": "午後",
       "es": "p. m., por la tarde",
-      "emoji": "🌇"
+      "emoji": "🌇",
+      "category": "noun"
     },
     {
       "id": "4:19:あさ",
@@ -1173,7 +1327,8 @@
       "kana": "あさ",
       "kanji": "朝",
       "es": "mañana (parte del día)",
-      "emoji": "🌅"
+      "emoji": "🌅",
+      "category": "noun"
     },
     {
       "id": "4:20:ひる",
@@ -1181,7 +1336,8 @@
       "kana": "ひる",
       "kanji": "昼",
       "es": "mediodía, día",
-      "emoji": "☀️"
+      "emoji": "☀️",
+      "category": "noun"
     },
     {
       "id": "4:21:ばん（よる）",
@@ -1189,45 +1345,52 @@
       "kana": "ばん（よる）",
       "kanji": "晩（夜）",
       "es": "noche",
-      "emoji": "🌙"
+      "emoji": "🌙",
+      "category": "noun"
     },
     {
       "id": "4:22:おととい",
       "lesson": 4,
       "kana": "おととい",
-      "es": "anteayer"
+      "es": "anteayer",
+      "category": "noun"
     },
     {
       "id": "4:23:きのう",
       "lesson": 4,
       "kana": "きのう",
-      "es": "ayer"
+      "es": "ayer",
+      "category": "noun"
     },
     {
       "id": "4:24:きょう",
       "lesson": 4,
       "kana": "きょう",
       "es": "hoy",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "4:25:あした",
       "lesson": 4,
       "kana": "あした",
-      "es": "mañana (el día siguiente)"
+      "es": "mañana (el día siguiente)",
+      "category": "noun"
     },
     {
       "id": "4:26:あさって",
       "lesson": 4,
       "kana": "あさって",
-      "es": "pasado mañana"
+      "es": "pasado mañana",
+      "category": "noun"
     },
     {
       "id": "4:27:けさ",
       "lesson": 4,
       "kana": "けさ",
       "es": "esta mañana",
-      "emoji": "🌅"
+      "emoji": "🌅",
+      "category": "noun"
     },
     {
       "id": "4:28:こんばん",
@@ -1235,7 +1398,8 @@
       "kana": "こんばん",
       "kanji": "今晩",
       "es": "esta noche",
-      "emoji": "🌙"
+      "emoji": "🌙",
+      "category": "noun"
     },
     {
       "id": "4:29:やすみ",
@@ -1243,7 +1407,8 @@
       "kana": "やすみ",
       "kanji": "休み",
       "es": "descanso, día libre",
-      "emoji": "🏖️"
+      "emoji": "🏖️",
+      "category": "noun"
     },
     {
       "id": "4:30:ひるやすみ",
@@ -1251,7 +1416,8 @@
       "kana": "ひるやすみ",
       "kanji": "昼休み",
       "es": "descanso del mediodía",
-      "emoji": "🍱"
+      "emoji": "🍱",
+      "category": "noun"
     },
     {
       "id": "4:31:しけん",
@@ -1259,7 +1425,8 @@
       "kana": "しけん",
       "kanji": "試験",
       "es": "examen",
-      "emoji": "📝"
+      "emoji": "📝",
+      "category": "noun"
     },
     {
       "id": "4:32:かいぎ",
@@ -1267,7 +1434,8 @@
       "kana": "かいぎ",
       "kanji": "会議",
       "es": "reunión",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "noun"
     },
     {
       "id": "4:33:えいが",
@@ -1275,7 +1443,8 @@
       "kana": "えいが",
       "kanji": "映画",
       "es": "película",
-      "emoji": "🎬"
+      "emoji": "🎬",
+      "category": "noun"
     },
     {
       "id": "4:34:まいあさ",
@@ -1283,7 +1452,8 @@
       "kana": "まいあさ",
       "kanji": "毎朝",
       "es": "todas las mañanas",
-      "emoji": "🌅"
+      "emoji": "🌅",
+      "category": "noun"
     },
     {
       "id": "4:35:まいばん",
@@ -1291,7 +1461,8 @@
       "kana": "まいばん",
       "kanji": "毎晩",
       "es": "todas las noches",
-      "emoji": "🌙"
+      "emoji": "🌙",
+      "category": "noun"
     },
     {
       "id": "4:36:まいにち",
@@ -1299,56 +1470,64 @@
       "kana": "まいにち",
       "kanji": "毎日",
       "es": "todos los días",
-      "emoji": "📆"
+      "emoji": "📆",
+      "category": "noun"
     },
     {
       "id": "4:37:げつようび",
       "lesson": 4,
       "kana": "げつようび",
       "kanji": "月曜日",
-      "es": "lunes"
+      "es": "lunes",
+      "category": "noun"
     },
     {
       "id": "4:38:かようび",
       "lesson": 4,
       "kana": "かようび",
       "kanji": "火曜日",
-      "es": "martes"
+      "es": "martes",
+      "category": "noun"
     },
     {
       "id": "4:39:すいようび",
       "lesson": 4,
       "kana": "すいようび",
       "kanji": "水曜日",
-      "es": "miércoles"
+      "es": "miércoles",
+      "category": "noun"
     },
     {
       "id": "4:40:もくようび",
       "lesson": 4,
       "kana": "もくようび",
       "kanji": "木曜日",
-      "es": "jueves"
+      "es": "jueves",
+      "category": "noun"
     },
     {
       "id": "4:41:きんようび",
       "lesson": 4,
       "kana": "きんようび",
       "kanji": "金曜日",
-      "es": "viernes"
+      "es": "viernes",
+      "category": "noun"
     },
     {
       "id": "4:42:どようび",
       "lesson": 4,
       "kana": "どようび",
       "kanji": "土曜日",
-      "es": "sábado"
+      "es": "sábado",
+      "category": "noun"
     },
     {
       "id": "4:43:にちようび",
       "lesson": 4,
       "kana": "にちようび",
       "kanji": "日曜日",
-      "es": "domingo"
+      "es": "domingo",
+      "category": "noun"
     },
     {
       "id": "4:44:なんようび",
@@ -1356,25 +1535,29 @@
       "kana": "なんようび",
       "kanji": "何曜日",
       "es": "¿qué día de la semana?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "4:45:～から",
       "lesson": 4,
       "kana": "～から",
-      "es": "desde ~"
+      "es": "desde ~",
+      "category": "other"
     },
     {
       "id": "4:46:～まで",
       "lesson": 4,
       "kana": "～まで",
-      "es": "hasta ~"
+      "es": "hasta ~",
+      "category": "other"
     },
     {
       "id": "4:47:～と～",
       "lesson": 4,
       "kana": "～と～",
-      "es": "~ y ~"
+      "es": "~ y ~",
+      "category": "other"
     },
     {
       "id": "4:48:たいへんですね",
@@ -1382,7 +1565,8 @@
       "kana": "たいへんですね",
       "kanji": "大変ですね",
       "es": "¡qué duro! / ¡qué pesado!",
-      "emoji": "😓"
+      "emoji": "😓",
+      "category": "expression"
     },
     {
       "id": "4:49:ばんごう",
@@ -1390,7 +1574,8 @@
       "kana": "ばんごう",
       "kanji": "番号",
       "es": "número",
-      "emoji": "🔢"
+      "emoji": "🔢",
+      "category": "noun"
     },
     {
       "id": "4:50:なんばん",
@@ -1398,13 +1583,15 @@
       "kana": "なんばん",
       "kanji": "何番",
       "es": "¿qué número?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "4:51:そちら",
       "lesson": 4,
       "kana": "そちら",
-      "es": "usted, su lado"
+      "es": "usted, su lado",
+      "category": "noun"
     },
     {
       "id": "5:0:いきます",
@@ -1413,7 +1600,8 @@
       "kanji": "行きます",
       "es": "ir",
       "emoji": "🚶",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "5:1:きます",
@@ -1422,7 +1610,8 @@
       "kanji": "来ます",
       "es": "venir",
       "emoji": "👋",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "5:2:かえります",
@@ -1431,7 +1620,8 @@
       "kanji": "帰ります",
       "es": "volver (a casa)",
       "emoji": "🏠",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "5:3:がっこう",
@@ -1439,14 +1629,16 @@
       "kana": "がっこう",
       "kanji": "学校",
       "es": "escuela",
-      "emoji": "🏫"
+      "emoji": "🏫",
+      "category": "noun"
     },
     {
       "id": "5:4:スーパー",
       "lesson": 5,
       "kana": "スーパー",
       "es": "supermercado",
-      "emoji": "🛒"
+      "emoji": "🛒",
+      "category": "noun"
     },
     {
       "id": "5:5:えき",
@@ -1454,7 +1646,8 @@
       "kana": "えき",
       "kanji": "駅",
       "es": "estación",
-      "emoji": "🚉"
+      "emoji": "🚉",
+      "category": "noun"
     },
     {
       "id": "5:6:ひこうき",
@@ -1462,7 +1655,8 @@
       "kana": "ひこうき",
       "kanji": "飛行機",
       "es": "avión",
-      "emoji": "✈️"
+      "emoji": "✈️",
+      "category": "noun"
     },
     {
       "id": "5:7:ふね",
@@ -1470,7 +1664,8 @@
       "kana": "ふね",
       "kanji": "船",
       "es": "barco",
-      "emoji": "🚢"
+      "emoji": "🚢",
+      "category": "noun"
     },
     {
       "id": "5:8:でんしゃ",
@@ -1478,7 +1673,8 @@
       "kana": "でんしゃ",
       "kanji": "電車",
       "es": "tren",
-      "emoji": "🚃"
+      "emoji": "🚃",
+      "category": "noun"
     },
     {
       "id": "5:9:ちかてつ",
@@ -1486,7 +1682,8 @@
       "kana": "ちかてつ",
       "kanji": "地下鉄",
       "es": "subte, metro",
-      "emoji": "🚇"
+      "emoji": "🚇",
+      "category": "noun"
     },
     {
       "id": "5:10:しんかんせん",
@@ -1494,21 +1691,24 @@
       "kana": "しんかんせん",
       "kanji": "新幹線",
       "es": "tren bala",
-      "emoji": "🚄"
+      "emoji": "🚄",
+      "category": "noun"
     },
     {
       "id": "5:11:バス",
       "lesson": 5,
       "kana": "バス",
       "es": "colectivo, bus",
-      "emoji": "🚌"
+      "emoji": "🚌",
+      "category": "noun"
     },
     {
       "id": "5:12:タクシー",
       "lesson": 5,
       "kana": "タクシー",
       "es": "taxi",
-      "emoji": "🚕"
+      "emoji": "🚕",
+      "category": "noun"
     },
     {
       "id": "5:13:じてんしゃ",
@@ -1516,7 +1716,8 @@
       "kana": "じてんしゃ",
       "kanji": "自転車",
       "es": "bicicleta",
-      "emoji": "🚲"
+      "emoji": "🚲",
+      "category": "noun"
     },
     {
       "id": "5:14:あるいて",
@@ -1524,7 +1725,8 @@
       "kana": "あるいて",
       "kanji": "歩いて",
       "es": "a pie, caminando",
-      "emoji": "🚶"
+      "emoji": "🚶",
+      "category": "adverb"
     },
     {
       "id": "5:15:ひと",
@@ -1532,7 +1734,8 @@
       "kana": "ひと",
       "kanji": "人",
       "es": "persona",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "noun"
     },
     {
       "id": "5:16:ともだち",
@@ -1540,7 +1743,8 @@
       "kana": "ともだち",
       "kanji": "友達",
       "es": "amigo",
-      "emoji": "🧑‍🤝‍🧑"
+      "emoji": "🧑‍🤝‍🧑",
+      "category": "noun"
     },
     {
       "id": "5:17:かれ",
@@ -1548,7 +1752,8 @@
       "kana": "かれ",
       "kanji": "彼",
       "es": "él; novio",
-      "emoji": "👦"
+      "emoji": "👦",
+      "category": "noun"
     },
     {
       "id": "5:18:かのじょ",
@@ -1556,7 +1761,8 @@
       "kana": "かのじょ",
       "kanji": "彼女",
       "es": "ella; novia",
-      "emoji": "👧"
+      "emoji": "👧",
+      "category": "noun"
     },
     {
       "id": "5:19:かぞく",
@@ -1564,7 +1770,8 @@
       "kana": "かぞく",
       "kanji": "家族",
       "es": "familia",
-      "emoji": "👨‍👩‍👧"
+      "emoji": "👨‍👩‍👧",
+      "category": "noun"
     },
     {
       "id": "5:20:ひとりで",
@@ -1572,76 +1779,87 @@
       "kana": "ひとりで",
       "kanji": "一人で",
       "es": "solo, por su cuenta",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "adverb"
     },
     {
       "id": "5:21:せんしゅう",
       "lesson": 5,
       "kana": "せんしゅう",
       "kanji": "先週",
-      "es": "la semana pasada"
+      "es": "la semana pasada",
+      "category": "noun"
     },
     {
       "id": "5:22:こんしゅう",
       "lesson": 5,
       "kana": "こんしゅう",
       "kanji": "今週",
-      "es": "esta semana"
+      "es": "esta semana",
+      "category": "noun"
     },
     {
       "id": "5:23:らいしゅう",
       "lesson": 5,
       "kana": "らいしゅう",
       "kanji": "来週",
-      "es": "la semana que viene"
+      "es": "la semana que viene",
+      "category": "noun"
     },
     {
       "id": "5:24:せんげつ",
       "lesson": 5,
       "kana": "せんげつ",
       "kanji": "先月",
-      "es": "el mes pasado"
+      "es": "el mes pasado",
+      "category": "noun"
     },
     {
       "id": "5:25:こんげつ",
       "lesson": 5,
       "kana": "こんげつ",
       "kanji": "今月",
-      "es": "este mes"
+      "es": "este mes",
+      "category": "noun"
     },
     {
       "id": "5:26:らいげつ",
       "lesson": 5,
       "kana": "らいげつ",
       "kanji": "来月",
-      "es": "el mes que viene"
+      "es": "el mes que viene",
+      "category": "noun"
     },
     {
       "id": "5:27:きょねん",
       "lesson": 5,
       "kana": "きょねん",
       "kanji": "去年",
-      "es": "el año pasado"
+      "es": "el año pasado",
+      "category": "noun"
     },
     {
       "id": "5:28:ことし",
       "lesson": 5,
       "kana": "ことし",
-      "es": "este año"
+      "es": "este año",
+      "category": "noun"
     },
     {
       "id": "5:29:らいねん",
       "lesson": 5,
       "kana": "らいねん",
       "kanji": "来年",
-      "es": "el año que viene"
+      "es": "el año que viene",
+      "category": "noun"
     },
     {
       "id": "5:30:―ねん",
       "lesson": 5,
       "kana": "―ねん",
       "kanji": "―年",
-      "es": "año ~"
+      "es": "año ~",
+      "category": "other"
     },
     {
       "id": "5:31:なんねん",
@@ -1649,14 +1867,16 @@
       "kana": "なんねん",
       "kanji": "何年",
       "es": "¿qué año? / ¿cuántos años?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "5:32:―がつ",
       "lesson": 5,
       "kana": "―がつ",
       "kanji": "―月",
-      "es": "mes ~ (ej. 4月 = abril)"
+      "es": "mes ~ (ej. 4月 = abril)",
+      "category": "other"
     },
     {
       "id": "5:33:なんがつ",
@@ -1664,7 +1884,8 @@
       "kana": "なんがつ",
       "kanji": "何月",
       "es": "¿qué mes?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "5:34:ついたち",
@@ -1672,7 +1893,8 @@
       "kana": "ついたち",
       "kanji": "1日",
       "es": "día 1 (del mes)",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:35:ふつか",
@@ -1680,7 +1902,8 @@
       "kana": "ふつか",
       "kanji": "2日",
       "es": "día 2",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:36:みっか",
@@ -1688,7 +1911,8 @@
       "kana": "みっか",
       "kanji": "3日",
       "es": "día 3",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:37:よっか",
@@ -1696,7 +1920,8 @@
       "kana": "よっか",
       "kanji": "4日",
       "es": "día 4",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:38:いつか",
@@ -1704,7 +1929,8 @@
       "kana": "いつか",
       "kanji": "5日",
       "es": "día 5",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:39:むいか",
@@ -1712,7 +1938,8 @@
       "kana": "むいか",
       "kanji": "6日",
       "es": "día 6",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:40:なのか",
@@ -1720,7 +1947,8 @@
       "kana": "なのか",
       "kanji": "7日",
       "es": "día 7",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:41:ようか",
@@ -1728,7 +1956,8 @@
       "kana": "ようか",
       "kanji": "8日",
       "es": "día 8",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:42:ここのか",
@@ -1736,7 +1965,8 @@
       "kana": "ここのか",
       "kanji": "9日",
       "es": "día 9",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:43:とおか",
@@ -1744,7 +1974,8 @@
       "kana": "とおか",
       "kanji": "10日",
       "es": "día 10",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:44:じゅうよっか",
@@ -1752,7 +1983,8 @@
       "kana": "じゅうよっか",
       "kanji": "14日",
       "es": "día 14",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:45:はつか",
@@ -1760,7 +1992,8 @@
       "kana": "はつか",
       "kanji": "20日",
       "es": "día 20",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:46:にじゅうよっか",
@@ -1768,7 +2001,8 @@
       "kana": "にじゅうよっか",
       "kanji": "24日",
       "es": "día 24",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "5:47:―にち",
@@ -1776,7 +2010,8 @@
       "kana": "―にち",
       "kanji": "―日",
       "es": "día ~ (del mes)",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "other"
     },
     {
       "id": "5:48:なんにち",
@@ -1784,14 +2019,16 @@
       "kana": "なんにち",
       "kanji": "何日",
       "es": "¿qué día (del mes)?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "5:49:いつ",
       "lesson": 5,
       "kana": "いつ",
       "es": "¿cuándo?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "5:50:たんじょうび",
@@ -1799,7 +2036,8 @@
       "kana": "たんじょうび",
       "kanji": "誕生日",
       "es": "cumpleaños",
-      "emoji": "🎂"
+      "emoji": "🎂",
+      "category": "noun"
     },
     {
       "id": "5:51:ふつう",
@@ -1807,7 +2045,8 @@
       "kana": "ふつう",
       "kanji": "普通",
       "es": "tren local (para en todas)",
-      "emoji": "🚃"
+      "emoji": "🚃",
+      "category": "noun"
     },
     {
       "id": "5:52:きゅうこう",
@@ -1815,7 +2054,8 @@
       "kana": "きゅうこう",
       "kanji": "急行",
       "es": "tren rápido",
-      "emoji": "🚆"
+      "emoji": "🚆",
+      "category": "noun"
     },
     {
       "id": "5:53:とっきゅう",
@@ -1823,7 +2063,8 @@
       "kana": "とっきゅう",
       "kanji": "特急",
       "es": "tren expreso",
-      "emoji": "🚅"
+      "emoji": "🚅",
+      "category": "noun"
     },
     {
       "id": "5:54:つぎの",
@@ -1831,14 +2072,16 @@
       "kana": "つぎの",
       "kanji": "次の",
       "es": "el próximo",
-      "emoji": "⏭️"
+      "emoji": "⏭️",
+      "category": "other"
     },
     {
       "id": "5:55:どういたしまして",
       "lesson": 5,
       "kana": "どういたしまして",
       "es": "de nada",
-      "emoji": "😊"
+      "emoji": "😊",
+      "category": "expression"
     },
     {
       "id": "5:56:―ばんせん",
@@ -1846,7 +2089,8 @@
       "kana": "―ばんせん",
       "kanji": "―番線",
       "es": "andén número ~",
-      "emoji": "🚉"
+      "emoji": "🚉",
+      "category": "other"
     },
     {
       "id": "6:0:たべます",
@@ -1855,7 +2099,8 @@
       "kanji": "食べます",
       "es": "comer",
       "emoji": "🍽️",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "6:1:のみます",
@@ -1864,7 +2109,8 @@
       "kanji": "飲みます",
       "es": "beber, tomar",
       "emoji": "🥤",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:2:すいます［たばこを～］",
@@ -1873,7 +2119,8 @@
       "kanji": "吸います",
       "es": "fumar",
       "emoji": "🚬",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:3:みます",
@@ -1882,7 +2129,8 @@
       "kanji": "見ます",
       "es": "ver, mirar",
       "emoji": "👀",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "6:4:ききます",
@@ -1891,7 +2139,8 @@
       "kanji": "聞きます",
       "es": "escuchar",
       "emoji": "👂",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:5:よみます",
@@ -1900,7 +2149,8 @@
       "kanji": "読みます",
       "es": "leer",
       "emoji": "📖",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:6:かきます",
@@ -1909,7 +2159,8 @@
       "kanji": "書きます",
       "es": "escribir; dibujar",
       "emoji": "✍️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:7:かいます",
@@ -1918,7 +2169,8 @@
       "kanji": "買います",
       "es": "comprar",
       "emoji": "🛍️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:8:とります［しゃしんを～］",
@@ -1927,14 +2179,16 @@
       "kanji": "撮ります［写真を～］",
       "es": "sacar (fotos)",
       "emoji": "📸",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:9:します",
       "lesson": 6,
       "kana": "します",
       "es": "hacer",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "6:10:あいます［ともだちに～］",
@@ -1943,14 +2197,16 @@
       "kanji": "会います［友達に～］",
       "es": "encontrarse (con un amigo)",
       "emoji": "🤝",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "6:11:ごはん",
       "lesson": 6,
       "kana": "ごはん",
       "es": "comida; arroz cocido",
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "category": "noun"
     },
     {
       "id": "6:12:あさごはん",
@@ -1958,7 +2214,8 @@
       "kana": "あさごはん",
       "kanji": "朝ごはん",
       "es": "desayuno",
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "category": "noun"
     },
     {
       "id": "6:13:ひるごはん",
@@ -1966,7 +2223,8 @@
       "kana": "ひるごはん",
       "kanji": "昼ごはん",
       "es": "almuerzo",
-      "emoji": "🍱"
+      "emoji": "🍱",
+      "category": "noun"
     },
     {
       "id": "6:14:ばんごはん",
@@ -1974,14 +2232,16 @@
       "kana": "ばんごはん",
       "kanji": "晩ごはん",
       "es": "cena",
-      "emoji": "🍛"
+      "emoji": "🍛",
+      "category": "noun"
     },
     {
       "id": "6:15:パン",
       "lesson": 6,
       "kana": "パン",
       "es": "pan",
-      "emoji": "🍞"
+      "emoji": "🍞",
+      "category": "noun"
     },
     {
       "id": "6:16:たまご",
@@ -1989,7 +2249,8 @@
       "kana": "たまご",
       "kanji": "卵",
       "es": "huevo",
-      "emoji": "🥚"
+      "emoji": "🥚",
+      "category": "noun"
     },
     {
       "id": "6:17:にく",
@@ -1997,7 +2258,8 @@
       "kana": "にく",
       "kanji": "肉",
       "es": "carne",
-      "emoji": "🥩"
+      "emoji": "🥩",
+      "category": "noun"
     },
     {
       "id": "6:18:さかな",
@@ -2005,7 +2267,8 @@
       "kana": "さかな",
       "kanji": "魚",
       "es": "pescado, pez",
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "category": "noun"
     },
     {
       "id": "6:19:やさい",
@@ -2013,7 +2276,8 @@
       "kana": "やさい",
       "kanji": "野菜",
       "es": "verdura",
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "category": "noun"
     },
     {
       "id": "6:20:くだもの",
@@ -2021,7 +2285,8 @@
       "kana": "くだもの",
       "kanji": "果物",
       "es": "fruta",
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "category": "noun"
     },
     {
       "id": "6:21:みず",
@@ -2029,7 +2294,8 @@
       "kana": "みず",
       "kanji": "水",
       "es": "agua",
-      "emoji": "💧"
+      "emoji": "💧",
+      "category": "noun"
     },
     {
       "id": "6:22:おちゃ",
@@ -2037,7 +2303,8 @@
       "kana": "おちゃ",
       "kanji": "お茶",
       "es": "té (verde)",
-      "emoji": "🍵"
+      "emoji": "🍵",
+      "category": "noun"
     },
     {
       "id": "6:23:こうちゃ",
@@ -2045,7 +2312,8 @@
       "kana": "こうちゃ",
       "kanji": "紅茶",
       "es": "té negro",
-      "emoji": "🫖"
+      "emoji": "🫖",
+      "category": "noun"
     },
     {
       "id": "6:24:ぎゅうにゅう（ミルク）",
@@ -2053,21 +2321,24 @@
       "kana": "ぎゅうにゅう（ミルク）",
       "kanji": "牛乳（ミルク）",
       "es": "leche",
-      "emoji": "🥛"
+      "emoji": "🥛",
+      "category": "noun"
     },
     {
       "id": "6:25:ジュース",
       "lesson": 6,
       "kana": "ジュース",
       "es": "jugo",
-      "emoji": "🧃"
+      "emoji": "🧃",
+      "category": "noun"
     },
     {
       "id": "6:26:ビール",
       "lesson": 6,
       "kana": "ビール",
       "es": "cerveza",
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "category": "noun"
     },
     {
       "id": "6:27:［お］さけ",
@@ -2075,14 +2346,16 @@
       "kana": "［お］さけ",
       "kanji": "［お］酒",
       "es": "bebida alcohólica; sake",
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "category": "noun"
     },
     {
       "id": "6:28:たばこ",
       "lesson": 6,
       "kana": "たばこ",
       "es": "cigarrillo",
-      "emoji": "🚬"
+      "emoji": "🚬",
+      "category": "noun"
     },
     {
       "id": "6:29:てがみ",
@@ -2090,14 +2363,16 @@
       "kana": "てがみ",
       "kanji": "手紙",
       "es": "carta",
-      "emoji": "✉️"
+      "emoji": "✉️",
+      "category": "noun"
     },
     {
       "id": "6:30:レポート",
       "lesson": 6,
       "kana": "レポート",
       "es": "informe",
-      "emoji": "📄"
+      "emoji": "📄",
+      "category": "noun"
     },
     {
       "id": "6:31:しゃしん",
@@ -2105,14 +2380,16 @@
       "kana": "しゃしん",
       "kanji": "写真",
       "es": "foto",
-      "emoji": "🖼️"
+      "emoji": "🖼️",
+      "category": "noun"
     },
     {
       "id": "6:32:ビデオ",
       "lesson": 6,
       "kana": "ビデオ",
       "es": "video",
-      "emoji": "📼"
+      "emoji": "📼",
+      "category": "noun"
     },
     {
       "id": "6:33:みせ",
@@ -2120,7 +2397,8 @@
       "kana": "みせ",
       "kanji": "店",
       "es": "negocio, tienda",
-      "emoji": "🏪"
+      "emoji": "🏪",
+      "category": "noun"
     },
     {
       "id": "6:34:にわ",
@@ -2128,7 +2406,8 @@
       "kana": "にわ",
       "kanji": "庭",
       "es": "jardín",
-      "emoji": "🌳"
+      "emoji": "🌳",
+      "category": "noun"
     },
     {
       "id": "6:35:しゅくだい",
@@ -2136,21 +2415,24 @@
       "kana": "しゅくだい",
       "kanji": "宿題",
       "es": "tarea",
-      "emoji": "📝"
+      "emoji": "📝",
+      "category": "noun"
     },
     {
       "id": "6:36:テニス",
       "lesson": 6,
       "kana": "テニス",
       "es": "tenis",
-      "emoji": "🎾"
+      "emoji": "🎾",
+      "category": "noun"
     },
     {
       "id": "6:37:サッカー",
       "lesson": 6,
       "kana": "サッカー",
       "es": "fútbol",
-      "emoji": "⚽"
+      "emoji": "⚽",
+      "category": "noun"
     },
     {
       "id": "6:38:［お］はなみ",
@@ -2158,7 +2440,8 @@
       "kana": "［お］はなみ",
       "kanji": "［お］花見",
       "es": "ver los cerezos en flor",
-      "emoji": "🌸"
+      "emoji": "🌸",
+      "category": "noun"
     },
     {
       "id": "6:39:なに",
@@ -2166,61 +2449,70 @@
       "kana": "なに",
       "kanji": "何",
       "es": "¿qué?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "6:40:いっしょに",
       "lesson": 6,
       "kana": "いっしょに",
       "es": "juntos",
-      "emoji": "👫"
+      "emoji": "👫",
+      "category": "adverb"
     },
     {
       "id": "6:41:ちょっと",
       "lesson": 6,
       "kana": "ちょっと",
       "es": "un poco",
-      "emoji": "🤏"
+      "emoji": "🤏",
+      "category": "adverb"
     },
     {
       "id": "6:42:いつも",
       "lesson": 6,
       "kana": "いつも",
-      "es": "siempre"
+      "es": "siempre",
+      "category": "adverb"
     },
     {
       "id": "6:43:ときどき",
       "lesson": 6,
       "kana": "ときどき",
       "kanji": "時々",
-      "es": "a veces"
+      "es": "a veces",
+      "category": "adverb"
     },
     {
       "id": "6:44:それから",
       "lesson": 6,
       "kana": "それから",
       "es": "después, y luego",
-      "emoji": "➡️"
+      "emoji": "➡️",
+      "category": "other"
     },
     {
       "id": "6:45:ええ",
       "lesson": 6,
       "kana": "ええ",
-      "es": "sí"
+      "es": "sí",
+      "category": "expression"
     },
     {
       "id": "6:46:いいですね",
       "lesson": 6,
       "kana": "いいですね",
       "es": "¡qué bueno!",
-      "emoji": "👍"
+      "emoji": "👍",
+      "category": "expression"
     },
     {
       "id": "6:47:わかりました",
       "lesson": 6,
       "kana": "わかりました",
       "es": "entendido",
-      "emoji": "🙆"
+      "emoji": "🙆",
+      "category": "expression"
     },
     {
       "id": "6:48:なんですか",
@@ -2228,14 +2520,16 @@
       "kana": "なんですか",
       "kanji": "何ですか",
       "es": "¿sí? ¿qué pasa?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "expression"
     },
     {
       "id": "6:49:じゃ、また［あした］",
       "lesson": 6,
       "kana": "じゃ、また［あした］",
       "es": "¡hasta [mañana]!",
-      "emoji": "👋"
+      "emoji": "👋",
+      "category": "expression"
     },
     {
       "id": "7:0:きります",
@@ -2244,7 +2538,8 @@
       "kanji": "切ります",
       "es": "cortar",
       "emoji": "✂️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "7:1:おくります",
@@ -2253,7 +2548,8 @@
       "kanji": "送ります",
       "es": "enviar",
       "emoji": "📤",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "7:2:あげます",
@@ -2261,7 +2557,8 @@
       "kana": "あげます",
       "es": "dar, regalar",
       "emoji": "🎁",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "7:3:もらいます",
@@ -2269,7 +2566,8 @@
       "kana": "もらいます",
       "es": "recibir",
       "emoji": "🤲",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "7:4:かします",
@@ -2277,7 +2575,8 @@
       "kana": "かします",
       "kanji": "貸します",
       "es": "prestar",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "7:5:かります",
@@ -2285,7 +2584,8 @@
       "kana": "かります",
       "kanji": "借ります",
       "es": "pedir prestado",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "7:6:おしえます",
@@ -2294,7 +2594,8 @@
       "kanji": "教えます",
       "es": "enseñar",
       "emoji": "👩‍🏫",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "7:7:ならいます",
@@ -2303,7 +2604,8 @@
       "kanji": "習います",
       "es": "aprender",
       "emoji": "📚",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "7:8:かけます［でんわを～］",
@@ -2312,7 +2614,8 @@
       "kanji": "かけます［電話を～］",
       "es": "hacer (una llamada)",
       "emoji": "📞",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "7:9:て",
@@ -2320,63 +2623,72 @@
       "kana": "て",
       "kanji": "手",
       "es": "mano",
-      "emoji": "✋"
+      "emoji": "✋",
+      "category": "noun"
     },
     {
       "id": "7:10:はし",
       "lesson": 7,
       "kana": "はし",
       "es": "palillos",
-      "emoji": "🥢"
+      "emoji": "🥢",
+      "category": "noun"
     },
     {
       "id": "7:11:スプーン",
       "lesson": 7,
       "kana": "スプーン",
       "es": "cuchara",
-      "emoji": "🥄"
+      "emoji": "🥄",
+      "category": "noun"
     },
     {
       "id": "7:12:ナイフ",
       "lesson": 7,
       "kana": "ナイフ",
       "es": "cuchillo",
-      "emoji": "🔪"
+      "emoji": "🔪",
+      "category": "noun"
     },
     {
       "id": "7:13:フォーク",
       "lesson": 7,
       "kana": "フォーク",
       "es": "tenedor",
-      "emoji": "🍴"
+      "emoji": "🍴",
+      "category": "noun"
     },
     {
       "id": "7:14:はさみ",
       "lesson": 7,
       "kana": "はさみ",
       "es": "tijera",
-      "emoji": "✂️"
+      "emoji": "✂️",
+      "category": "noun"
     },
     {
       "id": "7:15:パソコン",
       "lesson": 7,
       "kana": "パソコン",
       "es": "computadora personal",
-      "emoji": "💻"
+      "emoji": "💻",
+      "category": "noun"
     },
     {
       "id": "7:16:ケータイ",
       "lesson": 7,
       "kana": "ケータイ",
       "es": "celular",
-      "emoji": "📱"
+      "emoji": "📱",
+      "category": "noun"
     },
     {
       "id": "7:17:メール",
       "lesson": 7,
       "kana": "メール",
       "es": "mail",
-      "emoji": "📧"
+      "emoji": "📧",
+      "category": "noun"
     },
     {
       "id": "7:18:ねんがじょう",
@@ -2384,34 +2696,39 @@
       "kana": "ねんがじょう",
       "kanji": "年賀状",
       "es": "tarjeta de Año Nuevo",
-      "emoji": "🎍"
+      "emoji": "🎍",
+      "category": "noun"
     },
     {
       "id": "7:19:パンチ",
       "lesson": 7,
       "kana": "パンチ",
       "es": "perforadora",
-      "emoji": "🕳️"
+      "emoji": "🕳️",
+      "category": "noun"
     },
     {
       "id": "7:20:ホッチキス",
       "lesson": 7,
       "kana": "ホッチキス",
       "es": "abrochadora",
-      "emoji": "📎"
+      "emoji": "📎",
+      "category": "noun"
     },
     {
       "id": "7:21:セロテープ",
       "lesson": 7,
       "kana": "セロテープ",
-      "es": "cinta scotch"
+      "es": "cinta scotch",
+      "category": "noun"
     },
     {
       "id": "7:22:けしゴム",
       "lesson": 7,
       "kana": "けしゴム",
       "kanji": "消しゴム",
-      "es": "goma de borrar"
+      "es": "goma de borrar",
+      "category": "noun"
     },
     {
       "id": "7:23:かみ",
@@ -2419,7 +2736,8 @@
       "kana": "かみ",
       "kanji": "紙",
       "es": "papel",
-      "emoji": "📄"
+      "emoji": "📄",
+      "category": "noun"
     },
     {
       "id": "7:24:はな",
@@ -2427,21 +2745,24 @@
       "kana": "はな",
       "kanji": "花",
       "es": "flor",
-      "emoji": "💐"
+      "emoji": "💐",
+      "category": "noun"
     },
     {
       "id": "7:25:シャツ",
       "lesson": 7,
       "kana": "シャツ",
       "es": "camisa",
-      "emoji": "👕"
+      "emoji": "👕",
+      "category": "noun"
     },
     {
       "id": "7:26:プレゼント",
       "lesson": 7,
       "kana": "プレゼント",
       "es": "regalo",
-      "emoji": "🎁"
+      "emoji": "🎁",
+      "category": "noun"
     },
     {
       "id": "7:27:にもつ",
@@ -2449,7 +2770,8 @@
       "kana": "にもつ",
       "kanji": "荷物",
       "es": "equipaje, paquete",
-      "emoji": "📦"
+      "emoji": "📦",
+      "category": "noun"
     },
     {
       "id": "7:28:おかね",
@@ -2457,7 +2779,8 @@
       "kana": "おかね",
       "kanji": "お金",
       "es": "dinero",
-      "emoji": "💰"
+      "emoji": "💰",
+      "category": "noun"
     },
     {
       "id": "7:29:きっぷ",
@@ -2465,14 +2788,16 @@
       "kana": "きっぷ",
       "kanji": "切符",
       "es": "boleto",
-      "emoji": "🎫"
+      "emoji": "🎫",
+      "category": "noun"
     },
     {
       "id": "7:30:クリスマス",
       "lesson": 7,
       "kana": "クリスマス",
       "es": "Navidad",
-      "emoji": "🎄"
+      "emoji": "🎄",
+      "category": "noun"
     },
     {
       "id": "7:31:ちち",
@@ -2480,7 +2805,8 @@
       "kana": "ちち",
       "kanji": "父",
       "es": "(mi) padre",
-      "emoji": "👨"
+      "emoji": "👨",
+      "category": "noun"
     },
     {
       "id": "7:32:はは",
@@ -2488,7 +2814,8 @@
       "kana": "はは",
       "kanji": "母",
       "es": "(mi) madre",
-      "emoji": "👩"
+      "emoji": "👩",
+      "category": "noun"
     },
     {
       "id": "7:33:おとうさん",
@@ -2496,7 +2823,8 @@
       "kana": "おとうさん",
       "kanji": "お父さん",
       "es": "padre (de otro); papá",
-      "emoji": "👨"
+      "emoji": "👨",
+      "category": "noun"
     },
     {
       "id": "7:34:おかあさん",
@@ -2504,41 +2832,47 @@
       "kana": "おかあさん",
       "kanji": "お母さん",
       "es": "madre (de otro); mamá",
-      "emoji": "👩"
+      "emoji": "👩",
+      "category": "noun"
     },
     {
       "id": "7:35:もう",
       "lesson": 7,
       "kana": "もう",
       "es": "ya",
-      "emoji": "✅"
+      "emoji": "✅",
+      "category": "adverb"
     },
     {
       "id": "7:36:まだ",
       "lesson": 7,
       "kana": "まだ",
       "es": "todavía no",
-      "emoji": "⏳"
+      "emoji": "⏳",
+      "category": "adverb"
     },
     {
       "id": "7:37:これから",
       "lesson": 7,
       "kana": "これから",
-      "es": "de ahora en adelante; ahora"
+      "es": "de ahora en adelante; ahora",
+      "category": "adverb"
     },
     {
       "id": "7:38:［～、］すてきですね",
       "lesson": 7,
       "kana": "［～、］すてきですね",
       "es": "¡qué lindo ~!",
-      "emoji": "✨"
+      "emoji": "✨",
+      "category": "expression"
     },
     {
       "id": "7:39:いらっしゃい",
       "lesson": 7,
       "kana": "いらっしゃい",
       "es": "¡bienvenido!",
-      "emoji": "🙌"
+      "emoji": "🙌",
+      "category": "expression"
     },
     {
       "id": "7:40:どうぞおあがりください",
@@ -2546,7 +2880,8 @@
       "kana": "どうぞおあがりください",
       "kanji": "どうぞお上がりください",
       "es": "pase, adelante",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "category": "expression"
     },
     {
       "id": "7:41:しつれいします",
@@ -2554,48 +2889,55 @@
       "kana": "しつれいします",
       "kanji": "失礼します",
       "es": "con permiso",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "7:42:［～は］いかがですか",
       "lesson": 7,
       "kana": "［～は］いかがですか",
-      "es": "¿qué tal ~? / ¿quiere ~?"
+      "es": "¿qué tal ~? / ¿quiere ~?",
+      "category": "expression"
     },
     {
       "id": "7:43:いただきます",
       "lesson": 7,
       "kana": "いただきます",
       "es": "(antes de comer) ¡a comer!",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "expression"
     },
     {
       "id": "7:44:ごちそうさま［でした］",
       "lesson": 7,
       "kana": "ごちそうさま［でした］",
       "es": "gracias por la comida",
-      "emoji": "😋"
+      "emoji": "😋",
+      "category": "expression"
     },
     {
       "id": "7:45:スペイン",
       "lesson": 7,
       "kana": "スペイン",
       "es": "España",
-      "emoji": "🇪🇸"
+      "emoji": "🇪🇸",
+      "category": "noun"
     },
     {
       "id": "8:0:ハンサム［な］",
       "lesson": 8,
       "kana": "ハンサム［な］",
       "es": "guapo, apuesto",
-      "emoji": "😎"
+      "emoji": "😎",
+      "category": "adj-na"
     },
     {
       "id": "8:1:きれい［な］",
       "lesson": 8,
       "kana": "きれい［な］",
       "es": "lindo; limpio",
-      "emoji": "✨"
+      "emoji": "✨",
+      "category": "adj-na"
     },
     {
       "id": "8:2:しずか［な］",
@@ -2603,14 +2945,16 @@
       "kana": "しずか［な］",
       "kanji": "静か［な］",
       "es": "tranquilo, silencioso",
-      "emoji": "🤫"
+      "emoji": "🤫",
+      "category": "adj-na"
     },
     {
       "id": "8:3:にぎやか［な］",
       "lesson": 8,
       "kana": "にぎやか［な］",
       "es": "animado, bullicioso",
-      "emoji": "🎉"
+      "emoji": "🎉",
+      "category": "adj-na"
     },
     {
       "id": "8:4:ゆうめい［な］",
@@ -2618,7 +2962,8 @@
       "kana": "ゆうめい［な］",
       "kanji": "有名［な］",
       "es": "famoso",
-      "emoji": "⭐"
+      "emoji": "⭐",
+      "category": "adj-na"
     },
     {
       "id": "8:5:しんせつ［な］",
@@ -2626,7 +2971,8 @@
       "kana": "しんせつ［な］",
       "kanji": "親切［な］",
       "es": "amable",
-      "emoji": "😊"
+      "emoji": "😊",
+      "category": "adj-na"
     },
     {
       "id": "8:6:げんき［な］",
@@ -2634,7 +2980,8 @@
       "kana": "げんき［な］",
       "kanji": "元気［な］",
       "es": "sano, con energía",
-      "emoji": "💪"
+      "emoji": "💪",
+      "category": "adj-na"
     },
     {
       "id": "8:7:ひま［な］",
@@ -2642,7 +2989,8 @@
       "kana": "ひま［な］",
       "kanji": "暇［な］",
       "es": "libre, desocupado",
-      "emoji": "🛋️"
+      "emoji": "🛋️",
+      "category": "adj-na"
     },
     {
       "id": "8:8:べんり［な］",
@@ -2650,14 +2998,16 @@
       "kana": "べんり［な］",
       "kanji": "便利［な］",
       "es": "práctico, conveniente",
-      "emoji": "👌"
+      "emoji": "👌",
+      "category": "adj-na"
     },
     {
       "id": "8:9:すてき［な］",
       "lesson": 8,
       "kana": "すてき［な］",
       "es": "precioso, encantador",
-      "emoji": "💖"
+      "emoji": "💖",
+      "category": "adj-na"
     },
     {
       "id": "8:10:おおきい",
@@ -2665,7 +3015,8 @@
       "kana": "おおきい",
       "kanji": "大きい",
       "es": "grande",
-      "emoji": "🐘"
+      "emoji": "🐘",
+      "category": "adj-i"
     },
     {
       "id": "8:11:ちいさい",
@@ -2673,7 +3024,8 @@
       "kana": "ちいさい",
       "kanji": "小さい",
       "es": "chico, pequeño",
-      "emoji": "🐭"
+      "emoji": "🐭",
+      "category": "adj-i"
     },
     {
       "id": "8:12:あたらしい",
@@ -2681,7 +3033,8 @@
       "kana": "あたらしい",
       "kanji": "新しい",
       "es": "nuevo",
-      "emoji": "🆕"
+      "emoji": "🆕",
+      "category": "adj-i"
     },
     {
       "id": "8:13:ふるい",
@@ -2689,14 +3042,16 @@
       "kana": "ふるい",
       "kanji": "古い",
       "es": "viejo (cosas)",
-      "emoji": "🏚️"
+      "emoji": "🏚️",
+      "category": "adj-i"
     },
     {
       "id": "8:14:いい（よい）",
       "lesson": 8,
       "kana": "いい（よい）",
       "es": "bueno",
-      "emoji": "👍"
+      "emoji": "👍",
+      "category": "adj-i"
     },
     {
       "id": "8:15:わるい",
@@ -2704,7 +3059,8 @@
       "kana": "わるい",
       "kanji": "悪い",
       "es": "malo",
-      "emoji": "👎"
+      "emoji": "👎",
+      "category": "adj-i"
     },
     {
       "id": "8:16:あつい",
@@ -2712,7 +3068,8 @@
       "kana": "あつい",
       "kanji": "暑い",
       "es": "caluroso (clima)",
-      "emoji": "🥵"
+      "emoji": "🥵",
+      "category": "adj-i"
     },
     {
       "id": "8:17:あつい",
@@ -2720,7 +3077,8 @@
       "kana": "あつい",
       "kanji": "熱い",
       "es": "caliente (al tacto)",
-      "emoji": "♨️"
+      "emoji": "♨️",
+      "category": "adj-i"
     },
     {
       "id": "8:18:さむい",
@@ -2728,7 +3086,8 @@
       "kana": "さむい",
       "kanji": "寒い",
       "es": "frío (clima)",
-      "emoji": "🥶"
+      "emoji": "🥶",
+      "category": "adj-i"
     },
     {
       "id": "8:19:つめたい",
@@ -2736,7 +3095,8 @@
       "kana": "つめたい",
       "kanji": "冷たい",
       "es": "frío (al tacto)",
-      "emoji": "🧊"
+      "emoji": "🧊",
+      "category": "adj-i"
     },
     {
       "id": "8:20:むずかしい",
@@ -2744,7 +3104,8 @@
       "kana": "むずかしい",
       "kanji": "難しい",
       "es": "difícil",
-      "emoji": "🤯"
+      "emoji": "🤯",
+      "category": "adj-i"
     },
     {
       "id": "8:21:やさしい",
@@ -2752,7 +3113,8 @@
       "kana": "やさしい",
       "kanji": "易しい",
       "es": "fácil",
-      "emoji": "🙂"
+      "emoji": "🙂",
+      "category": "adj-i"
     },
     {
       "id": "8:22:たかい",
@@ -2760,7 +3122,8 @@
       "kana": "たかい",
       "kanji": "高い",
       "es": "caro; alto",
-      "emoji": "🗼"
+      "emoji": "🗼",
+      "category": "adj-i"
     },
     {
       "id": "8:23:やすい",
@@ -2768,28 +3131,32 @@
       "kana": "やすい",
       "kanji": "安い",
       "es": "barato",
-      "emoji": "🏷️"
+      "emoji": "🏷️",
+      "category": "adj-i"
     },
     {
       "id": "8:24:ひくい",
       "lesson": 8,
       "kana": "ひくい",
       "kanji": "低い",
-      "es": "bajo"
+      "es": "bajo",
+      "category": "adj-i"
     },
     {
       "id": "8:25:おもしろい",
       "lesson": 8,
       "kana": "おもしろい",
       "es": "interesante, divertido",
-      "emoji": "😄"
+      "emoji": "😄",
+      "category": "adj-i"
     },
     {
       "id": "8:26:おいしい",
       "lesson": 8,
       "kana": "おいしい",
       "es": "rico, sabroso",
-      "emoji": "😋"
+      "emoji": "😋",
+      "category": "adj-i"
     },
     {
       "id": "8:27:いそがしい",
@@ -2797,7 +3164,8 @@
       "kana": "いそがしい",
       "kanji": "忙しい",
       "es": "ocupado",
-      "emoji": "🏃"
+      "emoji": "🏃",
+      "category": "adj-i"
     },
     {
       "id": "8:28:たのしい",
@@ -2805,7 +3173,8 @@
       "kana": "たのしい",
       "kanji": "楽しい",
       "es": "divertido, agradable",
-      "emoji": "🥳"
+      "emoji": "🥳",
+      "category": "adj-i"
     },
     {
       "id": "8:29:しろい",
@@ -2813,7 +3182,8 @@
       "kana": "しろい",
       "kanji": "白い",
       "es": "blanco",
-      "emoji": "⬜"
+      "emoji": "⬜",
+      "category": "adj-i"
     },
     {
       "id": "8:30:くろい",
@@ -2821,7 +3191,8 @@
       "kana": "くろい",
       "kanji": "黒い",
       "es": "negro",
-      "emoji": "⬛"
+      "emoji": "⬛",
+      "category": "adj-i"
     },
     {
       "id": "8:31:あかい",
@@ -2829,7 +3200,8 @@
       "kana": "あかい",
       "kanji": "赤い",
       "es": "rojo",
-      "emoji": "🟥"
+      "emoji": "🟥",
+      "category": "adj-i"
     },
     {
       "id": "8:32:あおい",
@@ -2837,7 +3209,8 @@
       "kana": "あおい",
       "kanji": "青い",
       "es": "azul",
-      "emoji": "🟦"
+      "emoji": "🟦",
+      "category": "adj-i"
     },
     {
       "id": "8:33:さくら",
@@ -2845,7 +3218,8 @@
       "kana": "さくら",
       "kanji": "桜",
       "es": "cerezo; flor de cerezo",
-      "emoji": "🌸"
+      "emoji": "🌸",
+      "category": "noun"
     },
     {
       "id": "8:34:やま",
@@ -2853,7 +3227,8 @@
       "kana": "やま",
       "kanji": "山",
       "es": "montaña",
-      "emoji": "⛰️"
+      "emoji": "⛰️",
+      "category": "noun"
     },
     {
       "id": "8:35:まち",
@@ -2861,7 +3236,8 @@
       "kana": "まち",
       "kanji": "町",
       "es": "ciudad, pueblo",
-      "emoji": "🏙️"
+      "emoji": "🏙️",
+      "category": "noun"
     },
     {
       "id": "8:36:たべもの",
@@ -2869,7 +3245,8 @@
       "kana": "たべもの",
       "kanji": "食べ物",
       "es": "comida",
-      "emoji": "🍙"
+      "emoji": "🍙",
+      "category": "noun"
     },
     {
       "id": "8:37:ところ",
@@ -2877,7 +3254,8 @@
       "kana": "ところ",
       "kanji": "所",
       "es": "lugar",
-      "emoji": "📍"
+      "emoji": "📍",
+      "category": "noun"
     },
     {
       "id": "8:38:りょう",
@@ -2885,21 +3263,24 @@
       "kana": "りょう",
       "kanji": "寮",
       "es": "residencia de estudiantes",
-      "emoji": "🏢"
+      "emoji": "🏢",
+      "category": "noun"
     },
     {
       "id": "8:39:レストラン",
       "lesson": 8,
       "kana": "レストラン",
       "es": "restaurante",
-      "emoji": "🍽️"
+      "emoji": "🍽️",
+      "category": "noun"
     },
     {
       "id": "8:40:せいかつ",
       "lesson": 8,
       "kana": "せいかつ",
       "kanji": "生活",
-      "es": "vida (cotidiana)"
+      "es": "vida (cotidiana)",
+      "category": "noun"
     },
     {
       "id": "8:41:［お］しごと",
@@ -2907,45 +3288,52 @@
       "kana": "［お］しごと",
       "kanji": "［お］仕事",
       "es": "trabajo",
-      "emoji": "💼"
+      "emoji": "💼",
+      "category": "noun"
     },
     {
       "id": "8:42:どう",
       "lesson": 8,
       "kana": "どう",
       "es": "¿cómo?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "8:43:どんな～",
       "lesson": 8,
       "kana": "どんな～",
       "es": "¿qué tipo de ~?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "8:44:とても",
       "lesson": 8,
       "kana": "とても",
-      "es": "muy"
+      "es": "muy",
+      "category": "adverb"
     },
     {
       "id": "8:45:あまり",
       "lesson": 8,
       "kana": "あまり",
-      "es": "no muy (con negativo)"
+      "es": "no muy (con negativo)",
+      "category": "adverb"
     },
     {
       "id": "8:46:そして",
       "lesson": 8,
       "kana": "そして",
-      "es": "y, además"
+      "es": "y, además",
+      "category": "other"
     },
     {
       "id": "8:47:～が、～",
       "lesson": 8,
       "kana": "～が、～",
-      "es": "~, pero ~"
+      "es": "~, pero ~",
+      "category": "other"
     },
     {
       "id": "8:48:おげんきですか",
@@ -2953,14 +3341,16 @@
       "kana": "おげんきですか",
       "kanji": "お元気ですか",
       "es": "¿cómo está?",
-      "emoji": "🙂"
+      "emoji": "🙂",
+      "category": "expression"
     },
     {
       "id": "8:49:そうですね",
       "lesson": 8,
       "kana": "そうですね",
       "es": "veamos… / es cierto",
-      "emoji": "🤔"
+      "emoji": "🤔",
+      "category": "expression"
     },
     {
       "id": "8:50:もういっぱいいかがですか",
@@ -2968,7 +3358,8 @@
       "kana": "もういっぱいいかがですか",
       "kanji": "もう一杯いかがですか",
       "es": "¿otra taza?",
-      "emoji": "☕"
+      "emoji": "☕",
+      "category": "expression"
     },
     {
       "id": "8:51:［いいえ、］けっこうです",
@@ -2976,14 +3367,16 @@
       "kana": "［いいえ、］けっこうです",
       "kanji": "［いいえ、］結構です",
       "es": "no, gracias; está bien así",
-      "emoji": "🙅"
+      "emoji": "🙅",
+      "category": "expression"
     },
     {
       "id": "8:52:もう～です［ね］",
       "lesson": 8,
       "kana": "もう～です［ね］",
       "es": "ya son las ~",
-      "emoji": "🕙"
+      "emoji": "🕙",
+      "category": "expression"
     },
     {
       "id": "8:53:そろそろしつれいします",
@@ -2991,14 +3384,16 @@
       "kana": "そろそろしつれいします",
       "kanji": "そろそろ失礼します",
       "es": "ya me voy yendo",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "category": "expression"
     },
     {
       "id": "8:54:またいらっしゃってください",
       "lesson": 8,
       "kana": "またいらっしゃってください",
       "es": "vuelva cuando quiera",
-      "emoji": "👋"
+      "emoji": "👋",
+      "category": "expression"
     },
     {
       "id": "9:0:わかります",
@@ -3006,14 +3401,16 @@
       "kana": "わかります",
       "es": "entender",
       "emoji": "💡",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "9:1:あります",
       "lesson": 9,
       "kana": "あります",
       "es": "tener",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "9:2:すき［な］",
@@ -3021,7 +3418,8 @@
       "kana": "すき［な］",
       "kanji": "好き［な］",
       "es": "que gusta",
-      "emoji": "❤️"
+      "emoji": "❤️",
+      "category": "adj-na"
     },
     {
       "id": "9:3:きらい［な］",
@@ -3029,7 +3427,8 @@
       "kana": "きらい［な］",
       "kanji": "嫌い［な］",
       "es": "que no gusta",
-      "emoji": "💔"
+      "emoji": "💔",
+      "category": "adj-na"
     },
     {
       "id": "9:4:じょうず［な］",
@@ -3037,14 +3436,16 @@
       "kana": "じょうず［な］",
       "kanji": "上手［な］",
       "es": "hábil, bueno en",
-      "emoji": "🏆"
+      "emoji": "🏆",
+      "category": "adj-na"
     },
     {
       "id": "9:5:へた［な］",
       "lesson": 9,
       "kana": "へた［な］",
       "kanji": "下手［な］",
-      "es": "torpe, malo en"
+      "es": "torpe, malo en",
+      "category": "adj-na"
     },
     {
       "id": "9:6:のみもの",
@@ -3052,7 +3453,8 @@
       "kana": "のみもの",
       "kanji": "飲み物",
       "es": "bebida",
-      "emoji": "🥤"
+      "emoji": "🥤",
+      "category": "noun"
     },
     {
       "id": "9:7:りょうり",
@@ -3060,14 +3462,16 @@
       "kana": "りょうり",
       "kanji": "料理",
       "es": "comida, cocina",
-      "emoji": "🍳"
+      "emoji": "🍳",
+      "category": "noun"
     },
     {
       "id": "9:8:スポーツ",
       "lesson": 9,
       "kana": "スポーツ",
       "es": "deporte",
-      "emoji": "🏅"
+      "emoji": "🏅",
+      "category": "noun"
     },
     {
       "id": "9:9:やきゅう",
@@ -3075,14 +3479,16 @@
       "kana": "やきゅう",
       "kanji": "野球",
       "es": "béisbol",
-      "emoji": "⚾"
+      "emoji": "⚾",
+      "category": "noun"
     },
     {
       "id": "9:10:ダンス",
       "lesson": 9,
       "kana": "ダンス",
       "es": "baile",
-      "emoji": "💃"
+      "emoji": "💃",
+      "category": "noun"
     },
     {
       "id": "9:11:りょこう",
@@ -3090,7 +3496,8 @@
       "kana": "りょこう",
       "kanji": "旅行",
       "es": "viaje",
-      "emoji": "🧳"
+      "emoji": "🧳",
+      "category": "noun"
     },
     {
       "id": "9:12:おんがく",
@@ -3098,7 +3505,8 @@
       "kana": "おんがく",
       "kanji": "音楽",
       "es": "música",
-      "emoji": "🎵"
+      "emoji": "🎵",
+      "category": "noun"
     },
     {
       "id": "9:13:うた",
@@ -3106,35 +3514,40 @@
       "kana": "うた",
       "kanji": "歌",
       "es": "canción",
-      "emoji": "🎤"
+      "emoji": "🎤",
+      "category": "noun"
     },
     {
       "id": "9:14:クラシック",
       "lesson": 9,
       "kana": "クラシック",
       "es": "música clásica",
-      "emoji": "🎻"
+      "emoji": "🎻",
+      "category": "noun"
     },
     {
       "id": "9:15:ジャズ",
       "lesson": 9,
       "kana": "ジャズ",
       "es": "jazz",
-      "emoji": "🎷"
+      "emoji": "🎷",
+      "category": "noun"
     },
     {
       "id": "9:16:コンサート",
       "lesson": 9,
       "kana": "コンサート",
       "es": "concierto",
-      "emoji": "🎶"
+      "emoji": "🎶",
+      "category": "noun"
     },
     {
       "id": "9:17:カラオケ",
       "lesson": 9,
       "kana": "カラオケ",
       "es": "karaoke",
-      "emoji": "🎤"
+      "emoji": "🎤",
+      "category": "noun"
     },
     {
       "id": "9:18:かぶき",
@@ -3142,7 +3555,8 @@
       "kana": "かぶき",
       "kanji": "歌舞伎",
       "es": "kabuki (teatro)",
-      "emoji": "🎭"
+      "emoji": "🎭",
+      "category": "noun"
     },
     {
       "id": "9:19:え",
@@ -3150,14 +3564,16 @@
       "kana": "え",
       "kanji": "絵",
       "es": "pintura, dibujo",
-      "emoji": "🎨"
+      "emoji": "🎨",
+      "category": "noun"
     },
     {
       "id": "9:20:じ",
       "lesson": 9,
       "kana": "じ",
       "kanji": "字",
-      "es": "letra, carácter"
+      "es": "letra, carácter",
+      "category": "noun"
     },
     {
       "id": "9:21:かんじ",
@@ -3165,19 +3581,22 @@
       "kana": "かんじ",
       "kanji": "漢字",
       "es": "kanji",
-      "emoji": "🈶"
+      "emoji": "🈶",
+      "category": "noun"
     },
     {
       "id": "9:22:ひらがな",
       "lesson": 9,
       "kana": "ひらがな",
-      "es": "hiragana"
+      "es": "hiragana",
+      "category": "noun"
     },
     {
       "id": "9:23:かたかな",
       "lesson": 9,
       "kana": "かたかな",
-      "es": "katakana"
+      "es": "katakana",
+      "category": "noun"
     },
     {
       "id": "9:24:ローマじ",
@@ -3185,7 +3604,8 @@
       "kana": "ローマじ",
       "kanji": "ローマ字",
       "es": "alfabeto latino",
-      "emoji": "🔤"
+      "emoji": "🔤",
+      "category": "noun"
     },
     {
       "id": "9:25:こまかいおかね",
@@ -3193,14 +3613,16 @@
       "kana": "こまかいおかね",
       "kanji": "細かいお金",
       "es": "cambio, monedas",
-      "emoji": "🪙"
+      "emoji": "🪙",
+      "category": "noun"
     },
     {
       "id": "9:26:チケット",
       "lesson": 9,
       "kana": "チケット",
       "es": "entrada, ticket",
-      "emoji": "🎟️"
+      "emoji": "🎟️",
+      "category": "noun"
     },
     {
       "id": "9:27:じかん",
@@ -3208,7 +3630,8 @@
       "kana": "じかん",
       "kanji": "時間",
       "es": "tiempo",
-      "emoji": "⏳"
+      "emoji": "⏳",
+      "category": "noun"
     },
     {
       "id": "9:28:ようじ",
@@ -3216,7 +3639,8 @@
       "kana": "ようじ",
       "kanji": "用事",
       "es": "un asunto, algo que hacer",
-      "emoji": "📌"
+      "emoji": "📌",
+      "category": "noun"
     },
     {
       "id": "9:29:やくそく",
@@ -3224,13 +3648,15 @@
       "kana": "やくそく",
       "kanji": "約束",
       "es": "compromiso, cita",
-      "emoji": "🤙"
+      "emoji": "🤙",
+      "category": "noun"
     },
     {
       "id": "9:30:アルバイト",
       "lesson": 9,
       "kana": "アルバイト",
-      "es": "trabajo de medio tiempo"
+      "es": "trabajo de medio tiempo",
+      "category": "noun"
     },
     {
       "id": "9:31:ごしゅじん",
@@ -3238,7 +3664,8 @@
       "kana": "ごしゅじん",
       "kanji": "ご主人",
       "es": "esposo (de otra persona)",
-      "emoji": "🤵"
+      "emoji": "🤵",
+      "category": "noun"
     },
     {
       "id": "9:32:おっと／しゅじん",
@@ -3246,7 +3673,8 @@
       "kana": "おっと／しゅじん",
       "kanji": "夫／主人",
       "es": "(mi) esposo",
-      "emoji": "🤵"
+      "emoji": "🤵",
+      "category": "noun"
     },
     {
       "id": "9:33:おくさん",
@@ -3254,7 +3682,8 @@
       "kana": "おくさん",
       "kanji": "奥さん",
       "es": "esposa (de otra persona)",
-      "emoji": "👰"
+      "emoji": "👰",
+      "category": "noun"
     },
     {
       "id": "9:34:つま／かない",
@@ -3262,7 +3691,8 @@
       "kana": "つま／かない",
       "kanji": "妻／家内",
       "es": "(mi) esposa",
-      "emoji": "👰"
+      "emoji": "👰",
+      "category": "noun"
     },
     {
       "id": "9:35:こども",
@@ -3270,25 +3700,29 @@
       "kana": "こども",
       "kanji": "子ども",
       "es": "hijo; niño",
-      "emoji": "🧒"
+      "emoji": "🧒",
+      "category": "noun"
     },
     {
       "id": "9:36:よく",
       "lesson": 9,
       "kana": "よく",
-      "es": "bien; mucho, a menudo"
+      "es": "bien; mucho, a menudo",
+      "category": "adverb"
     },
     {
       "id": "9:37:だいたい",
       "lesson": 9,
       "kana": "だいたい",
-      "es": "más o menos"
+      "es": "más o menos",
+      "category": "adverb"
     },
     {
       "id": "9:38:たくさん",
       "lesson": 9,
       "kana": "たくさん",
-      "es": "mucho"
+      "es": "mucho",
+      "category": "adverb"
     },
     {
       "id": "9:39:すこし",
@@ -3296,7 +3730,8 @@
       "kana": "すこし",
       "kanji": "少し",
       "es": "un poco",
-      "emoji": "🤏"
+      "emoji": "🤏",
+      "category": "adverb"
     },
     {
       "id": "9:40:ぜんぜん",
@@ -3304,7 +3739,8 @@
       "kana": "ぜんぜん",
       "kanji": "全然",
       "es": "para nada (con negativo)",
-      "emoji": "🙅"
+      "emoji": "🙅",
+      "category": "adverb"
     },
     {
       "id": "9:41:はやく",
@@ -3312,34 +3748,39 @@
       "kana": "はやく",
       "kanji": "早く／速く",
       "es": "temprano; rápido",
-      "emoji": "⚡"
+      "emoji": "⚡",
+      "category": "adverb"
     },
     {
       "id": "9:42:～から",
       "lesson": 9,
       "kana": "～から",
-      "es": "porque ~"
+      "es": "porque ~",
+      "category": "other"
     },
     {
       "id": "9:43:どうして",
       "lesson": 9,
       "kana": "どうして",
       "es": "¿por qué?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "9:44:かしてください",
       "lesson": 9,
       "kana": "かしてください",
       "kanji": "貸してください",
-      "es": "préstemelo, por favor"
+      "es": "préstemelo, por favor",
+      "category": "expression"
     },
     {
       "id": "9:45:いいですよ",
       "lesson": 9,
       "kana": "いいですよ",
       "es": "¡claro, está bien!",
-      "emoji": "👌"
+      "emoji": "👌",
+      "category": "expression"
     },
     {
       "id": "9:46:ざんねんです［が］",
@@ -3347,33 +3788,38 @@
       "kana": "ざんねんです［が］",
       "kanji": "残念です［が］",
       "es": "qué lástima, pero…",
-      "emoji": "😞"
+      "emoji": "😞",
+      "category": "expression"
     },
     {
       "id": "9:47:ああ",
       "lesson": 9,
       "kana": "ああ",
-      "es": "ah…"
+      "es": "ah…",
+      "category": "expression"
     },
     {
       "id": "9:48:いっしょにいかがですか",
       "lesson": 9,
       "kana": "いっしょにいかがですか",
       "es": "¿qué tal si vamos juntos?",
-      "emoji": "👫"
+      "emoji": "👫",
+      "category": "expression"
     },
     {
       "id": "9:49:［～は］ちょっと…",
       "lesson": 9,
       "kana": "［～は］ちょっと…",
       "es": "~ es un poco… (rechazo amable)",
-      "emoji": "😅"
+      "emoji": "😅",
+      "category": "expression"
     },
     {
       "id": "9:50:だめですか",
       "lesson": 9,
       "kana": "だめですか",
-      "es": "¿no puede?"
+      "es": "¿no puede?",
+      "category": "expression"
     },
     {
       "id": "9:51:またこんどおねがいします",
@@ -3381,7 +3827,8 @@
       "kana": "またこんどおねがいします",
       "kanji": "また今度お願いします",
       "es": "otra vez será, por favor",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "expression"
     },
     {
       "id": "10:0:あります",
@@ -3389,7 +3836,8 @@
       "kana": "あります",
       "es": "haber, estar (cosas)",
       "emoji": "📦",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "10:1:います",
@@ -3397,13 +3845,15 @@
       "kana": "います",
       "es": "haber, estar (seres vivos)",
       "emoji": "🐈",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "10:2:いろいろ［な］",
       "lesson": 10,
       "kana": "いろいろ［な］",
-      "es": "varios, diversos"
+      "es": "varios, diversos",
+      "category": "adj-na"
     },
     {
       "id": "10:3:おとこのひと",
@@ -3411,7 +3861,8 @@
       "kana": "おとこのひと",
       "kanji": "男の人",
       "es": "hombre",
-      "emoji": "👨"
+      "emoji": "👨",
+      "category": "noun"
     },
     {
       "id": "10:4:おんなのひと",
@@ -3419,7 +3870,8 @@
       "kana": "おんなのひと",
       "kanji": "女の人",
       "es": "mujer",
-      "emoji": "👩"
+      "emoji": "👩",
+      "category": "noun"
     },
     {
       "id": "10:5:おとこのこ",
@@ -3427,7 +3879,8 @@
       "kana": "おとこのこ",
       "kanji": "男の子",
       "es": "niño, chico",
-      "emoji": "👦"
+      "emoji": "👦",
+      "category": "noun"
     },
     {
       "id": "10:6:おんなのこ",
@@ -3435,7 +3888,8 @@
       "kana": "おんなのこ",
       "kanji": "女の子",
       "es": "niña, chica",
-      "emoji": "👧"
+      "emoji": "👧",
+      "category": "noun"
     },
     {
       "id": "10:7:いぬ",
@@ -3443,7 +3897,8 @@
       "kana": "いぬ",
       "kanji": "犬",
       "es": "perro",
-      "emoji": "🐕"
+      "emoji": "🐕",
+      "category": "noun"
     },
     {
       "id": "10:8:ねこ",
@@ -3451,14 +3906,16 @@
       "kana": "ねこ",
       "kanji": "猫",
       "es": "gato",
-      "emoji": "🐈"
+      "emoji": "🐈",
+      "category": "noun"
     },
     {
       "id": "10:9:パンダ",
       "lesson": 10,
       "kana": "パンダ",
       "es": "panda",
-      "emoji": "🐼"
+      "emoji": "🐼",
+      "category": "noun"
     },
     {
       "id": "10:10:ぞう",
@@ -3466,7 +3923,8 @@
       "kana": "ぞう",
       "kanji": "象",
       "es": "elefante",
-      "emoji": "🐘"
+      "emoji": "🐘",
+      "category": "noun"
     },
     {
       "id": "10:11:き",
@@ -3474,14 +3932,16 @@
       "kana": "き",
       "kanji": "木",
       "es": "árbol; madera",
-      "emoji": "🌳"
+      "emoji": "🌳",
+      "category": "noun"
     },
     {
       "id": "10:12:もの",
       "lesson": 10,
       "kana": "もの",
       "kanji": "物",
-      "es": "cosa"
+      "es": "cosa",
+      "category": "noun"
     },
     {
       "id": "10:13:でんち",
@@ -3489,7 +3949,8 @@
       "kana": "でんち",
       "kanji": "電池",
       "es": "pila",
-      "emoji": "🔋"
+      "emoji": "🔋",
+      "category": "noun"
     },
     {
       "id": "10:14:はこ",
@@ -3497,14 +3958,16 @@
       "kana": "はこ",
       "kanji": "箱",
       "es": "caja",
-      "emoji": "📦"
+      "emoji": "📦",
+      "category": "noun"
     },
     {
       "id": "10:15:スイッチ",
       "lesson": 10,
       "kana": "スイッチ",
       "es": "interruptor",
-      "emoji": "🔘"
+      "emoji": "🔘",
+      "category": "noun"
     },
     {
       "id": "10:16:れいぞうこ",
@@ -3512,34 +3975,39 @@
       "kana": "れいぞうこ",
       "kanji": "冷蔵庫",
       "es": "heladera",
-      "emoji": "🧊"
+      "emoji": "🧊",
+      "category": "noun"
     },
     {
       "id": "10:17:テーブル",
       "lesson": 10,
       "kana": "テーブル",
-      "es": "mesa"
+      "es": "mesa",
+      "category": "noun"
     },
     {
       "id": "10:18:ベッド",
       "lesson": 10,
       "kana": "ベッド",
       "es": "cama",
-      "emoji": "🛏️"
+      "emoji": "🛏️",
+      "category": "noun"
     },
     {
       "id": "10:19:たな",
       "lesson": 10,
       "kana": "たな",
       "kanji": "棚",
-      "es": "estante"
+      "es": "estante",
+      "category": "noun"
     },
     {
       "id": "10:20:ドア",
       "lesson": 10,
       "kana": "ドア",
       "es": "puerta",
-      "emoji": "🚪"
+      "emoji": "🚪",
+      "category": "noun"
     },
     {
       "id": "10:21:まど",
@@ -3547,35 +4015,40 @@
       "kana": "まど",
       "kanji": "窓",
       "es": "ventana",
-      "emoji": "🪟"
+      "emoji": "🪟",
+      "category": "noun"
     },
     {
       "id": "10:22:ポスト",
       "lesson": 10,
       "kana": "ポスト",
       "es": "buzón",
-      "emoji": "📮"
+      "emoji": "📮",
+      "category": "noun"
     },
     {
       "id": "10:23:ビル",
       "lesson": 10,
       "kana": "ビル",
       "es": "edificio",
-      "emoji": "🏢"
+      "emoji": "🏢",
+      "category": "noun"
     },
     {
       "id": "10:24:ATM",
       "lesson": 10,
       "kana": "ATM",
       "es": "cajero automático",
-      "emoji": "🏧"
+      "emoji": "🏧",
+      "category": "noun"
     },
     {
       "id": "10:25:コンビニ",
       "lesson": 10,
       "kana": "コンビニ",
       "es": "tienda de conveniencia",
-      "emoji": "🏪"
+      "emoji": "🏪",
+      "category": "noun"
     },
     {
       "id": "10:26:こうえん",
@@ -3583,7 +4056,8 @@
       "kana": "こうえん",
       "kanji": "公園",
       "es": "parque",
-      "emoji": "🏞️"
+      "emoji": "🏞️",
+      "category": "noun"
     },
     {
       "id": "10:27:きっさてん",
@@ -3591,7 +4065,8 @@
       "kana": "きっさてん",
       "kanji": "喫茶店",
       "es": "cafetería",
-      "emoji": "☕"
+      "emoji": "☕",
+      "category": "noun"
     },
     {
       "id": "10:28:～や",
@@ -3599,7 +4074,8 @@
       "kana": "～や",
       "kanji": "～屋",
       "es": "tienda de ~",
-      "emoji": "🏪"
+      "emoji": "🏪",
+      "category": "other"
     },
     {
       "id": "10:29:のりば",
@@ -3607,7 +4083,8 @@
       "kana": "のりば",
       "kanji": "乗り場",
       "es": "parada, andén",
-      "emoji": "🚏"
+      "emoji": "🚏",
+      "category": "noun"
     },
     {
       "id": "10:30:けん",
@@ -3615,7 +4092,8 @@
       "kana": "けん",
       "kanji": "県",
       "es": "prefectura",
-      "emoji": "🗾"
+      "emoji": "🗾",
+      "category": "noun"
     },
     {
       "id": "10:31:うえ",
@@ -3623,7 +4101,8 @@
       "kana": "うえ",
       "kanji": "上",
       "es": "arriba, sobre",
-      "emoji": "⬆️"
+      "emoji": "⬆️",
+      "category": "noun"
     },
     {
       "id": "10:32:した",
@@ -3631,20 +4110,23 @@
       "kana": "した",
       "kanji": "下",
       "es": "abajo, debajo",
-      "emoji": "⬇️"
+      "emoji": "⬇️",
+      "category": "noun"
     },
     {
       "id": "10:33:まえ",
       "lesson": 10,
       "kana": "まえ",
       "kanji": "前",
-      "es": "delante"
+      "es": "delante",
+      "category": "noun"
     },
     {
       "id": "10:34:うしろ",
       "lesson": 10,
       "kana": "うしろ",
-      "es": "detrás"
+      "es": "detrás",
+      "category": "noun"
     },
     {
       "id": "10:35:みぎ",
@@ -3652,7 +4134,8 @@
       "kana": "みぎ",
       "kanji": "右",
       "es": "derecha",
-      "emoji": "➡️"
+      "emoji": "➡️",
+      "category": "noun"
     },
     {
       "id": "10:36:ひだり",
@@ -3660,21 +4143,24 @@
       "kana": "ひだり",
       "kanji": "左",
       "es": "izquierda",
-      "emoji": "⬅️"
+      "emoji": "⬅️",
+      "category": "noun"
     },
     {
       "id": "10:37:なか",
       "lesson": 10,
       "kana": "なか",
       "kanji": "中",
-      "es": "dentro"
+      "es": "dentro",
+      "category": "noun"
     },
     {
       "id": "10:38:そと",
       "lesson": 10,
       "kana": "そと",
       "kanji": "外",
-      "es": "fuera"
+      "es": "fuera",
+      "category": "noun"
     },
     {
       "id": "10:39:となり",
@@ -3682,47 +4168,54 @@
       "kana": "となり",
       "kanji": "隣",
       "es": "al lado",
-      "emoji": "↔️"
+      "emoji": "↔️",
+      "category": "noun"
     },
     {
       "id": "10:40:ちかく",
       "lesson": 10,
       "kana": "ちかく",
       "kanji": "近く",
-      "es": "cerca"
+      "es": "cerca",
+      "category": "noun"
     },
     {
       "id": "10:41:あいだ",
       "lesson": 10,
       "kana": "あいだ",
       "kanji": "間",
-      "es": "entre"
+      "es": "entre",
+      "category": "noun"
     },
     {
       "id": "10:42:～や～［など］",
       "lesson": 10,
       "kana": "～や～［など］",
-      "es": "~, ~, etc."
+      "es": "~, ~, etc.",
+      "category": "other"
     },
     {
       "id": "10:43:［どうも］すみません",
       "lesson": 10,
       "kana": "［どうも］すみません",
       "es": "disculpe; gracias",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "10:44:ナンプラー",
       "lesson": 10,
       "kana": "ナンプラー",
       "es": "salsa de pescado",
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "category": "noun"
     },
     {
       "id": "10:45:コーナー",
       "lesson": 10,
       "kana": "コーナー",
-      "es": "rincón, sección"
+      "es": "rincón, sección",
+      "category": "noun"
     },
     {
       "id": "10:46:いちばんした",
@@ -3730,14 +4223,16 @@
       "kana": "いちばんした",
       "kanji": "いちばん下",
       "es": "el de más abajo",
-      "emoji": "⬇️"
+      "emoji": "⬇️",
+      "category": "noun"
     },
     {
       "id": "10:47:―だんめ",
       "lesson": 10,
       "kana": "―だんめ",
       "kanji": "―段目",
-      "es": "el estante número ~"
+      "es": "el estante número ~",
+      "category": "other"
     },
     {
       "id": "11:0:います［こどもが～］",
@@ -3746,7 +4241,8 @@
       "kanji": "います［子どもが～］",
       "es": "tener (hijos)",
       "emoji": "🧒",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "11:1:います［にほんに～］",
@@ -3755,7 +4251,8 @@
       "kanji": "います［日本に～］",
       "es": "estar, quedarse (en Japón)",
       "emoji": "🗾",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "11:2:かかります",
@@ -3763,7 +4260,8 @@
       "kana": "かかります",
       "es": "tardar; costar",
       "emoji": "⏳",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "11:3:やすみます［かいしゃを～］",
@@ -3772,7 +4270,8 @@
       "kanji": "休みます［会社を～］",
       "es": "faltar (al trabajo)",
       "emoji": "🤒",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "11:4:ひとつ",
@@ -3780,7 +4279,8 @@
       "kana": "ひとつ",
       "kanji": "1つ",
       "es": "uno (cosas)",
-      "emoji": "1️⃣"
+      "emoji": "1️⃣",
+      "category": "noun"
     },
     {
       "id": "11:5:ふたつ",
@@ -3788,7 +4288,8 @@
       "kana": "ふたつ",
       "kanji": "2つ",
       "es": "dos (cosas)",
-      "emoji": "2️⃣"
+      "emoji": "2️⃣",
+      "category": "noun"
     },
     {
       "id": "11:6:みっつ",
@@ -3796,7 +4297,8 @@
       "kana": "みっつ",
       "kanji": "3つ",
       "es": "tres (cosas)",
-      "emoji": "3️⃣"
+      "emoji": "3️⃣",
+      "category": "noun"
     },
     {
       "id": "11:7:よっつ",
@@ -3804,7 +4306,8 @@
       "kana": "よっつ",
       "kanji": "4つ",
       "es": "cuatro (cosas)",
-      "emoji": "4️⃣"
+      "emoji": "4️⃣",
+      "category": "noun"
     },
     {
       "id": "11:8:いつつ",
@@ -3812,7 +4315,8 @@
       "kana": "いつつ",
       "kanji": "5つ",
       "es": "cinco (cosas)",
-      "emoji": "5️⃣"
+      "emoji": "5️⃣",
+      "category": "noun"
     },
     {
       "id": "11:9:むっつ",
@@ -3820,7 +4324,8 @@
       "kana": "むっつ",
       "kanji": "6つ",
       "es": "seis (cosas)",
-      "emoji": "6️⃣"
+      "emoji": "6️⃣",
+      "category": "noun"
     },
     {
       "id": "11:10:ななつ",
@@ -3828,7 +4333,8 @@
       "kana": "ななつ",
       "kanji": "7つ",
       "es": "siete (cosas)",
-      "emoji": "7️⃣"
+      "emoji": "7️⃣",
+      "category": "noun"
     },
     {
       "id": "11:11:やっつ",
@@ -3836,7 +4342,8 @@
       "kana": "やっつ",
       "kanji": "8つ",
       "es": "ocho (cosas)",
-      "emoji": "8️⃣"
+      "emoji": "8️⃣",
+      "category": "noun"
     },
     {
       "id": "11:12:ここのつ",
@@ -3844,7 +4351,8 @@
       "kana": "ここのつ",
       "kanji": "9つ",
       "es": "nueve (cosas)",
-      "emoji": "9️⃣"
+      "emoji": "9️⃣",
+      "category": "noun"
     },
     {
       "id": "11:13:とお",
@@ -3852,14 +4360,16 @@
       "kana": "とお",
       "kanji": "10",
       "es": "diez (cosas)",
-      "emoji": "🔟"
+      "emoji": "🔟",
+      "category": "noun"
     },
     {
       "id": "11:14:いくつ",
       "lesson": 11,
       "kana": "いくつ",
       "es": "¿cuántos?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "11:15:ひとり",
@@ -3867,7 +4377,8 @@
       "kana": "ひとり",
       "kanji": "1人",
       "es": "una persona",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "noun"
     },
     {
       "id": "11:16:ふたり",
@@ -3875,7 +4386,8 @@
       "kana": "ふたり",
       "kanji": "2人",
       "es": "dos personas",
-      "emoji": "🧑‍🤝‍🧑"
+      "emoji": "🧑‍🤝‍🧑",
+      "category": "noun"
     },
     {
       "id": "11:17:―にん",
@@ -3883,7 +4395,8 @@
       "kana": "―にん",
       "kanji": "―人",
       "es": "~ personas",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "other"
     },
     {
       "id": "11:18:―だい",
@@ -3891,7 +4404,8 @@
       "kana": "―だい",
       "kanji": "―台",
       "es": "contador de máquinas y vehículos",
-      "emoji": "🚗"
+      "emoji": "🚗",
+      "category": "other"
     },
     {
       "id": "11:19:―まい",
@@ -3899,7 +4413,8 @@
       "kana": "―まい",
       "kanji": "―枚",
       "es": "contador de cosas planas",
-      "emoji": "📄"
+      "emoji": "📄",
+      "category": "other"
     },
     {
       "id": "11:20:―かい",
@@ -3907,42 +4422,48 @@
       "kana": "―かい",
       "kanji": "―回",
       "es": "~ veces",
-      "emoji": "🔁"
+      "emoji": "🔁",
+      "category": "other"
     },
     {
       "id": "11:21:りんご",
       "lesson": 11,
       "kana": "りんご",
       "es": "manzana",
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "category": "noun"
     },
     {
       "id": "11:22:みかん",
       "lesson": 11,
       "kana": "みかん",
       "es": "mandarina",
-      "emoji": "🍊"
+      "emoji": "🍊",
+      "category": "noun"
     },
     {
       "id": "11:23:サンドイッチ",
       "lesson": 11,
       "kana": "サンドイッチ",
       "es": "sándwich",
-      "emoji": "🥪"
+      "emoji": "🥪",
+      "category": "noun"
     },
     {
       "id": "11:24:カレー［ライス］",
       "lesson": 11,
       "kana": "カレー［ライス］",
       "es": "curry con arroz",
-      "emoji": "🍛"
+      "emoji": "🍛",
+      "category": "noun"
     },
     {
       "id": "11:25:アイスクリーム",
       "lesson": 11,
       "kana": "アイスクリーム",
       "es": "helado",
-      "emoji": "🍨"
+      "emoji": "🍨",
+      "category": "noun"
     },
     {
       "id": "11:26:きって",
@@ -3950,13 +4471,15 @@
       "kana": "きって",
       "kanji": "切手",
       "es": "estampilla",
-      "emoji": "📮"
+      "emoji": "📮",
+      "category": "noun"
     },
     {
       "id": "11:27:はがき",
       "lesson": 11,
       "kana": "はがき",
-      "es": "postal"
+      "es": "postal",
+      "category": "noun"
     },
     {
       "id": "11:28:ふうとう",
@@ -3964,7 +4487,8 @@
       "kana": "ふうとう",
       "kanji": "封筒",
       "es": "sobre",
-      "emoji": "✉️"
+      "emoji": "✉️",
+      "category": "noun"
     },
     {
       "id": "11:29:りょうしん",
@@ -3972,70 +4496,80 @@
       "kana": "りょうしん",
       "kanji": "両親",
       "es": "padres",
-      "emoji": "👪"
+      "emoji": "👪",
+      "category": "noun"
     },
     {
       "id": "11:30:きょうだい",
       "lesson": 11,
       "kana": "きょうだい",
       "kanji": "兄弟",
-      "es": "hermanos"
+      "es": "hermanos",
+      "category": "noun"
     },
     {
       "id": "11:31:あに",
       "lesson": 11,
       "kana": "あに",
       "kanji": "兄",
-      "es": "(mi) hermano mayor"
+      "es": "(mi) hermano mayor",
+      "category": "noun"
     },
     {
       "id": "11:32:おにいさん",
       "lesson": 11,
       "kana": "おにいさん",
       "kanji": "お兄さん",
-      "es": "hermano mayor (de otro)"
+      "es": "hermano mayor (de otro)",
+      "category": "noun"
     },
     {
       "id": "11:33:あね",
       "lesson": 11,
       "kana": "あね",
       "kanji": "姉",
-      "es": "(mi) hermana mayor"
+      "es": "(mi) hermana mayor",
+      "category": "noun"
     },
     {
       "id": "11:34:おねえさん",
       "lesson": 11,
       "kana": "おねえさん",
       "kanji": "お姉さん",
-      "es": "hermana mayor (de otro)"
+      "es": "hermana mayor (de otro)",
+      "category": "noun"
     },
     {
       "id": "11:35:おとうと",
       "lesson": 11,
       "kana": "おとうと",
       "kanji": "弟",
-      "es": "(mi) hermano menor"
+      "es": "(mi) hermano menor",
+      "category": "noun"
     },
     {
       "id": "11:36:おとうとさん",
       "lesson": 11,
       "kana": "おとうとさん",
       "kanji": "弟さん",
-      "es": "hermano menor (de otro)"
+      "es": "hermano menor (de otro)",
+      "category": "noun"
     },
     {
       "id": "11:37:いもうと",
       "lesson": 11,
       "kana": "いもうと",
       "kanji": "妹",
-      "es": "(mi) hermana menor"
+      "es": "(mi) hermana menor",
+      "category": "noun"
     },
     {
       "id": "11:38:いもうとさん",
       "lesson": 11,
       "kana": "いもうとさん",
       "kanji": "妹さん",
-      "es": "hermana menor (de otro)"
+      "es": "hermana menor (de otro)",
+      "category": "noun"
     },
     {
       "id": "11:39:がいこく",
@@ -4043,7 +4577,8 @@
       "kana": "がいこく",
       "kanji": "外国",
       "es": "el extranjero, otro país",
-      "emoji": "🌍"
+      "emoji": "🌍",
+      "category": "noun"
     },
     {
       "id": "11:40:りゅうがくせい",
@@ -4051,14 +4586,16 @@
       "kana": "りゅうがくせい",
       "kanji": "留学生",
       "es": "estudiante extranjero",
-      "emoji": "🧑‍🎓"
+      "emoji": "🧑‍🎓",
+      "category": "noun"
     },
     {
       "id": "11:41:クラス",
       "lesson": 11,
       "kana": "クラス",
       "es": "clase, curso",
-      "emoji": "🏫"
+      "emoji": "🏫",
+      "category": "noun"
     },
     {
       "id": "11:42:―じかん",
@@ -4066,7 +4603,8 @@
       "kana": "―じかん",
       "kanji": "―時間",
       "es": "~ horas",
-      "emoji": "⏱️"
+      "emoji": "⏱️",
+      "category": "other"
     },
     {
       "id": "11:43:―しゅうかん",
@@ -4074,7 +4612,8 @@
       "kana": "―しゅうかん",
       "kanji": "―週間",
       "es": "~ semanas",
-      "emoji": "🗓️"
+      "emoji": "🗓️",
+      "category": "other"
     },
     {
       "id": "11:44:―かげつ",
@@ -4082,7 +4621,8 @@
       "kana": "―かげつ",
       "kanji": "―か月",
       "es": "~ meses",
-      "emoji": "🗓️"
+      "emoji": "🗓️",
+      "category": "other"
     },
     {
       "id": "11:45:―ねん",
@@ -4090,20 +4630,23 @@
       "kana": "―ねん",
       "kanji": "―年",
       "es": "~ años",
-      "emoji": "🗓️"
+      "emoji": "🗓️",
+      "category": "other"
     },
     {
       "id": "11:46:～ぐらい",
       "lesson": 11,
       "kana": "～ぐらい",
-      "es": "aproximadamente ~"
+      "es": "aproximadamente ~",
+      "category": "other"
     },
     {
       "id": "11:47:どのくらい",
       "lesson": 11,
       "kana": "どのくらい",
       "es": "¿cuánto (tiempo)?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "11:48:ぜんぶで",
@@ -4111,27 +4654,31 @@
       "kana": "ぜんぶで",
       "kanji": "全部で",
       "es": "en total",
-      "emoji": "🧮"
+      "emoji": "🧮",
+      "category": "adverb"
     },
     {
       "id": "11:49:みんな",
       "lesson": 11,
       "kana": "みんな",
       "es": "todos",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "noun"
     },
     {
       "id": "11:50:～だけ",
       "lesson": 11,
       "kana": "～だけ",
-      "es": "solo ~"
+      "es": "solo ~",
+      "category": "other"
     },
     {
       "id": "11:51:かしこまりました",
       "lesson": 11,
       "kana": "かしこまりました",
       "es": "entendido (muy formal)",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "11:52:いいおてんきですね",
@@ -4139,7 +4686,8 @@
       "kana": "いいおてんきですね",
       "kanji": "いいお天気ですね",
       "es": "¡qué lindo día!",
-      "emoji": "☀️"
+      "emoji": "☀️",
+      "category": "expression"
     },
     {
       "id": "11:53:おでかけですか",
@@ -4147,13 +4695,15 @@
       "kana": "おでかけですか",
       "kanji": "お出かけですか",
       "es": "¿va a salir?",
-      "emoji": "🚶"
+      "emoji": "🚶",
+      "category": "expression"
     },
     {
       "id": "11:54:ちょっと～まで",
       "lesson": 11,
       "kana": "ちょっと～まで",
-      "es": "voy un momento a ~"
+      "es": "voy un momento a ~",
+      "category": "expression"
     },
     {
       "id": "11:55:いっていらっしゃい",
@@ -4161,7 +4711,8 @@
       "kana": "いっていらっしゃい",
       "kanji": "行っていらっしゃい",
       "es": "¡que te vaya bien!",
-      "emoji": "👋"
+      "emoji": "👋",
+      "category": "expression"
     },
     {
       "id": "11:56:いってきます",
@@ -4169,7 +4720,8 @@
       "kana": "いってきます",
       "kanji": "行ってきます",
       "es": "¡me voy! (y vuelvo)",
-      "emoji": "👋"
+      "emoji": "👋",
+      "category": "expression"
     },
     {
       "id": "11:57:ふなびん",
@@ -4177,7 +4729,8 @@
       "kana": "ふなびん",
       "kanji": "船便",
       "es": "correo marítimo",
-      "emoji": "🚢"
+      "emoji": "🚢",
+      "category": "noun"
     },
     {
       "id": "11:58:こうくうびん（エアメール）",
@@ -4185,7 +4738,8 @@
       "kana": "こうくうびん（エアメール）",
       "kanji": "航空便（エアメール）",
       "es": "correo aéreo",
-      "emoji": "✈️"
+      "emoji": "✈️",
+      "category": "noun"
     },
     {
       "id": "11:59:［では、］おねがいします",
@@ -4193,7 +4747,8 @@
       "kana": "［では、］おねがいします",
       "kanji": "［では、］お願いします",
       "es": "entonces, por favor",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "expression"
     },
     {
       "id": "12:0:かんたん［な］",
@@ -4201,14 +4756,16 @@
       "kana": "かんたん［な］",
       "kanji": "簡単［な］",
       "es": "fácil, simple",
-      "emoji": "👌"
+      "emoji": "👌",
+      "category": "adj-na"
     },
     {
       "id": "12:1:ちかい",
       "lesson": 12,
       "kana": "ちかい",
       "kanji": "近い",
-      "es": "cercano"
+      "es": "cercano",
+      "category": "adj-i"
     },
     {
       "id": "12:2:とおい",
@@ -4216,7 +4773,8 @@
       "kana": "とおい",
       "kanji": "遠い",
       "es": "lejano",
-      "emoji": "🔭"
+      "emoji": "🔭",
+      "category": "adj-i"
     },
     {
       "id": "12:3:はやい",
@@ -4224,7 +4782,8 @@
       "kana": "はやい",
       "kanji": "速い",
       "es": "rápido",
-      "emoji": "🏎️"
+      "emoji": "🏎️",
+      "category": "adj-i"
     },
     {
       "id": "12:4:はやい",
@@ -4232,7 +4791,8 @@
       "kana": "はやい",
       "kanji": "早い",
       "es": "temprano",
-      "emoji": "🌅"
+      "emoji": "🌅",
+      "category": "adj-i"
     },
     {
       "id": "12:5:おそい",
@@ -4240,7 +4800,8 @@
       "kana": "おそい",
       "kanji": "遅い",
       "es": "lento; tarde",
-      "emoji": "🐢"
+      "emoji": "🐢",
+      "category": "adj-i"
     },
     {
       "id": "12:6:おおい［ひとが～］",
@@ -4248,14 +4809,16 @@
       "kana": "おおい［ひとが～］",
       "kanji": "多い［人が～］",
       "es": "mucho, muchos",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "adj-i"
     },
     {
       "id": "12:7:すくない［ひとが～］",
       "lesson": 12,
       "kana": "すくない［ひとが～］",
       "kanji": "少ない［人が～］",
-      "es": "poco, pocos"
+      "es": "poco, pocos",
+      "category": "adj-i"
     },
     {
       "id": "12:8:あたたかい",
@@ -4263,7 +4826,8 @@
       "kana": "あたたかい",
       "kanji": "暖かい／温かい",
       "es": "templado, tibio",
-      "emoji": "🌤️"
+      "emoji": "🌤️",
+      "category": "adj-i"
     },
     {
       "id": "12:9:すずしい",
@@ -4271,7 +4835,8 @@
       "kana": "すずしい",
       "kanji": "涼しい",
       "es": "fresco",
-      "emoji": "🍃"
+      "emoji": "🍃",
+      "category": "adj-i"
     },
     {
       "id": "12:10:あまい",
@@ -4279,7 +4844,8 @@
       "kana": "あまい",
       "kanji": "甘い",
       "es": "dulce",
-      "emoji": "🍬"
+      "emoji": "🍬",
+      "category": "adj-i"
     },
     {
       "id": "12:11:からい",
@@ -4287,7 +4853,8 @@
       "kana": "からい",
       "kanji": "辛い",
       "es": "picante; salado",
-      "emoji": "🌶️"
+      "emoji": "🌶️",
+      "category": "adj-i"
     },
     {
       "id": "12:12:おもい",
@@ -4295,7 +4862,8 @@
       "kana": "おもい",
       "kanji": "重い",
       "es": "pesado",
-      "emoji": "🏋️"
+      "emoji": "🏋️",
+      "category": "adj-i"
     },
     {
       "id": "12:13:かるい",
@@ -4303,14 +4871,16 @@
       "kana": "かるい",
       "kanji": "軽い",
       "es": "liviano",
-      "emoji": "🪶"
+      "emoji": "🪶",
+      "category": "adj-i"
     },
     {
       "id": "12:14:いい［コーヒーが～］",
       "lesson": 12,
       "kana": "いい［コーヒーが～］",
       "es": "preferir (café)",
-      "emoji": "☕"
+      "emoji": "☕",
+      "category": "adj-i"
     },
     {
       "id": "12:15:きせつ",
@@ -4318,7 +4888,8 @@
       "kana": "きせつ",
       "kanji": "季節",
       "es": "estación del año",
-      "emoji": "🍂"
+      "emoji": "🍂",
+      "category": "noun"
     },
     {
       "id": "12:16:はる",
@@ -4326,7 +4897,8 @@
       "kana": "はる",
       "kanji": "春",
       "es": "primavera",
-      "emoji": "🌸"
+      "emoji": "🌸",
+      "category": "noun"
     },
     {
       "id": "12:17:なつ",
@@ -4334,7 +4906,8 @@
       "kana": "なつ",
       "kanji": "夏",
       "es": "verano",
-      "emoji": "🌻"
+      "emoji": "🌻",
+      "category": "noun"
     },
     {
       "id": "12:18:あき",
@@ -4342,7 +4915,8 @@
       "kana": "あき",
       "kanji": "秋",
       "es": "otoño",
-      "emoji": "🍁"
+      "emoji": "🍁",
+      "category": "noun"
     },
     {
       "id": "12:19:ふゆ",
@@ -4350,7 +4924,8 @@
       "kana": "ふゆ",
       "kanji": "冬",
       "es": "invierno",
-      "emoji": "⛄"
+      "emoji": "⛄",
+      "category": "noun"
     },
     {
       "id": "12:20:てんき",
@@ -4358,7 +4933,8 @@
       "kana": "てんき",
       "kanji": "天気",
       "es": "tiempo, clima",
-      "emoji": "🌤️"
+      "emoji": "🌤️",
+      "category": "noun"
     },
     {
       "id": "12:21:あめ",
@@ -4366,7 +4942,8 @@
       "kana": "あめ",
       "kanji": "雨",
       "es": "lluvia",
-      "emoji": "🌧️"
+      "emoji": "🌧️",
+      "category": "noun"
     },
     {
       "id": "12:22:ゆき",
@@ -4374,7 +4951,8 @@
       "kana": "ゆき",
       "kanji": "雪",
       "es": "nieve",
-      "emoji": "❄️"
+      "emoji": "❄️",
+      "category": "noun"
     },
     {
       "id": "12:23:くもり",
@@ -4382,14 +4960,16 @@
       "kana": "くもり",
       "kanji": "曇り",
       "es": "nublado",
-      "emoji": "☁️"
+      "emoji": "☁️",
+      "category": "noun"
     },
     {
       "id": "12:24:ホテル",
       "lesson": 12,
       "kana": "ホテル",
       "es": "hotel",
-      "emoji": "🏨"
+      "emoji": "🏨",
+      "category": "noun"
     },
     {
       "id": "12:25:くうこう",
@@ -4397,7 +4977,8 @@
       "kana": "くうこう",
       "kanji": "空港",
       "es": "aeropuerto",
-      "emoji": "🛫"
+      "emoji": "🛫",
+      "category": "noun"
     },
     {
       "id": "12:26:うみ",
@@ -4405,7 +4986,8 @@
       "kana": "うみ",
       "kanji": "海",
       "es": "mar",
-      "emoji": "🌊"
+      "emoji": "🌊",
+      "category": "noun"
     },
     {
       "id": "12:27:せかい",
@@ -4413,14 +4995,16 @@
       "kana": "せかい",
       "kanji": "世界",
       "es": "mundo",
-      "emoji": "🌍"
+      "emoji": "🌍",
+      "category": "noun"
     },
     {
       "id": "12:28:パーティー",
       "lesson": 12,
       "kana": "パーティー",
       "es": "fiesta",
-      "emoji": "🎉"
+      "emoji": "🎉",
+      "category": "noun"
     },
     {
       "id": "12:29:［お］まつり",
@@ -4428,7 +5012,8 @@
       "kana": "［お］まつり",
       "kanji": "［お］祭り",
       "es": "festival",
-      "emoji": "🏮"
+      "emoji": "🏮",
+      "category": "noun"
     },
     {
       "id": "12:30:すきやき",
@@ -4436,7 +5021,8 @@
       "kana": "すきやき",
       "kanji": "すき焼き",
       "es": "sukiyaki",
-      "emoji": "🍲"
+      "emoji": "🍲",
+      "category": "noun"
     },
     {
       "id": "12:31:さしみ",
@@ -4444,21 +5030,24 @@
       "kana": "さしみ",
       "kanji": "刺身",
       "es": "sashimi",
-      "emoji": "🍣"
+      "emoji": "🍣",
+      "category": "noun"
     },
     {
       "id": "12:32:［お］すし",
       "lesson": 12,
       "kana": "［お］すし",
       "es": "sushi",
-      "emoji": "🍣"
+      "emoji": "🍣",
+      "category": "noun"
     },
     {
       "id": "12:33:てんぷら",
       "lesson": 12,
       "kana": "てんぷら",
       "es": "tempura",
-      "emoji": "🍤"
+      "emoji": "🍤",
+      "category": "noun"
     },
     {
       "id": "12:34:ぶたにく",
@@ -4466,7 +5055,8 @@
       "kana": "ぶたにく",
       "kanji": "豚肉",
       "es": "carne de cerdo",
-      "emoji": "🐖"
+      "emoji": "🐖",
+      "category": "noun"
     },
     {
       "id": "12:35:とりにく",
@@ -4474,7 +5064,8 @@
       "kana": "とりにく",
       "kanji": "とり肉",
       "es": "pollo",
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "category": "noun"
     },
     {
       "id": "12:36:ぎゅうにく",
@@ -4482,14 +5073,16 @@
       "kana": "ぎゅうにく",
       "kanji": "牛肉",
       "es": "carne vacuna",
-      "emoji": "🐄"
+      "emoji": "🐄",
+      "category": "noun"
     },
     {
       "id": "12:37:レモン",
       "lesson": 12,
       "kana": "レモン",
       "es": "limón",
-      "emoji": "🍋"
+      "emoji": "🍋",
+      "category": "noun"
     },
     {
       "id": "12:38:いけばな",
@@ -4497,7 +5090,8 @@
       "kana": "いけばな",
       "kanji": "生け花",
       "es": "arreglo floral (ikebana)",
-      "emoji": "💐"
+      "emoji": "💐",
+      "category": "noun"
     },
     {
       "id": "12:39:もみじ",
@@ -4505,33 +5099,38 @@
       "kana": "もみじ",
       "kanji": "紅葉",
       "es": "arce; hojas rojas de otoño",
-      "emoji": "🍁"
+      "emoji": "🍁",
+      "category": "noun"
     },
     {
       "id": "12:40:どちら",
       "lesson": 12,
       "kana": "どちら",
       "es": "¿cuál (de los dos)?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "12:41:どちらも",
       "lesson": 12,
       "kana": "どちらも",
-      "es": "los dos, ambos"
+      "es": "los dos, ambos",
+      "category": "adverb"
     },
     {
       "id": "12:42:いちばん",
       "lesson": 12,
       "kana": "いちばん",
       "es": "el más, número uno",
-      "emoji": "🥇"
+      "emoji": "🥇",
+      "category": "adverb"
     },
     {
       "id": "12:43:ずっと",
       "lesson": 12,
       "kana": "ずっと",
-      "es": "mucho más"
+      "es": "mucho más",
+      "category": "adverb"
     },
     {
       "id": "12:44:はじめて",
@@ -4539,14 +5138,16 @@
       "kana": "はじめて",
       "kanji": "初めて",
       "es": "por primera vez",
-      "emoji": "🆕"
+      "emoji": "🆕",
+      "category": "adverb"
     },
     {
       "id": "12:45:ただいま",
       "lesson": 12,
       "kana": "ただいま",
       "es": "¡ya llegué!",
-      "emoji": "🏠"
+      "emoji": "🏠",
+      "category": "expression"
     },
     {
       "id": "12:46:おかえりなさい",
@@ -4554,7 +5155,8 @@
       "kana": "おかえりなさい",
       "kanji": "お帰りなさい",
       "es": "¡bienvenido a casa!",
-      "emoji": "🏠"
+      "emoji": "🏠",
+      "category": "expression"
     },
     {
       "id": "12:47:わあ、すごいひとですね",
@@ -4562,7 +5164,8 @@
       "kana": "わあ、すごいひとですね",
       "kanji": "わあ、すごい人ですね",
       "es": "¡uau, cuánta gente!",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "expression"
     },
     {
       "id": "12:48:つかれました",
@@ -4570,7 +5173,8 @@
       "kana": "つかれました",
       "kanji": "疲れました",
       "es": "estoy cansado",
-      "emoji": "😩"
+      "emoji": "😩",
+      "category": "expression"
     },
     {
       "id": "13:0:あそびます",
@@ -4579,7 +5183,8 @@
       "kanji": "遊びます",
       "es": "jugar, divertirse",
       "emoji": "🎈",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "13:1:およぎます",
@@ -4588,7 +5193,8 @@
       "kanji": "泳ぎます",
       "es": "nadar",
       "emoji": "🏊",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "13:2:むかえます",
@@ -4597,7 +5203,8 @@
       "kanji": "迎えます",
       "es": "ir a buscar, recibir",
       "emoji": "🙋",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "13:3:つかれます",
@@ -4606,7 +5213,8 @@
       "kanji": "疲れます",
       "es": "cansarse",
       "emoji": "😩",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "13:4:けっこんします",
@@ -4615,7 +5223,8 @@
       "kanji": "結婚します",
       "es": "casarse",
       "emoji": "💍",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "13:5:かいものします",
@@ -4624,7 +5233,8 @@
       "kanji": "買い物します",
       "es": "hacer compras",
       "emoji": "🛍️",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "13:6:しょくじします",
@@ -4633,7 +5243,8 @@
       "kanji": "食事します",
       "es": "comer (una comida)",
       "emoji": "🍽️",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "13:7:さんぽします［こうえんを～］",
@@ -4642,7 +5253,8 @@
       "kanji": "散歩します［公園を～］",
       "es": "pasear (por el parque)",
       "emoji": "🚶",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "13:8:たいへん［な］",
@@ -4650,7 +5262,8 @@
       "kana": "たいへん［な］",
       "kanji": "大変［な］",
       "es": "duro, difícil",
-      "emoji": "😓"
+      "emoji": "😓",
+      "category": "adj-na"
     },
     {
       "id": "13:9:ほしい",
@@ -4658,28 +5271,32 @@
       "kana": "ほしい",
       "kanji": "欲しい",
       "es": "querer (algo)",
-      "emoji": "🤩"
+      "emoji": "🤩",
+      "category": "adj-i"
     },
     {
       "id": "13:10:ひろい",
       "lesson": 13,
       "kana": "ひろい",
       "kanji": "広い",
-      "es": "amplio, espacioso"
+      "es": "amplio, espacioso",
+      "category": "adj-i"
     },
     {
       "id": "13:11:せまい",
       "lesson": 13,
       "kana": "せまい",
       "kanji": "狭い",
-      "es": "estrecho, chico"
+      "es": "estrecho, chico",
+      "category": "adj-i"
     },
     {
       "id": "13:12:プール",
       "lesson": 13,
       "kana": "プール",
       "es": "pileta",
-      "emoji": "🏊"
+      "emoji": "🏊",
+      "category": "noun"
     },
     {
       "id": "13:13:かわ",
@@ -4687,7 +5304,8 @@
       "kana": "かわ",
       "kanji": "川",
       "es": "río",
-      "emoji": "🏞️"
+      "emoji": "🏞️",
+      "category": "noun"
     },
     {
       "id": "13:14:びじゅつ",
@@ -4695,7 +5313,8 @@
       "kana": "びじゅつ",
       "kanji": "美術",
       "es": "bellas artes",
-      "emoji": "🎨"
+      "emoji": "🎨",
+      "category": "noun"
     },
     {
       "id": "13:15:つり",
@@ -4703,14 +5322,16 @@
       "kana": "つり",
       "kanji": "釣り",
       "es": "pesca",
-      "emoji": "🎣"
+      "emoji": "🎣",
+      "category": "noun"
     },
     {
       "id": "13:16:スキー",
       "lesson": 13,
       "kana": "スキー",
       "es": "esquí",
-      "emoji": "⛷️"
+      "emoji": "⛷️",
+      "category": "noun"
     },
     {
       "id": "13:17:しゅうまつ",
@@ -4718,7 +5339,8 @@
       "kana": "しゅうまつ",
       "kanji": "週末",
       "es": "fin de semana",
-      "emoji": "🗓️"
+      "emoji": "🗓️",
+      "category": "noun"
     },
     {
       "id": "13:18:［お］しょうがつ",
@@ -4726,27 +5348,31 @@
       "kana": "［お］しょうがつ",
       "kanji": "［お］正月",
       "es": "Año Nuevo",
-      "emoji": "🎍"
+      "emoji": "🎍",
+      "category": "noun"
     },
     {
       "id": "13:19:～ごろ",
       "lesson": 13,
       "kana": "～ごろ",
       "es": "alrededor de (hora/fecha) ~",
-      "emoji": "🕑"
+      "emoji": "🕑",
+      "category": "other"
     },
     {
       "id": "13:20:なにか",
       "lesson": 13,
       "kana": "なにか",
       "kanji": "何か",
-      "es": "algo"
+      "es": "algo",
+      "category": "noun"
     },
     {
       "id": "13:21:どこか",
       "lesson": 13,
       "kana": "どこか",
-      "es": "algún lugar"
+      "es": "algún lugar",
+      "category": "noun"
     },
     {
       "id": "13:22:のどがかわきます",
@@ -4755,7 +5381,8 @@
       "kanji": "のどが渇きます",
       "es": "tener sed",
       "emoji": "🥤",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "13:23:おなかがすきます",
@@ -4763,14 +5390,16 @@
       "kana": "おなかがすきます",
       "es": "tener hambre",
       "emoji": "😋",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "13:24:そうしましょう",
       "lesson": 13,
       "kana": "そうしましょう",
       "es": "¡hagamos eso!",
-      "emoji": "👍"
+      "emoji": "👍",
+      "category": "expression"
     },
     {
       "id": "13:25:ごちゅうもんは？",
@@ -4778,7 +5407,8 @@
       "kana": "ごちゅうもんは？",
       "kanji": "ご注文は？",
       "es": "¿qué va a pedir?",
-      "emoji": "📝"
+      "emoji": "📝",
+      "category": "expression"
     },
     {
       "id": "13:26:ていしょく",
@@ -4786,7 +5416,8 @@
       "kana": "ていしょく",
       "kanji": "定食",
       "es": "menú del día",
-      "emoji": "🍱"
+      "emoji": "🍱",
+      "category": "noun"
     },
     {
       "id": "13:27:ぎゅうどん",
@@ -4794,7 +5425,8 @@
       "kana": "ぎゅうどん",
       "kanji": "牛どん",
       "es": "gyudon (bol de carne)",
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "category": "noun"
     },
     {
       "id": "13:28:［しょうしょう］おまちください",
@@ -4802,20 +5434,23 @@
       "kana": "［しょうしょう］おまちください",
       "kanji": "［少々］お待ちください",
       "es": "espere un momento, por favor",
-      "emoji": "⏳"
+      "emoji": "⏳",
+      "category": "expression"
     },
     {
       "id": "13:29:～で ございます",
       "lesson": 13,
       "kana": "～で ございます",
-      "es": "es ~ (formal)"
+      "es": "es ~ (formal)",
+      "category": "other"
     },
     {
       "id": "13:30:べつべつに",
       "lesson": 13,
       "kana": "べつべつに",
       "kanji": "別々に",
-      "es": "por separado"
+      "es": "por separado",
+      "category": "adverb"
     },
     {
       "id": "14:0:つけます",
@@ -4823,7 +5458,8 @@
       "kana": "つけます",
       "es": "encender",
       "emoji": "💡",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:1:けします",
@@ -4831,7 +5467,8 @@
       "kana": "けします",
       "kanji": "消します",
       "es": "apagar; borrar",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:2:あけます",
@@ -4839,7 +5476,8 @@
       "kana": "あけます",
       "kanji": "開けます",
       "es": "abrir",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:3:しめます",
@@ -4847,7 +5485,8 @@
       "kana": "しめます",
       "kanji": "閉めます",
       "es": "cerrar",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:4:いそぎます",
@@ -4856,7 +5495,8 @@
       "kanji": "急ぎます",
       "es": "apurarse",
       "emoji": "🏃",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:5:まちます",
@@ -4865,7 +5505,8 @@
       "kanji": "待ちます",
       "es": "esperar",
       "emoji": "⏳",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:6:もちます",
@@ -4873,7 +5514,8 @@
       "kana": "もちます",
       "kanji": "持ちます",
       "es": "sostener, llevar",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:7:とります",
@@ -4881,7 +5523,8 @@
       "kana": "とります",
       "kanji": "取ります",
       "es": "tomar, agarrar",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:8:てつだいます",
@@ -4890,7 +5533,8 @@
       "kanji": "手伝います",
       "es": "ayudar",
       "emoji": "🤝",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:9:よびます",
@@ -4899,7 +5543,8 @@
       "kanji": "呼びます",
       "es": "llamar (a alguien)",
       "emoji": "📣",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:10:はなします",
@@ -4908,7 +5553,8 @@
       "kanji": "話します",
       "es": "hablar",
       "emoji": "🗣️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:11:つかいます",
@@ -4916,7 +5562,8 @@
       "kana": "つかいます",
       "kanji": "使います",
       "es": "usar",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:12:とめます",
@@ -4925,7 +5572,8 @@
       "kanji": "止めます",
       "es": "parar; estacionar",
       "emoji": "🛑",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:13:みせます",
@@ -4934,7 +5582,8 @@
       "kanji": "見せます",
       "es": "mostrar",
       "emoji": "👀",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:14:おしえます［じゅうしょを～］",
@@ -4942,7 +5591,8 @@
       "kana": "おしえます［じゅうしょを～］",
       "kanji": "教えます［住所を～］",
       "es": "decir, informar (la dirección)",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:15:すわります",
@@ -4951,7 +5601,8 @@
       "kanji": "座ります",
       "es": "sentarse",
       "emoji": "🪑",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:16:たちます",
@@ -4960,7 +5611,8 @@
       "kanji": "立ちます",
       "es": "pararse",
       "emoji": "🧍",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:17:はいります［きっさてんに～］",
@@ -4969,7 +5621,8 @@
       "kanji": "入ります［喫茶店に～］",
       "es": "entrar (a la cafetería)",
       "emoji": "🚪",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:18:でます［きっさてんを～］",
@@ -4978,7 +5631,8 @@
       "kanji": "出ます［喫茶店を～］",
       "es": "salir (de la cafetería)",
       "emoji": "🚪",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "14:19:ふります［あめが～］",
@@ -4987,7 +5641,8 @@
       "kanji": "降ります［雨が～］",
       "es": "llover (caer lluvia)",
       "emoji": "🌧️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "14:20:コピーします",
@@ -4995,7 +5650,8 @@
       "kana": "コピーします",
       "es": "fotocopiar",
       "emoji": "🖨️",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "14:21:でんき",
@@ -5003,21 +5659,24 @@
       "kana": "でんき",
       "kanji": "電気",
       "es": "luz eléctrica",
-      "emoji": "💡"
+      "emoji": "💡",
+      "category": "noun"
     },
     {
       "id": "14:22:エアコン",
       "lesson": 14,
       "kana": "エアコン",
       "es": "aire acondicionado",
-      "emoji": "❄️"
+      "emoji": "❄️",
+      "category": "noun"
     },
     {
       "id": "14:23:パスポート",
       "lesson": 14,
       "kana": "パスポート",
       "es": "pasaporte",
-      "emoji": "🛂"
+      "emoji": "🛂",
+      "category": "noun"
     },
     {
       "id": "14:24:なまえ",
@@ -5025,7 +5684,8 @@
       "kana": "なまえ",
       "kanji": "名前",
       "es": "nombre",
-      "emoji": "🏷️"
+      "emoji": "🏷️",
+      "category": "noun"
     },
     {
       "id": "14:25:じゅうしょ",
@@ -5033,7 +5693,8 @@
       "kana": "じゅうしょ",
       "kanji": "住所",
       "es": "dirección, domicilio",
-      "emoji": "🏠"
+      "emoji": "🏠",
+      "category": "noun"
     },
     {
       "id": "14:26:ちず",
@@ -5041,7 +5702,8 @@
       "kana": "ちず",
       "kanji": "地図",
       "es": "mapa",
-      "emoji": "🗺️"
+      "emoji": "🗺️",
+      "category": "noun"
     },
     {
       "id": "14:27:しお",
@@ -5049,7 +5711,8 @@
       "kana": "しお",
       "kanji": "塩",
       "es": "sal",
-      "emoji": "🧂"
+      "emoji": "🧂",
+      "category": "noun"
     },
     {
       "id": "14:28:さとう",
@@ -5057,7 +5720,8 @@
       "kana": "さとう",
       "kanji": "砂糖",
       "es": "azúcar",
-      "emoji": "🍬"
+      "emoji": "🍬",
+      "category": "noun"
     },
     {
       "id": "14:29:もんだい",
@@ -5065,7 +5729,8 @@
       "kana": "もんだい",
       "kanji": "問題",
       "es": "pregunta, problema",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "noun"
     },
     {
       "id": "14:30:こたえ",
@@ -5073,7 +5738,8 @@
       "kana": "こたえ",
       "kanji": "答え",
       "es": "respuesta",
-      "emoji": "✅"
+      "emoji": "✅",
+      "category": "noun"
     },
     {
       "id": "14:31:よみかた",
@@ -5081,48 +5747,55 @@
       "kana": "よみかた",
       "kanji": "読み方",
       "es": "forma de leer",
-      "emoji": "📖"
+      "emoji": "📖",
+      "category": "noun"
     },
     {
       "id": "14:32:～かた",
       "lesson": 14,
       "kana": "～かた",
       "kanji": "～方",
-      "es": "forma de ~"
+      "es": "forma de ~",
+      "category": "other"
     },
     {
       "id": "14:33:まっすぐ",
       "lesson": 14,
       "kana": "まっすぐ",
       "es": "derecho",
-      "emoji": "⬆️"
+      "emoji": "⬆️",
+      "category": "adverb"
     },
     {
       "id": "14:34:ゆっくり",
       "lesson": 14,
       "kana": "ゆっくり",
       "es": "despacio",
-      "emoji": "🐢"
+      "emoji": "🐢",
+      "category": "adverb"
     },
     {
       "id": "14:35:すぐ",
       "lesson": 14,
       "kana": "すぐ",
       "es": "enseguida",
-      "emoji": "⚡"
+      "emoji": "⚡",
+      "category": "adverb"
     },
     {
       "id": "14:36:また",
       "lesson": 14,
       "kana": "また",
       "es": "otra vez",
-      "emoji": "🔁"
+      "emoji": "🔁",
+      "category": "adverb"
     },
     {
       "id": "14:37:あとで",
       "lesson": 14,
       "kana": "あとで",
-      "es": "después, más tarde"
+      "es": "después, más tarde",
+      "category": "adverb"
     },
     {
       "id": "14:38:もうすこし",
@@ -5130,26 +5803,30 @@
       "kana": "もうすこし",
       "kanji": "もう少し",
       "es": "un poco más",
-      "emoji": "🤏"
+      "emoji": "🤏",
+      "category": "adverb"
     },
     {
       "id": "14:39:もう～",
       "lesson": 14,
       "kana": "もう～",
-      "es": "~ más"
+      "es": "~ más",
+      "category": "other"
     },
     {
       "id": "14:40:さあ",
       "lesson": 14,
       "kana": "さあ",
-      "es": "¡bueno, vamos!"
+      "es": "¡bueno, vamos!",
+      "category": "expression"
     },
     {
       "id": "14:41:あれ？",
       "lesson": 14,
       "kana": "あれ？",
       "es": "¿eh? (sorpresa)",
-      "emoji": "😯"
+      "emoji": "😯",
+      "category": "expression"
     },
     {
       "id": "14:42:しんごうをみぎへまがってください",
@@ -5157,7 +5834,8 @@
       "kana": "しんごうをみぎへまがってください",
       "kanji": "信号を右へ曲がってください",
       "es": "doble a la derecha en el semáforo",
-      "emoji": "🚦"
+      "emoji": "🚦",
+      "category": "expression"
     },
     {
       "id": "14:43:これでおねがいします",
@@ -5165,14 +5843,16 @@
       "kana": "これでおねがいします",
       "kanji": "これでお願いします",
       "es": "con esto, por favor (al pagar)",
-      "emoji": "💴"
+      "emoji": "💴",
+      "category": "expression"
     },
     {
       "id": "14:44:おつり",
       "lesson": 14,
       "kana": "おつり",
       "es": "vuelto",
-      "emoji": "🪙"
+      "emoji": "🪙",
+      "category": "noun"
     },
     {
       "id": "15:0:おきます",
@@ -5180,7 +5860,8 @@
       "kana": "おきます",
       "kanji": "置きます",
       "es": "poner, dejar",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "15:1:つくります",
@@ -5189,7 +5870,8 @@
       "kanji": "作ります",
       "es": "hacer, fabricar",
       "emoji": "🛠️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "15:2:うります",
@@ -5198,7 +5880,8 @@
       "kanji": "売ります",
       "es": "vender",
       "emoji": "🏷️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "15:3:しります",
@@ -5207,7 +5890,8 @@
       "kanji": "知ります",
       "es": "llegar a saber, conocer",
       "emoji": "💡",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "15:4:すみます",
@@ -5216,7 +5900,8 @@
       "kanji": "住みます",
       "es": "vivir (en un lugar)",
       "emoji": "🏠",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "15:5:けんきゅうします",
@@ -5225,7 +5910,8 @@
       "kanji": "研究します",
       "es": "investigar",
       "emoji": "🔬",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "15:6:しりょう",
@@ -5233,14 +5919,16 @@
       "kana": "しりょう",
       "kanji": "資料",
       "es": "materiales, documentación",
-      "emoji": "📑"
+      "emoji": "📑",
+      "category": "noun"
     },
     {
       "id": "15:7:カタログ",
       "lesson": 15,
       "kana": "カタログ",
       "es": "catálogo",
-      "emoji": "📘"
+      "emoji": "📘",
+      "category": "noun"
     },
     {
       "id": "15:8:じこくひょう",
@@ -5248,7 +5936,8 @@
       "kana": "じこくひょう",
       "kanji": "時刻表",
       "es": "horario (de trenes)",
-      "emoji": "🕒"
+      "emoji": "🕒",
+      "category": "noun"
     },
     {
       "id": "15:9:ふく",
@@ -5256,7 +5945,8 @@
       "kana": "ふく",
       "kanji": "服",
       "es": "ropa",
-      "emoji": "👗"
+      "emoji": "👗",
+      "category": "noun"
     },
     {
       "id": "15:10:せいひん",
@@ -5264,14 +5954,16 @@
       "kana": "せいひん",
       "kanji": "製品",
       "es": "producto",
-      "emoji": "📦"
+      "emoji": "📦",
+      "category": "noun"
     },
     {
       "id": "15:11:ソフト",
       "lesson": 15,
       "kana": "ソフト",
       "es": "software",
-      "emoji": "💾"
+      "emoji": "💾",
+      "category": "noun"
     },
     {
       "id": "15:12:でんしじしょ",
@@ -5279,7 +5971,8 @@
       "kana": "でんしじしょ",
       "kanji": "電子辞書",
       "es": "diccionario electrónico",
-      "emoji": "📱"
+      "emoji": "📱",
+      "category": "noun"
     },
     {
       "id": "15:13:けいざい",
@@ -5287,7 +5980,8 @@
       "kana": "けいざい",
       "kanji": "経済",
       "es": "economía",
-      "emoji": "📈"
+      "emoji": "📈",
+      "category": "noun"
     },
     {
       "id": "15:14:しやくしょ",
@@ -5295,7 +5989,8 @@
       "kana": "しやくしょ",
       "kanji": "市役所",
       "es": "municipalidad",
-      "emoji": "🏛️"
+      "emoji": "🏛️",
+      "category": "noun"
     },
     {
       "id": "15:15:こうこう",
@@ -5303,7 +5998,8 @@
       "kana": "こうこう",
       "kanji": "高校",
       "es": "escuela secundaria",
-      "emoji": "🏫"
+      "emoji": "🏫",
+      "category": "noun"
     },
     {
       "id": "15:16:はいしゃ",
@@ -5311,7 +6007,8 @@
       "kana": "はいしゃ",
       "kanji": "歯医者",
       "es": "dentista",
-      "emoji": "🦷"
+      "emoji": "🦷",
+      "category": "noun"
     },
     {
       "id": "15:17:どくしん",
@@ -5319,14 +6016,16 @@
       "kana": "どくしん",
       "kanji": "独身",
       "es": "soltero",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "noun"
     },
     {
       "id": "15:18:すみません",
       "lesson": 15,
       "kana": "すみません",
       "es": "perdón",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "15:19:みなさん",
@@ -5334,7 +6033,8 @@
       "kana": "みなさん",
       "kanji": "皆さん",
       "es": "todos, ustedes",
-      "emoji": "👥"
+      "emoji": "👥",
+      "category": "noun"
     },
     {
       "id": "15:20:おもいだします",
@@ -5343,14 +6043,16 @@
       "kanji": "思い出します",
       "es": "recordar",
       "emoji": "💭",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "15:21:いらっしゃいます",
       "lesson": 15,
       "kana": "いらっしゃいます",
       "es": "estar (honorífico de います)",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "16:0:のります［でんしゃに～］",
@@ -5359,7 +6061,8 @@
       "kanji": "乗ります［電車に～］",
       "es": "subir (al tren)",
       "emoji": "🚃",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "16:1:おります［でんしゃを～］",
@@ -5368,7 +6071,8 @@
       "kanji": "降ります［電車を～］",
       "es": "bajar (del tren)",
       "emoji": "🚉",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:2:のりかえます",
@@ -5377,7 +6081,8 @@
       "kanji": "乗り換えます",
       "es": "hacer transbordo",
       "emoji": "🔄",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:3:あびます［シャワーを～］",
@@ -5386,7 +6091,8 @@
       "kanji": "浴びます",
       "es": "darse (una ducha)",
       "emoji": "🚿",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:4:いれます",
@@ -5395,7 +6101,8 @@
       "kanji": "入れます",
       "es": "meter, poner",
       "emoji": "📥",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:5:だします",
@@ -5404,7 +6111,8 @@
       "kanji": "出します",
       "es": "sacar; entregar",
       "emoji": "📤",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "16:6:おろします［おかねを～］",
@@ -5413,7 +6121,8 @@
       "kanji": "下ろします［お金を～］",
       "es": "sacar (dinero)",
       "emoji": "🏧",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "16:7:はいります［だいがくに～］",
@@ -5422,7 +6131,8 @@
       "kanji": "入ります［大学に～］",
       "es": "entrar (a la universidad)",
       "emoji": "🏫",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "16:8:でます［だいがくを～］",
@@ -5431,7 +6141,8 @@
       "kanji": "出ます［大学を～］",
       "es": "recibirse (de la universidad)",
       "emoji": "🎓",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:9:おします",
@@ -5440,7 +6151,8 @@
       "kanji": "押します",
       "es": "empujar, apretar",
       "emoji": "👆",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "16:10:やめます［かいしゃを～］",
@@ -5449,7 +6161,8 @@
       "kanji": "辞めます［会社を～］",
       "es": "renunciar (a la empresa)",
       "emoji": "🚪",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:11:はじめます",
@@ -5458,7 +6171,8 @@
       "kanji": "始めます",
       "es": "empezar",
       "emoji": "▶️",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "16:12:けんがくします",
@@ -5467,7 +6181,8 @@
       "kanji": "見学します",
       "es": "visitar para conocer",
       "emoji": "👀",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "16:13:でんわします",
@@ -5476,7 +6191,8 @@
       "kanji": "電話します",
       "es": "llamar por teléfono",
       "emoji": "📞",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "16:14:わかい",
@@ -5484,7 +6200,8 @@
       "kana": "わかい",
       "kanji": "若い",
       "es": "joven",
-      "emoji": "🧒"
+      "emoji": "🧒",
+      "category": "adj-i"
     },
     {
       "id": "16:15:ながい",
@@ -5492,14 +6209,16 @@
       "kana": "ながい",
       "kanji": "長い",
       "es": "largo",
-      "emoji": "📏"
+      "emoji": "📏",
+      "category": "adj-i"
     },
     {
       "id": "16:16:みじかい",
       "lesson": 16,
       "kana": "みじかい",
       "kanji": "短い",
-      "es": "corto"
+      "es": "corto",
+      "category": "adj-i"
     },
     {
       "id": "16:17:あかるい",
@@ -5507,7 +6226,8 @@
       "kana": "あかるい",
       "kanji": "明るい",
       "es": "luminoso, alegre",
-      "emoji": "💡"
+      "emoji": "💡",
+      "category": "adj-i"
     },
     {
       "id": "16:18:くらい",
@@ -5515,7 +6235,8 @@
       "kana": "くらい",
       "kanji": "暗い",
       "es": "oscuro",
-      "emoji": "🌑"
+      "emoji": "🌑",
+      "category": "adj-i"
     },
     {
       "id": "16:19:からだ",
@@ -5523,7 +6244,8 @@
       "kana": "からだ",
       "kanji": "体",
       "es": "cuerpo",
-      "emoji": "🧍"
+      "emoji": "🧍",
+      "category": "noun"
     },
     {
       "id": "16:20:あたま",
@@ -5531,7 +6253,8 @@
       "kana": "あたま",
       "kanji": "頭",
       "es": "cabeza; inteligencia",
-      "emoji": "🧠"
+      "emoji": "🧠",
+      "category": "noun"
     },
     {
       "id": "16:21:かみ",
@@ -5539,7 +6262,8 @@
       "kana": "かみ",
       "kanji": "髪",
       "es": "pelo",
-      "emoji": "💇"
+      "emoji": "💇",
+      "category": "noun"
     },
     {
       "id": "16:22:かお",
@@ -5547,7 +6271,8 @@
       "kana": "かお",
       "kanji": "顔",
       "es": "cara",
-      "emoji": "🙂"
+      "emoji": "🙂",
+      "category": "noun"
     },
     {
       "id": "16:23:め",
@@ -5555,7 +6280,8 @@
       "kana": "め",
       "kanji": "目",
       "es": "ojo",
-      "emoji": "👁️"
+      "emoji": "👁️",
+      "category": "noun"
     },
     {
       "id": "16:24:みみ",
@@ -5563,7 +6289,8 @@
       "kana": "みみ",
       "kanji": "耳",
       "es": "oreja",
-      "emoji": "👂"
+      "emoji": "👂",
+      "category": "noun"
     },
     {
       "id": "16:25:はな",
@@ -5571,7 +6298,8 @@
       "kana": "はな",
       "kanji": "鼻",
       "es": "nariz",
-      "emoji": "👃"
+      "emoji": "👃",
+      "category": "noun"
     },
     {
       "id": "16:26:くち",
@@ -5579,7 +6307,8 @@
       "kana": "くち",
       "kanji": "口",
       "es": "boca",
-      "emoji": "👄"
+      "emoji": "👄",
+      "category": "noun"
     },
     {
       "id": "16:27:は",
@@ -5587,13 +6316,15 @@
       "kana": "は",
       "kanji": "歯",
       "es": "diente",
-      "emoji": "🦷"
+      "emoji": "🦷",
+      "category": "noun"
     },
     {
       "id": "16:28:おなか",
       "lesson": 16,
       "kana": "おなか",
-      "es": "panza"
+      "es": "panza",
+      "category": "noun"
     },
     {
       "id": "16:29:あし",
@@ -5601,7 +6332,8 @@
       "kana": "あし",
       "kanji": "足",
       "es": "pie; pierna",
-      "emoji": "🦶"
+      "emoji": "🦶",
+      "category": "noun"
     },
     {
       "id": "16:30:せ",
@@ -5609,28 +6341,32 @@
       "kana": "せ",
       "kanji": "背",
       "es": "estatura",
-      "emoji": "📏"
+      "emoji": "📏",
+      "category": "noun"
     },
     {
       "id": "16:31:サービス",
       "lesson": 16,
       "kana": "サービス",
       "es": "servicio",
-      "emoji": "🛎️"
+      "emoji": "🛎️",
+      "category": "noun"
     },
     {
       "id": "16:32:ジョギング",
       "lesson": 16,
       "kana": "ジョギング",
       "es": "trote, jogging",
-      "emoji": "🏃"
+      "emoji": "🏃",
+      "category": "noun"
     },
     {
       "id": "16:33:シャワー",
       "lesson": 16,
       "kana": "シャワー",
       "es": "ducha",
-      "emoji": "🚿"
+      "emoji": "🚿",
+      "category": "noun"
     },
     {
       "id": "16:34:みどり",
@@ -5638,7 +6374,8 @@
       "kana": "みどり",
       "kanji": "緑",
       "es": "verde; vegetación",
-      "emoji": "🌿"
+      "emoji": "🌿",
+      "category": "noun"
     },
     {
       "id": "16:35:［お］てら",
@@ -5646,7 +6383,8 @@
       "kana": "［お］てら",
       "kanji": "［お］寺",
       "es": "templo budista",
-      "emoji": "🛕"
+      "emoji": "🛕",
+      "category": "noun"
     },
     {
       "id": "16:36:じんじゃ",
@@ -5654,7 +6392,8 @@
       "kana": "じんじゃ",
       "kanji": "神社",
       "es": "santuario sintoísta",
-      "emoji": "⛩️"
+      "emoji": "⛩️",
+      "category": "noun"
     },
     {
       "id": "16:37:―ばん",
@@ -5662,42 +6401,48 @@
       "kana": "―ばん",
       "kanji": "―番",
       "es": "número ~",
-      "emoji": "🔢"
+      "emoji": "🔢",
+      "category": "other"
     },
     {
       "id": "16:38:どうやって",
       "lesson": 16,
       "kana": "どうやって",
       "es": "¿cómo? (de qué manera)",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "16:39:どの～",
       "lesson": 16,
       "kana": "どの～",
       "es": "¿cuál ~?",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "16:40:どれ",
       "lesson": 16,
       "kana": "どれ",
       "es": "¿cuál? (de tres o más)",
-      "emoji": "❓"
+      "emoji": "❓",
+      "category": "question"
     },
     {
       "id": "16:41:すごいですね",
       "lesson": 16,
       "kana": "すごいですね",
       "es": "¡increíble!",
-      "emoji": "🤩"
+      "emoji": "🤩",
+      "category": "expression"
     },
     {
       "id": "16:42:［いいえ、］まだまだです",
       "lesson": 16,
       "kana": "［いいえ、］まだまだです",
       "es": "todavía me falta mucho",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "expression"
     },
     {
       "id": "16:43:おひきだしですか",
@@ -5705,14 +6450,16 @@
       "kana": "おひきだしですか",
       "kanji": "お引き出しですか",
       "es": "¿va a retirar dinero?",
-      "emoji": "🏧"
+      "emoji": "🏧",
+      "category": "expression"
     },
     {
       "id": "16:44:まず",
       "lesson": 16,
       "kana": "まず",
       "es": "primero",
-      "emoji": "1️⃣"
+      "emoji": "1️⃣",
+      "category": "adverb"
     },
     {
       "id": "16:45:つぎに",
@@ -5720,14 +6467,16 @@
       "kana": "つぎに",
       "kanji": "次に",
       "es": "a continuación",
-      "emoji": "2️⃣"
+      "emoji": "2️⃣",
+      "category": "adverb"
     },
     {
       "id": "16:46:キャッシュカード",
       "lesson": 16,
       "kana": "キャッシュカード",
       "es": "tarjeta de débito",
-      "emoji": "💳"
+      "emoji": "💳",
+      "category": "noun"
     },
     {
       "id": "16:47:あんしょうばんごう",
@@ -5735,7 +6484,8 @@
       "kana": "あんしょうばんごう",
       "kanji": "暗証番号",
       "es": "clave, PIN",
-      "emoji": "🔢"
+      "emoji": "🔢",
+      "category": "noun"
     },
     {
       "id": "16:48:きんがく",
@@ -5743,7 +6493,8 @@
       "kana": "きんがく",
       "kanji": "金額",
       "es": "monto",
-      "emoji": "💰"
+      "emoji": "💰",
+      "category": "noun"
     },
     {
       "id": "16:49:かくにん",
@@ -5751,14 +6502,16 @@
       "kana": "かくにん",
       "kanji": "確認",
       "es": "confirmación",
-      "emoji": "✅"
+      "emoji": "✅",
+      "category": "noun"
     },
     {
       "id": "16:50:ボタン",
       "lesson": 16,
       "kana": "ボタン",
       "es": "botón",
-      "emoji": "🔘"
+      "emoji": "🔘",
+      "category": "noun"
     },
     {
       "id": "17:0:おぼえます",
@@ -5767,7 +6520,8 @@
       "kanji": "覚えます",
       "es": "memorizar",
       "emoji": "🧠",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "17:1:わすれます",
@@ -5776,7 +6530,8 @@
       "kanji": "忘れます",
       "es": "olvidar",
       "emoji": "🤦",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "17:2:なくします",
@@ -5784,7 +6539,8 @@
       "kana": "なくします",
       "es": "perder (algo)",
       "emoji": "🔍",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:3:はらいます",
@@ -5793,7 +6549,8 @@
       "kanji": "払います",
       "es": "pagar",
       "emoji": "💴",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:4:かえします",
@@ -5802,7 +6559,8 @@
       "kanji": "返します",
       "es": "devolver",
       "emoji": "↩️",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:5:でかけます",
@@ -5811,7 +6569,8 @@
       "kanji": "出かけます",
       "es": "salir (de casa)",
       "emoji": "🚶",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "17:6:ぬぎます",
@@ -5820,7 +6579,8 @@
       "kanji": "脱ぎます",
       "es": "quitarse (ropa, zapatos)",
       "emoji": "👟",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:7:もっていきます",
@@ -5829,7 +6589,8 @@
       "kanji": "持って行きます",
       "es": "llevar (algo)",
       "emoji": "🎒",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:8:もってきます",
@@ -5838,7 +6599,8 @@
       "kanji": "持って来ます",
       "es": "traer (algo)",
       "emoji": "🎁",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "17:9:しんぱいします",
@@ -5847,7 +6609,8 @@
       "kanji": "心配します",
       "es": "preocuparse",
       "emoji": "😟",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "17:10:ざんぎょうします",
@@ -5856,7 +6619,8 @@
       "kanji": "残業します",
       "es": "hacer horas extra",
       "emoji": "🌃",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "17:11:しゅっちょうします",
@@ -5865,7 +6629,8 @@
       "kanji": "出張します",
       "es": "viajar por trabajo",
       "emoji": "💼",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "17:12:のみます［くすりを～］",
@@ -5874,7 +6639,8 @@
       "kanji": "飲みます［薬を～］",
       "es": "tomar (un remedio)",
       "emoji": "💊",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:13:はいります［おふろに～］",
@@ -5883,7 +6649,8 @@
       "kanji": "入ります［お風呂に～］",
       "es": "bañarse (en la bañera)",
       "emoji": "🛁",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "17:14:たいせつ［な］",
@@ -5891,7 +6658,8 @@
       "kana": "たいせつ［な］",
       "kanji": "大切［な］",
       "es": "importante, valioso",
-      "emoji": "💎"
+      "emoji": "💎",
+      "category": "adj-na"
     },
     {
       "id": "17:15:だいじょうぶ［な］",
@@ -5899,7 +6667,8 @@
       "kana": "だいじょうぶ［な］",
       "kanji": "大丈夫［な］",
       "es": "está bien, no hay problema",
-      "emoji": "👌"
+      "emoji": "👌",
+      "category": "adj-na"
     },
     {
       "id": "17:16:あぶない",
@@ -5907,7 +6676,8 @@
       "kana": "あぶない",
       "kanji": "危ない",
       "es": "peligroso",
-      "emoji": "⚠️"
+      "emoji": "⚠️",
+      "category": "adj-i"
     },
     {
       "id": "17:17:きんえん",
@@ -5915,7 +6685,8 @@
       "kana": "きんえん",
       "kanji": "禁煙",
       "es": "prohibido fumar",
-      "emoji": "🚭"
+      "emoji": "🚭",
+      "category": "noun"
     },
     {
       "id": "17:18:［けんこう］ほけんしょう",
@@ -5923,7 +6694,8 @@
       "kana": "［けんこう］ほけんしょう",
       "kanji": "［健康］保険証",
       "es": "tarjeta del seguro médico",
-      "emoji": "🪪"
+      "emoji": "🪪",
+      "category": "noun"
     },
     {
       "id": "17:19:ねつ",
@@ -5931,7 +6703,8 @@
       "kana": "ねつ",
       "kanji": "熱",
       "es": "fiebre",
-      "emoji": "🤒"
+      "emoji": "🤒",
+      "category": "noun"
     },
     {
       "id": "17:20:びょうき",
@@ -5939,7 +6712,8 @@
       "kana": "びょうき",
       "kanji": "病気",
       "es": "enfermedad",
-      "emoji": "🤧"
+      "emoji": "🤧",
+      "category": "noun"
     },
     {
       "id": "17:21:くすり",
@@ -5947,7 +6721,8 @@
       "kana": "くすり",
       "kanji": "薬",
       "es": "remedio, medicamento",
-      "emoji": "💊"
+      "emoji": "💊",
+      "category": "noun"
     },
     {
       "id": "17:22:［お］ふろ",
@@ -5955,7 +6730,8 @@
       "kana": "［お］ふろ",
       "kanji": "［お］風呂",
       "es": "baño, bañera",
-      "emoji": "🛁"
+      "emoji": "🛁",
+      "category": "noun"
     },
     {
       "id": "17:23:うわぎ",
@@ -5963,7 +6739,8 @@
       "kana": "うわぎ",
       "kanji": "上着",
       "es": "saco, abrigo",
-      "emoji": "🧥"
+      "emoji": "🧥",
+      "category": "noun"
     },
     {
       "id": "17:24:したぎ",
@@ -5971,7 +6748,8 @@
       "kana": "したぎ",
       "kanji": "下着",
       "es": "ropa interior",
-      "emoji": "🩲"
+      "emoji": "🩲",
+      "category": "noun"
     },
     {
       "id": "17:25:2、3にち",
@@ -5979,39 +6757,45 @@
       "kana": "2、3にち",
       "kanji": "2、3日",
       "es": "dos o tres días",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "other"
     },
     {
       "id": "17:26:2、3～",
       "lesson": 17,
       "kana": "2、3～",
-      "es": "dos o tres ~"
+      "es": "dos o tres ~",
+      "category": "other"
     },
     {
       "id": "17:27:～までに",
       "lesson": 17,
       "kana": "～までに",
       "es": "antes de ~ (plazo)",
-      "emoji": "⏰"
+      "emoji": "⏰",
+      "category": "other"
     },
     {
       "id": "17:28:ですから",
       "lesson": 17,
       "kana": "ですから",
-      "es": "por eso"
+      "es": "por eso",
+      "category": "other"
     },
     {
       "id": "17:29:どうしましたか",
       "lesson": 17,
       "kana": "どうしましたか",
       "es": "¿qué le pasa?",
-      "emoji": "🩺"
+      "emoji": "🩺",
+      "category": "expression"
     },
     {
       "id": "17:30:のど",
       "lesson": 17,
       "kana": "のど",
-      "es": "garganta"
+      "es": "garganta",
+      "category": "noun"
     },
     {
       "id": "17:31:［～が］いたいです",
@@ -6019,7 +6803,8 @@
       "kana": "［～が］いたいです",
       "kanji": "［～が］痛いです",
       "es": "me duele ~",
-      "emoji": "🤕"
+      "emoji": "🤕",
+      "category": "expression"
     },
     {
       "id": "17:32:かぜ",
@@ -6027,13 +6812,15 @@
       "kana": "かぜ",
       "kanji": "風邪",
       "es": "resfrío",
-      "emoji": "🤧"
+      "emoji": "🤧",
+      "category": "noun"
     },
     {
       "id": "17:33:それから",
       "lesson": 17,
       "kana": "それから",
-      "es": "además, y también"
+      "es": "además, y también",
+      "category": "other"
     },
     {
       "id": "17:34:おだいじに",
@@ -6041,7 +6828,8 @@
       "kana": "おだいじに",
       "kanji": "お大事に",
       "es": "¡que se mejore!",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "expression"
     },
     {
       "id": "18:0:できます",
@@ -6049,7 +6837,8 @@
       "kana": "できます",
       "es": "poder, saber hacer",
       "emoji": "💪",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "18:1:あらいます",
@@ -6058,7 +6847,8 @@
       "kanji": "洗います",
       "es": "lavar",
       "emoji": "🧼",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "18:2:ひきます",
@@ -6067,7 +6857,8 @@
       "kanji": "弾きます",
       "es": "tocar (un instrumento)",
       "emoji": "🎹",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "18:3:うたいます",
@@ -6076,7 +6867,8 @@
       "kanji": "歌います",
       "es": "cantar",
       "emoji": "🎤",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "18:4:あつめます",
@@ -6085,7 +6877,8 @@
       "kanji": "集めます",
       "es": "juntar, coleccionar",
       "emoji": "🗃️",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "18:5:すてます",
@@ -6094,7 +6887,8 @@
       "kanji": "捨てます",
       "es": "tirar (a la basura)",
       "emoji": "🗑️",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "18:6:かえます",
@@ -6103,7 +6897,8 @@
       "kanji": "換えます",
       "es": "cambiar (dinero, etc.)",
       "emoji": "💱",
-      "verbGroup": 2
+      "verbGroup": 2,
+      "category": "verb"
     },
     {
       "id": "18:7:うんてんします",
@@ -6112,7 +6907,8 @@
       "kanji": "運転します",
       "es": "manejar",
       "emoji": "🚗",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "18:8:よやくします",
@@ -6121,21 +6917,24 @@
       "kanji": "予約します",
       "es": "reservar",
       "emoji": "📅",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "18:9:ピアノ",
       "lesson": 18,
       "kana": "ピアノ",
       "es": "piano",
-      "emoji": "🎹"
+      "emoji": "🎹",
+      "category": "noun"
     },
     {
       "id": "18:10:―メートル",
       "lesson": 18,
       "kana": "―メートル",
       "es": "~ metros",
-      "emoji": "📏"
+      "emoji": "📏",
+      "category": "other"
     },
     {
       "id": "18:11:げんきん",
@@ -6143,7 +6942,8 @@
       "kana": "げんきん",
       "kanji": "現金",
       "es": "efectivo",
-      "emoji": "💵"
+      "emoji": "💵",
+      "category": "noun"
     },
     {
       "id": "18:12:しゅみ",
@@ -6151,7 +6951,8 @@
       "kana": "しゅみ",
       "kanji": "趣味",
       "es": "pasatiempo, hobby",
-      "emoji": "🎨"
+      "emoji": "🎨",
+      "category": "noun"
     },
     {
       "id": "18:13:にっき",
@@ -6159,7 +6960,8 @@
       "kana": "にっき",
       "kanji": "日記",
       "es": "diario (personal)",
-      "emoji": "📔"
+      "emoji": "📔",
+      "category": "noun"
     },
     {
       "id": "18:14:おいのり",
@@ -6167,7 +6969,8 @@
       "kana": "おいのり",
       "kanji": "お祈り",
       "es": "oración, rezo",
-      "emoji": "🙏"
+      "emoji": "🙏",
+      "category": "noun"
     },
     {
       "id": "18:15:かちょう",
@@ -6175,7 +6978,8 @@
       "kana": "かちょう",
       "kanji": "課長",
       "es": "jefe de sección",
-      "emoji": "👔"
+      "emoji": "👔",
+      "category": "noun"
     },
     {
       "id": "18:16:ぶちょう",
@@ -6183,7 +6987,8 @@
       "kana": "ぶちょう",
       "kanji": "部長",
       "es": "jefe de departamento",
-      "emoji": "👔"
+      "emoji": "👔",
+      "category": "noun"
     },
     {
       "id": "18:17:しゃちょう",
@@ -6191,7 +6996,8 @@
       "kana": "しゃちょう",
       "kanji": "社長",
       "es": "presidente de la empresa",
-      "emoji": "🤵"
+      "emoji": "🤵",
+      "category": "noun"
     },
     {
       "id": "18:18:どうぶつ",
@@ -6199,7 +7005,8 @@
       "kana": "どうぶつ",
       "kanji": "動物",
       "es": "animal",
-      "emoji": "🐾"
+      "emoji": "🐾",
+      "category": "noun"
     },
     {
       "id": "18:19:うま",
@@ -6207,28 +7014,32 @@
       "kana": "うま",
       "kanji": "馬",
       "es": "caballo",
-      "emoji": "🐎"
+      "emoji": "🐎",
+      "category": "noun"
     },
     {
       "id": "18:20:インターネット",
       "lesson": 18,
       "kana": "インターネット",
       "es": "internet",
-      "emoji": "🌐"
+      "emoji": "🌐",
+      "category": "noun"
     },
     {
       "id": "18:21:とくに",
       "lesson": 18,
       "kana": "とくに",
       "kanji": "特に",
-      "es": "especialmente"
+      "es": "especialmente",
+      "category": "adverb"
     },
     {
       "id": "18:22:へえ",
       "lesson": 18,
       "kana": "へえ",
       "es": "¡uh! ¿en serio?",
-      "emoji": "😮"
+      "emoji": "😮",
+      "category": "expression"
     },
     {
       "id": "18:23:それはおもしろいですね",
@@ -6236,13 +7047,15 @@
       "kana": "それはおもしろいですね",
       "kanji": "それは面白いですね",
       "es": "¡qué interesante!",
-      "emoji": "😄"
+      "emoji": "😄",
+      "category": "expression"
     },
     {
       "id": "18:24:なかなか",
       "lesson": 18,
       "kana": "なかなか",
-      "es": "no fácilmente (con negativo)"
+      "es": "no fácilmente (con negativo)",
+      "category": "adverb"
     },
     {
       "id": "18:25:ほんとうですか",
@@ -6250,14 +7063,16 @@
       "kana": "ほんとうですか",
       "kanji": "本当ですか",
       "es": "¿de verdad?",
-      "emoji": "😲"
+      "emoji": "😲",
+      "category": "expression"
     },
     {
       "id": "18:26:ぜひ",
       "lesson": 18,
       "kana": "ぜひ",
       "es": "sin falta, de todas maneras",
-      "emoji": "👍"
+      "emoji": "👍",
+      "category": "adverb"
     },
     {
       "id": "18:27:ぼくじょう",
@@ -6265,7 +7080,8 @@
       "kana": "ぼくじょう",
       "kanji": "牧場",
       "es": "granja, estancia",
-      "emoji": "🐄"
+      "emoji": "🐄",
+      "category": "noun"
     },
     {
       "id": "19:0:のぼります",
@@ -6274,7 +7090,8 @@
       "kanji": "登ります",
       "es": "subir, escalar",
       "emoji": "🧗",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "19:1:とまります［ホテルに～］",
@@ -6283,7 +7100,8 @@
       "kanji": "泊まります",
       "es": "alojarse (en un hotel)",
       "emoji": "🏨",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "19:2:そうじします",
@@ -6292,7 +7110,8 @@
       "kanji": "掃除します",
       "es": "limpiar",
       "emoji": "🧹",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "19:3:せんたくします",
@@ -6301,7 +7120,8 @@
       "kanji": "洗濯します",
       "es": "lavar la ropa",
       "emoji": "🧺",
-      "verbGroup": 3
+      "verbGroup": 3,
+      "category": "verb"
     },
     {
       "id": "19:4:なります",
@@ -6309,7 +7129,8 @@
       "kana": "なります",
       "es": "volverse, llegar a ser",
       "emoji": "🦋",
-      "verbGroup": 1
+      "verbGroup": 1,
+      "category": "verb"
     },
     {
       "id": "19:5:ねむい",
@@ -6317,7 +7138,8 @@
       "kana": "ねむい",
       "kanji": "眠い",
       "es": "tener sueño",
-      "emoji": "😪"
+      "emoji": "😪",
+      "category": "adj-i"
     },
     {
       "id": "19:6:つよい",
@@ -6325,7 +7147,8 @@
       "kana": "つよい",
       "kanji": "強い",
       "es": "fuerte",
-      "emoji": "💪"
+      "emoji": "💪",
+      "category": "adj-i"
     },
     {
       "id": "19:7:よわい",
@@ -6333,7 +7156,8 @@
       "kana": "よわい",
       "kanji": "弱い",
       "es": "débil",
-      "emoji": "🥀"
+      "emoji": "🥀",
+      "category": "adj-i"
     },
     {
       "id": "19:8:れんしゅう",
@@ -6341,14 +7165,16 @@
       "kana": "れんしゅう",
       "kanji": "練習",
       "es": "práctica",
-      "emoji": "🔁"
+      "emoji": "🔁",
+      "category": "noun"
     },
     {
       "id": "19:9:ゴルフ",
       "lesson": 19,
       "kana": "ゴルフ",
       "es": "golf",
-      "emoji": "⛳"
+      "emoji": "⛳",
+      "category": "noun"
     },
     {
       "id": "19:10:すもう",
@@ -6356,7 +7182,8 @@
       "kana": "すもう",
       "kanji": "相撲",
       "es": "sumo",
-      "emoji": "🤼"
+      "emoji": "🤼",
+      "category": "noun"
     },
     {
       "id": "19:11:おちゃ",
@@ -6364,7 +7191,8 @@
       "kana": "おちゃ",
       "kanji": "お茶",
       "es": "ceremonia del té",
-      "emoji": "🍵"
+      "emoji": "🍵",
+      "category": "noun"
     },
     {
       "id": "19:12:ひ",
@@ -6372,7 +7200,8 @@
       "kana": "ひ",
       "kanji": "日",
       "es": "día; fecha",
-      "emoji": "📅"
+      "emoji": "📅",
+      "category": "noun"
     },
     {
       "id": "19:13:ちょうし",
@@ -6380,7 +7209,8 @@
       "kana": "ちょうし",
       "kanji": "調子",
       "es": "estado, condición",
-      "emoji": "📶"
+      "emoji": "📶",
+      "category": "noun"
     },
     {
       "id": "19:14:いちど",
@@ -6388,7 +7218,8 @@
       "kana": "いちど",
       "kanji": "一度",
       "es": "una vez",
-      "emoji": "1️⃣"
+      "emoji": "1️⃣",
+      "category": "adverb"
     },
     {
       "id": "19:15:いちども",
@@ -6396,34 +7227,39 @@
       "kana": "いちども",
       "kanji": "一度も",
       "es": "ni una vez (con negativo)",
-      "emoji": "🙅"
+      "emoji": "🙅",
+      "category": "adverb"
     },
     {
       "id": "19:16:だんだん",
       "lesson": 19,
       "kana": "だんだん",
       "es": "poco a poco",
-      "emoji": "📈"
+      "emoji": "📈",
+      "category": "adverb"
     },
     {
       "id": "19:17:もうすぐ",
       "lesson": 19,
       "kana": "もうすぐ",
       "es": "pronto, dentro de poco",
-      "emoji": "⏳"
+      "emoji": "⏳",
+      "category": "adverb"
     },
     {
       "id": "19:18:おかげさまで",
       "lesson": 19,
       "kana": "おかげさまで",
       "es": "bien, gracias (a usted)",
-      "emoji": "🙇"
+      "emoji": "🙇",
+      "category": "expression"
     },
     {
       "id": "19:19:でも",
       "lesson": 19,
       "kana": "でも",
-      "es": "pero"
+      "es": "pero",
+      "category": "other"
     },
     {
       "id": "19:20:かんぱい",
@@ -6431,14 +7267,16 @@
       "kana": "かんぱい",
       "kanji": "乾杯",
       "es": "¡salud! (brindis)",
-      "emoji": "🥂"
+      "emoji": "🥂",
+      "category": "expression"
     },
     {
       "id": "19:21:ダイエット",
       "lesson": 19,
       "kana": "ダイエット",
       "es": "dieta",
-      "emoji": "🥗"
+      "emoji": "🥗",
+      "category": "noun"
     },
     {
       "id": "19:22:むり［な］",
@@ -6446,7 +7284,8 @@
       "kana": "むり［な］",
       "kanji": "無理［な］",
       "es": "imposible; excesivo",
-      "emoji": "🙅"
+      "emoji": "🙅",
+      "category": "adj-na"
     },
     {
       "id": "19:23:からだにいい",
@@ -6454,14 +7293,16 @@
       "kana": "からだにいい",
       "kanji": "体にいい",
       "es": "bueno para la salud",
-      "emoji": "💚"
+      "emoji": "💚",
+      "category": "expression"
     },
     {
       "id": "19:24:ケーキ",
       "lesson": 19,
       "kana": "ケーキ",
       "es": "torta",
-      "emoji": "🍰"
+      "emoji": "🍰",
+      "category": "noun"
     }
   ]
 }

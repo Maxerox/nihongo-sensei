@@ -18,8 +18,11 @@ export interface VocabWord {
   emoji?: string
   /** Grupo del verbo (I, II o III). Solo en los verbos en forma ます. */
   verbGroup?: VerbGroup
+  /** Tipo de palabra, para filtrar y para el quiz difícil. */
+  category: WordCategory
 }
 export type VerbGroup = 1 | 2 | 3
+export type WordCategory = 'verb' | 'adj-i' | 'adj-na' | 'noun' | 'adverb' | 'question' | 'expression' | 'other'
 export interface VocabularyData {
   lessons: number[]
   words: VocabWord[]

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { JumpNav } from '../../components/molecules/JumpNav'
 import { SegmentedTabs, tabPanelProps } from '../../components/molecules/SegmentedTabs'
 import { ParticleCard } from '../../components/organisms/ParticleCard'
@@ -6,10 +5,10 @@ import { ParticlePairCard } from '../../components/organisms/ParticlePairCard'
 import { ParticlePractice } from '../../components/organisms/ParticlePractice'
 import { PageLayout } from '../../components/templates/PageLayout'
 import particles from '../../data/particles.json'
-import { useLocalStorage } from '../../shared/hooks/useLocalStorage'
+import { useLocalStorage, useSessionStorage } from '../../shared/hooks/useLocalStorage'
 import type { ParticlesData } from '../../shared/types/content'
 import { lessonRange } from '../../shared/utils/lessons'
-import { STORAGE_KEYS } from '../../shared/utils/storage'
+import { SESSION_KEYS, STORAGE_KEYS } from '../../shared/utils/storage'
 import styles from './ParticlesPage.module.scss'
 
 const data = particles as ParticlesData
@@ -18,7 +17,7 @@ const TABS_ID = 'particulas-vista'
 const anchor = (romaji: string) => `particula-${romaji}`
 
 export function ParticlesPage() {
-  const [tab, setTab] = useState<Tab>('uses')
+  const [tab, setTab] = useSessionStorage<Tab>(SESSION_KEYS.particlesTab, 'uses')
   const [lessons, setLessons] = useLocalStorage<number[]>(STORAGE_KEYS.particleLessons, lessonRange())
 
   return (

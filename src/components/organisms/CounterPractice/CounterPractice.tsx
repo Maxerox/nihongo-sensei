@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { JpText } from '../../atoms/JpText'
 import { QuizDone } from '../../molecules/QuizDone'
 import { SegmentedTabs, tabPanelProps } from '../../molecules/SegmentedTabs'
@@ -7,6 +6,8 @@ import type { CountersData } from '../../../shared/types/content'
 import { counterQuestionKeys, makeCounterQuestion, type CounterMix } from '../../../shared/utils/counterQuiz'
 import { QuizCard } from '../QuizCard'
 import styles from './CounterPractice.module.scss'
+import { useSessionStorage } from '../../../shared/hooks/useLocalStorage'
+import { SESSION_KEYS } from '../../../shared/utils/storage'
 
 export type { CounterMix }
 
@@ -19,8 +20,8 @@ export interface CounterPracticeProps {
  * La pregunta no lleva furigana: la lectura es la respuesta (CONVENTIONS.md §2.2).
  */
 export function CounterPractice({ data }: CounterPracticeProps) {
-  const [mix, setMix] = useState<CounterMix>('all')
-  const r = useQuizRound(counterQuestionKeys(data, mix), mix, (key) => makeCounterQuestion(data, key))
+  const [mix, setMix] = useSessionStorage<CounterMix>(SESSION_KEYS.countersMix, 'all')
+  const r = useQuizRound(counterQuestionKeys(data, mix), mix, (key) => makeCounterQuestion(data, key), SESSION_KEYS.countersQuiz)
   const q = r.question
 
   return (

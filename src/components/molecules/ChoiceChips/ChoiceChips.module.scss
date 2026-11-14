@@ -1,0 +1,34 @@
+@use '../../../styles/mixins' as *;
+
+.choice {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.label {
+  @include label-caps;
+  padding: 0;
+  margin-bottom: var(--space-2);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  font-weight: 500;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+}
+
+.count {
+  font-variant-numeric: tabular-nums;
+  font-weight: 400;
+}
