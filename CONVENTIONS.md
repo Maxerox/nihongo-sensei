@@ -116,6 +116,13 @@ components/atoms/Button/
   `question`, `expression`, `other`; nombres en `shared/utils/wordCategories.ts`). Se usa
   para filtrar y para el quiz difícil. Una palabra nueva lleva su categoría; los verbos son
   justo los que tienen `verbGroup`, y los adjetivos な los que llevan ［な］ (lo controla el test).
+- El vocabulario sigue la **2.ª edición** de Minna no Nihongo I: la lección de cada palabra es
+  la del índice (索引) del libro principal. Los significados en español se pueden comparar con
+  el libro de traducción en español (翻訳・文法解説, 1.ª ed.), sin tomar el vocabulario de
+  referencia (参考語彙).
+- `uses` es cuántas veces aparece la palabra en las actividades del libro principal; lo usa el
+  filtro "Más usadas" (el 30 % más usado de lo elegido, `shared/utils/usage.ts`). Se genera con
+  `tools/vocab-uses` (ver su README). Una palabra nueva sin conteo queda fuera de ese filtro.
 
 ### 4.4 Shared utils
 
@@ -153,6 +160,7 @@ Claves de localStorage (no se renombran, para no perder el progreso):
 | `mn_sound`       | Sonido de acierto y error en los quizzes (`true` / `false`) |
 | `mn_vocab_cat`   | Tipo de palabra elegido en vocabulario (`all`, `verb`, `adj-i`…) |
 | `mn_vocab_hard`  | Quiz de vocabulario difícil (opciones del mismo tipo de palabra) |
+| `mn_vocab_top`   | Filtro "Solo las más usadas en el libro" en vocabulario |
 
 ### 4.6 Quizzes
 

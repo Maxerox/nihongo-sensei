@@ -16,6 +16,7 @@ import vocabulary from '../../data/vocabulary.json'
 import { useLocalStorage, useSessionStorage } from '../../shared/hooks/useLocalStorage'
 import type { VocabularyData } from '../../shared/types/content'
 import { SESSION_KEYS, STORAGE_KEYS } from '../../shared/utils/storage'
+import { mostUsed } from '../../shared/utils/usage'
 import { byCategory, WORD_CATEGORIES, type CategoryFilter } from '../../shared/utils/wordCategories'
 import styles from './VocabularyPage.module.scss'
 
@@ -30,16 +31,20 @@ export function VocabularyPage() {
   const [knownList, setKnownList] = useLocalStorage<string[]>(STORAGE_KEYS.known, [])
   const [category, setCategory] = useLocalStorage<CategoryFilter>(STORAGE_KEYS.vocabCategory, 'all')
   const [hard, setHard] = useLocalStorage<boolean>(STORAGE_KEYS.vocabHard, false)
+  const [onlyTop, setOnlyTop] = useLocalStorage<boolean>(STORAGE_KEYS.vocabMostUsed, false)
   const [mode, setMode] = useSessionStorage<Mode>(SESSION_KEYS.vocabTab, 'cards')
   const [onlyReview, setOnlyReview] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
 
   const known = useMemo(() => new Set(knownList), [knownList])
   const allInLessons = useMemo(() => data.words.filter((w) => lessons.includes(w.lesson)), [lessons])
-  const inLessons = useMemo(() => byCategory(allInLessons, category), [allInLessons, category])
+  const inLessons = useMemo(() => {
+    const ofType = byCategory(allInLessons, category)
+    return onlyTop ? mostUsed(ofType) : ofType
+  }, [allInLessons, category, onlyTop])
   const deckWords = onlyReview ? inLessons.filter((w) => !known.has(w.id)) : inLessons
   const knownCount = inLessons.filter((w) => known.has(w.id)).length
-  const resetKey = `${lessons.join(',')}|${onlyReview}|${category}`
+  const resetKey = `${lessons.join(',')}|${onlyReview}|${category}|${onlyTop ? 'top' : ''}`
   const categoryName = WORD_CATEGORIES.find((c) => c.id === category)?.label.toLowerCase()
 
   useEffect(() => {
@@ -104,6 +109,7 @@ export function VocabularyPage() {
         )}
       </div>
       <div className={styles.row}>
+        <Checkbox id="vocabulario-top" label="Solo las más usadas en el libro" checked={onlyTop} onChange={setOnlyTop} />
         <Checkbox id="vocabulario-faltan" label="Solo las que me faltan" checked={onlyReview} onChange={setOnlyReview} />
         <Checkbox id="vocabulario-kanji" label="Mostrar todos los kanji" checked={allKanji} onChange={setAllKanji} />
       </div>
@@ -111,6 +117,7 @@ export function VocabularyPage() {
         <div className={styles.row}>
           <p className={styles.stats}>
             Ya sabés <b>{knownCount}</b> de <b>{inLessons.length}</b> {category === 'all' ? 'palabras' : categoryName}
+            {onlyTop && ' · filtro: más usadas'}
           </p>
           <Chip
             className={styles.reset}
@@ -139,13 +146,13 @@ export function VocabularyPage() {
       }}
       toolbar={toolbar}
       toolbarLabel="Opciones de vocabulario"
-      footnote="Vocabulario basado en la 2.ª edición del libro principal. El botón 🔊 usa la voz japonesa de tu navegador, si la tiene. Las palabras sabidas se guardan en este navegador; la ronda del quiz y la tarjeta en la que vas, hasta que cierres la pestaña."
+      footnote="Vocabulario basado en la 2.ª edición del libro principal. El botón 🔊 usa la voz japonesa de tu navegador, si la tiene. «Más usadas» son el 30 % de las palabras elegidas que más aparecen en las actividades del libro (diálogos, ejemplos, prácticas y ejercicios). Las palabras sabidas se guardan en este navegador; la ronda del quiz y la tarjeta en la que vas, hasta que cierres la pestaña."
     >
       <div {...tabPanelProps(TABS_ID, mode)} className={styles.panel}>
         {lessons.length === 0 ? (
           <EmptyState>Elegí al menos una lección.</EmptyState>
         ) : inLessons.length === 0 ? (
-          <EmptyState>No hay {categoryName} en estas lecciones. Elegí otro tipo de palabra o más lecciones.</EmptyState>
+          <EmptyState>No hay palabras con estos filtros. Probá con otro tipo de palabra o con más lecciones.</EmptyState>
         ) : mode === 'cards' ? (
           <FlashcardDeck
             words={deckWords}

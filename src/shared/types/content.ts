@@ -20,6 +20,11 @@ export interface VocabWord {
   verbGroup?: VerbGroup
   /** Tipo de palabra, para filtrar y para el quiz difícil. */
   category: WordCategory
+  /**
+   * Cuántas veces aparece en las actividades del libro principal (2.ª ed.), para el filtro
+   * "Más usadas". No está en partículas y sufijos (～から, ～まで…), que no se cuentan.
+   */
+  uses?: number
 }
 export type VerbGroup = 1 | 2 | 3
 export type WordCategory = 'verb' | 'adj-i' | 'adj-na' | 'noun' | 'adverb' | 'question' | 'expression' | 'other'

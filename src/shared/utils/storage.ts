@@ -39,6 +39,7 @@ export const STORAGE_KEYS = {
   quizSound: 'mn_sound',
   vocabCategory: 'mn_vocab_cat',
   vocabHard: 'mn_vocab_hard',
+  vocabMostUsed: 'mn_vocab_top',
 } as const
 
 /** Claves de sessionStorage: el progreso de lo que se está practicando ahora. */
