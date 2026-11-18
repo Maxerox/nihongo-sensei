@@ -13,6 +13,7 @@ App para estudiar *Minna no Nihongo* (lecciones 1–19): vocabulario, kanji, gra
 | 文法 Gramática | `#/gramatica` | Cheatsheet por lección con ejemplos, tablas de conjugación y buscador. |
 | 数 Contadores y fechas | `#/contadores` | Contadores del 1 al 10 con las lecturas irregulares resaltadas, días del mes, meses y práctica. |
 | 助詞 Partículas | `#/particulas` | Usos de cada partícula, comparaciones y práctica filtrada por lección. |
+| 動詞 Verbos | `#/verbos` | Formas de los verbos del vocabulario (ません, ました, ませんでした, て, ない, る, た): práctica eligiendo o escribiendo (hiragana o romaji), reglas por grupo y tabla de conjugaciones. |
 
 Los quizzes y prácticas van por rondas: lo que respondés bien no vuelve a salir y lo que respondés mal vuelve hasta que lo aciertes. La ronda, la tarjeta en la que vas y la pestaña abierta se guardan en sessionStorage: si recargás la página seguís donde estabas.
 

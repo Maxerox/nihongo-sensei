@@ -4,6 +4,7 @@ import type { NavItem } from '../components/organisms/NavDrawer'
 export const SECTIONS: NavItem[] = [
   { to: '/vocabulario', ja: '単語', jaReading: 'たんご', title: 'Vocabulario', description: 'Tarjetas, quiz y lista · L1–19' },
   { to: '/kanji', ja: '漢字', jaReading: 'かんじ', title: 'Kanji', description: 'Tarjetas, quiz, trazos y lista · U1–9' },
+  { to: '/verbos', ja: '動詞', jaReading: 'どうし', title: 'Verbos', description: 'Formas て, ない, る, た… · práctica y tabla' },
   { to: '/gramatica', ja: '文法', jaReading: 'ぶんぽう', title: 'Gramática', description: 'Cheatsheet por lección · L1–19' },
   { to: '/contadores', ja: '数', jaReading: 'かず', title: 'Contadores y fechas', description: 'Contadores, días del mes y práctica' },
   { to: '/particulas', ja: '助詞', jaReading: 'じょし', title: 'Partículas', description: 'Usos, comparaciones y práctica' },

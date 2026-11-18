@@ -167,3 +167,30 @@ export interface KanjiStrokeData {
   numbers: [number, number][]
 }
 export type KanjiStrokesData = Record<string, KanjiStrokeData>
+
+// verb-forms.json (sección Verbos)
+export type VerbFormKey = 'masen' | 'mashita' | 'masendeshita' | 'te' | 'nai' | 'jisho' | 'ta'
+export interface VerbFormRule {
+  /** 'I', 'II', 'III' o 'todos'. */
+  group: string
+  /** Qué cambia (puede tener japonés). */
+  change: string
+  /** "かいます → かって": se controla en el test contra conjugate(). */
+  examples: string[]
+}
+export interface VerbFormInfo {
+  id: VerbFormKey
+  ja: string
+  /** Etiqueta corta para los chips y la tabla (て, ない, る…). */
+  short: string
+  name: string
+  /** Lección del libro principal donde se ve. */
+  lesson: number
+  description: string
+  example: Example
+  rules: VerbFormRule[]
+}
+export interface VerbFormsData {
+  forms: VerbFormInfo[]
+  groups: { group: string; description: string }[]
+}

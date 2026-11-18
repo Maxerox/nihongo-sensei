@@ -6,6 +6,7 @@ import { SECTIONS } from './sections'
 // Cada página se carga recién cuando se abre (los trazos de kanji pesan bastante).
 const VocabularyPage = lazy(() => import('../pages/VocabularyPage').then((m) => ({ default: m.VocabularyPage })))
 const KanjiPage = lazy(() => import('../pages/KanjiPage').then((m) => ({ default: m.KanjiPage })))
+const VerbsPage = lazy(() => import('../pages/VerbsPage').then((m) => ({ default: m.VerbsPage })))
 const GrammarPage = lazy(() => import('../pages/GrammarPage').then((m) => ({ default: m.GrammarPage })))
 const CountersPage = lazy(() => import('../pages/CountersPage').then((m) => ({ default: m.CountersPage })))
 const ParticlesPage = lazy(() => import('../pages/ParticlesPage').then((m) => ({ default: m.ParticlesPage })))
@@ -29,6 +30,7 @@ export function App() {
             <Route index element={<Navigate to="/vocabulario" replace />} />
             <Route path="vocabulario" element={<VocabularyPage />} />
             <Route path="kanji" element={<KanjiPage />} />
+            <Route path="verbos" element={<VerbsPage />} />
             <Route path="gramatica" element={<GrammarPage />} />
             <Route path="contadores" element={<CountersPage />} />
             <Route path="particulas" element={<ParticlesPage />} />

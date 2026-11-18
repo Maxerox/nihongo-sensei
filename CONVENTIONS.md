@@ -15,6 +15,7 @@ Secciones actuales, cada una es una página:
 | --------------- | -------------------- | --------------------------------------------- |
 | `/vocabulario`  | `VocabularyPage`     | Tarjetas, quiz y lista de vocabulario         |
 | `/kanji`        | `KanjiPage`          | Tarjetas, quiz, dibujo con corrección y lista de kanji (漢字マスターN5, unidades 1–9) |
+| `/verbos`       | `VerbsPage`          | Formas de los verbos (ません, ました, て, ない, る, た): práctica, reglas y tabla |
 | `/gramatica`    | `GrammarPage`        | Cheatsheet de gramática por lección           |
 | `/particulas`   | `ParticlesPage`      | Usos, comparaciones y práctica de partículas  |
 | `/contadores`   | `CountersPage`       | Contadores, fechas y práctica                 |
@@ -101,7 +102,7 @@ components/atoms/Button/
 ### 4.3 Contenido en JSON
 
 - Todo el contenido vive en `src/data/*.json`: `vocabulary`, `grammar`, `particles`,
-  `counters`, `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 72 kanji de
+  `counters`, `verb-forms` (formas de los verbos: reglas y ejemplos), `kanji` (lista de kanji permitidos y furigana), `kanji-book` (los 72 kanji de
   las unidades 1–9 de 漢字マスターN5) y `kanji-strokes` (trazos). Los componentes no tienen textos de estudio
   escritos adentro.
 - `kanji-strokes.json` se genera a partir de **KanjiVG** (© Ulrich Apel, licencia
@@ -133,6 +134,10 @@ components/atoms/Button/
 - Las páginas se cargan por separado (`React.lazy` en `App.tsx`), así lo pesado (como los
   trazos de kanji) se descarga solo al abrir esa página.
 
+- Las formas de los verbos no se escriben a mano: salen de `conjugate()` (`shared/utils/
+  conjugate.ts`), con las excepciones (行きます → 行って, あります → ない, 来ます → こない,
+  いらっしゃいます). Los ejemplos de `verb-forms.json` se controlan contra esa función en el test.
+
 ### 4.5 Estado guardado
 
 Hay dos lugares, siempre dentro de `try/catch` (`readStorage` / `writeStorage`):
@@ -161,6 +166,7 @@ Claves de localStorage (no se renombran, para no perder el progreso):
 | `mn_vocab_cat`   | Tipo de palabra elegido en vocabulario (`all`, `verb`, `adj-i`…) |
 | `mn_vocab_hard`  | Quiz de vocabulario difícil (opciones del mismo tipo de palabra) |
 | `mn_vocab_top`   | Filtro "Solo las más usadas en el libro" en vocabulario |
+| `mn_verb_lessons`, `mn_verb_forms`, `mn_verb_groups`, `mn_verb_mode` | Filtros y modo (elegir / escribir) de la práctica de verbos |
 
 ### 4.6 Quizzes
 

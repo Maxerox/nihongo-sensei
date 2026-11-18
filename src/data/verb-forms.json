@@ -1,0 +1,311 @@
+{
+  "forms": [
+    {
+      "id": "masen",
+      "ja": "ません",
+      "short": "ません",
+      "name": "Negativo cortés",
+      "lesson": 4,
+      "description": "No hacer algo, en forma cortés.",
+      "example": {
+        "ja": "わたしは たばこを すいません。",
+        "es": "No fumo."
+      },
+      "rules": [
+        {
+          "group": "todos",
+          "change": "ます → ません",
+          "examples": [
+            "たべます → たべません",
+            "いきます → いきません"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mashita",
+      "ja": "ました",
+      "short": "ました",
+      "name": "Pasado cortés",
+      "lesson": 4,
+      "description": "Algo que se hizo, en forma cortés.",
+      "example": {
+        "ja": "きのう べんきょうしました。",
+        "es": "Ayer estudié."
+      },
+      "rules": [
+        {
+          "group": "todos",
+          "change": "ます → ました",
+          "examples": [
+            "ねます → ねました",
+            "みます → みました"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masendeshita",
+      "ja": "ませんでした",
+      "short": "ませんでした",
+      "name": "Pasado negativo cortés",
+      "lesson": 4,
+      "description": "Algo que no se hizo, en forma cortés.",
+      "example": {
+        "ja": "けさ あさごはんを たべませんでした。",
+        "es": "Esta mañana no desayuné."
+      },
+      "rules": [
+        {
+          "group": "todos",
+          "change": "ます → ませんでした",
+          "examples": [
+            "のみます → のみませんでした",
+            "かえります → かえりませんでした"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "te",
+      "ja": "てけい",
+      "short": "て",
+      "name": "Forma て",
+      "lesson": 14,
+      "description": "Une acciones y arma pedidos (～てください), acciones en curso (～ています) y permisos (～てもいいです).",
+      "example": {
+        "ja": "ちょっと まって ください。",
+        "es": "Espere un momento, por favor."
+      },
+      "rules": [
+        {
+          "group": "I",
+          "change": "い・ち・り → って",
+          "examples": [
+            "かいます → かって",
+            "まちます → まって",
+            "かえります → かえって"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "み・び・に → んで",
+          "examples": [
+            "よみます → よんで",
+            "あそびます → あそんで"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "き → いて · ぎ → いで",
+          "examples": [
+            "かきます → かいて",
+            "およぎます → およいで"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "し → して",
+          "examples": [
+            "はなします → はなして",
+            "かします → かして"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "Excepción: いきます → いって",
+          "examples": [
+            "いきます → いって"
+          ]
+        },
+        {
+          "group": "II",
+          "change": "ます → て",
+          "examples": [
+            "たべます → たべて",
+            "みます → みて",
+            "おきます → おきて"
+          ]
+        },
+        {
+          "group": "III",
+          "change": "します → して · きます → きて",
+          "examples": [
+            "します → して",
+            "きます → きて",
+            "べんきょうします → べんきょうして"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nai",
+      "ja": "ないけい",
+      "short": "ない",
+      "name": "Forma ない",
+      "lesson": 17,
+      "description": "Negativo informal. Con ～ないでください se pide que no se haga algo, y con ～なければなりません se dice que hay que hacerlo.",
+      "example": {
+        "ja": "ここで しゃしんを とらないで ください。",
+        "es": "No saque fotos acá, por favor."
+      },
+      "rules": [
+        {
+          "group": "I",
+          "change": "fila い → fila あ + ない (con い es わ)",
+          "examples": [
+            "かきます → かかない",
+            "のみます → のまない",
+            "かいます → かわない",
+            "まちます → またない"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "Excepción: あります → ない",
+          "examples": [
+            "あります → ない"
+          ]
+        },
+        {
+          "group": "II",
+          "change": "ます → ない",
+          "examples": [
+            "たべます → たべない",
+            "みます → みない"
+          ]
+        },
+        {
+          "group": "III",
+          "change": "します → しない · きます → こない",
+          "examples": [
+            "します → しない",
+            "きます → こない"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jisho",
+      "ja": "じしょけい",
+      "short": "る",
+      "name": "Forma de diccionario (る)",
+      "lesson": 18,
+      "description": "La forma que aparece en el diccionario. Se usa con ～ことが できます (poder) y ～まえに (antes de).",
+      "example": {
+        "ja": "わたしは ピアノを ひく ことが できます。",
+        "es": "Sé tocar el piano."
+      },
+      "rules": [
+        {
+          "group": "I",
+          "change": "fila い → fila う",
+          "examples": [
+            "かきます → かく",
+            "のみます → のむ",
+            "かいます → かう",
+            "かえります → かえる"
+          ]
+        },
+        {
+          "group": "II",
+          "change": "ます → る",
+          "examples": [
+            "たべます → たべる",
+            "みます → みる"
+          ]
+        },
+        {
+          "group": "III",
+          "change": "します → する · きます → くる",
+          "examples": [
+            "します → する",
+            "きます → くる"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ta",
+      "ja": "たけい",
+      "short": "た",
+      "name": "Forma た",
+      "lesson": 19,
+      "description": "Pasado informal. Se arma igual que la forma て, cambiando て → た y で → だ. Se usa con ～たことが あります (alguna vez hice) y ～たり ～たり します.",
+      "example": {
+        "ja": "ほっかいどうへ いった ことが あります。",
+        "es": "Fui a Hokkaido alguna vez."
+      },
+      "rules": [
+        {
+          "group": "I",
+          "change": "い・ち・り → った",
+          "examples": [
+            "かいます → かった",
+            "まちます → まった"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "み・び・に → んだ",
+          "examples": [
+            "よみます → よんだ",
+            "あそびます → あそんだ"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "き → いた · ぎ → いだ",
+          "examples": [
+            "かきます → かいた",
+            "およぎます → およいだ"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "し → した",
+          "examples": [
+            "はなします → はなした"
+          ]
+        },
+        {
+          "group": "I",
+          "change": "Excepción: いきます → いった",
+          "examples": [
+            "いきます → いった"
+          ]
+        },
+        {
+          "group": "II",
+          "change": "ます → た",
+          "examples": [
+            "たべます → たべた",
+            "みます → みた"
+          ]
+        },
+        {
+          "group": "III",
+          "change": "します → した · きます → きた",
+          "examples": [
+            "します → した",
+            "きます → きた"
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "group": "I",
+      "description": "La raíz (lo que va antes de ます) termina en fila い: かきます, のみます, かえります. Es el grupo más grande."
+    },
+    {
+      "group": "II",
+      "description": "La raíz termina en fila え (たべます, ねます), y algunos pocos en fila い (みます, おきます, かります, できます)."
+    },
+    {
+      "group": "III",
+      "description": "Solo します (y los que terminan en します, como べんきょうします) y きます (venir)."
+    }
+  ]
+}

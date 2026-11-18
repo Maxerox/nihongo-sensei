@@ -1,0 +1,1 @@
+export { VerbsPage } from './VerbsPage'

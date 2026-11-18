@@ -1,0 +1,120 @@
+@use '../../../styles/mixins' as *;
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.card {
+  padding: var(--space-4) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.title {
+  margin: 0 0 var(--space-2);
+  font-size: 18px;
+
+  :global([lang='ja']) {
+    font-family: var(--font-jp);
+    font-weight: 600;
+    color: var(--ai);
+  }
+}
+
+.description {
+  margin: 0 0 var(--space-3);
+  font-size: 14.5px;
+  color: var(--muted);
+}
+
+.groups {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.group {
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 2px 0 0;
+    font-size: 14.5px;
+  }
+}
+
+.ruleList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.rule {
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+
+.change {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.groupTag {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--ai-soft);
+  color: var(--ai);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.examples {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 18px;
+  font-family: var(--font-jp);
+  font-size: 15.5px;
+  line-height: 1.7;
+
+  li {
+    white-space: nowrap;
+  }
+}
+
+.example {
+  margin: var(--space-3) 0 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--ai-soft);
+  font-size: 16px;
+  line-height: 2;
+}
+
+.es {
+  display: block;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+

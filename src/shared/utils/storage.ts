@@ -40,6 +40,10 @@ export const STORAGE_KEYS = {
   vocabCategory: 'mn_vocab_cat',
   vocabHard: 'mn_vocab_hard',
   vocabMostUsed: 'mn_vocab_top',
+  verbLessons: 'mn_verb_lessons',
+  verbForms: 'mn_verb_forms',
+  verbGroups: 'mn_verb_groups',
+  verbMode: 'mn_verb_mode',
 } as const
 
 /** Claves de sessionStorage: el progreso de lo que se está practicando ahora. */
@@ -55,4 +59,6 @@ export const SESSION_KEYS = {
   countersTab: 'mn_s_counters_tab',
   countersMix: 'mn_s_counters_mix',
   countersQuiz: 'mn_s_counters_quiz',
+  verbsTab: 'mn_s_verbs_tab',
+  verbsQuiz: 'mn_s_verbs_quiz',
 } as const

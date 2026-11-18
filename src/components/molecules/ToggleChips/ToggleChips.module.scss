@@ -1,0 +1,29 @@
+@use '../../../styles/mixins' as *;
+
+.toggle {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.label {
+  @include label-caps;
+  padding: 0;
+  margin-bottom: var(--space-2);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  font-weight: 500;
+
+  :global([lang='ja']) {
+    font-family: var(--font-jp);
+    font-size: 15px;
+  }
+}
